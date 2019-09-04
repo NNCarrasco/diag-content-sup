@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+.mixed-content-block {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  height: 540px;
+  width: 335px;
+  margin: auto;
+  position: relative;
+  background-color: #f2f2f2;
+}
+.mixed-content-block .copy-container {
+  height: 288px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.mixed-content-block .copy-container .content-title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.63;
+  color: #000000;
+  margin: 0;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+.mixed-content-block .copy-container .content-text {
+  font-size: 16px;
+  padding-top: 10px;
+  line-height: 1.63;
+  color: #3e3e3e;
+  margin: 0;
+}
+.mixed-content-block .copy-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 2px;
+  font-weight: 500;
+}
+.mixed-content-block .image-container {
+  width: 335px;
+  height: 250px;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.mixed-content-block .image-container img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .mixed-content-block {
+    width: 1172px;
+    height: 390px;
+  }
+  .mixed-content-block .copy-container {
+    height: 390px;
+    width: 653px;
+    float: left;
+    padding-left: 134px;
+    padding-right: 107px;
+  }
+  .mixed-content-block .copy-container .content-title {
+    font-size: 28px;
+    line-height: 1.43;
+    padding-top: 73px;
+  }
+  .mixed-content-block .copy-container .content-button {
+    position: relative;
+    width: 105px;
+  }
+  .mixed-content-block .copy-container .content-text {
+    padding: 20px 0;
+  }
+  .mixed-content-block .image-container {
+    height: 390px;
+    width: 519px;
+    float: left;
+  }
+}

@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+body {
+  box-sizing: border-box;
+}
+body .card-download-with-button {
+  font-family: 'Roboto', 'sans-serif';
+  width: 300px;
+  height: 360px;
+  border: solid 1px #e3e3e3;
+  background-color: #ffffff;
+  margin: auto;
+}
+body .card-download-with-button .image-container {
+  width: 100%;
+  height: 225px;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+body .card-download-with-button .copy-container {
+  position: relative;
+  width: 100%;
+  height: 135px;
+}
+body .card-download-with-button .copy-container .copy-text {
+  padding-top: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #3e3e3e;
+  margin: 0;
+}
+body .card-download-with-button .copy-container .dowload-button {
+  position: absolute;
+  width: 268px;
+  padding: 10px 0;
+  bottom: 13px;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  left: 50%;
+  margin-left: -135px;
+}
+body .card-download-with-button .copy-container .dowload-button i.fas.fa-download {
+  color: #000;
+  width: 12px;
+  height: 16px;
+  margin-right: 10px;
+}
