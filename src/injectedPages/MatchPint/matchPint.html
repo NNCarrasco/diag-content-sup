@@ -29,11 +29,159 @@
   font-size: 28px;
   line-height: 40px;
 }
-.match-pint-page-container .horizontal-card-container {
-  padding-bottom: 60px;
+.match-pint-page-container .horizontal-cards-container {
+  padding-bottom: 35px;
+}
+.match-pint-page-container .horizontal-cards-container .card-left-image-container {
+  display: flex;
+  height: 250px;
+  margin-bottom: 25px;
+}
+.match-pint-page-container .horizontal-cards-container .card-left-image-container .image-container {
+  width: 45%;
+  border-right: 5px solid #f2af0c;
+}
+.match-pint-page-container .horizontal-cards-container .card-left-image-container .image-container img {
+  height: 100%;
+  width: 100%;
+}
+.match-pint-page-container .horizontal-cards-container .card-left-image-container .content-container {
+  width: 54%;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-top: 44px;
+  padding-right: 30px;
+  background-color: #ffffff;
+}
+.match-pint-page-container .horizontal-cards-container .card-left-image-container .content-container .icon {
+  height: 35px;
+  width: 35px;
+}
+.match-pint-page-container .horizontal-cards-container .card-left-image-container .content-container .content-title {
+  font-size: 20px;
+  line-height: 32px;
+}
+.match-pint-page-container .horizontal-cards-container .card-left-image-container .content-container .content-text {
+  font-size: 16px;
+  line-height: 26px;
+}
+.match-pint-page-container .horizontal-cards-container .card-right-image-container {
+  display: flex;
+  height: 250px;
+  margin-bottom: 25px;
+}
+.match-pint-page-container .horizontal-cards-container .card-right-image-container .image-container {
+  width: 45%;
+  border-left: 5px solid #f2af0c;
+}
+.match-pint-page-container .horizontal-cards-container .card-right-image-container .image-container img {
+  height: 100%;
+  width: 100%;
+}
+.match-pint-page-container .horizontal-cards-container .card-right-image-container .content-container {
+  width: 54%;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-top: 44px;
+  padding-right: 30px;
+  background-color: #ffffff;
+}
+.match-pint-page-container .horizontal-cards-container .card-right-image-container .content-container .icon {
+  height: 35px;
+  width: 35px;
+}
+.match-pint-page-container .horizontal-cards-container .card-right-image-container .content-container .content-title {
+  font-size: 20px;
+  line-height: 32px;
+}
+.match-pint-page-container .horizontal-cards-container .card-right-image-container .content-container .content-text {
+  font-size: 16px;
+  line-height: 26px;
 }
 .match-pint-page-container .small-banner-card-container {
   padding-bottom: 100px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.match-pint-page-container .small-banner-card-container .mixed-content-block {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  height: 540px;
+  width: 335px;
+}
+.match-pint-page-container .small-banner-card-container .mixed-content-block .copy-container {
+  height: 288px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.match-pint-page-container .small-banner-card-container .mixed-content-block .copy-container .content-title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.63;
+  color: #000000;
+  margin: 0;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+.match-pint-page-container .small-banner-card-container .mixed-content-block .copy-container .content-text {
+  font-size: 16px;
+  padding-top: 10px;
+  line-height: 1.63;
+  color: #3e3e3e;
+  margin: 0;
+}
+.match-pint-page-container .small-banner-card-container .mixed-content-block .copy-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 2px;
+  font-weight: 500;
+}
+.match-pint-page-container .small-banner-card-container .mixed-content-block .image-container {
+  width: 335px;
+  height: 250px;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.match-pint-page-container .small-banner-card-container .mixed-content-block .image-container img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .match-pint-page-container .small-banner-card-container .mixed-content-block {
+    height: 190px;
+    width: 100%;
+  }
+  .match-pint-page-container .small-banner-card-container .mixed-content-block .copy-container {
+    float: left;
+    height: 100%;
+    width: 63%;
+    padding-left: 60px;
+    padding-right: 80px;
+    padding-top: 30px;
+  }
+  .match-pint-page-container .small-banner-card-container .mixed-content-block .copy-container .content-text {
+    padding-bottom: 20px;
+  }
+  .match-pint-page-container .small-banner-card-container .mixed-content-block .copy-container .content-button {
+    position: relative;
+    width: 140px;
+  }
+  .match-pint-page-container .small-banner-card-container .mixed-content-block .image-container {
+    height: 100%;
+    width: 37%;
+    float: left;
+  }
+  .match-pint-page-container .small-banner-card-container .mixed-content-block .image-container img {
+    height: 100%;
+    width: 100%;
+  }
 }
 .match-pint-page-container .alone-image-container {
   padding-bottom: 80px;
@@ -69,8 +217,8 @@
   height: 180px;
 }
 .match-pint-page-container .vertical-card-container .card-related-content .copy-container .copy-text {
-  width: 260px;
-  padding: 20px 0 0 30px;
+  width: 100%;
+  padding: 20px 30px;
   margin: 0;
   text-transform: uppercase;
   font-size: 16px;
@@ -116,11 +264,74 @@
             FOR LESS THAN THE PRICE OF A PINT PER WEEK, MATCHPINT WILL HELP YOU:
         </span>
     </div>
-    <div class="horizontal-card-container">
-        [4 HORIZONTAL CARDS]
+    <!-- HORIZONTAL CARDS -->
+    <div class="horizontal-cards-container slds-grid slds-wrap slds-gutters_medium">
+
+        <div class="card-left-image-container slds-col slds-size_1-of-2">
+            <div class="image-container">
+                <img
+                    src="https://dev4-diageo.cs85.force.com/s/sfsites/c/servlet/servlet.FileDownload?file=0156E000000Na2uQAC" />
+            </div>
+            <div class="content-container">
+                <img class="icon"
+                    src="https://dev4-diageo.cs85.force.com/s/sfsites/c/servlet/servlet.FileDownload?file=0156E000000Na2uQAC" />
+                <p class="content-title">Attract new footfall</p>
+                <p class="content-text">Over 2 million people across the UK and Ireland use MatchPint to find a bar
+                    showing sport.</p>
+            </div>
+        </div>
+        <div class="card-left-image-container slds-col slds-size_1-of-2">
+            <div class="image-container">
+                <img
+                    src="https://dev4-diageo.cs85.force.com/s/sfsites/c/servlet/servlet.FileDownload?file=0156E000000Na2uQAC" />
+            </div>
+            <div class="content-container">
+                <img class="icon"
+                    src="https://dev4-diageo.cs85.force.com/s/sfsites/c/servlet/servlet.FileDownload?file=0156E000000Na2uQAC" />
+                <p class="content-title">Increase beer sales</p>
+                <p class="content-text">Bring in new customers and get your regulars in more often by running drinks
+                    brand funded promotions on MatchPint.</p>
+            </div>
+        </div>
+        <div class="card-right-image-container slds-col slds-size_1-of-2">
+            <div class="content-container">
+                <img class="icon"
+                    src="https://dev4-diageo.cs85.force.com/s/sfsites/c/servlet/servlet.FileDownload?file=0156E000000Na2uQAC" />
+                <p class="content-title">Save time</p>
+                <p class="content-text">Consolidate all of your sports marketing into one place and schedule social
+                    media posts for the week in just 10 minutes.</p>
+            </div>
+            <div class="image-container">
+                <img
+                    src="https://dev4-diageo.cs85.force.com/s/sfsites/c/servlet/servlet.FileDownload?file=0156E000000Na2uQAC" />
+            </div>
+        </div>
+        <div class="card-right-image-container slds-col slds-size_1-of-2">
+            <div class="content-container">
+                <img class="icon"
+                    src="https://dev4-diageo.cs85.force.com/s/sfsites/c/servlet/servlet.FileDownload?file=0156E000000Na2uQAC" />
+                <p class="content-title">Get to the top of Google</p>
+                <p class="content-text">MatchPint will get your pub to the top of Google searches for anyone searching
+                    nearby.</p>
+            </div>
+            <div class="image-container">
+                <img
+                    src="https://dev4-diageo.cs85.force.com/s/sfsites/c/servlet/servlet.FileDownload?file=0156E000000Na2uQAC" />
+            </div>
+        </div>
     </div>
     <div class="small-banner-card-container">
-        [small banner card]
+        <!-- MIXED CONTENT BLOCKS -->
+        <div class="mixed-content-block">
+            <div class="image-container">
+                <img
+                    src="https://dev4-diageo.cs85.force.com/s/sfsites/c/servlet/servlet.FileDownload?file=0156E000000Na2uQAC" />
+            </div>
+            <div class="copy-container">
+                <p class="content-text">Attract more customers and get drinks promotions on MatchPint for free!</p>
+                <a href="#" class="content-button">sign up now</a>
+            </div>
+        </div>
     </div>
     <div class="description-container">
         <span class="description">
