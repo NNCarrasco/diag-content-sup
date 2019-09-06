@@ -1,0 +1,57 @@
+.banner-card-container {
+  background-color: #ffffff;
+  display: flex;
+  width: 100%;
+}
+.banner-card-container .text-container .text {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.banner-card-container .image-container {
+  position: relative;
+  width: 100%;
+}
+.banner-card-container .image-container img {
+  height: 100%;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .banner-card-container {
+    height: 420px;
+  }
+  .banner-card-container .text-container {
+    height: 150px;
+    padding-top: 120px;
+    padding-left: 83px;
+    margin-right: 90px;
+  }
+  .banner-card-container .text-container .text {
+    font-size: 38px;
+  }
+  .banner-card-container .image-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 425px solid #ffffff;
+    border-right: 80px solid transparent;
+    width: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner-card-container {
+    flex-wrap: wrap;
+  }
+  .banner-card-container .text-container {
+    height: 338px;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .banner-card-container .text-container .text {
+    font-size: 28px;
+  }
+  .banner-card-container .image-container img {
+    height: 280px;
+  }
+}
