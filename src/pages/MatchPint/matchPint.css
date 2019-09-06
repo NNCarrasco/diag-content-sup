@@ -5,10 +5,71 @@
 .match-pint-page-container .banner-container {
   padding-bottom: 60px;
 }
+.match-pint-page-container .banner-container .banner-card-container {
+  background-color: #ffffff;
+  display: flex;
+  width: 100%;
+}
+.match-pint-page-container .banner-container .banner-card-container .text-container .text {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.match-pint-page-container .banner-container .banner-card-container .image-container {
+  position: relative;
+  width: 100%;
+}
+.match-pint-page-container .banner-container .banner-card-container .image-container img {
+  height: 100%;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .match-pint-page-container .banner-container .banner-card-container {
+    height: 420px;
+  }
+  .match-pint-page-container .banner-container .banner-card-container .text-container {
+    height: 150px;
+    padding-top: 120px;
+    padding-left: 83px;
+    margin-right: 90px;
+  }
+  .match-pint-page-container .banner-container .banner-card-container .text-container .text {
+    font-size: 38px;
+  }
+  .match-pint-page-container .banner-container .banner-card-container .image-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 425px solid #ffffff;
+    border-right: 80px solid transparent;
+    width: 0;
+  }
+}
+@media (max-width: 768px) {
+  .match-pint-page-container .banner-container .banner-card-container {
+    flex-wrap: wrap;
+  }
+  .match-pint-page-container .banner-container .banner-card-container .text-container {
+    height: 338px;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .match-pint-page-container .banner-container .banner-card-container .text-container .text {
+    font-size: 28px;
+  }
+  .match-pint-page-container .banner-container .banner-card-container .image-container img {
+    height: 280px;
+  }
+}
 .match-pint-page-container .description-container {
   padding-bottom: 60px;
-  padding-left: 20%;
-  padding-right: 20%;
+}
+@media (min-width: 768px) {
+  .match-pint-page-container .description-container {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
 }
 .match-pint-page-container .description-container .description {
   font-size: 20px;
@@ -17,9 +78,11 @@
 .match-pint-page-container .subtitle-container {
   padding-bottom: 60px;
 }
-.match-pint-page-container .subtitle-container.center {
-  padding-left: 20%;
-  padding-right: 20%;
+@media (min-width: 768px) {
+  .match-pint-page-container .subtitle-container.center {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
 }
 .match-pint-page-container .subtitle-container.left {
   padding-left: 10%;
@@ -27,9 +90,16 @@
 .match-pint-page-container .subtitle-container .subtitle {
   font-size: 28px;
   line-height: 40px;
+  font-weight: bold;
 }
 .match-pint-page-container .horizontal-cards-container {
   padding-bottom: 35px;
+  display: none;
+}
+@media (min-width: 768px) {
+  .match-pint-page-container .horizontal-cards-container {
+    display: flex;
+  }
 }
 .match-pint-page-container .horizontal-cards-container .card-left-image-container {
   display: flex;
@@ -59,6 +129,7 @@
 .match-pint-page-container .horizontal-cards-container .card-left-image-container .content-container .content-title {
   font-size: 20px;
   line-height: 32px;
+  font-weight: bold;
 }
 .match-pint-page-container .horizontal-cards-container .card-left-image-container .content-container .content-text {
   font-size: 16px;
@@ -92,6 +163,7 @@
 .match-pint-page-container .horizontal-cards-container .card-right-image-container .content-container .content-title {
   font-size: 20px;
   line-height: 32px;
+  font-weight: bold;
 }
 .match-pint-page-container .horizontal-cards-container .card-right-image-container .content-container .content-text {
   font-size: 16px;
@@ -99,8 +171,12 @@
 }
 .match-pint-page-container .small-banner-card-container {
   padding-bottom: 100px;
-  padding-left: 20%;
-  padding-right: 20%;
+}
+@media (min-width: 768px) {
+  .match-pint-page-container .small-banner-card-container {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
 }
 .match-pint-page-container .small-banner-card-container .mixed-content-block {
   box-sizing: border-box;
@@ -167,6 +243,7 @@
   }
   .match-pint-page-container .small-banner-card-container .mixed-content-block .copy-container .content-text {
     padding-bottom: 20px;
+    font-size: 18px;
   }
   .match-pint-page-container .small-banner-card-container .mixed-content-block .copy-container .content-button {
     position: relative;
@@ -182,24 +259,71 @@
     width: 100%;
   }
 }
+@media (max-width: 768px) {
+  .match-pint-page-container .small-banner-card-container .mixed-content-block {
+    position: relative;
+    width: 100%;
+    height: unset;
+  }
+  .match-pint-page-container .small-banner-card-container .mixed-content-block .image-container {
+    width: 100%;
+    height: 220px;
+  }
+  .match-pint-page-container .small-banner-card-container .mixed-content-block .image-container img {
+    height: 100%;
+  }
+  .match-pint-page-container .small-banner-card-container .mixed-content-block .copy-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    height: unset;
+  }
+  .match-pint-page-container .small-banner-card-container .mixed-content-block .copy-container .content-text {
+    padding-top: 30px;
+    font-size: 18px;
+  }
+  .match-pint-page-container .small-banner-card-container .mixed-content-block .copy-container .content-button {
+    position: relative;
+    margin-top: 30px;
+  }
+}
 .match-pint-page-container .alone-image-container {
   padding-bottom: 80px;
 }
 .match-pint-page-container .alone-image-container .img {
-  padding-left: 20%;
-  padding-right: 20%;
   width: 100%;
   height: 475px;
 }
+@media (min-width: 768px) {
+  .match-pint-page-container .alone-image-container .img {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
 .match-pint-page-container .vertical-card-container {
   padding-bottom: 80px;
-  padding-left: 10%;
-  padding-right: 10%;
+}
+@media (min-width: 768px) {
+  .match-pint-page-container .vertical-card-container {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
 }
 .match-pint-page-container .vertical-card-container .card-related-content {
   font-family: 'Roboto', sans-serif;
   height: 430px;
   display: block;
+}
+@media (min-width: 768px) {
+  .match-pint-page-container .vertical-card-container .card-related-content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 33.3333%;
+    flex: 1 1 auto;
+  }
 }
 .match-pint-page-container .vertical-card-container .card-related-content .image-container {
   background-color: rgba(64, 146, 223, 0.5);
@@ -229,7 +353,7 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 1.71;
-  color: #3e3e3e;
+  color: #4092df;
   text-transform: uppercase;
   position: absolute;
   bottom: 20px;
@@ -240,7 +364,10 @@
 .match-pint-page-container .vertical-card-container .card-related-content .copy-container .copy-link i.fas.fa-angle-right {
   margin-left: 15px;
   font-size: 16px;
-  color: #3e3e3e;
+  color: #4092df;
   position: absolute;
   bottom: 4px;
+}
+.slds-col--padded.contentRegion.comm-layout-column {
+  padding: 0;
 }
