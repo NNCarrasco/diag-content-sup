@@ -45,6 +45,9 @@
     border-right: 80px solid transparent;
     width: 0;
   }
+  .match-pint-page-container .banner-container .banner-card-container .image-container .img-mobile {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   .match-pint-page-container .banner-container .banner-card-container {
@@ -59,12 +62,17 @@
   .match-pint-page-container .banner-container .banner-card-container .text-container .text {
     font-size: 28px;
   }
+  .match-pint-page-container .banner-container .banner-card-container .image-container .img-desktop {
+    display: none;
+  }
   .match-pint-page-container .banner-container .banner-card-container .image-container img {
     height: 280px;
   }
 }
 .match-pint-page-container .description-container {
   padding-bottom: 60px;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 @media (min-width: 768px) {
   .match-pint-page-container .description-container {
@@ -73,102 +81,136 @@
   }
 }
 .match-pint-page-container .description-container .description {
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 26px;
+}
+@media (min-width: 768px) {
+  .match-pint-page-container .description-container .description {
+    font-size: 20px;
+    line-height: 32px;
+  }
 }
 .match-pint-page-container .subtitle-container {
   padding-bottom: 60px;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 @media (min-width: 768px) {
   .match-pint-page-container .subtitle-container.center {
     padding-left: 20%;
     padding-right: 20%;
   }
-}
-.match-pint-page-container .subtitle-container.left {
-  padding-left: 10%;
+  .match-pint-page-container .subtitle-container.left {
+    padding-left: 10%;
+  }
 }
 .match-pint-page-container .subtitle-container .subtitle {
-  font-size: 28px;
-  line-height: 40px;
+  font-size: 20px;
+  line-height: 34px;
   font-weight: bold;
+}
+@media (min-width: 768px) {
+  .match-pint-page-container .subtitle-container .subtitle {
+    font-size: 28px;
+    line-height: 40px;
+  }
 }
 .match-pint-page-container .horizontal-cards-container {
   padding-bottom: 35px;
-  display: none;
 }
 @media (min-width: 768px) {
   .match-pint-page-container .horizontal-cards-container {
     display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
   }
 }
-.match-pint-page-container .horizontal-cards-container .card-left-image-container {
-  display: flex;
-  height: 250px;
+.match-pint-page-container .horizontal-cards-container .card-container {
   margin-bottom: 25px;
 }
-.match-pint-page-container .horizontal-cards-container .card-left-image-container .image-container {
-  width: 45%;
-  border-right: 5px solid #f2af0c;
-}
-.match-pint-page-container .horizontal-cards-container .card-left-image-container .image-container img {
+.match-pint-page-container .horizontal-cards-container .card-container .image-container img {
   height: 100%;
   width: 100%;
 }
-.match-pint-page-container .horizontal-cards-container .card-left-image-container .content-container {
-  width: 54%;
-  padding-bottom: 30px;
-  padding-left: 50px;
-  padding-top: 44px;
-  padding-right: 30px;
+.match-pint-page-container .horizontal-cards-container .card-container .content-container {
   background-color: #ffffff;
 }
-.match-pint-page-container .horizontal-cards-container .card-left-image-container .content-container .icon {
+.match-pint-page-container .horizontal-cards-container .card-container .content-container .icon {
   height: 35px;
-  width: 35px;
 }
-.match-pint-page-container .horizontal-cards-container .card-left-image-container .content-container .content-title {
+.match-pint-page-container .horizontal-cards-container .card-container .content-container .content-title {
   font-size: 20px;
   line-height: 32px;
   font-weight: bold;
+  margin: unset;
 }
-.match-pint-page-container .horizontal-cards-container .card-left-image-container .content-container .content-text {
+.match-pint-page-container .horizontal-cards-container .card-container .content-container .content-text {
   font-size: 16px;
   line-height: 26px;
+  margin: unset;
 }
-.match-pint-page-container .horizontal-cards-container .card-right-image-container {
-  display: flex;
-  height: 250px;
-  margin-bottom: 25px;
+@media (min-width: 768px) {
+  .match-pint-page-container .horizontal-cards-container .card-container {
+    height: 250px;
+    display: flex;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 50%;
+    flex: 1 1 auto;
+  }
+  .match-pint-page-container .horizontal-cards-container .card-container .image-container {
+    width: 45%;
+  }
+  .match-pint-page-container .horizontal-cards-container .card-container .content-container {
+    width: 54%;
+    padding-top: 44px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+  }
+  .match-pint-page-container .horizontal-cards-container .card-container.left .image-container {
+    order: 0;
+    border-right: 5px solid #f2af0c;
+  }
+  .match-pint-page-container .horizontal-cards-container .card-container.left .content-container {
+    order: 1;
+  }
+  .match-pint-page-container .horizontal-cards-container .card-container.right .image-container {
+    order: 1;
+    border-left: 5px solid #f2af0c;
+  }
+  .match-pint-page-container .horizontal-cards-container .card-container.right .content-container {
+    order: 0;
+  }
 }
-.match-pint-page-container .horizontal-cards-container .card-right-image-container .image-container {
-  width: 45%;
-  border-left: 5px solid #f2af0c;
-}
-.match-pint-page-container .horizontal-cards-container .card-right-image-container .image-container img {
-  height: 100%;
-  width: 100%;
-}
-.match-pint-page-container .horizontal-cards-container .card-right-image-container .content-container {
-  width: 54%;
-  padding-bottom: 30px;
-  padding-left: 50px;
-  padding-top: 44px;
-  padding-right: 30px;
-  background-color: #ffffff;
-}
-.match-pint-page-container .horizontal-cards-container .card-right-image-container .content-container .icon {
-  height: 35px;
-  width: 35px;
-}
-.match-pint-page-container .horizontal-cards-container .card-right-image-container .content-container .content-title {
-  font-size: 20px;
-  line-height: 32px;
-  font-weight: bold;
-}
-.match-pint-page-container .horizontal-cards-container .card-right-image-container .content-container .content-text {
-  font-size: 16px;
-  line-height: 26px;
+@media (max-width: 768px) {
+  .match-pint-page-container .horizontal-cards-container .card-container {
+    height: 490px;
+  }
+  .match-pint-page-container .horizontal-cards-container .card-container .image-container {
+    height: 260px;
+    width: 100%;
+    border-bottom: 5px solid #f2af0c;
+  }
+  .match-pint-page-container .horizontal-cards-container .card-container .content-container {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .match-pint-page-container .horizontal-cards-container .card-container .content-container .icon {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .match-pint-page-container .horizontal-cards-container .card-container .content-container .content-title {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .match-pint-page-container .horizontal-cards-container .card-container .content-container .content-text {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 }
 .match-pint-page-container .small-banner-card-container {
   padding-bottom: 100px;
@@ -326,6 +368,13 @@
     flex: 1 1 auto;
   }
 }
+@media (max-width: 768px) {
+  .match-pint-page-container .vertical-card-container .card-related-content {
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-bottom: 4%;
+  }
+}
 .match-pint-page-container .vertical-card-container .card-related-content .image-container {
   background-color: rgba(64, 146, 223, 0.5);
   height: 250px;
@@ -382,8 +431,8 @@
                 <span class="text">Keep the sales flowing with matchpint</span>
             </div>
             <div class="image-container">
-                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOj9" alt="">
-                
+                <img class="img-desktop" src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOj9" alt="">
+                <img class="img-mobile" src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOk7" alt="">
             </div>
             
         </div>
@@ -401,9 +450,9 @@
         </span>
     </div>
     <!-- HORIZONTAL CARDS -->
-    <div class="horizontal-cards-container slds-grid slds-wrap slds-gutters_medium">
+    <div class="horizontal-cards-container">
 
-        <div class="card-left-image-container slds-col slds-size_1-of-2">
+        <div class="card-container left">
             <div class="image-container">
                 <img
                     src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOk7" />
@@ -416,7 +465,7 @@
                     showing sport.</p>
             </div>
         </div>
-        <div class="card-left-image-container slds-col slds-size_1-of-2">
+        <div class="card-container left">
             <div class="image-container">
                 <img
                     src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOkH" />
@@ -429,7 +478,11 @@
                     brand funded promotions on MatchPint.</p>
             </div>
         </div>
-        <div class="card-right-image-container slds-col slds-size_1-of-2">
+        <div class="card-container right">
+            <div class="image-container">
+                <img
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOkR" />
+            </div>
             <div class="content-container">
                 <img class="icon"
                     src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOkW" />
@@ -437,22 +490,18 @@
                 <p class="content-text">Consolidate all of your sports marketing into one place and schedule social
                     media posts for the week in just 10 minutes.</p>
             </div>
+        </div>
+        <div class="card-container right">
             <div class="image-container">
                 <img
-                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOkR" />
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOkb" />
             </div>
-        </div>
-        <div class="card-right-image-container slds-col slds-size_1-of-2">
             <div class="content-container">
                 <img class="icon"
                     src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOkg" />
                 <p class="content-title">Get to the top of Google</p>
                 <p class="content-text">MatchPint will get your pub to the top of Google searches for anyone searching
                     nearby.</p>
-            </div>
-            <div class="image-container">
-                <img
-                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOkb" />
             </div>
         </div>
     </div>
