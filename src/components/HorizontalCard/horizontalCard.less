@@ -1,0 +1,91 @@
+.general-container {
+	padding: 0 10%;
+	background-color: gray;
+}
+
+.card-container {
+	margin-bottom: 25px;
+	.image-container {
+		img {
+			height: 100%;
+			width: 100%;
+		}
+	}
+	.content-container {
+		background-color: #ffffff;
+		.icon {
+			height: 35px;
+			width: 35px;
+		}
+		.content-title {
+			font-size: 20px;
+			line-height: 32px;
+			font-weight: bold;
+			margin: unset;
+		}
+		.content-text {
+			font-size: 16px;
+			line-height: 26px;
+			margin: unset;
+		}
+	}
+	//DESKTOP
+	@media (min-width: 768px) {
+		height: 250px;
+		display: flex;
+		.image-container {
+			width: 45%;
+		}
+		.content-container {
+			width: 54%;
+			padding-top: 44px;
+			padding-right: 30px;
+			padding-bottom: 30px;
+			padding-left: 50px;
+		}
+		&.left {
+			.image-container {
+				order: 0;
+				border-right: 5px solid #f2af0c;
+			}
+			.content-container {
+				order: 1;
+			}
+		}
+		&.right {
+			.image-container {
+				order: 1;
+				border-left: 5px solid #f2af0c;
+			}
+			.content-container {
+				order: 0;
+			}
+		}
+	}
+	//MOBILE
+	@media (max-width: 768px) {
+		height: 490px;
+		.image-container {
+			height: 260px;
+			width: 100%;
+			border-bottom: 5px solid #f2af0c;
+		}
+		.content-container {
+			width: 100%;
+			padding-top: 40px;
+			padding-bottom: 30px;
+			.icon {
+				padding-right: 30px;
+				padding-left: 30px;
+			}
+			.content-title {
+				padding-right: 30px;
+				padding-left: 30px;
+			}
+			.content-text {
+				padding-right: 30px;
+				padding-left: 30px;
+			}
+		}
+	}
+}
