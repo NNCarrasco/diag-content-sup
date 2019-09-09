@@ -74,14 +74,14 @@
 	}
 	.description-container {
 		padding-bottom: 60px;
-		padding-left: 4%;
-		padding-right: 4%;
+		padding-left: 6%;
+    	padding-right: 6%;
 		@media (min-width: 768px) {
 			padding-left: 20%;
 			padding-right: 20%;
 		}
 		.description {
-			font-size: 16px;
+			font-size: 18px;
 			line-height: 26px;
 			@media (min-width: 768px) {
 				font-size: 20px;
@@ -90,16 +90,24 @@
 		}
 	}
 	.subtitle-container {
-		padding-bottom: 60px;
-		padding-left: 4%;
-		padding-right: 4%;
+		padding-left: 6%;
+    	padding-right: 6%;
 		@media (min-width: 768px) {
+			padding-bottom: 60px;
 			&.center {
 				padding-left: 20%;
 				padding-right: 20%;
 			}
 			&.left {
 				padding-left: 10%;
+			}
+		}
+		@media (max-width: 768px) {
+			&.center {
+				padding-bottom: 30px;
+			}
+			&.left {
+				padding-bottom: 40px;
 			}
 		}
 		.subtitle {
@@ -186,7 +194,9 @@
 			}
 			//MOBILE
 			@media (max-width: 768px) {
-				height: 490px;
+				padding-left: 6%;
+    			padding-right: 6%;
+				margin-bottom: 4%;
 				.image-container {
 					height: 260px;
 					width: 100%;
@@ -213,10 +223,13 @@
 		}
 	}
 	.small-banner-card-container {
-		padding-bottom: 100px;
 		@media (min-width: 768px) {
+			padding-bottom: 100px;
 			padding-left: 20%;
 			padding-right: 20%;
+		}
+		@media (max-width: 768px) {
+			padding-bottom: 80px;
 		}
 		// MIXED CONTENT BLOCK 
 		.mixed-content-block {//GENERAL AND PHONE
@@ -331,15 +344,24 @@
 			}
 		}
 	}
-	.alone-image-container {
-		padding-bottom: 80px;
-		.img {
+	.video-container {
+		@media (min-width: 768px) {
+			padding-bottom: 80px;
+		}
+		@media (max-width: 768px) {
+			padding-right: 6%;
+    		padding-left: 6%;
+			padding-bottom: 60px;
+		}
+		.video {
 			@media (min-width: 768px) {
+				height: 476px;
 				padding-left: 20%;
 				padding-right: 20%;
 			}
-			width: 100%;
-			height: 475px;
+			@media (max-width: 768px) {
+				height: 188px;
+			}
 		}
 	}
 	.vertical-card-container {
@@ -364,8 +386,8 @@
 				flex: 1 1 auto;
 			}
 			@media (max-width: 768px) {
-				padding-left: 4%;
-				padding-right: 4%;
+				padding-left: 6%;
+    			padding-right: 6%;
 				margin-bottom: 4%;
 			}
 		}
@@ -384,7 +406,6 @@
 			height: 180px;
 		}
 		.card-related-content .copy-container .copy-text {
-			width: 100%;
 			padding: 20px 30px;
 			margin: 0;
 			text-transform: uppercase;
@@ -403,7 +424,6 @@
 			bottom: 20px;
 			left: 30px;
 			text-decoration: none;
-			width: 100%;
 		}
 		.card-related-content .copy-container .copy-link i.fas.fa-angle-right {
 			margin-left: 15px;

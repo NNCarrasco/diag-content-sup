@@ -70,8 +70,8 @@
 }
 .match-pint-page-container .description-container {
   padding-bottom: 60px;
-  padding-left: 4%;
-  padding-right: 4%;
+  padding-left: 6%;
+  padding-right: 6%;
 }
 @media (min-width: 768px) {
   .match-pint-page-container .description-container {
@@ -80,7 +80,7 @@
   }
 }
 .match-pint-page-container .description-container .description {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
 }
 @media (min-width: 768px) {
@@ -90,17 +90,27 @@
   }
 }
 .match-pint-page-container .subtitle-container {
-  padding-bottom: 60px;
-  padding-left: 4%;
-  padding-right: 4%;
+  padding-left: 6%;
+  padding-right: 6%;
 }
 @media (min-width: 768px) {
+  .match-pint-page-container .subtitle-container {
+    padding-bottom: 60px;
+  }
   .match-pint-page-container .subtitle-container.center {
     padding-left: 20%;
     padding-right: 20%;
   }
   .match-pint-page-container .subtitle-container.left {
     padding-left: 10%;
+  }
+}
+@media (max-width: 768px) {
+  .match-pint-page-container .subtitle-container.center {
+    padding-bottom: 30px;
+  }
+  .match-pint-page-container .subtitle-container.left {
+    padding-bottom: 40px;
   }
 }
 .match-pint-page-container .subtitle-container .subtitle {
@@ -186,7 +196,9 @@
 }
 @media (max-width: 768px) {
   .match-pint-page-container .horizontal-cards-container .card-container {
-    height: 490px;
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 4%;
   }
   .match-pint-page-container .horizontal-cards-container .card-container .image-container {
     height: 260px;
@@ -211,13 +223,16 @@
     padding-left: 30px;
   }
 }
-.match-pint-page-container .small-banner-card-container {
-  padding-bottom: 100px;
-}
 @media (min-width: 768px) {
   .match-pint-page-container .small-banner-card-container {
+    padding-bottom: 100px;
     padding-left: 20%;
     padding-right: 20%;
+  }
+}
+@media (max-width: 768px) {
+  .match-pint-page-container .small-banner-card-container {
+    padding-bottom: 80px;
   }
 }
 .match-pint-page-container .small-banner-card-container .mixed-content-block {
@@ -329,17 +344,28 @@
     margin-top: 30px;
   }
 }
-.match-pint-page-container .alone-image-container {
-  padding-bottom: 80px;
+@media (min-width: 768px) {
+  .match-pint-page-container .video-container {
+    padding-bottom: 80px;
+  }
 }
-.match-pint-page-container .alone-image-container .img {
-  width: 100%;
-  height: 475px;
+@media (max-width: 768px) {
+  .match-pint-page-container .video-container {
+    padding-right: 6%;
+    padding-left: 6%;
+    padding-bottom: 60px;
+  }
 }
 @media (min-width: 768px) {
-  .match-pint-page-container .alone-image-container .img {
+  .match-pint-page-container .video-container .video {
+    height: 476px;
     padding-left: 20%;
     padding-right: 20%;
+  }
+}
+@media (max-width: 768px) {
+  .match-pint-page-container .video-container .video {
+    height: 188px;
   }
 }
 .match-pint-page-container .vertical-card-container {
@@ -369,8 +395,8 @@
 }
 @media (max-width: 768px) {
   .match-pint-page-container .vertical-card-container .card-related-content {
-    padding-left: 4%;
-    padding-right: 4%;
+    padding-left: 6%;
+    padding-right: 6%;
     margin-bottom: 4%;
   }
 }
@@ -389,7 +415,6 @@
   height: 180px;
 }
 .match-pint-page-container .vertical-card-container .card-related-content .copy-container .copy-text {
-  width: 100%;
   padding: 20px 30px;
   margin: 0;
   text-transform: uppercase;
@@ -408,7 +433,6 @@
   bottom: 20px;
   left: 30px;
   text-decoration: none;
-  width: 100%;
 }
 .match-pint-page-container .vertical-card-container .card-related-content .copy-container .copy-link i.fas.fa-angle-right {
   margin-left: 15px;
