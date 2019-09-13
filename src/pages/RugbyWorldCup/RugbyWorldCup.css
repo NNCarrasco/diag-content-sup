@@ -50,6 +50,7 @@
   position: relative;
   width: 100%;
   height: 100%;
+  background-color: rgba(64, 146, 223, 0.5);
 }
 .rugby-world-cup-page-container .banner-container .banner-card-container .image-container img {
   height: 100%;
@@ -85,7 +86,7 @@
     flex-wrap: wrap;
     margin-top: 60px;
     height: 620px;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
   }
   .rugby-world-cup-page-container .banner-container .banner-card-container .label {
     margin-left: 20px;
@@ -115,9 +116,6 @@
   .rugby-world-cup-page-container .banner-container .banner-card-container .title-container.with-label {
     margin-top: 20px;
   }
-  .rugby-world-cup-page-container .banner-container .banner-card-container .image-container img {
-    height: 280px;
-  }
 }
 .rugby-world-cup-page-container .subtitle-container {
   padding-left: 6%;
@@ -141,7 +139,7 @@
     padding-bottom: 30px;
   }
   .rugby-world-cup-page-container .subtitle-container.left {
-    padding-bottom: 40px;
+    padding-bottom: 25px;
   }
 }
 .rugby-world-cup-page-container .subtitle-container .subtitle {
@@ -183,6 +181,12 @@
 @media (max-width: 768px) {
   .rugby-world-cup-page-container .tab-table-container {
     height: 835px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 321px) {
+  .rugby-world-cup-page-container .tab-table-container {
+    height: 975px;
     margin-bottom: 40px;
   }
 }
@@ -271,21 +275,30 @@
   .rugby-world-cup-page-container .tab-table-container .tabs {
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: -14px;
+  }
+  .rugby-world-cup-page-container .tab-table-container .tabs .tab {
+    margin-top: -6px;
   }
   .rugby-world-cup-page-container .tab-table-container .tabs .tab .content {
-    top: 113px;
+    top: 101px;
   }
   .rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container {
     padding-left: 20px;
+    padding-top: 20px;
     height: 90px;
   }
   .rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container .match-date {
     padding-right: 10px;
-    padding-top: 10px;
+    padding-top: 0;
+  }
+  .rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container .match-teams {
+    padding-top: 0;
   }
   .rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container .match-teams .flag-img {
     height: 22px;
     width: 30px;
+    margin-top: 14px;
   }
   .rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container .match-teams .flag-img.team-one {
     margin-right: 10px;
