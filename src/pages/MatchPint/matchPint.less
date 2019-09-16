@@ -73,12 +73,13 @@
 		}
 	}
 	.description-container {
-		padding-bottom: 60px;
+		padding-bottom: 40px;
 		padding-left: 6%;
     	padding-right: 6%;
 		@media (min-width: 768px) {
 			padding-left: 20%;
 			padding-right: 20%;
+			padding-bottom: 60px;
 		}
 		.description {
 			font-size: 18px;
@@ -433,6 +434,30 @@
 			bottom: 4px;
 		}
 
+	}
+	.button-container {
+		@media (min-width: 768px) {
+			display: none;
+		}
+		@media (max-width: 768px) {
+			padding-left: 6%;
+			padding-right: 6%;
+			padding-bottom: 25px;
+			.content-button {
+				position: relative;
+				width: 100%;
+				font-size: 14px;
+				text-align: center;
+				display: block;
+				padding: 13px 0;
+				background-color: #f2af0c;
+				color: #000;
+				text-decoration: none;
+				text-transform: uppercase;
+				bottom: 2px;
+				font-weight: 500;
+			}
+		}
 	}
 }
 // Edit styles out content page 

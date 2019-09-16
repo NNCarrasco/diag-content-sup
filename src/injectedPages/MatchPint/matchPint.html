@@ -70,7 +70,7 @@
   }
 }
 .match-pint-page-container .description-container {
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   padding-left: 6%;
   padding-right: 6%;
 }
@@ -78,6 +78,7 @@
   .match-pint-page-container .description-container {
     padding-left: 20%;
     padding-right: 20%;
+    padding-bottom: 60px;
   }
 }
 .match-pint-page-container .description-container .description {
@@ -442,6 +443,32 @@
   position: absolute;
   bottom: 4px;
 }
+@media (min-width: 768px) {
+  .match-pint-page-container .button-container {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .match-pint-page-container .button-container {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 25px;
+  }
+  .match-pint-page-container .button-container .content-button {
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 13px 0;
+    background-color: #f2af0c;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    bottom: 2px;
+    font-weight: 500;
+  }
+}
 .slds-col--padded.contentRegion.comm-layout-column {
   padding: 0;
 }
@@ -470,6 +497,9 @@
             in Ireland. Also thrown in are some awesome marketing tools to help you sell more beer and save time
             promoting your pub. MatchPint has been proven to drive <b>5% more beer sales</b> during sport.
         </span>
+    </div>
+    <div class="button-container">
+        <a href="https://pubs.matchpint.co.uk/features" target="_blank" class="content-button">sign up now</a>
     </div>
     <div class="subtitle-container center">
         <span class="subtitle">
@@ -563,7 +593,8 @@
             </div>
             <div class="copy-container">
                 <p class="copy-text">Get in on the rugby action this autumn</p>
-                <span class="copy-link">coming soon<i class="fas fa-angle-right"></i></span>
+                <a href="https://www.mydiageo.com/s/landing?menu=Rugby-Action-IRL" class="copy-link">Find out more<i
+                        class="fas fa-angle-right"></i></a>
             </div>
         </div>
 

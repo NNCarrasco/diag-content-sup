@@ -69,7 +69,7 @@
   }
 }
 .match-pint-page-container .description-container {
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   padding-left: 6%;
   padding-right: 6%;
 }
@@ -77,6 +77,7 @@
   .match-pint-page-container .description-container {
     padding-left: 20%;
     padding-right: 20%;
+    padding-bottom: 60px;
   }
 }
 .match-pint-page-container .description-container .description {
@@ -440,6 +441,32 @@
   color: #4092df;
   position: absolute;
   bottom: 4px;
+}
+@media (min-width: 768px) {
+  .match-pint-page-container .button-container {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .match-pint-page-container .button-container {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 25px;
+  }
+  .match-pint-page-container .button-container .content-button {
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 13px 0;
+    background-color: #f2af0c;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    bottom: 2px;
+    font-weight: 500;
+  }
 }
 .slds-col--padded.contentRegion.comm-layout-column {
   padding: 0;
