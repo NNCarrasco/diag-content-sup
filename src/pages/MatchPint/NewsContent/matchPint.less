@@ -15,6 +15,7 @@
 				}
 			}
 			.image-container {
+				background-color: rgba(64, 146, 223, 0.5);
 				position: relative;
 				width: 100%;
 				img {
@@ -133,6 +134,7 @@
 		.card-container {
 			margin-bottom: 25px;
 			.image-container {
+				background-color: rgba(64, 146, 223, 0.5);
 				img {
 					height: 100%;
 					width: 100%;
@@ -163,6 +165,7 @@
 				padding-left: 1rem;
 				width: 50%;
 				flex: 1 1 auto;
+				margin-bottom: 35px;
 				.image-container {
 					width: 45%;
 				}
@@ -272,6 +275,10 @@
 					position: absolute;
 					bottom: 2px;
 					font-weight: 500;
+					&:hover {
+						background-color: #ffc800;
+						color: #000;
+					}
 				}
 			}
 			.image-container {
@@ -347,18 +354,20 @@
 	}
 	.video-container {
 		@media (min-width: 768px) {
-			padding-bottom: 80px;
+			margin-bottom: 80px;
+			margin-left: 11%;
+			margin-right: 11%;
+			background-color: rgba(64, 146, 223, 0.5);
 		}
 		@media (max-width: 768px) {
-			padding-right: 6%;
-			padding-left: 6%;
-			padding-bottom: 60px;
+			margin-right: 6%;
+			margin-left: 6%;
+			margin-bottom: 60px;
+			background-color: rgba(64, 146, 223, 0.5);
 		}
 		.video {
 			@media (min-width: 768px) {
 				height: 476px;
-				padding-left: 11%;
-				padding-right: 11%;
 			}
 			@media (max-width: 768px) {
 				height: 188px;
@@ -425,6 +434,10 @@
 			bottom: 20px;
 			left: 30px;
 			text-decoration: none;
+		}
+		.card-related-content .copy-container .copy-link:hover {
+			border-bottom: 2px solid;
+    		margin-bottom: -2px;
 		}
 		.card-related-content .copy-container .copy-link i.fas.fa-angle-right {
 			margin-left: 15px;

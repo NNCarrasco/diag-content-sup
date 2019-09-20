@@ -16,6 +16,7 @@
   font-weight: bold;
 }
 .match-pint-page-container .banner-container .banner-card-container .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
   position: relative;
   width: 100%;
 }
@@ -140,6 +141,9 @@
 .match-pint-page-container .horizontal-cards-container .card-container {
   margin-bottom: 25px;
 }
+.match-pint-page-container .horizontal-cards-container .card-container .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+}
 .match-pint-page-container .horizontal-cards-container .card-container .image-container img {
   height: 100%;
   width: 100%;
@@ -169,6 +173,7 @@
     padding-left: 1rem;
     width: 50%;
     flex: 1 1 auto;
+    margin-bottom: 35px;
   }
   .match-pint-page-container .horizontal-cards-container .card-container .image-container {
     width: 45%;
@@ -278,6 +283,10 @@
   bottom: 2px;
   font-weight: 500;
 }
+.match-pint-page-container .small-banner-card-container .mixed-content-block .copy-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
 .match-pint-page-container .small-banner-card-container .mixed-content-block .image-container {
   width: 335px;
   height: 250px;
@@ -347,21 +356,23 @@
 }
 @media (min-width: 768px) {
   .match-pint-page-container .video-container {
-    padding-bottom: 80px;
+    margin-bottom: 80px;
+    margin-left: 11%;
+    margin-right: 11%;
+    background-color: rgba(64, 146, 223, 0.5);
   }
 }
 @media (max-width: 768px) {
   .match-pint-page-container .video-container {
-    padding-right: 6%;
-    padding-left: 6%;
-    padding-bottom: 60px;
+    margin-right: 6%;
+    margin-left: 6%;
+    margin-bottom: 60px;
+    background-color: rgba(64, 146, 223, 0.5);
   }
 }
 @media (min-width: 768px) {
   .match-pint-page-container .video-container .video {
     height: 476px;
-    padding-left: 11%;
-    padding-right: 11%;
   }
 }
 @media (max-width: 768px) {
@@ -434,6 +445,10 @@
   bottom: 20px;
   left: 30px;
   text-decoration: none;
+}
+.match-pint-page-container .vertical-card-container .card-related-content .copy-container .copy-link:hover {
+  border-bottom: 2px solid;
+  margin-bottom: -2px;
 }
 .match-pint-page-container .vertical-card-container .card-related-content .copy-container .copy-link i.fas.fa-angle-right {
   margin-left: 15px;
