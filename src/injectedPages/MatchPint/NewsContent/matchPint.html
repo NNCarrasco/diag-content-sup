@@ -1,0 +1,626 @@
+<style>
+.match-pint-page-container {
+  text-align: left;
+  background-color: #f2f2f2;
+}
+.match-pint-page-container .banner-container {
+  padding-bottom: 60px;
+}
+.match-pint-page-container .banner-container .banner-card-container {
+  background-color: #ffffff;
+  display: flex;
+  width: 100%;
+}
+.match-pint-page-container .banner-container .banner-card-container .text-container .text {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.match-pint-page-container .banner-container .banner-card-container .image-container {
+  position: relative;
+  width: 100%;
+}
+.match-pint-page-container .banner-container .banner-card-container .image-container img {
+  height: 100%;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .match-pint-page-container .banner-container .banner-card-container {
+    height: 420px;
+  }
+  .match-pint-page-container .banner-container .banner-card-container .text-container {
+    height: 150px;
+    padding-top: 120px;
+    padding-left: 83px;
+  }
+  .match-pint-page-container .banner-container .banner-card-container .text-container .text {
+    font-size: 38px;
+  }
+  .match-pint-page-container .banner-container .banner-card-container .image-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 425px solid #ffffff;
+    border-right: 80px solid transparent;
+    width: 0;
+  }
+  .match-pint-page-container .banner-container .banner-card-container .image-container .img-mobile {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .match-pint-page-container .banner-container .banner-card-container {
+    flex-wrap: wrap;
+  }
+  .match-pint-page-container .banner-container .banner-card-container .text-container {
+    height: 338px;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .match-pint-page-container .banner-container .banner-card-container .text-container .text {
+    font-size: 28px;
+  }
+  .match-pint-page-container .banner-container .banner-card-container .image-container .img-desktop {
+    display: none;
+  }
+  .match-pint-page-container .banner-container .banner-card-container .image-container img {
+    height: 280px;
+  }
+}
+.match-pint-page-container .description-container {
+  padding-bottom: 40px;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+@media (min-width: 768px) {
+  .match-pint-page-container .description-container {
+    padding-left: 11%;
+    padding-right: 11%;
+    padding-bottom: 60px;
+  }
+}
+.match-pint-page-container .description-container .description {
+  font-size: 18px;
+  line-height: 26px;
+}
+@media (min-width: 768px) {
+  .match-pint-page-container .description-container .description {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+.match-pint-page-container .subtitle-container {
+  padding-left: 6%;
+  padding-right: 6%;
+}
+@media (min-width: 768px) {
+  .match-pint-page-container .subtitle-container {
+    padding-bottom: 60px;
+  }
+  .match-pint-page-container .subtitle-container.center {
+    padding-left: 11%;
+    padding-right: 11%;
+  }
+  .match-pint-page-container .subtitle-container.left {
+    padding-left: 5%;
+  }
+}
+@media (max-width: 768px) {
+  .match-pint-page-container .subtitle-container.center {
+    padding-bottom: 30px;
+  }
+  .match-pint-page-container .subtitle-container.left {
+    padding-bottom: 40px;
+  }
+}
+.match-pint-page-container .subtitle-container .subtitle {
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .match-pint-page-container .subtitle-container .subtitle {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+.match-pint-page-container .horizontal-cards-container {
+  padding-bottom: 35px;
+}
+@media (min-width: 768px) {
+  .match-pint-page-container .horizontal-cards-container {
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+}
+.match-pint-page-container .horizontal-cards-container .card-container {
+  margin-bottom: 25px;
+}
+.match-pint-page-container .horizontal-cards-container .card-container .image-container img {
+  height: 100%;
+  width: 100%;
+}
+.match-pint-page-container .horizontal-cards-container .card-container .content-container {
+  background-color: #ffffff;
+}
+.match-pint-page-container .horizontal-cards-container .card-container .content-container .icon {
+  height: 35px;
+}
+.match-pint-page-container .horizontal-cards-container .card-container .content-container .content-title {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: bold;
+  margin: unset;
+}
+.match-pint-page-container .horizontal-cards-container .card-container .content-container .content-text {
+  font-size: 16px;
+  line-height: 26px;
+  margin: unset;
+}
+@media (min-width: 768px) {
+  .match-pint-page-container .horizontal-cards-container .card-container {
+    height: 250px;
+    display: flex;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 50%;
+    flex: 1 1 auto;
+  }
+  .match-pint-page-container .horizontal-cards-container .card-container .image-container {
+    width: 45%;
+  }
+  .match-pint-page-container .horizontal-cards-container .card-container .content-container {
+    width: 54%;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 35px;
+  }
+  .match-pint-page-container .horizontal-cards-container .card-container.left .image-container {
+    order: 0;
+    border-right: 5px solid #f2af0c;
+  }
+  .match-pint-page-container .horizontal-cards-container .card-container.left .content-container {
+    order: 1;
+  }
+  .match-pint-page-container .horizontal-cards-container .card-container.right .image-container {
+    order: 1;
+    border-left: 5px solid #f2af0c;
+  }
+  .match-pint-page-container .horizontal-cards-container .card-container.right .content-container {
+    order: 0;
+  }
+}
+@media (max-width: 768px) {
+  .match-pint-page-container .horizontal-cards-container .card-container {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 4%;
+  }
+  .match-pint-page-container .horizontal-cards-container .card-container .image-container {
+    height: 260px;
+    width: 100%;
+    border-bottom: 5px solid #f2af0c;
+  }
+  .match-pint-page-container .horizontal-cards-container .card-container .content-container {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .match-pint-page-container .horizontal-cards-container .card-container .content-container .icon {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .match-pint-page-container .horizontal-cards-container .card-container .content-container .content-title {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .match-pint-page-container .horizontal-cards-container .card-container .content-container .content-text {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .match-pint-page-container .small-banner-card-container {
+    padding-bottom: 100px;
+    padding-left: 11%;
+    padding-right: 11%;
+  }
+}
+@media (max-width: 768px) {
+  .match-pint-page-container .small-banner-card-container {
+    padding-bottom: 80px;
+  }
+}
+.match-pint-page-container .small-banner-card-container .mixed-content-block {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  height: 540px;
+  width: 335px;
+}
+.match-pint-page-container .small-banner-card-container .mixed-content-block .copy-container {
+  height: 288px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.match-pint-page-container .small-banner-card-container .mixed-content-block .copy-container .content-title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.63;
+  color: #000000;
+  margin: 0;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+.match-pint-page-container .small-banner-card-container .mixed-content-block .copy-container .content-text {
+  font-size: 16px;
+  padding-top: 10px;
+  line-height: 1.63;
+  color: #3e3e3e;
+  margin: 0;
+}
+.match-pint-page-container .small-banner-card-container .mixed-content-block .copy-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 2px;
+  font-weight: 500;
+}
+.match-pint-page-container .small-banner-card-container .mixed-content-block .image-container {
+  width: 335px;
+  height: 250px;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.match-pint-page-container .small-banner-card-container .mixed-content-block .image-container img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .match-pint-page-container .small-banner-card-container .mixed-content-block {
+    height: 190px;
+    width: 100%;
+  }
+  .match-pint-page-container .small-banner-card-container .mixed-content-block .copy-container {
+    float: left;
+    height: 100%;
+    width: 63%;
+    padding-left: 60px;
+    padding-right: 80px;
+    padding-top: 30px;
+  }
+  .match-pint-page-container .small-banner-card-container .mixed-content-block .copy-container .content-text {
+    padding-bottom: 20px;
+    font-size: 18px;
+  }
+  .match-pint-page-container .small-banner-card-container .mixed-content-block .copy-container .content-button {
+    position: relative;
+    width: 140px;
+  }
+  .match-pint-page-container .small-banner-card-container .mixed-content-block .image-container {
+    height: 100%;
+    width: 37%;
+    float: left;
+  }
+  .match-pint-page-container .small-banner-card-container .mixed-content-block .image-container img {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .match-pint-page-container .small-banner-card-container .mixed-content-block {
+    position: relative;
+    width: 100%;
+    height: unset;
+  }
+  .match-pint-page-container .small-banner-card-container .mixed-content-block .image-container {
+    width: 100%;
+    height: 220px;
+  }
+  .match-pint-page-container .small-banner-card-container .mixed-content-block .image-container img {
+    height: 100%;
+  }
+  .match-pint-page-container .small-banner-card-container .mixed-content-block .copy-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    height: unset;
+  }
+  .match-pint-page-container .small-banner-card-container .mixed-content-block .copy-container .content-text {
+    padding-top: 30px;
+    font-size: 18px;
+  }
+  .match-pint-page-container .small-banner-card-container .mixed-content-block .copy-container .content-button {
+    position: relative;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .match-pint-page-container .video-container {
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .match-pint-page-container .video-container {
+    padding-right: 6%;
+    padding-left: 6%;
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 768px) {
+  .match-pint-page-container .video-container .video {
+    height: 476px;
+    padding-left: 11%;
+    padding-right: 11%;
+  }
+}
+@media (max-width: 768px) {
+  .match-pint-page-container .video-container .video {
+    height: 188px;
+  }
+}
+.match-pint-page-container .vertical-card-container {
+  padding-bottom: 80px;
+}
+@media (min-width: 768px) {
+  .match-pint-page-container .vertical-card-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+}
+.match-pint-page-container .vertical-card-container .card-related-content {
+  font-family: 'Roboto', sans-serif;
+  height: 430px;
+  display: block;
+}
+@media (min-width: 768px) {
+  .match-pint-page-container .vertical-card-container .card-related-content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 33.3333%;
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 768px) {
+  .match-pint-page-container .vertical-card-container .card-related-content {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 4%;
+  }
+}
+.match-pint-page-container .vertical-card-container .card-related-content .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+  height: 250px;
+}
+.match-pint-page-container .vertical-card-container .card-related-content .image-container img {
+  width: 100%;
+  height: 100%;
+}
+.match-pint-page-container .vertical-card-container .card-related-content .copy-container {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 180px;
+}
+.match-pint-page-container .vertical-card-container .card-related-content .copy-container .copy-text {
+  padding: 20px 30px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.75;
+  color: #000000;
+}
+.match-pint-page-container .vertical-card-container .card-related-content .copy-container .copy-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #4092df;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  text-decoration: none;
+}
+.match-pint-page-container .vertical-card-container .card-related-content .copy-container .copy-link i.fas.fa-angle-right {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #4092df;
+  position: absolute;
+  bottom: 4px;
+}
+@media (min-width: 768px) {
+  .match-pint-page-container .button-container {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .match-pint-page-container .button-container {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 25px;
+  }
+  .match-pint-page-container .button-container .content-button {
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 13px 0;
+    background-color: #f2af0c;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    bottom: 2px;
+    font-weight: 500;
+  }
+}
+.slds-col--padded.contentRegion.comm-layout-column {
+  padding: 0;
+}
+.cCP_NewsDetail .detail-date.p-16-white-bold,
+.cCP_NewsDetail .btn-div.content-button-container {
+  display: none;
+}
+
+</style>
+
+<div class="match-pint-page-container">
+    <div class="banner-container">
+        <div class="banner-card-container">
+            <div class="text-container">
+                <span class="text">Keep the sales flowing with matchpint</span>
+            </div>
+            <div class="image-container">
+                <img class="img-desktop"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOj9" alt="">
+                <img class="img-mobile"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOqe" alt="">
+            </div>
+
+        </div>
+    </div>
+    <div class="description-container">
+        <span class="description">
+            MatchPint is the UK’s number one pub finder for sports fans used by <b>3,000 pubs</b> in the UK and now
+            available
+            in Ireland. Also thrown in are some awesome marketing tools to help you sell more beer and save time
+            promoting your pub. MatchPint has been proven to drive <b>5% more beer sales</b> during sport.
+        </span>
+    </div>
+    <div class="button-container">
+        <a href="https://pubs.matchpint.co.uk/features" target="_blank" class="content-button">sign up now</a>
+    </div>
+    <div class="subtitle-container center">
+        <span class="subtitle">
+            FOR LESS THAN THE PRICE OF A PINT PER WEEK, MATCHPINT WILL HELP YOU:
+        </span>
+    </div>
+    <!-- HORIZONTAL CARDS -->
+    <div class="horizontal-cards-container">
+
+        <div class="card-container left">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOk7" />
+            </div>
+            <div class="content-container">
+                <img class="icon"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOkC" />
+                <p class="content-title">Attract new footfall</p>
+                <p class="content-text">Over 2 million people across the UK and Ireland use MatchPint to find a bar
+                    showing sport.</p>
+            </div>
+        </div>
+        <div class="card-container left">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOkH" />
+            </div>
+            <div class="content-container">
+                <img class="icon"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOkM" />
+                <p class="content-title">Increase beer sales</p>
+                <p class="content-text">Bring in new customers and get your regulars in more often by running drinks
+                    brand funded promotions on MatchPint.</p>
+            </div>
+        </div>
+        <div class="card-container right">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOkR" />
+            </div>
+            <div class="content-container">
+                <img class="icon"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOkW" />
+                <p class="content-title">Save time</p>
+                <p class="content-text">Consolidate all of your sports marketing into one place and schedule social
+                    media posts for the week in just 10 minutes.</p>
+            </div>
+        </div>
+        <div class="card-container right">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOkb" />
+            </div>
+            <div class="content-container">
+                <img class="icon"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOkg" />
+                <p class="content-title">Get to the top of Google</p>
+                <p class="content-text">MatchPint will get your pub to the top of Google searches for anyone searching
+                    nearby.</p>
+            </div>
+        </div>
+    </div>
+    <div class="small-banner-card-container">
+        <!-- MIXED CONTENT BLOCKS -->
+        <div class="mixed-content-block">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOkl" />
+            </div>
+            <div class="copy-container">
+                <p class="content-text">Attract more customers and get drinks promotions on MatchPint for free!</p>
+                <a href="https://pubs.matchpint.co.uk/features" target="_blank" class="content-button">sign up now</a>
+            </div>
+        </div>
+    </div>
+    <div class="description-container">
+        <span class="description">
+            Drive <b>extra footfall, increased rate of sale</b> and midweek visits of customers during the Rugby this
+            year with MatchPint and <b>The Guinness Pint Predictor.</b>
+        </span>
+    </div>
+    <div class="video-container">
+        <iframe class="video" width="100%" height="100%" src="https://www.youtube.com/embed/MyFp4kFe_cE" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="subtitle-container left">
+        <span class="subtitle">
+            YOU MIGHT ALSO LIKE
+        </span>
+    </div>
+    <div class="vertical-card-container">
+
+        <div class="card-related-content ">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOkq" />
+            </div>
+            <div class="copy-container">
+                <p class="copy-text">Get in on the rugby action this autumn</p>
+                <a href="https://www.mydiageo.com/s/landing?menu=Rugby-Action-IRL" class="copy-link">Find out more<i
+                        class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+
+        <div class="card-related-content">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOkv" />
+            </div>
+            <div class="copy-container">
+                <p class="copy-text">The latest beer trends and insights</p>
+                <a href="https://www.mydiageo.com/s/cp-content/a4PD00000001VDUMA2/trendsbeerinsightjune18?retUrl=https%3A%2F%2Fwww.mydiageo.com%2Fs%2Fdiscover"
+                    class="copy-link">Find out more<i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+
+        <div class="card-related-content">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOl0" />
+            </div>
+            <div class="copy-container">
+                <p class="copy-text">7Cs’ Programme to delivering great looking & great tasting Guinness</p>
+                <a href="https://www.mydiageo.com/s/landing?menu=IRL-get-the-basics-right" class="copy-link">Find out
+                    more<i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
