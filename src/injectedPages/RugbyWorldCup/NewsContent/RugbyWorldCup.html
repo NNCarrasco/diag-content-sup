@@ -1,0 +1,1248 @@
+<style>
+.rugby-world-cup-page-container {
+  text-align: left;
+  background-color: #f2f2f2;
+}
+.rugby-world-cup-page-container .banner-container .banner-card-container {
+  text-align: left;
+  background-color: #ffffff;
+}
+.rugby-world-cup-page-container .banner-container .banner-card-container .label {
+  width: 105px;
+  height: 40px;
+  margin-left: 83px;
+  margin-top: 25px;
+}
+.rugby-world-cup-page-container .banner-container .banner-card-container .label div {
+  height: 100%;
+}
+.rugby-world-cup-page-container .banner-container .banner-card-container .label div span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.rugby-world-cup-page-container .banner-container .banner-card-container .title-container {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.rugby-world-cup-page-container .banner-container .banner-card-container .title-container.with-label {
+  margin-top: 20px;
+}
+.rugby-world-cup-page-container .banner-container .banner-card-container .title-container .title {
+  font-size: 38px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  color: black;
+}
+.rugby-world-cup-page-container .banner-container .banner-card-container .text-container .text {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #3e3e3e;
+}
+.rugby-world-cup-page-container .banner-container .banner-card-container .image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.rugby-world-cup-page-container .banner-container .banner-card-container .image-container img {
+  height: 100%;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .rugby-world-cup-page-container .banner-container .banner-card-container {
+    height: 420px;
+    margin-bottom: 40px;
+  }
+  .rugby-world-cup-page-container .banner-container .banner-card-container .content-container {
+    padding-right: 45px;
+  }
+  .rugby-world-cup-page-container .banner-container .banner-card-container .text-container,
+  .rugby-world-cup-page-container .banner-container .banner-card-container .title-container {
+    padding-left: 83px;
+  }
+  .rugby-world-cup-page-container .banner-container .banner-card-container .title-container {
+    text-transform: uppercase;
+  }
+  .rugby-world-cup-page-container .banner-container .banner-card-container .image-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 425px solid #ffffff;
+    border-right: 80px solid transparent;
+    width: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .rugby-world-cup-page-container .banner-container .banner-card-container {
+    flex-wrap: wrap;
+    margin-top: 60px;
+    height: 620px;
+    margin-bottom: 45px;
+  }
+  .rugby-world-cup-page-container .banner-container .banner-card-container .label {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  .rugby-world-cup-page-container .banner-container .banner-card-container .text-container,
+  .rugby-world-cup-page-container .banner-container .banner-card-container .title-container {
+    padding: 20px;
+    padding-top: 0;
+    margin: 0;
+  }
+  .rugby-world-cup-page-container .banner-container .banner-card-container .text-container .text,
+  .rugby-world-cup-page-container .banner-container .banner-card-container .title-container .text {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.63;
+    color: #3e3e3e;
+  }
+  .rugby-world-cup-page-container .banner-container .banner-card-container .text-container .title,
+  .rugby-world-cup-page-container .banner-container .banner-card-container .title-container .title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .rugby-world-cup-page-container .banner-container .banner-card-container .title-container {
+    margin-top: 75px;
+  }
+  .rugby-world-cup-page-container .banner-container .banner-card-container .title-container.with-label {
+    margin-top: 20px;
+  }
+}
+.rugby-world-cup-page-container .subtitle-container {
+  padding-left: 6%;
+  padding-right: 6%;
+}
+@media (min-width: 768px) {
+  .rugby-world-cup-page-container .subtitle-container {
+    padding-bottom: 60px;
+  }
+  .rugby-world-cup-page-container .subtitle-container.center {
+    padding-left: 11%;
+    padding-right: 11%;
+  }
+  .rugby-world-cup-page-container .subtitle-container.left {
+    padding-left: 5%;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .rugby-world-cup-page-container .subtitle-container.center {
+    padding-bottom: 30px;
+  }
+  .rugby-world-cup-page-container .subtitle-container.left {
+    padding-bottom: 25px;
+  }
+}
+.rugby-world-cup-page-container .subtitle-container .subtitle {
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .rugby-world-cup-page-container .subtitle-container .subtitle {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+.rugby-world-cup-page-container .tab-table-container .tab [type=radio] {
+  display: none;
+}
+.rugby-world-cup-page-container .tab-table-container .tab [type=radio]:checked ~ .label {
+  background: rgba(242, 175, 12, 0.12);
+  padding-bottom: 13px;
+  padding-top: 13px;
+  border-bottom: 2px solid #f2af0c;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .rugby-world-cup-page-container .tab-table-container {
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-bottom: 100px;
+  }
+  .rugby-world-cup-page-container .tab-table-container .tab [type=radio]:checked ~ .spacer.big-games,
+  .rugby-world-cup-page-container .tab-table-container .tab [type=radio]:checked ~ .spacer.ireland,
+  .rugby-world-cup-page-container .tab-table-container .tab [type=radio]:checked ~ .spacer.scotland,
+  .rugby-world-cup-page-container .tab-table-container .tab [type=radio]:checked ~ .spacer.england,
+  .rugby-world-cup-page-container .tab-table-container .tab [type=radio]:checked ~ .spacer.wales {
+    height: 720px;
+  }
+}
+@media (max-width: 768px) {
+  .rugby-world-cup-page-container .tab-table-container {
+    height: 835px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 321px) {
+  .rugby-world-cup-page-container .tab-table-container {
+    height: 975px;
+    margin-bottom: 40px;
+  }
+}
+.rugby-world-cup-page-container .tab-table-container .tab [type=radio]:checked ~ .label ~ .content {
+  z-index: 1;
+  display: block;
+}
+.rugby-world-cup-page-container .tab-table-container .tabs {
+  position: relative;
+  clear: both;
+  margin: 0;
+  padding-top: 15px;
+  white-space: nowrap;
+  display: flex;
+  width: 100%;
+}
+.rugby-world-cup-page-container .tab-table-container .tabs .tab {
+  vertical-align: top;
+}
+.rugby-world-cup-page-container .tab-table-container .tabs .tab .label {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  min-height: 50px;
+  line-height: 50px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 13px;
+  padding-top: 13px;
+  border-bottom: 1px solid #979797;
+}
+.rugby-world-cup-page-container .tab-table-container .tabs .tab .content {
+  white-space: normal;
+  top: 63px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+  display: none;
+  width: 100%;
+  position: absolute;
+}
+.rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container {
+  display: flex;
+  padding-left: 80px;
+}
+.rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container:nth-child(odd) {
+  background-color: white;
+}
+.rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container .match-date {
+  padding-right: 130px;
+  padding-top: 20px;
+}
+.rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container .match-date .date {
+  font-size: 16px;
+  width: 100px;
+  line-height: 26px;
+}
+.rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container .match-teams {
+  height: unset;
+  padding-top: 34px;
+  padding-bottom: 30px;
+  width: 100%;
+  display: flex;
+}
+.rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container .match-teams .flag-img {
+  height: 26px;
+  width: 34px;
+}
+.rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container .match-teams .flag-img.team-one {
+  margin-right: 16px;
+}
+.rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container .match-teams .flag-img.team-two {
+  margin-right: 25px;
+}
+.rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container .match-teams .teams-names {
+  font-size: 16px;
+  line-height: 26px;
+  margin: unset;
+}
+@media (max-width: 768px) {
+  .rugby-world-cup-page-container .tab-table-container .tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -14px;
+  }
+  .rugby-world-cup-page-container .tab-table-container .tabs .tab {
+    margin-top: -6px;
+  }
+  .rugby-world-cup-page-container .tab-table-container .tabs .tab .content {
+    top: 101px;
+  }
+  .rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container {
+    padding-left: 20px;
+    padding-top: 20px;
+    height: 90px;
+  }
+  .rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container .match-date {
+    padding-right: 10px;
+    padding-top: 0;
+  }
+  .rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container .match-teams {
+    padding-top: 0;
+  }
+  .rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container .match-teams .flag-img {
+    height: 22px;
+    width: 30px;
+    margin-top: 14px;
+  }
+  .rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container .match-teams .flag-img.team-one {
+    margin-right: 10px;
+  }
+  .rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container .match-teams .flag-img.team-two {
+    margin-right: 25px;
+  }
+}
+@media (min-width: 768px) {
+  .rugby-world-cup-page-container .mixed-content-card-container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media (max-width: 768px) {
+  .rugby-world-cup-page-container .mixed-content-card-container {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+.rugby-world-cup-page-container .mixed-content-card-container .mixed-content-block {
+  font-family: 'Roboto', sans-serif;
+  background-color: transparent;
+}
+.rugby-world-cup-page-container .mixed-content-card-container .mixed-content-block .copy-container .content-title {
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+.rugby-world-cup-page-container .mixed-content-card-container .mixed-content-block .copy-container .content-text {
+  color: #3e3e3e;
+}
+.rugby-world-cup-page-container .mixed-content-card-container .mixed-content-block .copy-container .content-button {
+  font-size: 14px;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.rugby-world-cup-page-container .mixed-content-card-container .mixed-content-block .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.rugby-world-cup-page-container .mixed-content-card-container .mixed-content-block .image-container img {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .rugby-world-cup-page-container .mixed-content-card-container .mixed-content-block {
+    width: 100%;
+    display: flex;
+    height: 390px;
+    margin-bottom: 80px;
+  }
+  .rugby-world-cup-page-container .mixed-content-card-container .mixed-content-block.image-left .copy-container {
+    order: 0;
+    padding-right: 115px;
+  }
+  .rugby-world-cup-page-container .mixed-content-card-container .mixed-content-block.image-left .image-container {
+    order: 1;
+  }
+  .rugby-world-cup-page-container .mixed-content-card-container .mixed-content-block.image-right .copy-container {
+    order: 1;
+    padding-left: 115px;
+  }
+  .rugby-world-cup-page-container .mixed-content-card-container .mixed-content-block.image-right .image-container {
+    order: 0;
+  }
+  .rugby-world-cup-page-container .mixed-content-card-container .mixed-content-block .copy-container {
+    height: 100%;
+    width: 100%;
+  }
+  .rugby-world-cup-page-container .mixed-content-card-container .mixed-content-block .copy-container .content-title {
+    font-size: 28px;
+    padding-top: 60px;
+    line-height: 40px;
+  }
+  .rugby-world-cup-page-container .mixed-content-card-container .mixed-content-block .copy-container .content-button {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+  .rugby-world-cup-page-container .mixed-content-card-container .mixed-content-block .copy-container .content-text {
+    padding: 20px 0;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .rugby-world-cup-page-container .mixed-content-card-container .mixed-content-block .image-container {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .rugby-world-cup-page-container .mixed-content-card-container .mixed-content-block {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: unset;
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
+  .rugby-world-cup-page-container .mixed-content-card-container .mixed-content-block .copy-container {
+    width: 100%;
+  }
+  .rugby-world-cup-page-container .mixed-content-card-container .mixed-content-block .copy-container .content-title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 32px;
+    color: #000000;
+    text-transform: uppercase;
+    padding-top: 20px;
+  }
+  .rugby-world-cup-page-container .mixed-content-card-container .mixed-content-block .copy-container .content-text {
+    font-size: 16px;
+    padding-top: 10px;
+    line-height: 26px;
+    color: #3e3e3e;
+  }
+  .rugby-world-cup-page-container .mixed-content-card-container .mixed-content-block .copy-container .content-button {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 13px 0;
+    background-color: #f2af0c;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    bottom: 2px;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+  .rugby-world-cup-page-container .mixed-content-card-container .mixed-content-block .image-container {
+    width: 100%;
+    height: 250px;
+    background-color: rgba(64, 146, 223, 0.5);
+  }
+  .rugby-world-cup-page-container .mixed-content-card-container .mixed-content-block .image-container img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.rugby-world-cup-page-container .vertical-card-container {
+  padding-bottom: 80px;
+}
+@media (min-width: 768px) {
+  .rugby-world-cup-page-container .vertical-card-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+}
+.rugby-world-cup-page-container .vertical-card-container .card-related-content {
+  font-family: 'Roboto', sans-serif;
+  height: 430px;
+  display: block;
+}
+@media (min-width: 768px) {
+  .rugby-world-cup-page-container .vertical-card-container .card-related-content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 33.3333%;
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 768px) {
+  .rugby-world-cup-page-container .vertical-card-container .card-related-content {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 4%;
+  }
+}
+.rugby-world-cup-page-container .vertical-card-container .card-related-content .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+  height: 250px;
+}
+.rugby-world-cup-page-container .vertical-card-container .card-related-content .image-container img {
+  width: 100%;
+  height: 100%;
+}
+.rugby-world-cup-page-container .vertical-card-container .card-related-content .copy-container {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 180px;
+}
+.rugby-world-cup-page-container .vertical-card-container .card-related-content .copy-container .copy-text {
+  padding: 20px 30px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.75;
+  color: #000000;
+}
+.rugby-world-cup-page-container .vertical-card-container .card-related-content .copy-container .copy-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #4092df;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  text-decoration: none;
+}
+.rugby-world-cup-page-container .vertical-card-container .card-related-content .copy-container .copy-link i.fas.fa-angle-right {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #4092df;
+  position: absolute;
+  bottom: 4px;
+}
+.slds-col--padded.contentRegion.comm-layout-column {
+  padding: 0;
+}
+.cCP_NewsDetail .detail-date.p-16-white-bold,
+.cCP_NewsDetail .btn-div.content-button-container {
+  display: none;
+}
+
+</style>
+
+<div class="rugby-world-cup-page-container">
+    <div class="banner-container">
+        <div class="banner-card-container slds-grid">
+            <div class="content-container slds-col slds-size_2-of-2 slds-large-size_1-of-2">
+                <div class="label">
+                    <div class="slds-align_absolute-center">
+                        <span>TEST LABEL</span>
+                    </div>
+                </div>
+                <!-- {!(v.pageLabel != null) ? 'title-container with-label' : 'title-container'}" -->
+                <div class="title-container with-label">
+                    <h2 class="title">Get in on the rugby action this autumn</h2>
+                </div>
+                <div class="text-container">
+                    <p class="text">With early kick offs to the live action in Japan, there’s still plenty of
+                        opportunity to take advantage of the rugby fever and drive sales throughout the tournament.</p>
+                </div>
+            </div>
+            <div class="slds-col slds-size_2-of-2 slds-large-size_1-of-2">
+                <div class="image-container">
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOkq"
+                        alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="subtitle-container left">
+        <span class="subtitle">
+            KEY MATCH DATES
+        </span>
+    </div>
+    <div class="tab-table-container">
+        <div class="tabs">
+
+            <div class="tab">
+                <input type="radio" id="tab-1" name="tab-group-1" checked>
+                <label class="label" for="tab-1">Big games</label>
+                <div class="big-games spacer"></div>
+                <div class="content">
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sat 21 Sep</b> 8.15 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP9C"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP8s"
+                                alt="">
+                            <span class="teams-names"><b>France v Argentina</b> - Tokyo</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sat 21 Sep</b> 10.45 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP9q"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAK"
+                                alt="">
+                            <span class="teams-names"><b>New Zeland v South Africa</b> - Yokohoma</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sun 22 Sep</b> 8.45 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP9l"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP9M"
+                                alt="">
+                            <span class="teams-names"><b>Ireland v Scotland</b> - Yokohoma</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sun 29 Sep</b> 8.45 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP8x"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP9W"
+                                alt="">
+                            <span class="teams-names"><b>Australia v Wales</b> - Tokyo</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sat 12 Oct</b> 11.15 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP92"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP9C"
+                                alt="">
+                            <span class="teams-names"><b>England v France</b> - Yokohoma</span>
+                        </div>
+                    </div>
+                    <!-- FUTURE -->
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sat 26 Oct</b> 9.00 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <span class="teams-names"><b>Semi Final 1</b> - Yokohama</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                            <div class="match-date">
+                                <p class="date"><b>Sun 27 Oct</b> 10.00 am</p>
+                            </div>
+                            <div class="match-teams">
+                                <img class="flag-img team-one"
+                                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                    alt="">
+                                <img class="flag-img team-two"
+                                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                    alt="">
+                                <span class="teams-names"><b>Semi Final 2</b> - Yokohama</span>
+                            </div>
+                        </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sat 2 Nov</b> 9.00 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <span class="teams-names"><b>RWC 2019 Final</b> - Yokohama</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab">
+                <input type="radio" id="tab-2" name="tab-group-1">
+                <label class="label" for="tab-2">Ireland</label>
+                <div class="ireland spacer"></div>
+                <div class="content">
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sun 22 Sep</b> 8.45 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP9l"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP9M"
+                                alt="">
+                            <span class="teams-names"><b>Ireland v Scotland</b> - Yokohama</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sat 28 Sep</b> 8.15 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP9b"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP9l"
+                                alt="">
+                            <span class="teams-names"><b>Japan v Ireland</b> - Shizuoka</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Thu 3 Oct</b> 11.15 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP9l"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP9v"
+                                alt="">
+                            <span class="teams-names"><b>Ireland v Russia</b> - Kobe</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sat 12 Oct</b> 11.45 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP9l"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAF"
+                                alt="">
+                            <span class="teams-names"><b>Ireland v Samoa</b> - Fukuoka</span>
+                        </div>
+                    </div>
+                    <!-- FUTURE -->
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sat 19 Oct</b> 11.15 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <span class="teams-names"><b>QF2 Winner B v Runner-up A</b> - Tokyo</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sun 20 Oct</b> 11.15 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <span class="teams-names"><b>QF4 Winner A v Runner-up B</b> - Tokyo</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sat 26 Oct</b> 9.00 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <span class="teams-names"><b>Semi Final 1</b> - Yokohama</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sat 2 Nov</b> 9.00 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <span class="teams-names"><b>RWC 2019 Final</b> - Yokohama</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab">
+                <input type="radio" id="tab-3" name="tab-group-1">
+                <label class="label" for="tab-3">Scotland</label>
+                <div class="scotland spacer"></div>
+                <div class="content">
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sun 22 Sep</b> 8.45 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP9l"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP9M"
+                                alt="">
+                            <span class="teams-names"><b>Ireland v Scotland</b> - Yokohama</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Mon 30 Sep</b> 11.15 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP9M"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAF"
+                                alt="">
+                            <span class="teams-names"><b>Scotland v Samoa</b> - Kobe</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Wed 9 Oct</b> 8.15 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP9M"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP9v"
+                                alt="">
+                            <span class="teams-names"><b>Scotland v Russia</b> - Shizuoka</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sun 13 Oct</b> 11.45 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP9b"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP9M"
+                                alt="">
+                            <span class="teams-names"><b>Japan v Scotland</b> - Yokohama</span>
+                        </div>
+                    </div>
+                    <!-- FUTURE -->
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sat 19 Oct</b> 11.15 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <span class="teams-names"><b>QF2 Winner B v Runner-up A</b> - Tokyo</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sun 20 Oct</b> 11.15 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <span class="teams-names"><b>QF4 Winner A v Runner-up B</b> - Tokyo</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sat 26 Oct</b> 9.00 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <span class="teams-names"><b>Semi Final 1</b> - Yokohama</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sat 2 Nov</b> 9.00 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <span class="teams-names"><b>RWC 2019 Final</b> - Yokohama</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab">
+                <input type="radio" id="tab-4" name="tab-group-1">
+                <label class="label" for="tab-4">England</label>
+                <div class="england spacer"></div>
+                <div class="content">
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sun 22 Sep</b> 11.15 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP92"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPA0"
+                                alt="">
+                            <span class="teams-names"><b>England v Tonga</b> - Sapporo</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Thu 26 Sep</b> 11.45 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP92"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPA5"
+                                alt="">
+                            <span class="teams-names"><b>England v USA</b> - Kobe</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sat 5 Oct</b> 9.00 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP92"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP8s"
+                                alt="">
+                            <span class="teams-names"><b>England v Argentina</b> - Tokyo</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sat 12 Oct</b> 9.15 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP92"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP9C"
+                                alt="">
+                            <span class="teams-names"><b>England v France</b> - Yokohama</span>
+                        </div>
+                    </div>
+                    <!-- FUTURE -->
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sat 19 Oct</b> 8.15 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <span class="teams-names"><b>QF1 Winner C v Runner-up D</b> - Oita</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sun 20 Oct</b> 8.15 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <span class="teams-names"><b>QF3 Winner D v Runner-up C</b> - Oita</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sat 26 Oct</b> 9.00 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <span class="teams-names"><b>Semi Final 1</b> - Yokohama</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sat 2 Nov</b> 9.00 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <span class="teams-names"><b>RWC 2019 Final</b> - Yokohama</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab">
+                <input type="radio" id="tab-5" name="tab-group-1">
+                <label class="label" for="tab-5">Wales</label>
+                <div class="wales spacer"></div>
+                <div class="content">
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Mon 23 Sep</b> 11.15 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP9W"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP9R"
+                                alt="">
+                            <span class="teams-names"><b>Wales v Georgia</b> - Toyota</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sun 29 Sep</b> 8.45 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP8x"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP9W"
+                                alt="">
+                            <span class="teams-names"><b>Australia v Wales</b> - Tokyo</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Wed 9 Oct</b> 10.45 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP9W"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP97"
+                                alt="">
+                            <span class="teams-names"><b>Wales v Fiji</b> - Oita</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sun 13 Oct</b> 9.15 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XP9W"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAA"
+                                alt="">
+                            <span class="teams-names"><b>Wales v Uruguay</b> - Kumamoto</span>
+                        </div>
+                    </div>
+                    <!-- FUTURE -->
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sat 19 Oct</b> 8.15 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <span class="teams-names"><b>QF1 Winner C v Runner-up D</b> - Oita</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sun 20 Oct</b> 8.15 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <span class="teams-names"><b>QF3 Winner D v Runner-up C</b> - Oita</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sat 26 Oct</b> 9.00 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <span class="teams-names"><b>Semi Final 1</b> - Yokohama</span>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="match-date">
+                            <p class="date"><b>Sat 2 Nov</b> 9.00 am</p>
+                        </div>
+                        <div class="match-teams">
+                            <img class="flag-img team-one"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <img class="flag-img team-two"
+                                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPAP"
+                                alt="">
+                            <span class="teams-names"><b>RWC 2019 Final</b> - Yokohama</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="subtitle-container center">
+        <span class="subtitle">
+            Increase drinks sales during the tournament
+        </span>
+    </div>
+    <div class="mixed-content-card-container">
+        <div class="mixed-content-block image-left">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPBI"
+                alt=""/>
+            </div>
+            <div class="copy-container">
+                <p class="content-title">Drive footfall and fan engagement</p>
+                <p class="content-text">Get drinks promotions for free and take part in the Guinness Pint Predictor on
+                    MatchPint to get more rugby fans coming to your pub after the games.</p>
+                <a href="https://pubs.matchpint.co.uk/features" target="_blank" class="content-button">sign up now</a>
+            </div>
+        </div>
+        <div class="mixed-content-block image-right">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPBN"
+                alt=""/>
+            </div>
+            <div class="copy-container">
+                <p class="content-title">The ultimate rugby quiz</p>
+                <p class="content-text">With the live action happening in the morning, take the fever through to the
+                    evening with themed events, like our rugby quiz night.</p>
+                <a href="https://ent.box.com/s/iurzwpmjt8kuep301ktw3cg2uptg84m9" target="_blank" target="_blank" class="content-button">download the quiz</a>
+            </div>
+        </div>
+        <div class="mixed-content-block image-left">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XPBS"
+                alt=""/>
+            </div>
+            <div class="copy-container">
+                <p class="content-title">Stay social</p>
+                <p class="content-text">Advertise your events throughout the tournament, show your support and
+                    participate in the conversation.</p>
+                <a href="https://ent.box.com/s/1t5tkmyho7dqqd5wr51xqvvmpj9jgeyc" target="_blank" class="content-button">get the social assets</a>
+            </div>
+        </div>
+    </div>
+    <div class="subtitle-container left">
+        <span class="subtitle">
+            you might also like
+        </span>
+    </div>
+    <div class="vertical-card-container">
+
+        <div class="card-related-content ">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOqe" />
+            </div>
+            <div class="copy-container">
+                <p class="copy-text">Keep the sales flowing with matchpint</p>
+                <a href="#" class="copy-link">Find out more<i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+
+        <div class="card-related-content">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOkv" />
+            </div>
+            <div class="copy-container">
+                <p class="copy-text">The latest beer trends and insights</p>
+                <a href="https://www.mydiageo.com/s/cp-content/a4PD00000001VDUMA2/trendsbeerinsightjune18?retUrl=https%3A%2F%2Fwww.mydiageo.com%2Fs%2Fdiscover"
+                    class="copy-link">Find out more<i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+
+        <div class="card-related-content">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOl0" />
+            </div>
+            <div class="copy-container">
+                <p class="copy-text">7Cs’ Programme to delivering great looking & great tasting Guinness</p>
+                <a href="https://www.mydiageo.com/s/landing?menu=IRL-get-the-basics-right" class="copy-link">Find out
+                    more<i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>

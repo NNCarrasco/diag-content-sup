@@ -1,0 +1,527 @@
+.rugby-world-cup-page-container {
+	text-align: left;
+	background-color: #f2f2f2;
+	.banner-container {
+		.banner-card-container {
+			text-align: left;
+			background-color: #ffffff;
+
+			.label {
+				width: 105px;
+				height: 40px;
+				margin-left: 83px;
+				margin-top: 25px;
+				div {
+					height: 100%;
+					span {
+						font-size: 14px;
+						font-weight: bold;
+						color: #ffffff;
+						text-transform: uppercase;
+					}
+				}
+			}
+
+			.title-container {
+				margin-top: 60px;
+				margin-bottom: 20px;
+				&.with-label {
+					margin-top: 20px;
+				}
+
+				.title {
+					font-size: 38px;
+					font-weight: bold;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.32;
+					letter-spacing: normal;
+					color: black;
+				}
+			}
+
+			.text-container {
+				.text {
+					font-size: 16px;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.63;
+					letter-spacing: normal;
+					color: #3e3e3e;
+				}
+			}
+
+			.image-container {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(64, 146, 223, 0.5);
+				img {
+					height: 100%;
+					width: 100%;
+				}
+			}
+
+			//DESKTOP
+			@media screen and (min-width: 768px) {
+				height: 420px;
+				margin-bottom: 40px;
+				.content-container {
+					padding-right: 45px;
+				}
+				.text-container,
+				.title-container {
+					padding-left: 83px;
+				}
+				.title-container {
+					text-transform: uppercase;
+				}
+				.image-container {
+					&:before {
+						content: '';
+						position: absolute;
+						top: 0;
+						left: 0;
+						border-top: 425px solid #ffffff;
+						border-right: 80px solid transparent;
+						width: 0;
+					}
+				}
+			}
+
+			//MOBILE
+			@media screen and (max-width: 768px) {
+				flex-wrap: wrap;
+				margin-top: 60px;
+				height: 620px;
+				margin-bottom: 45px;
+				.label {
+					margin-left: 20px;
+					margin-top: 15px;
+				}
+				.text-container,
+				.title-container {
+					padding: 20px;
+					padding-top: 0;
+					margin: 0;
+					.text {
+						font-size: 16px;
+						font-weight: normal;
+						line-height: 1.63;
+						color: #3e3e3e;
+					}
+					.title {
+						font-size: 28px;
+						font-weight: bold;
+					}
+				}
+				.title-container {
+					margin-top: 75px;
+					&.with-label {
+						margin-top: 20px;
+					}
+				}
+			}
+		}
+	}
+	.subtitle-container {
+		padding-left: 6%;
+		padding-right: 6%;
+		@media (min-width: 768px) {
+			padding-bottom: 60px;
+			&.center {
+				padding-left: 11%;
+				padding-right: 11%;
+			}
+			&.left {
+				padding-left: 5%;
+				padding-bottom: 20px;
+			}
+		}
+		@media (max-width: 768px) {
+			&.center {
+				padding-bottom: 30px;
+			}
+			&.left {
+				padding-bottom: 25px;
+			}
+		}
+		.subtitle {
+			font-size: 20px;
+			line-height: 34px;
+			font-weight: bold;
+			text-transform: uppercase;
+			@media (min-width: 768px) {
+				font-size: 28px;
+				line-height: 40px;
+			}
+		}
+	}
+	.tab-table-container {
+		.tab [type=radio] {
+			display: none;
+		}
+		.tab [type=radio]:checked ~ .label {
+			background: rgba(242, 175, 12, 0.12);
+			padding-bottom: 13px;
+			padding-top: 13px;
+			border-bottom: 2px solid #f2af0c;
+			z-index: 2;
+		}
+		//DESKTOP
+		@media (min-width: 768px) {
+			padding-right: 5%;
+			padding-left: 5%;
+			margin-bottom: 100px;
+			.tab [type=radio]:checked ~ .spacer.big-games,
+			.tab [type=radio]:checked ~ .spacer.ireland,
+			.tab [type=radio]:checked ~ .spacer.scotland,
+			.tab [type=radio]:checked ~ .spacer.england,
+			.tab [type=radio]:checked ~ .spacer.wales {
+				height: 720px;
+			}
+		}
+		//MOBILE
+		@media (max-width: 768px) {
+			height: 835px;
+			margin-bottom: 40px;
+		}
+		//MOBILE SPECIAL FOR 320PX RESOLUTION
+		@media (max-width: 321px) {
+			height: 975px;
+			margin-bottom: 40px;
+		}
+		.tab [type=radio]:checked ~ .label ~ .content {
+			z-index: 1;
+			display: block;
+		}
+		.tabs {
+			position: relative;
+			clear: both;
+			margin: 0;
+			padding-top: 15px;
+			white-space: nowrap;
+			display: flex;
+			width: 100%;
+			.tab {
+				vertical-align: top;
+				.label {
+					font-size: 14px;
+					text-transform: uppercase;
+					font-weight: bold;
+					min-height: 50px;
+					line-height: 50px;
+					margin: auto;
+					padding-left: 20px;
+					padding-right: 20px;
+					padding-bottom: 13px;
+					padding-top: 13px;
+					border-bottom: 1px solid #979797;
+				}
+				.content {
+					white-space: normal;
+					top: 63px;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					height: 100px;
+					display: none;
+					width: 100%;
+					position: absolute;
+					.row-container {
+						display: flex;
+						padding-left: 80px;
+						&:nth-child(odd) {
+							background-color: white;
+						}
+						&:nth-child(even) {
+							background-color: rgba(255, 255, 255, 0.5);
+						}
+						.match-date {
+							padding-right: 130px;
+							padding-top: 20px;
+							.date {
+								font-size: 16px;
+								width: 100px;
+								line-height: 26px;
+							}
+						}
+						.match-teams {
+							height: unset;
+							padding-top: 34px;
+							padding-bottom: 30px;
+							width: 100%;
+							display: flex;
+							.flag-img {
+								height: 26px;
+								width: 34px;
+								&.team-one {
+									margin-right: 16px;
+								}
+								&.team-two {
+									margin-right: 25px;
+								}
+							}
+							.teams-names {
+								font-size: 16px;
+								line-height: 26px;
+								margin: unset;
+							}
+						}
+					}
+				}
+			}
+			//MOBILE
+			@media (max-width: 768px) {
+				flex-wrap: wrap;
+				justify-content: center;
+				margin-top: -14px;
+				.tab {
+					margin-top: -6px;
+					.content {
+						top: 101px;
+						.row-container {
+							padding-left: 20px;
+							padding-top: 20px;
+							height: 90px;
+							.match-date {
+								padding-right: 10px;
+								padding-top: 0;
+							}
+							.match-teams {
+								padding-top: 0;
+								.flag-img {
+									height: 22px;
+									width: 30px;
+									margin-top: 14px;
+									&.team-one {
+										margin-right: 10px;
+									}
+									&.team-two {
+										margin-right: 25px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.mixed-content-card-container {
+		//DESKTOP
+		@media (min-width: 768px) {
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+		//MOBILE
+		@media (max-width: 768px) {
+			padding-left: 6%;
+			padding-right: 6%;
+		}
+		//MIXED CONTENT BLOCK
+		.mixed-content-block {
+			font-family: 'Roboto', sans-serif;
+			background-color: transparent;
+			.copy-container {
+				.content-title {
+					font-weight: bold;
+					color: #000000;
+					text-transform: uppercase;
+				}
+				.content-text {
+					color: #3e3e3e;
+				}
+				.content-button {
+					font-size: 14px;
+					background-color: #f2af0c;
+					color: #000;
+					text-decoration: none;
+					text-transform: uppercase;
+					font-weight: 500;
+				}
+			}
+			.image-container {
+				background-color: rgba(64, 146, 223, 0.5);
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+			//DESKTOP
+			@media (min-width: 768px) {
+				width: 100%;
+				display: flex;
+				height: 390px;
+				margin-bottom: 80px;
+				&.image-left {
+					.copy-container {
+						order: 0;
+						padding-right: 115px;
+					}
+					.image-container {
+						order: 1;
+					}
+				}
+				&.image-right {
+					.copy-container {
+						order: 1;
+						padding-left: 115px;
+					}
+					.image-container {
+						order: 0;
+					}
+				}
+				.copy-container {
+					height: 100%;
+					width: 100%;
+					.content-title {
+						font-size: 28px;
+						padding-top: 60px;
+						line-height: 40px;
+					}
+					.content-button {
+						padding: 10px 25px;
+						font-size: 14px;
+					}
+					.content-text {
+						padding: 20px 0;
+						font-size: 16px;
+						line-height: 26px;
+					}
+				}
+				.image-container {
+					height: 100%;
+					width: 100%;
+				}
+			}
+			//MOBILE
+			@media (max-width: 768px) {
+				font-family: 'Roboto', sans-serif;
+				width: 100%;
+				height: unset;
+				margin-bottom: 40px;
+				margin-top: 10px;
+				.copy-container {
+					width: 100%;
+					.content-title {
+						font-size: 20px;
+						font-weight: bold;
+						line-height: 32px;
+						color: #000000;
+						text-transform: uppercase;
+						padding-top: 20px;
+					}
+					.content-text {
+						font-size: 16px;
+						padding-top: 10px;
+						line-height: 26px;
+						color: #3e3e3e;
+					}
+					.content-button {
+						width: 100%;
+						font-size: 14px;
+						text-align: center;
+						display: block;
+						padding: 13px 0;
+						background-color: #f2af0c;
+						color: #000;
+						text-decoration: none;
+						text-transform: uppercase;
+						bottom: 2px;
+						font-weight: 500;
+						margin-top: 20px;
+					}
+				}
+				.image-container {
+					width: 100%;
+					height: 250px;
+					background-color: rgba(64, 146, 223, 0.5);
+					img {
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+		}
+	}
+	.vertical-card-container {
+		padding-bottom: 80px;
+		@media (min-width: 768px) {
+			padding-left: 5%;
+			padding-right: 5%;
+			display: flex;
+			margin-right: -1rem;
+			margin-left: -1rem;
+		}
+		// CARD RELATED STYLES
+		.card-related-content {
+			font-family: 'Roboto', sans-serif;
+			height: 430px;
+			display: block;
+
+			@media (min-width: 768px) {
+				padding-right: 1rem;
+				padding-left: 1rem;
+				width: 33.3333%;
+				flex: 1 1 auto;
+			}
+			@media (max-width: 768px) {
+				padding-left: 6%;
+				padding-right: 6%;
+				margin-bottom: 4%;
+			}
+		}
+		.card-related-content .image-container {
+			background-color: rgba(64, 146, 223, 0.5);
+			height: 250px;
+		}
+		.card-related-content .image-container img {
+			width: 100%;
+			height: 100%;
+		}
+		.card-related-content .copy-container {
+			background-color: #ffffff;
+			position: relative;
+			width: 100%;
+			height: 180px;
+		}
+		.card-related-content .copy-container .copy-text {
+			padding: 20px 30px;
+			margin: 0;
+			text-transform: uppercase;
+			font-size: 16px;
+			font-weight: bold;
+			line-height: 1.75;
+			color: #000000;
+		}
+		.card-related-content .copy-container .copy-link {
+			font-size: 14px;
+			font-weight: 500;
+			line-height: 1.71;
+			color: #4092df;
+			text-transform: uppercase;
+			position: absolute;
+			bottom: 20px;
+			left: 30px;
+			text-decoration: none;
+		}
+		.card-related-content .copy-container .copy-link i.fas.fa-angle-right {
+			margin-left: 15px;
+			font-size: 16px;
+			color: #4092df;
+			position: absolute;
+			bottom: 4px;
+		}
+	}
+}
+// Edit styles out content page
+.slds-col--padded.contentRegion.comm-layout-column {
+	padding: 0;
+}
+.cCP_NewsDetail .detail-date.p-16-white-bold,
+.cCP_NewsDetail .btn-div.content-button-container {
+	display: none;
+}
