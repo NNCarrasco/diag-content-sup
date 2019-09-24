@@ -166,7 +166,7 @@
 }
 @media (min-width: 768px) {
   .match-pint-page-container .horizontal-cards-container .card-container {
-    height: 250px;
+    height: 230px;
     display: flex;
     padding-right: 1rem;
     padding-left: 1rem;
@@ -179,10 +179,13 @@
   }
   .match-pint-page-container .horizontal-cards-container .card-container .content-container {
     width: 54%;
-    padding-top: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
-    padding-left: 35px;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+  }
+  .match-pint-page-container .horizontal-cards-container .card-container .content-container .icon {
+    margin-bottom: 5px;
   }
   .match-pint-page-container .horizontal-cards-container .card-container.left .image-container {
     order: 0;
@@ -413,7 +416,7 @@
 }
 .match-pint-page-container .vertical-card-container .card-related-content .image-container {
   background-color: rgba(64, 146, 223, 0.5);
-  height: 250px;
+  height: 225px;
 }
 .match-pint-page-container .vertical-card-container .card-related-content .image-container img {
   width: 100%;
