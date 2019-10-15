@@ -485,3 +485,11 @@
 .slds-col--padded.contentRegion.comm-layout-column {
   padding: 0;
 }
+.cCP_NewsDetail .detail-date.p-16-white-bold,
+.cCP_NewsDetail .btn-div.content-button-container {
+  display: none;
+}
+.cCP_NewsDetail {
+  margin: unset;
+  padding: unset;
+}
