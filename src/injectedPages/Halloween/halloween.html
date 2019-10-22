@@ -1,0 +1,870 @@
+<style>
+.halloween {
+  text-align: left;
+  background-color: #f2f2f2;
+}
+.halloween .banner-container .banner-card-container {
+  text-align: left;
+  background-color: #ffffff;
+}
+.halloween .banner-container .banner-card-container .label {
+  width: 105px;
+  height: 40px;
+  margin-left: 83px;
+  margin-top: 25px;
+}
+.halloween .banner-container .banner-card-container .label div {
+  height: 100%;
+}
+.halloween .banner-container .banner-card-container .label div span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.halloween .banner-container .banner-card-container .title-container {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.halloween .banner-container .banner-card-container .title-container.with-label {
+  margin-top: 20px;
+}
+.halloween .banner-container .banner-card-container .title-container .title {
+  font-size: 38px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  color: black;
+  text-transform: uppercase;
+}
+.halloween .banner-container .banner-card-container .text-container .text {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 26px;
+  letter-spacing: normal;
+  color: #3e3e3e;
+}
+.halloween .banner-container .banner-card-container .image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.halloween .banner-container .banner-card-container .image-container img {
+  height: 100%;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .halloween .banner-container .banner-card-container {
+    height: 420px;
+    margin-bottom: 40px;
+  }
+  .halloween .banner-container .banner-card-container .content-container {
+    padding-right: 45px;
+  }
+  .halloween .banner-container .banner-card-container .text-container,
+  .halloween .banner-container .banner-card-container .title-container {
+    padding-left: 83px;
+    padding-right: 80px;
+  }
+  .halloween .banner-container .banner-card-container .title-container {
+    text-transform: uppercase;
+  }
+  .halloween .banner-container .banner-card-container .image-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 425px solid #ffffff;
+    border-right: 80px solid transparent;
+    width: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .halloween .banner-container .banner-card-container {
+    flex-wrap: wrap;
+    height: 620px;
+    margin-bottom: 70px;
+  }
+  .halloween .banner-container .banner-card-container .label {
+    margin-left: 20px;
+    margin-top: 0;
+  }
+  .halloween .banner-container .banner-card-container .text-container,
+  .halloween .banner-container .banner-card-container .title-container {
+    padding: 20px;
+    padding-top: 0;
+    margin: 0;
+  }
+  .halloween .banner-container .banner-card-container .text-container .text,
+  .halloween .banner-container .banner-card-container .title-container .text {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.63;
+    color: #3e3e3e;
+  }
+  .halloween .banner-container .banner-card-container .text-container .title,
+  .halloween .banner-container .banner-card-container .title-container .title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .halloween .banner-container .banner-card-container .title-container {
+    margin-top: 75px;
+  }
+  .halloween .banner-container .banner-card-container .title-container.with-label {
+    margin-top: 0;
+  }
+}
+@media (min-width: 768px) {
+  .halloween .mixed-content-card-container {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+@media (max-width: 768px) {
+  .halloween .mixed-content-card-container {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 12%;
+  }
+}
+.halloween .mixed-content-card-container .mixed-content-block {
+  font-family: 'Roboto', sans-serif;
+  background-color: transparent;
+}
+.halloween .mixed-content-card-container .mixed-content-block .copy-container .content-title {
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+.halloween .mixed-content-card-container .mixed-content-block .copy-container .content-text {
+  color: #3e3e3e;
+}
+.halloween .mixed-content-card-container .mixed-content-block .copy-container .content-button {
+  font-size: 14px;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.halloween .mixed-content-card-container .mixed-content-block .copy-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.halloween .mixed-content-card-container .mixed-content-block .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+  width: 519px;
+  height: 346px;
+}
+.halloween .mixed-content-card-container .mixed-content-block .image-container img {
+  width: 519px;
+  height: 346px;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .halloween .mixed-content-card-container .mixed-content-block {
+    width: 100%;
+    display: flex;
+    height: 390px;
+    margin-bottom: 80px;
+  }
+  .halloween .mixed-content-card-container .mixed-content-block.image-left .copy-container {
+    padding-left: 115px;
+    order: 0;
+    padding-right: 70px;
+    width: 52%;
+  }
+  .halloween .mixed-content-card-container .mixed-content-block.image-left .image-container {
+    order: 1;
+  }
+  .halloween .mixed-content-card-container .mixed-content-block.image-right .copy-container {
+    padding-left: 70px;
+    order: 1;
+    padding-right: 115px;
+    width: 52%;
+  }
+  .halloween .mixed-content-card-container .mixed-content-block.image-right .image-container {
+    order: 0;
+  }
+  .halloween .mixed-content-card-container .mixed-content-block .copy-container {
+    height: 100%;
+    width: 100%;
+  }
+  .halloween .mixed-content-card-container .mixed-content-block .copy-container .content-title {
+    font-size: 18px;
+    padding-top: 60px;
+    line-height: 40px;
+  }
+  .halloween .mixed-content-card-container .mixed-content-block .copy-container .content-button {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+  .halloween .mixed-content-card-container .mixed-content-block .copy-container .content-text {
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+@media (max-width: 768px) {
+  .halloween .mixed-content-card-container .mixed-content-block {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: unset;
+    margin-bottom: 60px;
+    margin-top: 35px;
+  }
+  .halloween .mixed-content-card-container .mixed-content-block .copy-container {
+    width: 100%;
+  }
+  .halloween .mixed-content-card-container .mixed-content-block .copy-container .content-title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 32px;
+    color: #000000;
+    text-transform: uppercase;
+    padding-top: 20px;
+  }
+  .halloween .mixed-content-card-container .mixed-content-block .copy-container .content-text {
+    font-size: 16px;
+    padding-top: 10px;
+    line-height: 26px;
+    color: #3e3e3e;
+  }
+  .halloween .mixed-content-card-container .mixed-content-block .copy-container .content-button {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 13px 0;
+    background-color: #f2af0c;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    bottom: 2px;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+  .halloween .mixed-content-card-container .mixed-content-block .image-container {
+    width: 375px;
+    height: 240px;
+    background-color: rgba(64, 146, 223, 0.5);
+    margin-left: -6.5%;
+  }
+  .halloween .mixed-content-card-container .mixed-content-block .image-container img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.halloween .image-centered {
+  padding-top: 2%;
+  padding-bottom: 6%;
+}
+.halloween .image-centered .image-centered-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 40px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.halloween .image-centered .image-centered-subtitle {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+.halloween .image-centered .image-centered-container {
+  width: 845px;
+  height: 476px;
+}
+.halloween .image-centered .image-centered-container img {
+  width: 845px;
+  height: 476px;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .halloween .image-centered {
+    width: 845px;
+    padding-top: 2%;
+    padding-bottom: 6%;
+    margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  .halloween .image-centered {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 14%;
+  }
+  .halloween .image-centered .image-centered-container {
+    width: 375px;
+    height: 250px;
+    margin-left: -6.5%;
+  }
+  .halloween .image-centered .image-centered-container img {
+    width: 375px;
+    height: 250px;
+  }
+  .halloween .image-centered .image-centered-title {
+    font-size: 26px;
+  }
+}
+.halloween .image-outside-horizontal-card-container .image-outside-horizontal-card {
+  display: flex;
+  width: 845px;
+  height: 334px;
+  position: relative;
+}
+.halloween .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container {
+  width: 100%;
+  border: 5px solid #7f2151;
+  z-index: 1;
+}
+.halloween .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
+  width: 380px;
+  padding-left: 80px;
+  padding-top: 35px;
+  padding-right: 85px;
+}
+.halloween .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
+  padding: 0;
+  width: 380px;
+  padding-left: 80px;
+  padding-right: 85px;
+}
+.halloween .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.halloween .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.halloween .image-outside-horizontal-card-container .image-outside-horizontal-card .image-container {
+  position: absolute;
+  right: -100px;
+  top: -40px;
+  z-index: 0;
+  height: 415px;
+  width: 410px;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.halloween .image-outside-horizontal-card-container .image-outside-horizontal-card .image-container img {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .halloween .image-outside-horizontal-card-container {
+    padding-bottom: 120px;
+    padding-left: 14%;
+  }
+  .halloween .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
+    width: 530px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .halloween .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
+    width: 530px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .halloween .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container {
+    width: 162px;
+    height: 44px;
+    margin-top: 75px;
+    margin-left: 180px;
+  }
+}
+@media (max-width: 768px) {
+  .halloween .image-outside-horizontal-card-container {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 80px;
+  }
+  .halloween .image-outside-horizontal-card-container .image-outside-horizontal-card {
+    width: 100%;
+    height: unset;
+    flex-wrap: wrap;
+  }
+  .halloween .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container {
+    order: 1;
+    height: 690px;
+  }
+  .halloween .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
+    padding-left: 30px;
+    padding-top: 410px;
+    padding-right: 30px;
+    width: unset;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+  }
+  .halloween .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #3e3e3e;
+    width: unset;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0;
+    text-align: left;
+  }
+  .halloween .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container {
+    height: 45px;
+    width: 160px;
+    margin-top: 40px;
+    margin-left: 25%;
+  }
+  .halloween .image-outside-horizontal-card-container .image-outside-horizontal-card .image-container {
+    order: 0;
+    position: absolute;
+    top: -30px;
+    z-index: 0;
+    width: 102vw;
+    right: -6.7%;
+  }
+}
+.halloween .text-centered {
+  padding-left: 14%;
+  padding-right: 14%;
+  padding-bottom: 5%;
+}
+.halloween .text-centered p {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 40px;
+  color: #000;
+}
+@media (max-width: 768px) {
+  .halloween .text-centered {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .halloween .text-centered p {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+@media (min-width: 768px) {
+  .halloween .halloween-class {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+@media (max-width: 768px) {
+  .halloween .halloween-class {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+.halloween .halloween-class .tab-table-container .tab [type="radio"] {
+  display: none;
+}
+.halloween .halloween-class .tab-table-container .tab [type="radio"]:checked ~ .label {
+  background: rgba(242, 175, 12, 0.12);
+  padding-bottom: 17px;
+  padding-top: 17px;
+  border-bottom: 2px solid #f2af0c;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .halloween .halloween-class .tab-table-container {
+    margin-bottom: 100px;
+    height: 475px;
+  }
+}
+@media (max-width: 768px) {
+  .halloween .halloween-class .tab-table-container {
+    height: 320px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 321px) {
+  .halloween .halloween-class .tab-table-container {
+    height: 320px;
+    margin-bottom: 40px;
+  }
+}
+.halloween .halloween-class .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content {
+  z-index: 1;
+  display: table;
+}
+.halloween .halloween-class .tab-table-container .tabs {
+  position: relative;
+  clear: both;
+  margin: 0;
+  padding-top: 25px;
+  white-space: nowrap;
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid #979797;
+}
+.halloween .halloween-class .tab-table-container .tabs .tab {
+  vertical-align: top;
+}
+.halloween .halloween-class .tab-table-container .tabs .tab .label {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  min-height: 50px;
+  line-height: 50px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  padding-top: 17px;
+  border-bottom: 2px solid #979797;
+}
+.halloween .halloween-class .tab-table-container .tabs .tab .label:hover {
+  cursor: pointer;
+}
+.halloween .halloween-class .tab-table-container .tabs .tab .content {
+  white-space: normal;
+  top: 77px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  background-color: white;
+}
+.halloween .halloween-class .tab-table-container .tabs .tab .content ol,
+.halloween .halloween-class .tab-table-container .tabs .tab .content ul {
+  max-width: 350px;
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 45px;
+}
+.halloween .halloween-class .tab-table-container .tabs .tab .content ol li,
+.halloween .halloween-class .tab-table-container .tabs .tab .content ul li {
+  margin-bottom: 16px;
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+.halloween .halloween-class .tab-table-container .tabs .tab .content ol li p,
+.halloween .halloween-class .tab-table-container .tabs .tab .content ul li p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #000000;
+}
+.halloween .halloween-class .tab-table-container .tabs .tab .content ol li:before,
+.halloween .halloween-class .tab-table-container .tabs .tab .content ul li:before {
+  content: counter(my-awesome-counter);
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  position: absolute;
+  --size: 25px;
+  left: calc(-1 * var(--size) - 20px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  background: #3e3e3e;
+  border-radius: 50%;
+  text-align: center;
+}
+.halloween .halloween-class .tab-table-container .tabs .tab .content ul {
+  padding-left: 25px;
+}
+.halloween .halloween-class .tab-table-container .tabs .tab .content ul li:before {
+  content: "";
+  color: #fff;
+  /* font-size : 10px; */
+  font-weight: bold;
+  position: absolute;
+  --size: 8px;
+  left: calc(-1 * var(--size) - 15px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 9px;
+  background: #7d7773;
+  border-radius: 50%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .halloween .halloween-class .tab-table-container {
+    flex-wrap: wrap;
+  }
+  .halloween .halloween-class .tab-table-container .tab {
+    margin-top: -6px;
+  }
+  .halloween .halloween-class .tab-table-container .tab .content {
+    top: 71px;
+  }
+  .halloween .halloween-class .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content {
+    z-index: 1;
+    display: table;
+    top: 71px;
+  }
+}
+.halloween .title-card {
+  width: 520px;
+  height: 40px;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.halloween .subtitle-card {
+  width: 520px;
+  height: 52px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #3e3e3e;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.halloween .FULL-SIZE {
+  width: 520px;
+  height: 317px;
+  object-fit: cover;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.halloween .container-recipes {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .halloween .title-card {
+    width: unset;
+    height: unset;
+  }
+  .halloween .subtitle-card {
+    width: unset;
+    height: unset;
+    text-align: left;
+  }
+  .halloween .FULL-SIZE {
+    width: 334.7px;
+    height: 203.5px;
+    object-fit: cover;
+  }
+  .halloween .container-recipes {
+    display: block;
+    height: 1775px;
+  }
+  .halloween .recipe-card {
+    padding: 40px 0 20px 0;
+  }
+  .halloween .recipe-card.not-first {
+    border-top: 1px solid #b9b9b9;
+  }
+}
+.slds-col--padded.contentRegion.comm-layout-column {
+  padding: 0;
+}
+.cCP_NewsDetail .detail-date.p-16-white-bold,
+.cCP_NewsDetail .btn-div.content-button-container {
+  display: none;
+}
+.cCP_NewsDetail {
+  margin: unset;
+  padding: unset;
+}
+
+</style>
+
+<div class="halloween">
+    <div class="banner-container">
+        <div class="banner-card-container slds-grid">
+            <div class="content-container slds-col slds-size_2-of-2 slds-large-size_1-of-2">
+                <div class="label">
+                    <div class="slds-align_absolute-center">
+                        <span>TEST LABEL</span>
+                    </div>
+                </div>
+                <!-- {!(v.pageLabel != null) ? 'title-container with-label' : 'title-container'}" -->
+                <div class="title-container with-label">
+                    <h2 class="title">Get your freak on</h2>
+                </div>
+                <div class="text-container">
+                    <p class="text">Halloween is around the corner and with this year’s event falling on a Thursday, it’s lining up to be a four-day spooktacular. Here’s our guide to making the most of the third biggest drinking occasion of the year.</p>
+                </div>
+            </div>
+            <div class="slds-col slds-size_2-of-2 slds-large-size_1-of-2">
+                <div class="image-container">
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MX3H"
+                        alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="image-centered">
+        <p class="image-centered-title">Expect more customers than usual</p>
+        <p class="image-centered-subtitle">No one wants to spend half the night queueing, so make sure you’ve got extra staff available on the door and at the bar, to get people in and served more efficiently.</p>
+        <div class="image-centered-container">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MX2n"
+                alt="" />
+        </div>
+    </div>
+    <div class="mixed-content-card-container">
+        <div class="mixed-content-block image-left">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MX2s"
+                alt=""/>
+            </div>
+            <div class="copy-container">
+                <p class="content-title">Larger serves for big groups</p>
+                <p class="content-text">Occasions like Halloween attract bigger crowds, especially at the bar. To speed up service, try different drink formats like pitchers of beer and cocktails, cutting the number of visits to the bar without lowering spend.</p>
+            </div>
+        </div>
+        <div class="mixed-content-block image-right">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MX2x"
+                alt=""/>
+            </div>
+            <div class="copy-container">
+                <p class="content-title">ReVAMP your menu </p>
+                <p class="content-text">As well as Halloween-themed cocktails, change up your food offering with autumnal flavours and put a spooky twist on some favourite dishes. Creating food and drink pairings can enhance the customer experience and maximise sales.</p>
+            </div>
+        </div>
+    </div>
+    <div class="image-outside-horizontal-card-container">
+        <div class="image-outside-horizontal-card">
+            <div class="content-container">
+                <div class="title-container">
+                    <span class="title">Entertain your customers</span>
+                </div>
+                <div class="description-container">
+                    <span class="description">Drive extra footfall to your venue by putting on entertainment for the night and promoting it in advance - anything from a Halloween pub quiz to themed games and competitions will get everyone involved. And whatever you do, make sure your decorate!</span>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MX32" />
+            </div>
+        </div>
+    </div>
+    <div class="text-centered">
+        <p>GET THE GHOULS THROUGH YOUR DOOR WITH THESE SPINE-CHILLING COCKTAIL RECIPES FOR HALLOWEEN…</p>
+    </div>
+    <div class="halloween-class">
+        <div class="container-recipes">
+            <div class="recipe-card">
+                <div class="title-card">
+                    <p>Spiced baileys latte</p>
+                </div>
+                <div class="subtitle-card">
+                    <p>A delicious blend of rich Baileys, coffee and unmistakable autumnal spices to warm the heart.</p>
+                </div>
+                <div>
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MX37"
+                        class="FULL-SIZE">
+                </div>
+                <div class="tab-table-container">
+                    <div class="tabs"> 
+                        <div class="tab">
+                            <input type="radio" id="tab-1" name="tab-group-1" checked>
+                            <label class="label" for="tab-1">Ingredients</label>
+                            <div class="ingredients spacer"></div>
+                            <div class="content">
+                                <ul>
+                                    <li><p>50ml Baileys Original</p></li>
+                                    <li><p>20ml espresso</p></li>
+                                    <li><p>135ml milk</p></li>
+                                    <li><p>Cinnamon stick</p></li>
+                                    <li><p>Nutmeg</p></li>
+                                    <li><p>Whipped cream</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="radio" id="tab-2" name="tab-group-1">
+                            <label class="label" for="tab-2">Method</label>
+                            <div class="method spacer"></div>
+                            <div class="content">
+                                <ol>
+                                    <li><p>Pour 250ml of steaming milk into a disposable cup</p></li>
+                                    <li><p>Add one espresso shot</p></li>
+                                    <li><p>Pour in 50ml of Baileys</p></li>
+                                    <li><p>Add nutmeg, whipped cream and cinnamon stick to serve</p></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-card not-first">
+                <div class="title-card">
+                    <p>Ketel one bloody mary</p>
+                </div>
+                <div class="subtitle-card">
+                    <p>Lively, crisp flavour and silky softness of Ketel One gives new life to a timeless classic.</p>
+                </div>
+                <div>
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MX3C"
+                        class="FULL-SIZE">
+                </div>
+                <div class="tab-table-container">
+                    <div class="tabs"> 
+                        <div class="tab">
+                            <input type="radio" id="tab-3" name="tab-group-2" checked>
+                            <label class="label" for="tab-3">Ingredients</label>
+                            <div class="ingredients spacer"></div>
+                            <div class="content">
+                                <ul>
+                                    <li><p>50 ml Ketel One</p></li>
+                                    <li><p>20ml Harveys Bristol Cream</p></li>
+                                    <li><p>90ml tomato juice</p></li>
+                                    <li><p>Yellow bell pepper</p></li>
+                                    <li><p>8 drops of Tabasco</p></li>
+                                    <li><p>4 dashes of Worcestershire sauce</p></li>
+                                    <li><p>Celery stick</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="radio" id="tab-4" name="tab-group-2">
+                            <label class="label" for="tab-4">Method</label>
+                            <div class="method spacer"></div>
+                            <div class="content">
+                                <ol>
+                                    <li><p>Put two chopped rings of yellow bell pepper into a cocktail shaker.</p></li>
+                                    <li><p>Add 50ml Ketel One</p></li>
+                                    <li><p>Add 90ml tomato juice</p></li>
+                                    <li><p>Add 20ml Harveys Bristol Cream</p></li>
+                                    <li><p>Add 8 drops of Tabasco and 4 dashes of Worcestershire sauce</p></li>
+                                    <li><p>Dip the rim of a highball glass in salt &amp; pepper and fill with ice</p></li>
+                                    <li><p>Rock the drink with ice and fine-strain to serve, garnishing it with a celery stick</p></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

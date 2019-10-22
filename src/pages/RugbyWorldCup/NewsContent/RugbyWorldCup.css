@@ -259,20 +259,26 @@
   width: 100%;
   display: flex;
 }
-.rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container .match-teams .flag-img {
-  height: 26px;
-  width: 34px;
-}
-.rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container .match-teams .flag-img.team-one {
+.rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container .match-teams .content-flag-img {
+  position: relative;
   margin-right: 16px;
 }
-.rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container .match-teams .flag-img.team-two {
-  margin-right: 25px;
+.rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container .match-teams .content-flag-img .flag-img-result {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  font-weight: bold;
+  margin-top: 4px;
+}
+.rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container .match-teams .content-flag-img .flag-img {
+  height: 26px;
+  width: 34px;
 }
 .rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container .match-teams .teams-names {
   font-size: 16px;
   line-height: 26px;
   margin: unset;
+  width: 59%;
 }
 @media (max-width: 768px) {
   .rugby-world-cup-page-container .tab-table-container .tabs {
@@ -302,12 +308,6 @@
     height: 22px;
     width: 30px;
     margin-top: 14px;
-  }
-  .rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container .match-teams .flag-img.team-one {
-    margin-right: 10px;
-  }
-  .rugby-world-cup-page-container .tab-table-container .tabs .tab .content .row-container .match-teams .flag-img.team-two {
-    margin-right: 25px;
   }
 }
 @media (max-width: 768px) and (max-width: 321px) {
