@@ -61,6 +61,12 @@
   height: 100%;
   width: 100%;
 }
+.captain-morgan-halloween .banner-container .banner-card-container .image-container img.desktop-img {
+  display: block;
+}
+.captain-morgan-halloween .banner-container .banner-card-container .image-container img.phone-img {
+  display: none;
+}
 @media screen and (max-width: 768px) {
   .captain-morgan-halloween .banner-container .banner-card-container {
     flex-wrap: wrap;
@@ -100,6 +106,12 @@
   .captain-morgan-halloween .banner-container .banner-card-container .image-container:before {
     content: unset;
   }
+  .captain-morgan-halloween .banner-container .banner-card-container .image-container img.desktop-img {
+    display: none;
+  }
+  .captain-morgan-halloween .banner-container .banner-card-container .image-container img.phone-img {
+    display: block;
+  }
 }
 @media screen and (max-width: 768px) {
   .captain-morgan-halloween .banner-container {
@@ -124,13 +136,14 @@
   padding-top: 40px;
 }
 .captain-morgan-halloween .text-centered-container p.uppercase-text.second-uppercase-text {
-  padding-top: 80px;
+  padding-top: unset;
   padding-bottom: 20px;
 }
 .captain-morgan-halloween .text-centered-container p.second-p {
   font-size: 16px;
   line-height: 26px;
   padding-top: 0;
+  padding-bottom: 120px;
 }
 @media screen and (max-width: 768px) {
   .captain-morgan-halloween .text-centered-container p {
@@ -292,40 +305,84 @@
   padding-left: 108px;
   background: rgba(255, 255, 255, 0.5);
   padding-top: 40px;
+  margin-bottom: 80px;
+  padding-bottom: 110px;
 }
-.captain-morgan-halloween .content-card-recipes .recipes-top {
+.captain-morgan-halloween .content-card-recipes .recipe-header {
   display: flex;
+  flex-direction: column;
 }
-.captain-morgan-halloween .content-card-recipes .recipes-top .recipes-title {
+.captain-morgan-halloween .content-card-recipes .recipe-header .recipes-top {
+  display: flex;
+  position: relative;
+}
+.captain-morgan-halloween .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty {
+  position: absolute;
+  top: 0;
+  right: 109px;
+}
+.captain-morgan-halloween .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .difficulty {
+  margin-top: 15px;
+}
+.captain-morgan-halloween .content-card-recipes .recipe-header .recipes-top .recipes-title {
   font-size: 24px;
   line-height: 40px;
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 30px;
 }
-.captain-morgan-halloween .content-card-recipes .recipes-description {
+.captain-morgan-halloween .content-card-recipes .recipe-header .recipes-description {
   font-size: 16px;
   line-height: 26px;
   text-align: left;
+  padding-bottom: 60px;
 }
-.captain-morgan-halloween .content-card-recipes .recipes-medium {
+.captain-morgan-halloween .content-card-recipes .recipe-header .recipe-information .recipes-medium {
   float: left;
   display: inline-flex;
   border-right: 2px solid #b9b9b9;
   padding-left: 20px;
   padding-right: 20px;
+  height: 50px;
+  width: 21.5%;
+  position: relative;
 }
-.captain-morgan-halloween .content-card-recipes .recipes-medium .recipes-medium-title {
+.captain-morgan-halloween .content-card-recipes .recipe-header .recipe-information .recipes-medium .recipes-medium-title {
   display: flex;
   font-size: 16px;
   line-height: 26px;
   text-transform: uppercase;
   font-weight: bold;
 }
-.captain-morgan-halloween .content-card-recipes .recipes-ingredients-method .tab-table-container .tab [type="radio"] {
+.captain-morgan-halloween .content-card-recipes .recipe-header .recipe-information .recipes-medium .description {
+  position: absolute;
+  bottom: 0;
+}
+.captain-morgan-halloween .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty {
   display: none;
 }
-.captain-morgan-halloween .content-card-recipes .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label {
+.captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method {
+  display: flex;
+}
+.captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content {
+  background-color: rgba(64, 146, 223, 0.5);
+}
+@media (min-width: 768px) {
+  .captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content {
+    width: 44%;
+    height: 316px;
+    margin-top: 25px;
+    margin-right: 25px;
+  }
+}
+.captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content img {
+  height: 100%;
+  width: 100%;
+}
+.captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"] {
+  display: none;
+}
+.captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label {
   background: rgba(242, 175, 12, 0.12);
   padding-bottom: 17px;
   padding-top: 17px;
@@ -333,28 +390,28 @@
   z-index: 2;
 }
 @media (min-width: 768px) {
-  .captain-morgan-halloween .content-card-recipes .recipes-ingredients-method .tab-table-container {
+  .captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
     margin-bottom: 100px;
-    height: 475px;
+    width: 44%;
   }
 }
 @media (max-width: 768px) {
-  .captain-morgan-halloween .content-card-recipes .recipes-ingredients-method .tab-table-container {
+  .captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
     height: 320px;
     margin-bottom: 40px;
   }
 }
 @media (max-width: 321px) {
-  .captain-morgan-halloween .content-card-recipes .recipes-ingredients-method .tab-table-container {
+  .captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
     height: 320px;
     margin-bottom: 40px;
   }
 }
-.captain-morgan-halloween .content-card-recipes .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content {
+.captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content {
   z-index: 1;
   display: table;
 }
-.captain-morgan-halloween .content-card-recipes .recipes-ingredients-method .tab-table-container .tabs {
+.captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs {
   position: relative;
   clear: both;
   margin: 0;
@@ -364,10 +421,28 @@
   width: 100%;
   border-bottom: 2px solid #979797;
 }
-.captain-morgan-halloween .content-card-recipes .recipes-ingredients-method .tab-table-container .tabs .tab {
+.captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .download-tab-btn {
+  display: none;
+}
+@media (min-width: 768px) {
+  .captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .download-tab-btn {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    font-size: 14px;
+    display: block;
+  }
+  .captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .download-tab-btn a {
+    color: #4092df;
+  }
+  .captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .download-tab-btn a i {
+    margin-right: 10px;
+  }
+}
+.captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab {
   vertical-align: top;
 }
-.captain-morgan-halloween .content-card-recipes .recipes-ingredients-method .tab-table-container .tabs .tab .label {
+.captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .label {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
@@ -380,10 +455,10 @@
   padding-top: 17px;
   border-bottom: 2px solid #979797;
 }
-.captain-morgan-halloween .content-card-recipes .recipes-ingredients-method .tab-table-container .tabs .tab .label:hover {
+.captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .label:hover {
   cursor: pointer;
 }
-.captain-morgan-halloween .content-card-recipes .recipes-ingredients-method .tab-table-container .tabs .tab .content {
+.captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content {
   white-space: normal;
   top: 77px;
   left: 0;
@@ -394,22 +469,26 @@
   padding: 20px;
   position: absolute;
   background-color: white;
+  height: 265px;
 }
-.captain-morgan-halloween .content-card-recipes .recipes-ingredients-method .tab-table-container .tabs .tab .content ol,
-.captain-morgan-halloween .content-card-recipes .recipes-ingredients-method .tab-table-container .tabs .tab .content ul {
-  max-width: 350px;
+.captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol,
+.captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul {
   counter-reset: my-awesome-counter;
   list-style: none;
   padding-left: 45px;
 }
-.captain-morgan-halloween .content-card-recipes .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li,
-.captain-morgan-halloween .content-card-recipes .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li {
-  margin-bottom: 16px;
+.captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li,
+.captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li {
+  margin-bottom: 10px;
   counter-increment: my-awesome-counter;
   position: relative;
 }
-.captain-morgan-halloween .content-card-recipes .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li p,
-.captain-morgan-halloween .content-card-recipes .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li p {
+.captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li:last-child,
+.captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li:last-child {
+  margin-bottom: 0;
+}
+.captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li p,
+.captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li p {
   font-family: Roboto;
   font-size: 16px;
   font-weight: normal;
@@ -419,8 +498,8 @@
   letter-spacing: normal;
   color: #000000;
 }
-.captain-morgan-halloween .content-card-recipes .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li:before,
-.captain-morgan-halloween .content-card-recipes .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li:before {
+.captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li:before,
+.captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li:before {
   content: counter(my-awesome-counter);
   color: #fff;
   font-size: 11px;
@@ -436,10 +515,10 @@
   border-radius: 50%;
   text-align: center;
 }
-.captain-morgan-halloween .content-card-recipes .recipes-ingredients-method .tab-table-container .tabs .tab .content ul {
+.captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul {
   padding-left: 25px;
 }
-.captain-morgan-halloween .content-card-recipes .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li:before {
+.captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li:before {
   content: "";
   color: #fff;
   /* font-size : 10px; */
@@ -456,20 +535,435 @@
   text-align: center;
 }
 @media (max-width: 768px) {
-  .captain-morgan-halloween .content-card-recipes .recipes-ingredients-method .tab-table-container {
+  .captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
     flex-wrap: wrap;
   }
-  .captain-morgan-halloween .content-card-recipes .recipes-ingredients-method .tab-table-container .tab {
+  .captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab {
     margin-top: -6px;
   }
-  .captain-morgan-halloween .content-card-recipes .recipes-ingredients-method .tab-table-container .tab .content {
+  .captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab .content {
     top: 71px;
   }
-  .captain-morgan-halloween .content-card-recipes .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content {
+  .captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content {
     z-index: 1;
     display: table;
     top: 71px;
   }
+}
+@media (max-width: 768px) {
+  .captain-morgan-halloween .content-card-recipes {
+    margin: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 81px;
+  }
+  .captain-morgan-halloween .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty {
+    display: none;
+  }
+  .captain-morgan-halloween .content-card-recipes .recipe-header .recipes-top .recipes-title {
+    margin-bottom: 20px;
+  }
+  .captain-morgan-halloween .content-card-recipes .recipe-header .recipes-description {
+    padding-bottom: 20px;
+  }
+  .captain-morgan-halloween .content-card-recipes .recipe-header .recipe-information .recipes-medium {
+    float: unset;
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .captain-morgan-halloween .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty {
+    display: block;
+  }
+  .captain-morgan-halloween .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .wow-factor img {
+    height: 40px;
+  }
+  .captain-morgan-halloween .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .difficulty {
+    margin-top: 20px;
+  }
+  .captain-morgan-halloween .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .difficulty img {
+    height: 40px;
+  }
+  .captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method {
+    flex-direction: column;
+  }
+  .captain-morgan-halloween .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content {
+    margin-top: 25px;
+    margin-right: 25px;
+    width: 100%;
+  }
+}
+.captain-morgan-halloween .content-card-recipes .only-mobile-download-tab-btn {
+  text-align: left;
+  display: none;
+}
+@media (max-width: 768px) {
+  .captain-morgan-halloween .content-card-recipes .only-mobile-download-tab-btn {
+    display: block;
+  }
+  .captain-morgan-halloween .content-card-recipes .only-mobile-download-tab-btn a {
+    color: #4092df;
+  }
+  .captain-morgan-halloween .content-card-recipes .only-mobile-download-tab-btn a i {
+    margin-right: 10px;
+  }
+}
+.captain-morgan-halloween .mixed-content-card-container {
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .captain-morgan-halloween .mixed-content-card-container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media (max-width: 768px) {
+}
+.captain-morgan-halloween .mixed-content-card-container .mixed-content-block {
+  font-family: 'Roboto', sans-serif;
+  background-color: transparent;
+}
+.captain-morgan-halloween .mixed-content-card-container .mixed-content-block .copy-container .content-title {
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+.captain-morgan-halloween .mixed-content-card-container .mixed-content-block .copy-container .content-text {
+  color: #3e3e3e;
+}
+.captain-morgan-halloween .mixed-content-card-container .mixed-content-block .copy-container .content-button {
+  font-size: 14px;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.captain-morgan-halloween .mixed-content-card-container .mixed-content-block .copy-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.captain-morgan-halloween .mixed-content-card-container .mixed-content-block .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.captain-morgan-halloween .mixed-content-card-container .mixed-content-block .image-container img {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .captain-morgan-halloween .mixed-content-card-container .mixed-content-block {
+    width: 100%;
+    display: flex;
+    height: 340px;
+    margin-bottom: 80px;
+  }
+  .captain-morgan-halloween .mixed-content-card-container .mixed-content-block.image-left .copy-container {
+    order: 0;
+    padding-right: 115px;
+  }
+  .captain-morgan-halloween .mixed-content-card-container .mixed-content-block.image-left .image-container {
+    order: 1;
+  }
+  .captain-morgan-halloween .mixed-content-card-container .mixed-content-block.image-right .copy-container {
+    order: 1;
+    padding-left: 65px;
+  }
+  .captain-morgan-halloween .mixed-content-card-container .mixed-content-block.image-right .image-container {
+    order: 0;
+  }
+  .captain-morgan-halloween .mixed-content-card-container .mixed-content-block .copy-container {
+    height: 100%;
+    width: 100%;
+  }
+  .captain-morgan-halloween .mixed-content-card-container .mixed-content-block .copy-container .content-title {
+    font-size: 18px;
+    padding-top: 60px;
+    line-height: 40px;
+  }
+  .captain-morgan-halloween .mixed-content-card-container .mixed-content-block .copy-container .content-button {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+  .captain-morgan-halloween .mixed-content-card-container .mixed-content-block .copy-container .content-text {
+    width: 370px;
+    padding: 20px 0;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .captain-morgan-halloween .mixed-content-card-container .mixed-content-block .image-container {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .captain-morgan-halloween .mixed-content-card-container .mixed-content-block {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: unset;
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
+  .captain-morgan-halloween .mixed-content-card-container .mixed-content-block .copy-container {
+    width: 100%;
+  }
+  .captain-morgan-halloween .mixed-content-card-container .mixed-content-block .copy-container .content-title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 32px;
+    color: #000000;
+    text-transform: uppercase;
+    padding-top: 20px;
+  }
+  .captain-morgan-halloween .mixed-content-card-container .mixed-content-block .copy-container .content-text {
+    font-size: 16px;
+    padding-top: 10px;
+    line-height: 26px;
+    color: #3e3e3e;
+  }
+  .captain-morgan-halloween .mixed-content-card-container .mixed-content-block .copy-container .content-button {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 13px 0;
+    background-color: #f2af0c;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    bottom: 2px;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+  .captain-morgan-halloween .mixed-content-card-container .mixed-content-block .image-container {
+    margin-left: -6%;
+    margin-right: -6%;
+    width: 112%;
+    height: 250px;
+    background-color: rgba(64, 146, 223, 0.5);
+  }
+  .captain-morgan-halloween .mixed-content-card-container .mixed-content-block .image-container img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.captain-morgan-halloween .download-block {
+  background-color: #ffffff;
+}
+.captain-morgan-halloween .download-block .download-header {
+  position: relative;
+  border-bottom: 1px solid;
+  height: 95px;
+}
+.captain-morgan-halloween .download-block .download-header .title {
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
+  height: inherit;
+  padding-top: 35px;
+  padding-left: 60px;
+}
+.captain-morgan-halloween .download-block .download-header .download-btn {
+  position: absolute;
+  top: 38px;
+  right: 40px;
+  font-size: 14px;
+}
+.captain-morgan-halloween .download-block .download-header .download-btn a {
+  color: #4092df;
+}
+.captain-morgan-halloween .download-block .download-header .download-btn a i {
+  margin-right: 10px;
+}
+.captain-morgan-halloween .download-block .download-body {
+  padding: 40px;
+}
+.captain-morgan-halloween .download-block .download-body .download-card-container {
+  display: flex;
+}
+.captain-morgan-halloween .download-block .download-body .download-card-container .download-card {
+  width: 220px;
+  height: 355px;
+  margin-left: 20px;
+}
+.captain-morgan-halloween .download-block .download-body .download-card-container .download-card:first-child {
+  margin-left: 0;
+}
+.captain-morgan-halloween .download-block .download-body .download-card-container .download-card .image-container {
+  height: 170px;
+}
+.captain-morgan-halloween .download-block .download-body .download-card-container .download-card .image-container img {
+  height: 100%;
+  width: 100%;
+}
+.captain-morgan-halloween .download-block .download-body .download-card-container .download-card .body-container {
+  background-color: #f2f2f2;
+  height: 185px;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+.captain-morgan-halloween .download-block .download-body .download-card-container .download-card .body-container .title-text {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 22px;
+  color: #0041a5;
+  text-transform: uppercase;
+}
+.captain-morgan-halloween .download-block .download-body .download-card-container .download-card .body-container .description-text {
+  padding-top: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  word-break: break-word;
+}
+.captain-morgan-halloween .download-block .download-body .download-card-container .download-card .body-container .download-card-btn {
+  margin-top: 20px;
+  border: 1px solid;
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+}
+.captain-morgan-halloween .download-block .download-body .download-card-container .download-card .body-container .download-card-btn .download-link-box {
+  color: #3e3e3e;
+}
+.captain-morgan-halloween .download-block .download-body .download-card-container .download-card .body-container .download-card-btn .download-link-box i {
+  margin-right: 10px;
+}
+.captain-morgan-halloween .download-block .download-footer {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+  color: #3e3e3e;
+}
+@media (max-width: 768px) {
+  .captain-morgan-halloween .download-block .download-header .title {
+    padding-top: 21px;
+    padding-left: 21px;
+    height: unset;
+  }
+  .captain-morgan-halloween .download-block .download-header .download-btn {
+    position: unset;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .captain-morgan-halloween .download-block .download-body {
+    padding: 20px;
+  }
+  .captain-morgan-halloween .download-block .download-body .download-card-container {
+    flex-direction: column;
+  }
+  .captain-morgan-halloween .download-block .download-body .download-card-container .download-card {
+    width: 100%;
+    height: unset;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .captain-morgan-halloween .download-block .download-body .download-card-container .download-card .image-container {
+    height: 225px;
+  }
+  .captain-morgan-halloween .download-block .download-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+  }
+}
+.captain-morgan-halloween .related-content-title {
+  margin-top: 80px;
+  text-align: left;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #7d7773;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+}
+.captain-morgan-halloween .vertical-card-container {
+  text-align: left;
+  padding-bottom: 80px;
+}
+@media (min-width: 768px) {
+  .captain-morgan-halloween .vertical-card-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+}
+.captain-morgan-halloween .vertical-card-container .card-related-content {
+  font-family: 'Roboto', sans-serif;
+  height: 430px;
+  display: block;
+}
+@media (min-width: 768px) {
+  .captain-morgan-halloween .vertical-card-container .card-related-content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 33.3333%;
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 768px) {
+  .captain-morgan-halloween .vertical-card-container .card-related-content {
+    margin-bottom: 4%;
+  }
+}
+.captain-morgan-halloween .vertical-card-container .card-related-content .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+  height: 225px;
+}
+.captain-morgan-halloween .vertical-card-container .card-related-content .image-container img {
+  width: 100%;
+  height: 100%;
+}
+.captain-morgan-halloween .vertical-card-container .card-related-content .copy-container {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 180px;
+}
+.captain-morgan-halloween .vertical-card-container .card-related-content .copy-container .copy-text {
+  padding: 20px 30px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.75;
+  color: #000000;
+}
+.captain-morgan-halloween .vertical-card-container .card-related-content .copy-container .copy-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #4092df;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  text-decoration: none;
+}
+.captain-morgan-halloween .vertical-card-container .card-related-content .copy-container .copy-link:hover {
+  border-bottom: 2px solid;
+  margin-bottom: -2px;
+}
+.captain-morgan-halloween .vertical-card-container .card-related-content .copy-container .copy-link i.fas.fa-angle-right {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #4092df;
+  position: absolute;
+  bottom: 4px;
 }
 .slds-col--padded.contentRegion.comm-layout-column {
   padding: 0;
@@ -493,12 +987,17 @@
                     <h2 class="title">THE HIGHLIGHT OF FRIGHT NIGHT</h2>
                 </div>
                 <div class="text-container">
-                    <p class="text">Halloween is the third biggest drinking occasion of the year. Cash in with Captain Morgan and his uniquely spooky serves, perfect for witching hour...</p>
+                    <p class="text">Halloween is the third biggest drinking occasion of the year. Cash in with Captain
+                        Morgan and his uniquely spooky serves, perfect for witching hour...</p>
                 </div>
             </div>
             <div class="slds-col slds-size_2-of-2 slds-large-size_1-of-2">
                 <div class="image-container">
-                    <img src=""
+                    <img class="desktop-img"
+                        src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHE"
+                        alt="" />
+                    <img class="phone-img"
+                        src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHJ"
                         alt="" />
                 </div>
             </div>
@@ -506,104 +1005,282 @@
     </div>
     <div class="text-centered-container">
         <p>
-            Halloween is classic impulse purchase territory, with <b>30% of people aged 27-36 likely to make spur of the moment choices on October 31st.*</b> Promoting eye-catching, themed serves will help you get a share of the spend...
+            Halloween is classic impulse purchase territory, with <b>30% of people aged 27-36 likely to make spur of the
+                moment choices on October 31st.*</b> Promoting eye-catching, themed serves will help you get a share of
+            the spend...
         </p>
         <p class="uppercase-text">Give your customers something to sink their fangs into</h1>
     </div>
     <div class="content-card-recipes">
-        <div class="recipes-top">
-            <div class="recipes-factor-and-difficulty">
-                <div class="">
-                    <img src="" />
-                </div>
-                <div class="">
-                    <img src="" />
-                </div>
-            </div>
-            <div class="recipes-title">
-                <p>
-                    Apple 'n' Ginger Captain
-                </p>
-            </div>
-        </div>
-        <div class="recipes-description">
-            <p>
-                Dive into a delicious blend of Captain Morgan, ginger ale and a good slug of apple juice.
-            </p>
-        </div>
-        <div class="recipes-medium">
-            <div class="recipes-medium-title">
-                <p>
-                    Drink Style
-                </p>
-            </div>
-            <div>
-                <p>Fruity &amp; Fresh | Sweet &amp; Tasty</p>
-            </div>
-        </div>
-        <div class="recipes-medium">
-            <div class="recipes-medium-title">
-                <p>
-                    Season/Occasion                           
-                </p>
-            </div>
-            <div>
-                <p>Autumn | Winter | Halloween</p>
-            </div>
-        </div>
-        <div class="recipes-medium">
-            <div class="recipes-medium-title">
-                <p>
-                    Alcohol content
-                </p>
-            </div>
-            <div>
-                <p>1.75 / 14g</p>
-            </div>
-        </div>
-        <div class="recipes-ingredients-method">
-            <div class="recipes-image-content">
-                <img src="" />
-            </div>
-            <div class="tab-table-container">
-                <div class="tabs"> 
-                    <div class="tab">
-                        <input type="radio" id="tab-1" name="tab-group-1" checked>
-                        <label class="label" for="tab-1">Ingredients</label>
-                        <div class="ingredients spacer"></div>
-                        <div class="content">
-                            <ul>
-                                <li><p>50ml Baileys Original</p></li>
-                                <li><p>20ml espresso</p></li>
-                                <li><p>135ml milk</p></li>
-                                <li><p>Cinnamon stick</p></li>
-                                <li><p>Nutmeg</p></li>
-                                <li><p>Whipped cream</p></li>
-                            </ul>
-                        </div>
+        <div class="recipe-header">
+            <div class="recipes-top">
+                <div class="recipes-factor-and-difficulty">
+                    <div class="wow-factor">
+                        <img
+                            src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHO" />
                     </div>
-                    <div class="tab">
-                        <input type="radio" id="tab-2" name="tab-group-1">
-                        <label class="label" for="tab-2">Method</label>
-                        <div class="method spacer"></div>
-                        <div class="content">
-                            <ol>
-                                <li><p>Pour 250ml of steaming milk into a disposable cup</p></li>
-                                <li><p>Add one espresso shot</p></li>
-                                <li><p>Pour in 50ml of Baileys</p></li>
-                                <li><p>Add nutmeg, whipped cream and cinnamon stick to serve</p></li>
-                            </ol>
-                        </div>
+                    <div class="difficulty">
+                        <img
+                            src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHT" />
+                    </div>
+                </div>
+                <div class="recipes-title">
+                    <p>
+                        Count Captain
+                    </p>
+                </div>
+            </div>
+            <div class="recipes-description">
+                <p>
+                    A deliciously spooky blend of Captain Morgan, grenadine, and citrus juices.
+                </p>
+            </div>
+            <div class="recipe-information">
+                <div class="recipes-medium">
+                    <div class="recipes-medium-title">
+                        <p>
+                            Drink Style
+                        </p>
+                    </div>
+                    <div class="description">
+                        <p>Fruity &amp; Fresh | Sweet &amp; Tasty</p>
+                    </div>
+                </div>
+                <div class="recipes-medium">
+                    <div class="recipes-medium-title">
+                        <p>
+                            Season/Occasion
+                        </p>
+                    </div>
+                    <div class="description">
+                        <p>Halloween</p>
+                    </div>
+                </div>
+                <div class="recipes-medium">
+                    <div class="recipes-medium-title">
+                        <p>
+                            Alcohol content
+                        </p>
+                    </div>
+                    <div class="description">
+                        <p> 2 units / 14g</p>
                     </div>
                 </div>
             </div>
+            <div class="only-mobile-recipes-factor-and-difficulty">
+                <div class="wow-factor">
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHO" />
+                </div>
+                <div class="difficulty">
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHT" />
+                </div>
+            </div>
+        </div>
+        <div class="recipe-body">
+            <div class="recipes-ingredients-method">
+                <div class="recipes-image-content">
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHY" />
+                </div>
+                <div class="tab-table-container">
+                    <div class="tabs">
+                        <div class="download-tab-btn">
+                            <a href="/"><i class="fas fa-download"></i>Download recipe card</a>
+                        </div>
+                        <div class="tab">
+                            <input type="radio" id="tab-1" name="tab-group-1" checked>
+                            <label class="label" for="tab-1">Ingredients</label>
+                            <div class="ingredients spacer"></div>
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <p>50ml Captain Morgan (White rum or Original Spiced Gold)</p>
+                                    </li>
+                                    <li>
+                                        <p>25ml grenadine</p>
+                                    </li>
+                                    <li>
+                                        <p>25ml lemon juice</p>
+                                    </li>
+                                    <li>
+                                        <p>12.5ml lime juice</p>
+                                    </li>
+                                    <li>
+                                        <p>100ml orange juice</p>
+                                    </li>
+                                    <li>
+                                        <p>Glacier cherries</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="radio" id="tab-2" name="tab-group-1">
+                            <label class="label" for="tab-2">Method</label>
+                            <div class="method spacer"></div>
+                            <div class="content">
+                                <ol>
+                                    <li>
+                                        <p>Add the Captain Morgan (White Rum or Original Spiced Gold) lemon juice and
+                                            grenadine to a tall glass</p>
+                                    </li>
+                                    <li>
+                                        <p>Add ice to fill the glass and top with orange</p>
+                                    </li>
+                                    <li>
+                                        <p>Gently stir for the grenadine to rise and cause a ‘bloody’ effect</p>
+                                    </li>
+                                    <li>
+                                        <p>Garnish with x2 glacier cherries</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="only-mobile-download-tab-btn">
+            <a href="/"><i class="fas fa-download"></i>Download recipe card</a>
+        </div>
+    </div>
+    <div class="content-card-recipes">
+        <div class="recipe-header">
+            <div class="recipes-top">
+                <div class="recipes-factor-and-difficulty">
+                    <div class="wow-factor">
+                        <img
+                            src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHO" />
+                    </div>
+                    <div class="difficulty">
+                        <img
+                            src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHd" />
+                    </div>
+                </div>
+                <div class="recipes-title">
+                    <p>
+                        Apple 'n' Ginger Captain
+                    </p>
+                </div>
+            </div>
+            <div class="recipes-description">
+                <p>
+                    Dive into a delicious blend of Captain Morgan, ginger ale and a good slug of apple juice.
+                </p>
+            </div>
+            <div class="recipe-information">
+                <div class="recipes-medium">
+                    <div class="recipes-medium-title">
+                        <p>
+                            Drink Style
+                        </p>
+                    </div>
+                    <div class="description">
+                        <p>Fruity &amp; Fresh | Sweet &amp; Tasty</p>
+                    </div>
+                </div>
+                <div class="recipes-medium">
+                    <div class="recipes-medium-title">
+                        <p>
+                            Season/Occasion
+                        </p>
+                    </div>
+                    <div class="description">
+                        <p>Autumn | Winter | Halloween</p>
+                    </div>
+                </div>
+                <div class="recipes-medium">
+                    <div class="recipes-medium-title">
+                        <p>
+                            Alcohol content
+                        </p>
+                    </div>
+                    <div class="description">
+                        <p>1.75 / 14g</p>
+                    </div>
+                </div>
+            </div>
+            <div class="only-mobile-recipes-factor-and-difficulty">
+                <div class="wow-factor">
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHO" />
+                </div>
+                <div class="difficulty">
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHd" />
+                </div>
+            </div>
+        </div>
+        <div class="recipe-body">
+            <div class="recipes-ingredients-method">
+                <div class="recipes-image-content">
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHi" />
+                </div>
+                <div class="tab-table-container">
+                    <div class="tabs">
+                        <div class="download-tab-btn">
+                            <a href="/"><i class="fas fa-download"></i>Download recipe card</a>
+                        </div>
+                        <div class="tab">
+                            <input type="radio" id="tab-3" name="tab-group-2" checked>
+                            <label class="label" for="tab-3">Ingredients</label>
+                            <div class="ingredients spacer"></div>
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <p>50ml Baileys Original</p>
+                                    </li>
+                                    <li>
+                                        <p>20ml espresso</p>
+                                    </li>
+                                    <li>
+                                        <p>135ml milk</p>
+                                    </li>
+                                    <li>
+                                        <p>Cinnamon stick</p>
+                                    </li>
+                                    <li>
+                                        <p>Nutmeg</p>
+                                    </li>
+                                    <li>
+                                        <p>Whipped cream</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="radio" id="tab-4" name="tab-group-2">
+                            <label class="label" for="tab-4">Method</label>
+                            <div class="method spacer"></div>
+                            <div class="content">
+                                <ol>
+                                    <li>
+                                        <p>Pour 250ml of steaming milk into a disposable cup</p>
+                                    </li>
+                                    <li>
+                                        <p>Add one espresso shot</p>
+                                    </li>
+                                    <li>
+                                        <p>Pour in 50ml of Baileys</p>
+                                    </li>
+                                    <li>
+                                        <p>Add nutmeg, whipped cream and cinnamon stick to serve</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="only-mobile-download-tab-btn">
+            <a href="/"><i class="fas fa-download"></i>Download recipe card</a>
         </div>
     </div>
     <div class="text-centered-container">
         <p class="uppercase-text second-uppercase-text">DONT MISS AN opportunity TO BOOST YOUR SALES</h1>
-        <p class="second-p">
-            Capitalising on key calendar dates during autumn and winter will make a positive impact on sales and profit. Promoting seasonally themed drinks and making them available for a limited time only prompts customers to try them before they're gone.
-        </p>
+            <p class="second-p">
+                Capitalising on key calendar dates during autumn and winter will make a positive impact on sales and
+                profit. Promoting seasonally themed drinks and making them available for a limited time only prompts
+                customers to try them before they're gone.
+            </p>
     </div>
     <div class="image-outside-horizontal-card-container">
         <div class="image-outside-horizontal-card">
@@ -613,12 +1290,117 @@
                         <span class="title">Coming soon</span>
                     </div>
                     <div class="description-container">
-                        <span class="description">The festive party season is almost here, bringing in more customers willing to spend extra on premium drinks. Look out for our Captain's cocktail list, coming soon with perfect seasonal serves by the barrel load.</span>
+                        <span class="description">The festive party season is almost here, bringing in more customers
+                            willing to spend extra on premium drinks. Look out for our Captain's cocktail list, coming
+                            soon with perfect seasonal serves by the barrel load.</span>
                     </div>
                 </div>
             </div>
             <div class="image-container">
-                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MX32" />
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHn" />
+            </div>
+        </div>
+    </div>
+    <div class="mixed-content-card-container">
+        <div class="mixed-content-block image-right">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHs"
+                    alt="" />
+            </div>
+            <div class="copy-container">
+                <p class="content-title">Meet the crew</p>
+                <p class="content-text">As The Captain likes to remind us, variety is the spice of life. Take a look at
+                    the full range of delicious drinks, each with its own distinctive flavour and personality.</p>
+                <!-- <a href="https://pubs.matchpint.co.uk/features" target="_blank" class="content-button">find out more</a> -->
+            </div>
+        </div>
+    </div>
+    <div class="download-block">
+        <div class="download-header">
+            <div class="title">
+                <p>SOCIAL MEDIA DOWNLOADS</p>
+            </div>
+            <div class="download-btn">
+                <a href="/"><i class="fas fa-download"></i> Download all</a>
+            </div>
+        </div>
+        <div class="download-body">
+            <div class="download-card-container">
+                <div class="download-card">
+                    <div class="image-container">
+                        <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHx"
+                            alt="" />
+                    </div>
+                    <div class="body-container">
+                        <p class="title-text">Social media image</p>
+                        <p class="description-text">CM_Social_Posts_Halloween - Captain Bites Back.jpg</p>
+                        <div class="download-card-btn">
+                            <a href="#" target="_blank" class="download-link-box"><i
+                                    class="fas fa-download"></i>Download</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-card">
+                    <div class="image-container">
+                        <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXI2"
+                            alt="" />
+                    </div>
+                    <div class="body-container">
+                        <p class="title-text">pos image</p>
+                        <p class="description-text">09734_CM_Drinks1.1_Menu_Insert_Halloween_Tankard_148x210.jpg</p>
+                        <div class="download-card-btn">
+                            <a href="#" target="_blank" class="download-link-box"><i
+                                    class="fas fa-download"></i>Download</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="download-footer">
+            <p>By using these assets you agree to ensure that your marketing of Diageo products through the use of
+                digital assets provided by us shall at all times adhere to the Diageo Marketing Code (“DMC”), a copy of
+                which is available at www.diageo.com. Should you fail to adhere to the DMC in your use of the digital
+                assets we reserve the right to require you to withdraw the assets from your social media channels and we
+                will not provide you with any additional assets. If so requested, you agree to remove the assets from
+                your social media channels immediately.</p>
+        </div>
+    </div>
+    <div class="related-content-title">
+        <p class="text">RELATED articles</p>
+    </div>
+    <div class="vertical-card-container">
+
+        <div class="card-related-content ">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOqe" />
+            </div>
+            <div class="copy-container">
+                <p class="copy-text">Keep the sales flowing with matchpint</p>
+                <a href="https://www.mydiageo.com/s/cp-content/a4P4G000000KEN9" class="copy-link">Find out more<i
+                        class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+
+        <div class="card-related-content">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOkv" />
+            </div>
+            <div class="copy-container">
+                <p class="copy-text">The latest beer trends and insights</p>
+                <a href="https://www.mydiageo.com/s/cp-content/a4PD00000001VDUMA2/trendsbeerinsightjune18?retUrl=https%3A%2F%2Fwww.mydiageo.com%2Fs%2Fdiscover"
+                    class="copy-link">Find out more<i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+
+        <div class="card-related-content">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOl0" />
+            </div>
+            <div class="copy-container">
+                <p class="copy-text">7Cs’ Programme to delivering great looking & great tasting Guinness</p>
+                <a href="https://www.mydiageo.com/s/landing?menu=IRL-get-the-basics-right" class="copy-link">Find out
+                    more<i class="fas fa-angle-right"></i></a>
             </div>
         </div>
     </div>
