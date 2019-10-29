@@ -1,0 +1,817 @@
+<style>
+.QualityRoadshow {
+  text-align: left;
+  background-color: #f2f2f2;
+}
+.QualityRoadshow .titles-and-descriptions .general-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  text-transform: uppercase;
+}
+.QualityRoadshow .titles-and-descriptions .general-description {
+  font-size: 20px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  color: #3e3e3e;
+  padding-right: 20%;
+  padding-left: 20%;
+}
+.QualityRoadshow .titles-and-descriptions .related-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  text-transform: uppercase;
+  border-bottom: 1px solid #7d7773;
+  margin-bottom: 50px;
+  margin-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  .QualityRoadshow .titles-and-descriptions .general-title {
+    padding-left: 6%;
+    padding-right: 6%;
+    font-size: 24px;
+  }
+  .QualityRoadshow .titles-and-descriptions .general-description {
+    padding-left: 6%;
+    padding-right: 5%;
+  }
+  .QualityRoadshow .titles-and-descriptions .related-title {
+    font-size: 24px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+}
+.QualityRoadshow .banner-container .banner-card-container {
+  text-align: left;
+  background-color: #ffffff;
+}
+.QualityRoadshow .banner-container .banner-card-container .label {
+  width: 60px;
+  height: 40px;
+  margin-left: 83px;
+  margin-top: 25px;
+}
+.QualityRoadshow .banner-container .banner-card-container .label div {
+  height: 100%;
+}
+.QualityRoadshow .banner-container .banner-card-container .label div span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.QualityRoadshow .banner-container .banner-card-container .title-container {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.QualityRoadshow .banner-container .banner-card-container .title-container.with-label {
+  margin-top: 20px;
+}
+.QualityRoadshow .banner-container .banner-card-container .title-container .title {
+  font-size: 38px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  color: black;
+  text-transform: uppercase;
+}
+.QualityRoadshow .banner-container .banner-card-container .text-container .text {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #3e3e3e;
+}
+.QualityRoadshow .banner-container .banner-card-container .btn-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.QualityRoadshow .banner-container .banner-card-container .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.QualityRoadshow .banner-container .banner-card-container .image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.QualityRoadshow .banner-container .banner-card-container .image-container img {
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .QualityRoadshow .banner-container .banner-card-container {
+    height: 420px;
+    margin-bottom: 40px;
+  }
+  .QualityRoadshow .banner-container .banner-card-container .content-container {
+    padding-right: 110px;
+  }
+  .QualityRoadshow .banner-container .banner-card-container .text-container,
+  .QualityRoadshow .banner-container .banner-card-container .title-container {
+    padding-left: 83px;
+  }
+  .QualityRoadshow .banner-container .banner-card-container .text-container {
+    padding-bottom: 20px;
+  }
+  .QualityRoadshow .banner-container .banner-card-container .btn-container {
+    height: 45px;
+    width: 160px;
+    margin-left: 83px;
+  }
+  .QualityRoadshow .banner-container .banner-card-container .image-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 425px solid #ffffff;
+    border-right: 80px solid transparent;
+    width: 0;
+  }
+  .QualityRoadshow .banner-container .banner-card-container .image-container .desktop-img {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .QualityRoadshow .banner-container .banner-card-container {
+    flex-wrap: wrap;
+    margin-top: 0;
+    height: 660px;
+    margin-bottom: 45px;
+  }
+  .QualityRoadshow .banner-container .banner-card-container .label {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  .QualityRoadshow .banner-container .banner-card-container .text-container,
+  .QualityRoadshow .banner-container .banner-card-container .title-container {
+    padding: 20px;
+    padding-top: 0;
+    margin: 0;
+  }
+  .QualityRoadshow .banner-container .banner-card-container .text-container .text,
+  .QualityRoadshow .banner-container .banner-card-container .title-container .text {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.63;
+    color: #3e3e3e;
+  }
+  .QualityRoadshow .banner-container .banner-card-container .text-container .title,
+  .QualityRoadshow .banner-container .banner-card-container .title-container .title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .QualityRoadshow .banner-container .banner-card-container .title-container {
+    margin-top: 75px;
+  }
+  .QualityRoadshow .banner-container .banner-card-container .title-container.with-label {
+    margin-top: 20px;
+  }
+  .QualityRoadshow .banner-container .banner-card-container .btn-container {
+    width: 88%;
+    height: 45px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .QualityRoadshow .banner-container .banner-card-container .image-container .phone-img {
+    display: block;
+    position: absolute;
+    height: 280px;
+    left: 0;
+    bottom: 0;
+  }
+}
+.QualityRoadshow .horizontal-cards-container {
+  padding-bottom: 35px;
+}
+@media (min-width: 768px) {
+  .QualityRoadshow .horizontal-cards-container {
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-bottom: 0;
+  }
+}
+.QualityRoadshow .horizontal-cards-container .card-container {
+  margin-bottom: 25px;
+}
+.QualityRoadshow .horizontal-cards-container .card-container .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.QualityRoadshow .horizontal-cards-container .card-container .image-container img {
+  height: 100%;
+  width: 100%;
+}
+.QualityRoadshow .horizontal-cards-container .card-container .content-container {
+  background-color: #ffffff;
+}
+.QualityRoadshow .horizontal-cards-container .card-container .content-container .icon {
+  height: 35px;
+}
+.QualityRoadshow .horizontal-cards-container .card-container .content-container .content-title {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  margin: unset;
+}
+.QualityRoadshow .horizontal-cards-container .card-container .content-container .content-text {
+  font-size: 16px;
+  line-height: 26px;
+  margin: unset;
+}
+@media (min-width: 768px) {
+  .QualityRoadshow .horizontal-cards-container .card-container {
+    height: 250px;
+    display: flex;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 50%;
+    flex: 1 1 auto;
+    margin-bottom: 35px;
+  }
+  .QualityRoadshow .horizontal-cards-container .card-container .image-container {
+    width: 45%;
+  }
+  .QualityRoadshow .horizontal-cards-container .card-container .content-container {
+    width: 54%;
+    padding-top: 44px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+  }
+  .QualityRoadshow .horizontal-cards-container .card-container.left .image-container {
+    order: 0;
+    border-right: 5px solid #be63f7;
+  }
+  .QualityRoadshow .horizontal-cards-container .card-container.left .content-container {
+    order: 1;
+  }
+  .QualityRoadshow .horizontal-cards-container .card-container.right .image-container {
+    order: 1;
+    border-left: 5px solid #be63f7;
+  }
+  .QualityRoadshow .horizontal-cards-container .card-container.right .content-container {
+    order: 0;
+  }
+}
+@media (max-width: 768px) {
+  .QualityRoadshow .horizontal-cards-container .card-container {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 4%;
+  }
+  .QualityRoadshow .horizontal-cards-container .card-container .image-container {
+    height: 260px;
+    width: 100%;
+    border-bottom: 5px solid #be63f7;
+  }
+  .QualityRoadshow .horizontal-cards-container .card-container .content-container {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .QualityRoadshow .horizontal-cards-container .card-container .content-container .icon {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .QualityRoadshow .horizontal-cards-container .card-container .content-container .content-title {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .QualityRoadshow .horizontal-cards-container .card-container .content-container .content-text {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .QualityRoadshow .mixed-content-card-container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media (max-width: 768px) {
+  .QualityRoadshow .mixed-content-card-container {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+.QualityRoadshow .mixed-content-card-container .mixed-content-block {
+  font-family: 'Roboto', sans-serif;
+  background-color: transparent;
+}
+.QualityRoadshow .mixed-content-card-container .mixed-content-block .copy-container .content-title {
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+.QualityRoadshow .mixed-content-card-container .mixed-content-block .copy-container .content-text {
+  color: #3e3e3e;
+}
+.QualityRoadshow .mixed-content-card-container .mixed-content-block .copy-container .content-button {
+  font-size: 14px;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.QualityRoadshow .mixed-content-card-container .mixed-content-block .copy-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.QualityRoadshow .mixed-content-card-container .mixed-content-block .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.QualityRoadshow .mixed-content-card-container .mixed-content-block .image-container img {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .QualityRoadshow .mixed-content-card-container .mixed-content-block {
+    width: 100%;
+    display: flex;
+    height: 340px;
+    margin-bottom: 80px;
+  }
+  .QualityRoadshow .mixed-content-card-container .mixed-content-block.image-left .copy-container {
+    order: 0;
+    padding-right: 115px;
+  }
+  .QualityRoadshow .mixed-content-card-container .mixed-content-block.image-left .image-container {
+    order: 1;
+  }
+  .QualityRoadshow .mixed-content-card-container .mixed-content-block.image-right .copy-container {
+    order: 1;
+    padding-left: 115px;
+  }
+  .QualityRoadshow .mixed-content-card-container .mixed-content-block.image-right .image-container {
+    order: 0;
+  }
+  .QualityRoadshow .mixed-content-card-container .mixed-content-block .copy-container {
+    height: 100%;
+    width: 100%;
+  }
+  .QualityRoadshow .mixed-content-card-container .mixed-content-block .copy-container .content-title {
+    font-size: 18px;
+    padding-top: 60px;
+    line-height: 40px;
+  }
+  .QualityRoadshow .mixed-content-card-container .mixed-content-block .copy-container .content-button {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+  .QualityRoadshow .mixed-content-card-container .mixed-content-block .copy-container .content-text {
+    padding: 20px 0;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .QualityRoadshow .mixed-content-card-container .mixed-content-block .image-container {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .QualityRoadshow .mixed-content-card-container .mixed-content-block {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: unset;
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
+  .QualityRoadshow .mixed-content-card-container .mixed-content-block .copy-container {
+    width: 100%;
+  }
+  .QualityRoadshow .mixed-content-card-container .mixed-content-block .copy-container .content-title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 32px;
+    color: #000000;
+    text-transform: uppercase;
+    padding-top: 20px;
+  }
+  .QualityRoadshow .mixed-content-card-container .mixed-content-block .copy-container .content-text {
+    font-size: 16px;
+    padding-top: 10px;
+    line-height: 26px;
+    color: #3e3e3e;
+  }
+  .QualityRoadshow .mixed-content-card-container .mixed-content-block .copy-container .content-button {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 13px 0;
+    background-color: #f2af0c;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    bottom: 2px;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+  .QualityRoadshow .mixed-content-card-container .mixed-content-block .image-container {
+    height: 250px;
+    margin-left: -7%;
+    margin-right: -7%;
+    width: 114%;
+    background-color: rgba(64, 146, 223, 0.5);
+  }
+  .QualityRoadshow .mixed-content-card-container .mixed-content-block .image-container img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.QualityRoadshow .black-box {
+  display: flex;
+  margin-right: 20%;
+  margin-left: 20%;
+  position: relative;
+  color: white;
+  background-color: #3e3e3e;
+}
+.QualityRoadshow .black-box .image-container {
+  height: 110px;
+  width: 110px;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.QualityRoadshow .black-box .image-container img {
+  height: 100%;
+  width: 100%;
+}
+.QualityRoadshow .black-box .description-container {
+  padding-top: 30px;
+  padding-left: 40px;
+  font-size: 18px;
+  line-height: 1.56;
+  font-weight: 300;
+}
+.QualityRoadshow .black-box .description-container .bold {
+  font-weight: bold;
+}
+.QualityRoadshow .black-box .btn-container {
+  height: 44px;
+  width: 130px;
+  position: absolute;
+  top: 33px;
+  right: 40px;
+}
+.QualityRoadshow .black-box .btn-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.QualityRoadshow .black-box .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+@media screen and (max-width: 768px) {
+  .QualityRoadshow .black-box {
+    flex-flow: column;
+    margin: 0;
+  }
+  .QualityRoadshow .black-box .image-container {
+    width: 100%;
+    height: 225px;
+  }
+  .QualityRoadshow .black-box .description-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+  .QualityRoadshow .black-box .btn-container {
+    position: unset;
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 40px;
+  }
+}
+.QualityRoadshow .vertical-card-container {
+  padding-bottom: 80px;
+}
+@media (min-width: 768px) {
+  .QualityRoadshow .vertical-card-container {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+}
+.QualityRoadshow .vertical-card-container .card-related-content {
+  font-family: 'Roboto', sans-serif;
+  height: 430px;
+  display: block;
+}
+@media (min-width: 768px) {
+  .QualityRoadshow .vertical-card-container .card-related-content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 33.3333%;
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 768px) {
+  .QualityRoadshow .vertical-card-container .card-related-content {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 4%;
+  }
+}
+.QualityRoadshow .vertical-card-container .card-related-content .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+  height: 250px;
+}
+.QualityRoadshow .vertical-card-container .card-related-content .image-container img {
+  width: 100%;
+  height: 100%;
+}
+.QualityRoadshow .vertical-card-container .card-related-content .copy-container {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 180px;
+}
+.QualityRoadshow .vertical-card-container .card-related-content .copy-container .copy-text {
+  padding: 20px 30px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.75;
+  color: #000000;
+}
+.QualityRoadshow .vertical-card-container .card-related-content .copy-container .copy-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #4092df;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  text-decoration: none;
+}
+.QualityRoadshow .vertical-card-container .card-related-content .copy-container .copy-link:hover {
+  border-bottom: 2px solid;
+  margin-bottom: -2px;
+}
+.QualityRoadshow .vertical-card-container .card-related-content .copy-container .copy-link i.fas.fa-angle-right {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #4092df;
+  position: absolute;
+  bottom: 4px;
+}
+.slds-col--padded.contentRegion.comm-layout-column {
+  padding: 0;
+}
+.cCP_NewsDetail .detail-date.p-16-white-bold,
+.cCP_NewsDetail .btn-div.content-button-container {
+  display: none;
+}
+.cCP_NewsDetail {
+  margin: unset;
+  padding: unset;
+}
+
+</style>
+
+<div class="QualityRoadshow">
+    <!-- BANNER -->
+    <div class="banner-container">
+        <div class="banner-card-container slds-grid">
+            <div class="content-container slds-col slds-size_2-of-2 slds-large-size_1-of-2">
+                <div class="label">
+                    <div class="slds-align_absolute-center">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="title-container with-label">
+                    <h2 class="title">Diageo on-trade roadshow</h2>
+                </div>
+                <div class="text-container">
+                    <p class="text">We’re touring the country to share the essentials of great bar business with venues
+                        all over Ireland. And we’ve packaged the highlights together in one handy guide.</p>
+                </div>
+                <div class="btn-container">
+                    <a href="#" target="_blank" class="content-button">download it now</a>
+                </div>
+            </div>
+            <div class="slds-col slds-size_2-of-2 slds-large-size_1-of-2">
+                <div class="image-container">
+                    <img class="desktop-img"
+                        src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1M"
+                        alt="" />
+                    <img class="phone-img"
+                        src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2P"
+                        alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="titles-and-descriptions">
+        <p class="general-description">The free playbook covers on trade topics from training and trends to tips and top
+            sellers. It’s an
+            indispensable guide to doing better business and it’s available to download now. Here’s a quick taste of
+            what you’ll find…</p>
+    </div>
+
+    <div class="titles-and-descriptions">
+        <p class="general-title">The latest trends</p>
+    </div>
+
+    <!-- HORIZONTAL CARDS -->
+    <div class="horizontal-cards-container">
+        <div class="card-container left">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1R" />
+            </div>
+            <div class="content-container">
+                <img class="icon"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1l" />
+                <p class="content-title">Healthier lifestyles</p>
+                <p class="content-text">Find out how our desire to lead a healthier life with more balanced choices is
+                    impacting your business.</p>
+            </div>
+        </div>
+        <div class="card-container left">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1W" />
+            </div>
+            <div class="content-container">
+                <img class="icon"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1q" />
+                <p class="content-title">Everyday moments</p>
+                <p class="content-text">What does the trend for sharing experiences with friends, fans and followers
+                    mean for your bottom line?</p>
+            </div>
+        </div>
+        <div class="card-container right">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1b" />
+            </div>
+            <div class="content-container">
+                <img class="icon"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1v" />
+                <p class="content-title">Avid explorers</p>
+                <p class="content-text">Learn how our curiosity for new flavours and serves is creating huge revenue
+                    opportunities.</p>
+            </div>
+        </div>
+        <div class="card-container right">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1g" />
+            </div>
+            <div class="content-container">
+                <img class="icon"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY20" />
+                <p class="content-title">Celebration time</p>
+                <p class="content-text">We’re out less but spending more – we show you how to cash in on our love of
+                    memorable occasions.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="titles-and-descriptions">
+        <p class="general-title">The biggest tips</p>
+    </div>
+
+    <div class="mixed-content-card-container">
+        <div class="mixed-content-block image-left">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY25"
+                    alt="" />
+            </div>
+            <div class="copy-container">
+                <p class="content-title">The BEER variety show</p>
+                <p class="content-text">Making sure your range reflects the growing appetite for newer, bolder beers as
+                    customers expand their repertoire.</p>
+            </div>
+        </div>
+        <div class="mixed-content-block image-right">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2A"
+                    alt="" />
+            </div>
+            <div class="copy-container">
+                <p class="content-title">In the spirit</p>
+                <p class="content-text">Getting your spirit offering right, with longer, lower alcohol drinks and
+                    shorter stronger options, is great for business.</p>
+
+            </div>
+        </div>
+        <div class="mixed-content-block image-left">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2F"
+                    alt="" />
+            </div>
+            <div class="copy-container">
+                <p class="content-title">See the woods</p>
+                <p class="content-text">Following our <a href="">layout principles</a> means the clutter never gets in between your
+                    customers and a great experience. </p>
+
+            </div>
+        </div>
+        <div class="mixed-content-block image-right">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2K"
+                    alt="" />
+            </div>
+            <div class="copy-container">
+                <p class="content-title">keys to success</p>
+                <p class="content-text">Enhancing your team’s skills and learning the tricks of upselling with
+                    confidence can transform your takings.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="black-box">
+        <div class="image-container">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2Z" />
+        </div>
+        <div class="description-container">
+            <p>Don’t miss out on our essential guide.</p>
+            <p class="bold">Download the free on trade playbook now.</p> 
+        </div>
+        <div class="btn-container">
+            <a href="#" target="_blank" class="content-button">download</a>
+        </div>
+    </div>
+
+    <div class="titles-and-descriptions">
+        <p class="related-title">RELATED articles</p>
+    </div>
+
+    <div class="vertical-card-container">
+
+        <div class="card-related-content ">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOqe" />
+            </div>
+            <div class="copy-container">
+                <p class="copy-text">Keep the sales flowing with matchpint</p>
+                <a href="https://www.mydiageo.com/s/cp-content/a4P4G000000KEN9" class="copy-link">Find out more<i
+                        class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+
+        <div class="card-related-content">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOkv" />
+            </div>
+            <div class="copy-container">
+                <p class="copy-text">The latest beer trends and insights</p>
+                <a href="https://www.mydiageo.com/s/cp-content/a4PD00000001VDUMA2/trendsbeerinsightjune18?retUrl=https%3A%2F%2Fwww.mydiageo.com%2Fs%2Fdiscover"
+                    class="copy-link">Find out more<i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+
+        <div class="card-related-content">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOl0" />
+            </div>
+            <div class="copy-container">
+                <p class="copy-text">7Cs’ Programme to delivering great looking & great tasting Guinness</p>
+                <a href="https://www.mydiageo.com/s/landing?menu=IRL-get-the-basics-right" class="copy-link">Find out
+                    more<i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
