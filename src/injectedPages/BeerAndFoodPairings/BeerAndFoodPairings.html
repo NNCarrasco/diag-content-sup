@@ -1,0 +1,1323 @@
+<style>
+.BeerAndFoodPairings {
+  text-align: left;
+  background-color: #f2f2f2;
+}
+.BeerAndFoodPairings .titles-and-descriptions .general-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  padding-left: 18%;
+  padding-right: 18%;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  text-transform: uppercase;
+}
+.BeerAndFoodPairings .titles-and-descriptions .general-description {
+  font-size: 20px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  color: #3e3e3e;
+  padding-right: 18%;
+  padding-left: 18%;
+  padding-bottom: 80px;
+}
+.BeerAndFoodPairings .titles-and-descriptions .related-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  text-transform: uppercase;
+  border-bottom: 1px solid #7d7773;
+  margin-bottom: 50px;
+  margin-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  .BeerAndFoodPairings .titles-and-descriptions .general-title {
+    padding-left: 6%;
+    padding-right: 6%;
+    font-size: 24px;
+  }
+  .BeerAndFoodPairings .titles-and-descriptions .general-description {
+    padding-left: 6%;
+    padding-right: 5%;
+  }
+  .BeerAndFoodPairings .titles-and-descriptions .related-title {
+    font-size: 24px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+}
+.BeerAndFoodPairings .banner-container .banner-card-container {
+  text-align: left;
+  background-color: #ffffff;
+}
+.BeerAndFoodPairings .banner-container .banner-card-container .label {
+  width: 60px;
+  height: 40px;
+  margin-left: 83px;
+  margin-top: 25px;
+}
+.BeerAndFoodPairings .banner-container .banner-card-container .label div {
+  height: 100%;
+}
+.BeerAndFoodPairings .banner-container .banner-card-container .label div span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.BeerAndFoodPairings .banner-container .banner-card-container .title-container {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.BeerAndFoodPairings .banner-container .banner-card-container .title-container.with-label {
+  margin-top: 20px;
+}
+.BeerAndFoodPairings .banner-container .banner-card-container .title-container .title {
+  font-size: 38px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  color: black;
+  text-transform: uppercase;
+}
+.BeerAndFoodPairings .banner-container .banner-card-container .text-container .text {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #3e3e3e;
+}
+.BeerAndFoodPairings .banner-container .banner-card-container .btn-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.BeerAndFoodPairings .banner-container .banner-card-container .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.BeerAndFoodPairings .banner-container .banner-card-container .image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.BeerAndFoodPairings .banner-container .banner-card-container .image-container img {
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .BeerAndFoodPairings .banner-container .banner-card-container {
+    height: 420px;
+    margin-bottom: 40px;
+  }
+  .BeerAndFoodPairings .banner-container .banner-card-container .content-container {
+    padding-right: 110px;
+  }
+  .BeerAndFoodPairings .banner-container .banner-card-container .text-container,
+  .BeerAndFoodPairings .banner-container .banner-card-container .title-container {
+    padding-left: 83px;
+  }
+  .BeerAndFoodPairings .banner-container .banner-card-container .text-container {
+    padding-bottom: 20px;
+  }
+  .BeerAndFoodPairings .banner-container .banner-card-container .btn-container {
+    height: 45px;
+    width: 160px;
+    margin-left: 83px;
+  }
+  .BeerAndFoodPairings .banner-container .banner-card-container .image-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 425px solid #ffffff;
+    border-right: 80px solid transparent;
+    width: 0;
+  }
+  .BeerAndFoodPairings .banner-container .banner-card-container .image-container .desktop-img {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .BeerAndFoodPairings .banner-container .banner-card-container {
+    flex-wrap: wrap;
+    margin-top: 0;
+    height: 660px;
+    margin-bottom: 45px;
+  }
+  .BeerAndFoodPairings .banner-container .banner-card-container .label {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  .BeerAndFoodPairings .banner-container .banner-card-container .text-container,
+  .BeerAndFoodPairings .banner-container .banner-card-container .title-container {
+    padding: 20px;
+    padding-top: 0;
+    margin: 0;
+  }
+  .BeerAndFoodPairings .banner-container .banner-card-container .text-container .text,
+  .BeerAndFoodPairings .banner-container .banner-card-container .title-container .text {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.63;
+    color: #3e3e3e;
+  }
+  .BeerAndFoodPairings .banner-container .banner-card-container .text-container .title,
+  .BeerAndFoodPairings .banner-container .banner-card-container .title-container .title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .BeerAndFoodPairings .banner-container .banner-card-container .title-container {
+    margin-top: 75px;
+  }
+  .BeerAndFoodPairings .banner-container .banner-card-container .title-container.with-label {
+    margin-top: 20px;
+  }
+  .BeerAndFoodPairings .banner-container .banner-card-container .btn-container {
+    width: 88%;
+    height: 45px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .BeerAndFoodPairings .banner-container .banner-card-container .image-container .phone-img {
+    display: block;
+    position: absolute;
+    height: 280px;
+    left: 0;
+    bottom: 0;
+  }
+}
+.BeerAndFoodPairings .image-text-block {
+  display: flex;
+  padding-left: 18%;
+  padding-bottom: 90px;
+}
+.BeerAndFoodPairings .image-text-block .itb-image-container {
+  width: 80px;
+  height: 80px;
+  margin-right: 25px;
+}
+.BeerAndFoodPairings .image-text-block .itb-image-container img {
+  height: 100%;
+  width: 100%;
+}
+.BeerAndFoodPairings .image-text-block .itb-text-container {
+  width: 735px;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #3e3e3e;
+}
+@media (max-width: 768px) {
+  .BeerAndFoodPairings .image-text-block {
+    flex-flow: column;
+    padding-left: 6%;
+    padding-right: 6%;
+    text-align: center;
+  }
+  .BeerAndFoodPairings .image-text-block .itb-image-container {
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .BeerAndFoodPairings .image-text-block .itb-text-container {
+    width: unset;
+  }
+}
+.BeerAndFoodPairings .horizontal-cards-container {
+  padding-bottom: 35px;
+}
+@media (min-width: 768px) {
+  .BeerAndFoodPairings .horizontal-cards-container {
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-bottom: 0;
+  }
+}
+.BeerAndFoodPairings .horizontal-cards-container .card-container {
+  margin-bottom: 25px;
+}
+.BeerAndFoodPairings .horizontal-cards-container .card-container .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.BeerAndFoodPairings .horizontal-cards-container .card-container .image-container img {
+  height: 100%;
+  width: 100%;
+}
+.BeerAndFoodPairings .horizontal-cards-container .card-container .content-container {
+  background-color: #ffffff;
+}
+.BeerAndFoodPairings .horizontal-cards-container .card-container .content-container .icon {
+  height: 35px;
+}
+.BeerAndFoodPairings .horizontal-cards-container .card-container .content-container .content-title {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  margin: unset;
+}
+.BeerAndFoodPairings .horizontal-cards-container .card-container .content-container .content-text {
+  font-size: 16px;
+  line-height: 26px;
+  margin: unset;
+}
+@media (min-width: 768px) {
+  .BeerAndFoodPairings .horizontal-cards-container .card-container {
+    height: 250px;
+    display: flex;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 50%;
+    flex: 1 1 auto;
+    margin-bottom: 35px;
+  }
+  .BeerAndFoodPairings .horizontal-cards-container .card-container .image-container {
+    width: 45%;
+  }
+  .BeerAndFoodPairings .horizontal-cards-container .card-container .content-container {
+    width: 54%;
+    padding-top: 44px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+  }
+  .BeerAndFoodPairings .horizontal-cards-container .card-container.left .image-container {
+    order: 0;
+    border-right: 5px solid #be63f7;
+  }
+  .BeerAndFoodPairings .horizontal-cards-container .card-container.left .content-container {
+    order: 1;
+  }
+  .BeerAndFoodPairings .horizontal-cards-container .card-container.right .image-container {
+    order: 1;
+    border-left: 5px solid #be63f7;
+  }
+  .BeerAndFoodPairings .horizontal-cards-container .card-container.right .content-container {
+    order: 0;
+  }
+}
+@media (max-width: 768px) {
+  .BeerAndFoodPairings .horizontal-cards-container .card-container {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 4%;
+  }
+  .BeerAndFoodPairings .horizontal-cards-container .card-container .image-container {
+    height: 260px;
+    width: 100%;
+    border-bottom: 5px solid #be63f7;
+  }
+  .BeerAndFoodPairings .horizontal-cards-container .card-container .content-container {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .BeerAndFoodPairings .horizontal-cards-container .card-container .content-container .icon {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .BeerAndFoodPairings .horizontal-cards-container .card-container .content-container .content-title {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .BeerAndFoodPairings .horizontal-cards-container .card-container .content-container .content-text {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .BeerAndFoodPairings .mixed-content-card-container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media (max-width: 768px) {
+  .BeerAndFoodPairings .mixed-content-card-container {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 80px;
+  }
+}
+.BeerAndFoodPairings .mixed-content-card-container .mixed-content-block {
+  font-family: 'Roboto', sans-serif;
+  background-color: transparent;
+}
+.BeerAndFoodPairings .mixed-content-card-container .mixed-content-block .copy-container .content-title {
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+.BeerAndFoodPairings .mixed-content-card-container .mixed-content-block .copy-container .content-text {
+  color: #3e3e3e;
+}
+.BeerAndFoodPairings .mixed-content-card-container .mixed-content-block .copy-container .content-button {
+  font-size: 14px;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.BeerAndFoodPairings .mixed-content-card-container .mixed-content-block .copy-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.BeerAndFoodPairings .mixed-content-card-container .mixed-content-block .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.BeerAndFoodPairings .mixed-content-card-container .mixed-content-block .image-container img {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .BeerAndFoodPairings .mixed-content-card-container .mixed-content-block {
+    width: 100%;
+    display: flex;
+    height: 340px;
+    margin-bottom: 80px;
+  }
+  .BeerAndFoodPairings .mixed-content-card-container .mixed-content-block.image-left .copy-container {
+    order: 0;
+    padding-right: 115px;
+  }
+  .BeerAndFoodPairings .mixed-content-card-container .mixed-content-block.image-left .image-container {
+    order: 1;
+  }
+  .BeerAndFoodPairings .mixed-content-card-container .mixed-content-block.image-right .copy-container {
+    order: 1;
+    padding-left: 115px;
+  }
+  .BeerAndFoodPairings .mixed-content-card-container .mixed-content-block.image-right .image-container {
+    order: 0;
+  }
+  .BeerAndFoodPairings .mixed-content-card-container .mixed-content-block .copy-container {
+    height: 100%;
+    width: 100%;
+  }
+  .BeerAndFoodPairings .mixed-content-card-container .mixed-content-block .copy-container .content-title {
+    font-size: 18px;
+    padding-top: 60px;
+    line-height: 40px;
+  }
+  .BeerAndFoodPairings .mixed-content-card-container .mixed-content-block .copy-container .content-button {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+  .BeerAndFoodPairings .mixed-content-card-container .mixed-content-block .copy-container .content-text {
+    padding: 20px 0;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .BeerAndFoodPairings .mixed-content-card-container .mixed-content-block .image-container {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .BeerAndFoodPairings .mixed-content-card-container .mixed-content-block {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: unset;
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
+  .BeerAndFoodPairings .mixed-content-card-container .mixed-content-block .copy-container {
+    width: 100%;
+  }
+  .BeerAndFoodPairings .mixed-content-card-container .mixed-content-block .copy-container .content-title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 32px;
+    color: #000000;
+    text-transform: uppercase;
+    padding-top: 20px;
+  }
+  .BeerAndFoodPairings .mixed-content-card-container .mixed-content-block .copy-container .content-text {
+    font-size: 16px;
+    padding-top: 10px;
+    line-height: 26px;
+    color: #3e3e3e;
+  }
+  .BeerAndFoodPairings .mixed-content-card-container .mixed-content-block .copy-container .content-button {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 13px 0;
+    background-color: #f2af0c;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    bottom: 2px;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+  .BeerAndFoodPairings .mixed-content-card-container .mixed-content-block .image-container {
+    height: 250px;
+    margin-left: -7%;
+    margin-right: -7%;
+    width: 114%;
+    background-color: rgba(64, 146, 223, 0.5);
+  }
+  .BeerAndFoodPairings .mixed-content-card-container .mixed-content-block .image-container img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.BeerAndFoodPairings .black-box {
+  display: flex;
+  margin-right: 18%;
+  margin-left: 18%;
+  position: relative;
+  color: white;
+  background-color: #3e3e3e;
+  border-radius: 56px 0px 0px 56px;
+}
+.BeerAndFoodPairings .black-box.white-background {
+  background-color: #ffffff;
+  border-radius: unset;
+  color: black;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 80px;
+}
+.BeerAndFoodPairings .black-box.white-background .description-container {
+  padding-top: unset;
+}
+.BeerAndFoodPairings .black-box .image-container {
+  height: 110px;
+  width: 110px;
+  background-color: rgba(64, 146, 223, 0.5);
+  border-radius: 56px;
+  margin-left: -2px;
+}
+.BeerAndFoodPairings .black-box .image-container img {
+  height: 100%;
+  width: 100%;
+}
+.BeerAndFoodPairings .black-box .description-container {
+  padding-top: 30px;
+  padding-left: 40px;
+  font-size: 18px;
+  line-height: 1.56;
+  font-weight: 300;
+}
+.BeerAndFoodPairings .black-box .description-container .bold {
+  font-weight: bold;
+}
+.BeerAndFoodPairings .black-box .btn-container {
+  height: 44px;
+  width: 130px;
+  position: absolute;
+  top: 33px;
+  right: 40px;
+}
+.BeerAndFoodPairings .black-box .btn-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.BeerAndFoodPairings .black-box .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+@media screen and (max-width: 768px) {
+  .BeerAndFoodPairings .black-box {
+    flex-flow: column;
+    margin: 0;
+    border-radius: unset;
+  }
+  .BeerAndFoodPairings .black-box.white-background .btn-container {
+    margin-bottom: unset;
+  }
+  .BeerAndFoodPairings .black-box .image-container {
+    height: 110px;
+    width: 110px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: -1px;
+  }
+  .BeerAndFoodPairings .black-box .description-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+  .BeerAndFoodPairings .black-box .btn-container {
+    position: unset;
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 40px;
+  }
+}
+.BeerAndFoodPairings .image-text-list-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 9%;
+  margin-right: 9%;
+  padding-left: 9%;
+  padding-right: 9%;
+  background-color: #ffffff;
+  padding-top: 40px;
+  margin-top: 40px;
+}
+.BeerAndFoodPairings .image-text-list-block .list-header .header-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+.BeerAndFoodPairings .image-text-list-block .list-header .header-description {
+  font-size: 16px;
+  line-height: 1.63;
+  color: #3e3e3e;
+  padding-bottom: 40px;
+}
+.BeerAndFoodPairings .image-text-list-block .list-column {
+  display: flex;
+  min-height: 150px;
+  margin-bottom: 30px;
+}
+.BeerAndFoodPairings .image-text-list-block .list-column .list-column-image {
+  height: 80px;
+  width: 80px;
+}
+.BeerAndFoodPairings .image-text-list-block .list-column .list-column-image img {
+  width: 100%;
+  height: 100%;
+}
+.BeerAndFoodPairings .image-text-list-block .list-column .list-column-text {
+  width: 90%;
+}
+.BeerAndFoodPairings .image-text-list-block .list-column .list-column-text .list-column-text-title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.56;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.BeerAndFoodPairings .image-text-list-block .list-column .list-column-text .list-column-text-description {
+  font-size: 16px;
+  line-height: 1.63;
+  color: #3e3e3e;
+}
+.BeerAndFoodPairings .image-text-list-block .list-column.image-left .list-column-image {
+  order: 1;
+}
+.BeerAndFoodPairings .image-text-list-block .list-column.image-left .list-column-text {
+  order: 2;
+  padding-left: 25px;
+}
+.BeerAndFoodPairings .image-text-list-block .list-column.image-right .list-column-image {
+  order: 2;
+}
+.BeerAndFoodPairings .image-text-list-block .list-column.image-right .list-column-text {
+  order: 1;
+  padding-right: 25px;
+}
+@media screen and (max-width: 768px) {
+  .BeerAndFoodPairings .image-text-list-block {
+    margin-left: 6%;
+    margin-right: 6%;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .BeerAndFoodPairings .image-text-list-block .list-column {
+    height: unset;
+    flex-flow: column;
+    margin-bottom: 60px;
+  }
+  .BeerAndFoodPairings .image-text-list-block .list-column .list-column-image {
+    width: 100%;
+    height: 220px;
+  }
+  .BeerAndFoodPairings .image-text-list-block .list-column .list-column-text {
+    margin-top: 10px;
+    padding: unset;
+    width: 100%;
+  }
+  .BeerAndFoodPairings .image-text-list-block .list-column.image-left .list-column-image {
+    order: 1;
+    padding: unset;
+  }
+  .BeerAndFoodPairings .image-text-list-block .list-column.image-left .list-column-text {
+    order: 2;
+    padding: unset;
+  }
+  .BeerAndFoodPairings .image-text-list-block .list-column.image-right .list-column-image {
+    order: 1;
+    padding: unset;
+  }
+  .BeerAndFoodPairings .image-text-list-block .list-column.image-right .list-column-text {
+    order: 2;
+    padding: unset;
+  }
+}
+.BeerAndFoodPairings .vertical-card-container {
+  padding-bottom: 80px;
+}
+@media (min-width: 768px) {
+  .BeerAndFoodPairings .vertical-card-container {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+}
+.BeerAndFoodPairings .vertical-card-container .card-related-content {
+  font-family: 'Roboto', sans-serif;
+  height: 430px;
+  display: block;
+}
+@media (min-width: 768px) {
+  .BeerAndFoodPairings .vertical-card-container .card-related-content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 33.3333%;
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 768px) {
+  .BeerAndFoodPairings .vertical-card-container .card-related-content {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 4%;
+  }
+}
+.BeerAndFoodPairings .vertical-card-container .card-related-content .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+  height: 250px;
+}
+.BeerAndFoodPairings .vertical-card-container .card-related-content .image-container img {
+  width: 100%;
+  height: 100%;
+}
+.BeerAndFoodPairings .vertical-card-container .card-related-content .copy-container {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 180px;
+}
+.BeerAndFoodPairings .vertical-card-container .card-related-content .copy-container .copy-text {
+  padding: 20px 30px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.75;
+  color: #000000;
+}
+.BeerAndFoodPairings .vertical-card-container .card-related-content .copy-container .copy-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #4092df;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  text-decoration: none;
+}
+.BeerAndFoodPairings .vertical-card-container .card-related-content .copy-container .copy-link:hover {
+  border-bottom: 2px solid;
+  margin-bottom: -2px;
+}
+.BeerAndFoodPairings .vertical-card-container .card-related-content .copy-container .copy-link i.fas.fa-angle-right {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #4092df;
+  position: absolute;
+  bottom: 4px;
+}
+@media (min-width: 768px) {
+  .BeerAndFoodPairings .small-banner-card-container {
+    padding-left: 11%;
+    padding-right: 11%;
+  }
+}
+.BeerAndFoodPairings .small-banner-card-container .mixed-content-block {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  height: 540px;
+  width: 335px;
+}
+.BeerAndFoodPairings .small-banner-card-container .mixed-content-block .copy-container {
+  height: 288px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.BeerAndFoodPairings .small-banner-card-container .mixed-content-block .copy-container .content-title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.63;
+  color: #000000;
+  margin: 0;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+.BeerAndFoodPairings .small-banner-card-container .mixed-content-block .copy-container .content-text {
+  font-size: 16px;
+  padding-top: 10px;
+  line-height: 1.63;
+  color: #3e3e3e;
+  margin: 0;
+}
+.BeerAndFoodPairings .small-banner-card-container .mixed-content-block .copy-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 2px;
+  font-weight: 500;
+}
+.BeerAndFoodPairings .small-banner-card-container .mixed-content-block .copy-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.BeerAndFoodPairings .small-banner-card-container .mixed-content-block .image-container {
+  width: 335px;
+  height: 250px;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.BeerAndFoodPairings .small-banner-card-container .mixed-content-block .image-container img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .BeerAndFoodPairings .small-banner-card-container {
+    padding-left: 18%;
+    padding-right: 18%;
+    padding-top: 80px;
+  }
+  .BeerAndFoodPairings .small-banner-card-container .mixed-content-block {
+    height: 190px;
+    width: 100%;
+  }
+  .BeerAndFoodPairings .small-banner-card-container .mixed-content-block .copy-container {
+    float: left;
+    height: 100%;
+    width: 63%;
+    padding-left: 35px;
+    padding-right: 80px;
+    padding-top: 30px;
+  }
+  .BeerAndFoodPairings .small-banner-card-container .mixed-content-block .copy-container .content-text {
+    padding-bottom: 20px;
+    font-size: 18px;
+  }
+  .BeerAndFoodPairings .small-banner-card-container .mixed-content-block .copy-container .content-button {
+    position: relative;
+    width: 140px;
+  }
+  .BeerAndFoodPairings .small-banner-card-container .mixed-content-block .image-container {
+    height: 100%;
+    width: 37%;
+    float: left;
+  }
+  .BeerAndFoodPairings .small-banner-card-container .mixed-content-block .image-container img {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .BeerAndFoodPairings .small-banner-card-container {
+    padding-top: 60px;
+  }
+  .BeerAndFoodPairings .small-banner-card-container .mixed-content-block {
+    position: relative;
+    width: 100%;
+    height: unset;
+  }
+  .BeerAndFoodPairings .small-banner-card-container .mixed-content-block .image-container {
+    width: 100%;
+    height: 220px;
+  }
+  .BeerAndFoodPairings .small-banner-card-container .mixed-content-block .image-container img {
+    height: 100%;
+  }
+  .BeerAndFoodPairings .small-banner-card-container .mixed-content-block .copy-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    height: unset;
+  }
+  .BeerAndFoodPairings .small-banner-card-container .mixed-content-block .copy-container .content-text {
+    padding-top: 30px;
+    font-size: 18px;
+  }
+  .BeerAndFoodPairings .small-banner-card-container .mixed-content-block .copy-container .content-button {
+    position: relative;
+    margin-top: 30px;
+  }
+}
+.BeerAndFoodPairings .image-outside-horizontal-card-container .image-outside-horizontal-card {
+  display: flex;
+  width: 845px;
+  height: 334px;
+  position: relative;
+}
+.BeerAndFoodPairings .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container {
+  width: 100%;
+  border: 5px solid #be63f7;
+  z-index: 1;
+}
+.BeerAndFoodPairings .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
+  width: 380px;
+  padding-left: 80px;
+  padding-top: 35px;
+  padding-right: 85px;
+}
+.BeerAndFoodPairings .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
+  padding: 0;
+  width: 380px;
+  padding-left: 80px;
+  padding-top: 20px;
+  padding-right: 85px;
+}
+.BeerAndFoodPairings .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.BeerAndFoodPairings .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.BeerAndFoodPairings .image-outside-horizontal-card-container .image-outside-horizontal-card .image-container {
+  position: absolute;
+  right: -100px;
+  top: -40px;
+  z-index: 0;
+  height: 415px;
+  width: 410px;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.BeerAndFoodPairings .image-outside-horizontal-card-container .image-outside-horizontal-card .image-container img {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .BeerAndFoodPairings .image-outside-horizontal-card-container {
+    padding-bottom: 120px;
+    padding-left: 14%;
+  }
+  .BeerAndFoodPairings .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
+    width: 530px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .BeerAndFoodPairings .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
+    width: 530px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .BeerAndFoodPairings .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container {
+    width: 162px;
+    height: 44px;
+    margin-top: 75px;
+    margin-left: 180px;
+  }
+}
+@media (max-width: 768px) {
+  .BeerAndFoodPairings .image-outside-horizontal-card-container {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 80px;
+  }
+  .BeerAndFoodPairings .image-outside-horizontal-card-container .image-outside-horizontal-card {
+    width: 100%;
+    height: unset;
+    flex-wrap: wrap;
+  }
+  .BeerAndFoodPairings .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container {
+    order: 1;
+    height: 728px;
+  }
+  .BeerAndFoodPairings .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
+    padding-left: 30px;
+    padding-top: 410px;
+    padding-right: 30px;
+    width: unset;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .BeerAndFoodPairings .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
+    font-size: 20px;
+    text-align: center;
+    color: #3e3e3e;
+    width: unset;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 30px;
+  }
+  .BeerAndFoodPairings .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container {
+    height: 45px;
+    width: 160px;
+    margin-top: 40px;
+    margin-left: 25%;
+  }
+  .BeerAndFoodPairings .image-outside-horizontal-card-container .image-outside-horizontal-card .image-container {
+    order: 0;
+    position: absolute;
+    top: -30px;
+    z-index: 0;
+    width: 102vw;
+    right: -6.7%;
+  }
+}
+.BeerAndFoodPairings .icon-and-description-container {
+  display: flex;
+}
+.BeerAndFoodPairings .icon-and-description-container .item-container {
+  display: flex;
+}
+.BeerAndFoodPairings .icon-and-description-container .item-container .image-container {
+  height: 96px;
+  width: 96px;
+}
+.BeerAndFoodPairings .icon-and-description-container .item-container .image-container img {
+  width: 100%;
+  height: 100%;
+}
+.BeerAndFoodPairings .icon-and-description-container .item-container .descrition-container {
+  width: 240px;
+  margin-left: 40px;
+  padding-right: 30px;
+}
+.BeerAndFoodPairings .icon-and-description-container .item-container .descrition-container .title {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.BeerAndFoodPairings .icon-and-description-container .item-container .descrition-container .description {
+  font-size: 18px;
+  line-height: 1.56;
+}
+@media screen and (min-width: 768px) {
+  .BeerAndFoodPairings .icon-and-description-container {
+    margin-bottom: 80px;
+  }
+  .BeerAndFoodPairings .icon-and-description-container .item-container {
+    border-right: 1px solid black;
+    margin-left: 70px;
+  }
+  .BeerAndFoodPairings .icon-and-description-container .item-container:last-child {
+    border-right: unset;
+  }
+  .BeerAndFoodPairings .icon-and-description-container .item-container:first-child {
+    margin-left: unset;
+  }
+}
+@media (max-width: 768px) {
+  .BeerAndFoodPairings .icon-and-description-container {
+    flex-flow: column;
+  }
+  .BeerAndFoodPairings .icon-and-description-container .item-container {
+    flex-flow: column;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .BeerAndFoodPairings .icon-and-description-container .item-container .image-container {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .BeerAndFoodPairings .icon-and-description-container .item-container .descrition-container {
+    width: 88%;
+    margin-right: 6%;
+    margin-left: 6%;
+    padding: unset;
+  }
+}
+.slds-col--padded.contentRegion.comm-layout-column {
+  padding: 0;
+}
+.cCP_NewsDetail .detail-date.p-16-white-bold,
+.cCP_NewsDetail .btn-div.content-button-container {
+  display: none;
+}
+.cCP_NewsDetail {
+  margin: unset;
+  padding: unset;
+}
+
+</style>
+
+<div class="BeerAndFoodPairings">
+    <!-- BANNER -->
+    <div class="banner-container">
+        <div class="banner-card-container slds-grid">
+            <div class="content-container slds-col slds-size_2-of-2 slds-large-size_1-of-2">
+                <div class="label">
+                    <div class="slds-align_absolute-center">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="title-container with-label">
+                    <h2 class="title">Diageo on-trade roadshow</h2>
+                </div>
+                <div class="text-container">
+                    <p class="text">We’re touring the country to share the essentials of great bar business with venues
+                        all over Ireland. And we’ve packaged the highlights together in one handy guide.</p>
+                </div>
+                <!-- <div class="btn-container">
+                    <a href="#" target="_blank" class="content-button">download it now</a>
+                </div> -->
+            </div>
+            <div class="slds-col slds-size_2-of-2 slds-large-size_1-of-2">
+                <div class="image-container">
+                    <img class="desktop-img"
+                        src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1M"
+                        alt="" />
+                    <img class="phone-img"
+                        src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2P"
+                        alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="titles-and-descriptions">
+        <p class="general-description">The free playbook covers on trade topics from training and trends to tips and top
+            sellers. It’s an
+            indispensable guide to doing better business and it’s available to download now. Here’s a quick taste of
+            what you’ll find…</p>
+    </div>
+
+    <div class="mixed-content-card-container">
+        <div class="mixed-content-block image-left">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2F"
+                    alt="" />
+            </div>
+            <div class="copy-container">
+                <p class="content-title">See the woods</p>
+                <p class="content-text">Following our <a href="">layout principles</a> means the clutter never gets in
+                    between your
+                    customers and a great experience. </p>
+
+            </div>
+        </div>
+        <div class="mixed-content-block image-right">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2A"
+                    alt="" />
+            </div>
+            <div class="copy-container">
+                <p class="content-title">In the spirit</p>
+                <p class="content-text">Getting your spirit offering right, with longer, lower alcohol drinks and
+                    shorter stronger options, is great for business.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="image-outside-horizontal-card-container">
+        <div class="image-outside-horizontal-card">
+            <div class="content-container">
+                <div class="title-container">
+                    <span class="title">Transforming drink experiences</span>
+                </div>
+                <div class="description-container">
+                    <span class="description"> Our mission is to transform drinks experiences, and fuel the exciting
+                        drinks category, everyday and everywhere.</span>
+                </div>
+                <div class="btn-container">
+                    <a href="#" target="_blank" class="content-button">get the report</a>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+            </div>
+        </div>
+    </div>
+
+    <div class="icon-and-description-container">
+        <div class="item-container">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+            </div>
+            <div class="descrition-container">
+                <p class="title">social gatherings</p>
+                <p class="description">50% of consumers say that alcohol is important in choosing where to eat</p>
+            </div>
+        </div>
+        <div class="item-container">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+            </div>
+            <div class="descrition-container">
+                <p class="title">social gatherings</p>
+                <p class="description">50% of consumers say that alcohol is important in choosing where to eat</p>
+            </div>
+        </div>
+        <div class="item-container">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+            </div>
+            <div class="descrition-container">
+                <p class="title">social gatherings</p>
+                <p class="description">50% of consumers say that alcohol is important in choosing where to eat</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-text-list-block">
+        <div class="list-header">
+            <p class="header-title">Key pairings</p>
+            <p class="header-description">To get you started, here are a few beer and food pairing suggestions :</p>
+        </div>
+        <div class="list-column image-left">
+            <div class="list-column-image">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1R" />
+            </div>
+            <div class="list-column-text">
+                <!-- <div class="list-column-text-title">
+                        <p>greater visibility</p>
+                    </div> -->
+                <div class="list-column-text-description">
+                    <p><b>Light, refreshing pilsner</b></p>
+                    <p><b>Taste:</b> Clean, with a full bodied and rounded mouthfeel and a mild bitterness,
+                        complemented by subtle citrus notes and a crisp finish.</p>
+                    <p><b>Pairing:</b> Great for cutting through rich batters and sauces, making this the ideal
+                        accompaniment to fish and chips, pizza and BBQ-style dishes.</p>
+                </div>
+            </div>
+        </div>
+        <div class="list-column image-left">
+            <div class="list-column-image">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1R" />
+            </div>
+            <div class="list-column-text">
+                <!-- <div class="list-column-text-title">
+                            <p>greater visibility</p>
+                        </div> -->
+                <div class="list-column-text-description">
+                    <p><b>Light, refreshing pilsner</b></p>
+                    <p><b>Taste:</b> Clean, with a full bodied and rounded mouthfeel and a mild bitterness,
+                        complemented by subtle citrus notes and a crisp finish.</p>
+                    <p><b>Pairing:</b> Great for cutting through rich batters and sauces, making this the ideal
+                        accompaniment to fish and chips, pizza and BBQ-style dishes.</p>
+                </div>
+            </div>
+        </div>
+        <div class="list-column image-left">
+            <div class="list-column-image">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1R" />
+            </div>
+            <div class="list-column-text">
+                <!-- <div class="list-column-text-title">
+                                <p>greater visibility</p>
+                            </div> -->
+                <div class="list-column-text-description">
+                    <p><b>Light, refreshing pilsner</b></p>
+                    <p><b>Taste:</b> Clean, with a full bodied and rounded mouthfeel and a mild bitterness,
+                        complemented by subtle citrus notes and a crisp finish.</p>
+                    <p><b>Pairing:</b> Great for cutting through rich batters and sauces, making this the ideal
+                        accompaniment to fish and chips, pizza and BBQ-style dishes.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="small-banner-card-container">
+        <div class="mixed-content-block">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOkl" />
+            </div>
+            <div class="copy-container">
+                <p class="content-text">Attract more customers and get drinks promotions on MatchPint for free!</p>
+                <a href="https://pubs.matchpint.co.uk/features" target="_blank" class="content-button">sign up now</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="titles-and-descriptions">
+        <p class="related-title">RELATED articles</p>
+    </div>
+
+    <div class="vertical-card-container">
+
+        <div class="card-related-content ">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOqe" />
+            </div>
+            <div class="copy-container">
+                <p class="copy-text">Keep the sales flowing with matchpint</p>
+                <a href="https://www.mydiageo.com/s/cp-content/a4P4G000000KEN9" class="copy-link">Find out more<i
+                        class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+
+        <div class="card-related-content">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOkv" />
+            </div>
+            <div class="copy-container">
+                <p class="copy-text">The latest beer trends and insights</p>
+                <a href="https://www.mydiageo.com/s/cp-content/a4PD00000001VDUMA2/trendsbeerinsightjune18?retUrl=https%3A%2F%2Fwww.mydiageo.com%2Fs%2Fdiscover"
+                    class="copy-link">Find out more<i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+
+        <div class="card-related-content">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOl0" />
+            </div>
+            <div class="copy-container">
+                <p class="copy-text">7Cs’ Programme to delivering great looking & great tasting Guinness</p>
+                <a href="https://www.mydiageo.com/s/landing?menu=IRL-get-the-basics-right" class="copy-link">Find out
+                    more<i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
