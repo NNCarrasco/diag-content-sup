@@ -1,0 +1,584 @@
+<style>
+.RecipePage-AppleAndGingerCaptain {
+  text-align: left;
+  background-color: #f2f2f2;
+}
+.RecipePage-AppleAndGingerCaptain .titles-and-descriptions .general-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  padding-left: 18%;
+  padding-right: 18%;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .RecipePage-AppleAndGingerCaptain .titles-and-descriptions .general-title {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .RecipePage-AppleAndGingerCaptain .titles-and-descriptions .general-title {
+    padding-bottom: 40px;
+  }
+}
+.RecipePage-AppleAndGingerCaptain .titles-and-descriptions .general-description {
+  font-size: 20px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  color: #3e3e3e;
+  padding-right: 18%;
+  padding-left: 18%;
+}
+@media screen and (min-width: 768px) {
+  .RecipePage-AppleAndGingerCaptain .titles-and-descriptions .general-description {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .RecipePage-AppleAndGingerCaptain .titles-and-descriptions .general-description {
+    padding-bottom: 80px;
+  }
+}
+.RecipePage-AppleAndGingerCaptain .titles-and-descriptions .related-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  text-transform: uppercase;
+  border-bottom: 1px solid #7d7773;
+}
+@media screen and (min-width: 768px) {
+  .RecipePage-AppleAndGingerCaptain .titles-and-descriptions .related-title {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .RecipePage-AppleAndGingerCaptain .titles-and-descriptions .related-title {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .RecipePage-AppleAndGingerCaptain .titles-and-descriptions .general-title {
+    font-size: 24px;
+  }
+  .RecipePage-AppleAndGingerCaptain .titles-and-descriptions .general-description {
+    padding-left: 6%;
+    padding-right: 5%;
+  }
+  .RecipePage-AppleAndGingerCaptain .titles-and-descriptions .related-title {
+    font-size: 24px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+}
+.RecipePage-AppleAndGingerCaptain .recipe-banner {
+  background-color: #ffffff;
+  padding-top: 20px;
+  padding-left: 85px;
+  padding-bottom: 45px;
+  padding-right: 80px;
+  position: relative;
+}
+.RecipePage-AppleAndGingerCaptain .recipe-banner .recipe-banner-type {
+  width: fit-content;
+  background-color: #00b39f;
+  color: #ffffff;
+  padding: 12px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.RecipePage-AppleAndGingerCaptain .recipe-banner .recipe-banner-title-container {
+  font-size: 38px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.32;
+}
+.RecipePage-AppleAndGingerCaptain .recipe-banner .recipe-banner-bottom-bar {
+  height: 30px;
+  width: 50%;
+  background-color: #00b39f;
+  position: absolute;
+  right: 0;
+  bottom: -16px;
+}
+.RecipePage-AppleAndGingerCaptain .recipe-banner .recipe-banner-bottom-bar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 0;
+  border-bottom: 30px solid #00b39f;
+  border-left: 10px solid transparent;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes {
+  padding-left: 108px;
+  background: rgba(255, 255, 255, 0.5);
+  padding-top: 40px;
+  margin-bottom: 80px;
+  padding-bottom: 110px;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-header {
+  display: flex;
+  flex-direction: column;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-header .recipes-top {
+  display: flex;
+  position: relative;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty {
+  position: absolute;
+  top: 0;
+  right: 109px;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .difficulty {
+  margin-top: 15px;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-header .recipes-top .recipes-title {
+  font-size: 24px;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-header .recipes-description {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: left;
+  padding-bottom: 60px;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-header .recipe-information .recipes-medium {
+  float: left;
+  display: inline-flex;
+  border-right: 2px solid #b9b9b9;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 50px;
+  width: 21.5%;
+  position: relative;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-header .recipe-information .recipes-medium .recipes-medium-title {
+  display: flex;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-header .recipe-information .recipes-medium .description {
+  position: absolute;
+  bottom: 0;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty {
+  display: none;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method {
+  display: flex;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content {
+  background-color: rgba(64, 146, 223, 0.5);
+}
+@media (min-width: 768px) {
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content {
+    width: 44%;
+    height: 316px;
+    margin-top: 25px;
+    margin-right: 25px;
+  }
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content img {
+  height: 100%;
+  width: 100%;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"] {
+  display: none;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label {
+  background: rgba(242, 175, 12, 0.12);
+  padding-bottom: 17px;
+  padding-top: 17px;
+  border-bottom: 2px solid #f2af0c;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
+    margin-bottom: 100px;
+    width: 44%;
+  }
+}
+@media (max-width: 768px) {
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
+    height: 320px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 321px) {
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
+    height: 320px;
+    margin-bottom: 40px;
+  }
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content {
+  z-index: 1;
+  display: table;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs {
+  position: relative;
+  clear: both;
+  margin: 0;
+  padding-top: 25px;
+  white-space: nowrap;
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid #979797;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .download-tab-btn {
+  display: none;
+}
+@media (min-width: 768px) {
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .download-tab-btn {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    font-size: 14px;
+    display: block;
+  }
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .download-tab-btn a {
+    color: #4092df;
+  }
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .download-tab-btn a i {
+    margin-right: 10px;
+  }
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab {
+  vertical-align: top;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .label {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  min-height: 50px;
+  line-height: 50px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  padding-top: 17px;
+  border-bottom: 2px solid #979797;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .label:hover {
+  cursor: pointer;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content {
+  white-space: normal;
+  top: 77px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  background-color: white;
+  height: 265px;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol,
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul {
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 45px;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li,
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li {
+  margin-bottom: 10px;
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li:last-child,
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li:last-child {
+  margin-bottom: 0;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li p,
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #000000;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li:before,
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li:before {
+  content: counter(my-awesome-counter);
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  position: absolute;
+  --size: 25px;
+  left: calc(-1 * var(--size) - 20px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  background: #3e3e3e;
+  border-radius: 50%;
+  text-align: center;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul {
+  padding-left: 25px;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li:before {
+  content: "";
+  color: #fff;
+  /* font-size : 10px; */
+  font-weight: bold;
+  position: absolute;
+  --size: 8px;
+  left: calc(-1 * var(--size) - 15px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 9px;
+  background: #7d7773;
+  border-radius: 50%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
+    flex-wrap: wrap;
+  }
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab {
+    margin-top: -6px;
+  }
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab .content {
+    top: 71px;
+  }
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content {
+    z-index: 1;
+    display: table;
+    top: 71px;
+  }
+}
+@media (max-width: 768px) {
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes {
+    margin: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 81px;
+  }
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty {
+    display: none;
+  }
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-header .recipes-top .recipes-title {
+    margin-bottom: 20px;
+  }
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-header .recipes-description {
+    padding-bottom: 20px;
+  }
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-header .recipe-information .recipes-medium {
+    float: unset;
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty {
+    display: block;
+  }
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .wow-factor img {
+    height: 40px;
+  }
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .difficulty {
+    margin-top: 20px;
+  }
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .difficulty img {
+    height: 40px;
+  }
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method {
+    flex-direction: column;
+  }
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content {
+    margin-top: 25px;
+    margin-right: 25px;
+    width: 100%;
+  }
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .only-mobile-download-tab-btn {
+  text-align: left;
+  display: none;
+}
+@media (max-width: 768px) {
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes .only-mobile-download-tab-btn {
+    display: block;
+  }
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes .only-mobile-download-tab-btn a {
+    color: #4092df;
+  }
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes .only-mobile-download-tab-btn a i {
+    margin-right: 10px;
+  }
+}
+.slds-col--padded.contentRegion.comm-layout-column {
+  padding: 0;
+}
+.cCP_NewsDetail .detail-date.p-16-white-bold,
+.cCP_NewsDetail .btn-div.content-button-container {
+  display: none;
+}
+.cCP_NewsDetail {
+  margin: unset;
+  padding: unset;
+}
+
+</style>
+
+<div class="RecipePage-AppleAndGingerCaptain">
+
+    <div class="recipe-banner">
+        <div class="recipe-banner-type">
+            <p>Recipes</p>
+        </div>
+        <div class="recipe-banner-title-container">
+            <p class="recipe-banner-title">Apple 'n' Ginger Captain</p>
+        </div>
+        <div class="recipe-banner-bottom-bar" ></div>
+    </div>
+
+    <div class="content-card-recipes">
+        <div class="recipe-header">
+            <div class="recipes-top">
+                <div class="recipes-factor-and-difficulty">
+                    <div class="wow-factor">
+                        <img
+                            src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHO" />
+                    </div>
+                    <div class="difficulty">
+                        <img
+                            src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHd" />
+                    </div>
+                </div>
+                <div class="recipes-title">
+                    <p>
+                        Apple 'n' Ginger Captain
+                    </p>
+                </div>
+            </div>
+            <div class="recipes-description">
+                <p>
+                    Dive into a delicious blend of Captain Morgan, ginger ale and a good slug of apple juice.
+                </p>
+            </div>
+            <div class="recipe-information">
+                <div class="recipes-medium">
+                    <div class="recipes-medium-title">
+                        <p>
+                            Drink Style
+                        </p>
+                    </div>
+                    <div class="description">
+                        <p>Fruity &amp; Fresh | Sweet &amp; Tasty</p>
+                    </div>
+                </div>
+                <div class="recipes-medium">
+                    <div class="recipes-medium-title">
+                        <p>
+                            Season/Occasion
+                        </p>
+                    </div>
+                    <div class="description">
+                        <p>Autumn | Winter | Halloween</p>
+                    </div>
+                </div>
+                <div class="recipes-medium">
+                    <div class="recipes-medium-title">
+                        <p>
+                            Alcohol content
+                        </p>
+                    </div>
+                    <div class="description">
+                        <p>1.75 / 14g</p>
+                    </div>
+                </div>
+            </div>
+            <div class="only-mobile-recipes-factor-and-difficulty">
+                <div class="wow-factor">
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHO" />
+                </div>
+                <div class="difficulty">
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHd" />
+                </div>
+            </div>
+        </div>
+        <div class="recipe-body">
+            <div class="recipes-ingredients-method">
+                <div class="recipes-image-content">
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHi" />
+                </div>
+                <div class="tab-table-container">
+                    <div class="tabs">
+                        <div class="download-tab-btn">
+                            <a href="/"><i class="fas fa-download"></i>Download recipe card</a>
+                        </div>
+                        <div class="tab">
+                            <input type="radio" id="tab-3" name="tab-group-2" checked>
+                            <label class="label" for="tab-3">Ingredients</label>
+                            <div class="ingredients spacer"></div>
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <p>50ml Baileys Original</p>
+                                    </li>
+                                    <li>
+                                        <p>20ml espresso</p>
+                                    </li>
+                                    <li>
+                                        <p>135ml milk</p>
+                                    </li>
+                                    <li>
+                                        <p>Cinnamon stick</p>
+                                    </li>
+                                    <li>
+                                        <p>Nutmeg</p>
+                                    </li>
+                                    <li>
+                                        <p>Whipped cream</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="radio" id="tab-4" name="tab-group-2">
+                            <label class="label" for="tab-4">Method</label>
+                            <div class="method spacer"></div>
+                            <div class="content">
+                                <ol>
+                                    <li>
+                                        <p>Pour 250ml of steaming milk into a disposable cup</p>
+                                    </li>
+                                    <li>
+                                        <p>Add one espresso shot</p>
+                                    </li>
+                                    <li>
+                                        <p>Pour in 50ml of Baileys</p>
+                                    </li>
+                                    <li>
+                                        <p>Add nutmeg, whipped cream and cinnamon stick to serve</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="only-mobile-download-tab-btn">
+            <a href="/"><i class="fas fa-download"></i>Download recipe card</a>
+        </div>
+    </div>
+</div>
