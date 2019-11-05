@@ -150,10 +150,13 @@
   margin-top: 15px;
 }
 .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-header .recipes-top .recipes-title {
-  font-size: 24px;
-  line-height: 40px;
   text-transform: uppercase;
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #ffffff;
+  background-color: #00b39f;
+  padding: 8px 10px;
   margin-bottom: 30px;
 }
 .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-header .recipes-description {
@@ -204,6 +207,59 @@
   height: 100%;
   width: 100%;
 }
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
+  position: relative;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block {
+  z-index: 3;
+  bottom: -65px;
+  position: absolute;
+  width: 100%;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-description {
+  font-size: 16px;
+  line-height: 1.63;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  border: 4px solid #00b39f;
+  padding-right: 75px;
+  background-color: white;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-description .porcentual-number-container {
+  position: absolute;
+  bottom: -20px;
+  right: -35px;
+  color: white;
+  border-radius: 50%;
+  background-color: #00b39f;
+  width: 100px;
+  height: 100px;
+}
+.RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-description .porcentual-number-container .porcentual-number {
+  padding-top: 29px;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.6;
+  text-align: center;
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block {
+    bottom: -100px;
+    left: -14px;
+  }
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-description {
+    padding-right: 80px;
+  }
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-description .porcentual-number-container {
+    width: 110px;
+    height: 110px;
+  }
+  .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-description .porcentual-number-container .porcentual-number {
+    padding-top: 35px;
+  }
+}
 .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"] {
   display: none;
 }
@@ -216,7 +272,6 @@
 }
 @media (min-width: 768px) {
   .RecipePage-AppleAndGingerCaptain .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
-    margin-bottom: 100px;
     width: 44%;
   }
 }
@@ -377,9 +432,8 @@
 }
 @media (max-width: 768px) {
   .RecipePage-AppleAndGingerCaptain .content-card-recipes {
-    margin: -20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: unset;
+    padding-right: unset;
     padding-bottom: 40px;
     margin-bottom: 81px;
   }
@@ -435,6 +489,7 @@
 }
 @media (max-width: 768px) {
   .RecipePage-AppleAndGingerCaptain .content-card-recipes .only-mobile-download-tab-btn {
+    margin-top: 87px;
     padding-right: 6%;
     padding-left: 6%;
     display: block;
@@ -581,7 +636,7 @@
             <p>Recipes</p>
         </div>
         <div class="recipe-banner-title-container">
-            <p class="recipe-banner-title">Apple 'n' Ginger Captain</p>
+            <p class="recipe-banner-title">Halloween</p>
         </div>
         <div class="recipe-banner-bottom-bar"></div>
     </div>
@@ -657,6 +712,14 @@
                     <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHi" />
                 </div>
                 <div class="tab-table-container">
+                    <div class="porcentual-block">
+                        <div class="porcentual-description">
+                            <p>Above average <b>Gross Margin</b> on this serve</p> 
+                            <div class="porcentual-number-container">
+                                <p class="porcentual-number"> 100.0%</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="tabs">
                         <div class="download-tab-btn">
                             <a href="/"><i class="fas fa-download"></i>Download recipe card</a>
