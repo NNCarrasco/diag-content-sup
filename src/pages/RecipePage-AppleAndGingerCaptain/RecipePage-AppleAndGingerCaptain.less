@@ -110,6 +110,17 @@
 				border-left: 10px solid transparent;
 			}
 		}
+		//MOBILE
+		@media screen and (max-width: 768px) {
+			padding-left: 6%;
+			padding-right: 6%;
+			.recipe-banner-type {
+				margin-bottom: 20px;
+			}
+			.recipe-banner-bottom-bar {
+				width: 90%;
+			}
+		}
 	}
 
 	.content-card-recipes {
@@ -385,6 +396,8 @@
 			padding-bottom: 40px;
 			margin-bottom: 81px;
 			.recipe-header {
+				padding-right: 6%;
+				padding-left: 6%;
 				.recipes-top {
 					.recipes-factor-and-difficulty {
 						display: none;
@@ -422,6 +435,8 @@
 				}
 			}
 			.recipe-body {
+				padding-right: 6%;
+				padding-left: 6%;
 				.recipes-ingredients-method {
 					flex-direction: column;
 					.recipes-image-content {
@@ -437,6 +452,8 @@
 			display: none;
 			//MOBILE
 			@media (max-width: 768px) {
+				padding-right: 6%;
+				padding-left: 6%;
 				display: block;
 				a {
 					color: #4092df;
@@ -445,6 +462,111 @@
 					}
 				}
 			}
+		}
+	}
+	.image-list {
+		//DESKTOP COMPONENT SEPARATION
+		@media screen and (min-width: 768px) {
+			padding-bottom: 80px;
+		}
+		//MOBILE COMPONENT SEPARATION
+		@media screen and (max-width: 768px) {
+			padding-bottom: 80px;
+		}
+		padding-left: 10%;
+		padding-right: 10%;
+		.image-list-title {
+			font-size: 28px;
+			font-weight: bold;
+			line-height: 1.43;
+			color: #3e3e3e;
+			text-transform: uppercase;
+			padding-bottom: 35px;
+		}
+		.image-list-items-container {
+			display: flex;
+			.image-list-item {
+				width: 175px;
+				margin-right: 25px;
+				.image-list-item-image {
+					width: 90px;
+					height: 90px;
+					margin: auto;
+					margin-bottom: 15px;
+					img {
+						height: 100%;
+						width: 100%;
+					}
+				}
+				.image-list-item-title {
+					font-size: 16px;
+					line-height: 1.63;
+					text-align: center;
+					color: #3e3e3e;
+				}
+			}
+		}
+		//MOBILE
+		@media screen and (max-width: 768px) {
+			padding-left: 6%;
+			padding-right: 6%;
+			.image-list-title {
+				font-size: 24px;
+			}
+			.image-list-items-container {
+				flex-flow: column;
+				padding-left: 23%;
+				padding-right: 23%;
+			}
+			.image-list-item {
+				margin-bottom: 25px;
+			}
+		}
+	}
+	.tips-block {
+		//DESKTOP COMPONENT SEPARATION
+		@media screen and (min-width: 768px) {
+			margin-bottom: 80px;
+		}
+		//MOBILE COMPONENT SEPARATION
+		@media screen and (max-width: 768px) {
+			margin-bottom: 80px;
+		}
+		border: 5px solid #00b39f;
+		text-align: center;
+		margin-left: 16%;
+		margin-right: 16%;
+		.tips-block-image {
+			width: 62px;
+			height: 50px;
+			margin: auto;
+			margin-top: 30px;
+			margin-bottom: 20px;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.tips-block-title {
+			font-size: 18px;
+			font-weight: bold;
+			line-height: 1.56;
+			color: #000000;
+			text-transform: uppercase;
+			padding-bottom: 25px;
+		}
+		.tips-block-description {
+			font-size: 16px;
+			line-height: 1.63;
+			color: #3e3e3e;
+			padding-left: 10%;
+			padding-right: 10%;
+			padding-bottom: 35px;
+		}
+		//MOBILE
+		@media screen and (max-width: 768px) {
+			margin-left: 3%;
+			margin-right: 3%;
 		}
 	}
 }
@@ -459,6 +581,9 @@
 .cCP_NewsDetail {
 	margin: unset;
 	padding: unset;
+}
+.detail-long-desc-html.reset-this.slds-size_12-of-12 {
+	background-color: #f2f2f2;
 }
 
 // body {
