@@ -1,0 +1,317 @@
+.ChristmasCocktailList {
+  text-align: left;
+  background-color: #f2f2f2;
+}
+.ChristmasCocktailList .titles-and-descriptions .general-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  padding-left: 18%;
+  padding-right: 18%;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .ChristmasCocktailList .titles-and-descriptions .general-title {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ChristmasCocktailList .titles-and-descriptions .general-title {
+    padding-bottom: 40px;
+  }
+}
+.ChristmasCocktailList .titles-and-descriptions .general-description {
+  font-size: 20px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  color: #3e3e3e;
+  padding-right: 18%;
+  padding-left: 18%;
+}
+@media screen and (min-width: 768px) {
+  .ChristmasCocktailList .titles-and-descriptions .general-description {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ChristmasCocktailList .titles-and-descriptions .general-description {
+    padding-bottom: 80px;
+  }
+}
+.ChristmasCocktailList .titles-and-descriptions .related-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  text-transform: uppercase;
+  border-bottom: 1px solid #7d7773;
+}
+@media screen and (min-width: 768px) {
+  .ChristmasCocktailList .titles-and-descriptions .related-title {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ChristmasCocktailList .titles-and-descriptions .related-title {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ChristmasCocktailList .titles-and-descriptions .general-title {
+    font-size: 24px;
+  }
+  .ChristmasCocktailList .titles-and-descriptions .general-description {
+    padding-left: 6%;
+    padding-right: 5%;
+  }
+  .ChristmasCocktailList .titles-and-descriptions .related-title {
+    font-size: 24px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+}
+.ChristmasCocktailList .recipe-banner {
+  background-color: #ffffff;
+  padding-top: 20px;
+  padding-left: 85px;
+  padding-bottom: 45px;
+  padding-right: 80px;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .ChristmasCocktailList .recipe-banner {
+    margin-bottom: 55px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ChristmasCocktailList .recipe-banner {
+    margin-bottom: 95px;
+  }
+}
+.ChristmasCocktailList .recipe-banner .recipe-banner-type {
+  width: fit-content;
+  background-color: #00b39f;
+  color: #ffffff;
+  padding: 12px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.ChristmasCocktailList .recipe-banner .recipe-banner-title-container {
+  font-size: 38px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.32;
+}
+.ChristmasCocktailList .recipe-banner .recipe-banner-bottom-bar {
+  height: 30px;
+  width: 50%;
+  background-color: #00b39f;
+  position: absolute;
+  right: 0;
+  bottom: -16px;
+}
+.ChristmasCocktailList .recipe-banner .recipe-banner-bottom-bar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 0;
+  border-bottom: 30px solid #00b39f;
+  border-left: 10px solid transparent;
+}
+@media screen and (max-width: 768px) {
+  .ChristmasCocktailList .recipe-banner {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .ChristmasCocktailList .recipe-banner .recipe-banner-type {
+    margin-bottom: 20px;
+  }
+  .ChristmasCocktailList .recipe-banner .recipe-banner-bottom-bar {
+    width: 90%;
+  }
+}
+.ChristmasCocktailList .recipe-horizontal-card {
+  display: flex;
+  margin-left: 12%;
+  margin-right: 21%;
+  position: relative;
+  background-color: white;
+  margin-bottom: 20px;
+}
+.ChristmasCocktailList .recipe-horizontal-card .recipe-card-number {
+  position: absolute;
+  width: 48px;
+  height: 29px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.63;
+  text-align: center;
+  color: #ffffff;
+  background-color: #00b39f;
+}
+.ChristmasCocktailList .recipe-horizontal-card .recipe-card-number::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -7px;
+  width: 0;
+  border-top: 30px solid #00b39f;
+  border-right: 7px solid transparent;
+}
+.ChristmasCocktailList .recipe-horizontal-card .recipe-card-image-container {
+  height: 170px;
+  width: 20%;
+}
+.ChristmasCocktailList .recipe-horizontal-card .recipe-card-image-container img {
+  width: 100%;
+  height: 100%;
+}
+.ChristmasCocktailList .recipe-horizontal-card .recipe-card-content {
+  width: 42%;
+  padding-left: 4%;
+  padding-top: 20px;
+}
+.ChristmasCocktailList .recipe-horizontal-card .recipe-card-content .recipe-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.56;
+  padding-bottom: 10px;
+}
+.ChristmasCocktailList .recipe-horizontal-card .recipe-card-content .recipe-card-description {
+  font-size: 12px;
+  line-height: 1.67;
+  padding-bottom: 10px;
+}
+.ChristmasCocktailList .recipe-horizontal-card .recipe-card-points {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  right: 25px;
+}
+.ChristmasCocktailList .recipe-horizontal-card .recipe-card-points .wow-factor {
+  margin-bottom: 10px;
+}
+.ChristmasCocktailList .recipe-horizontal-card .recipe-card-redirection a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #4092df;
+}
+.ChristmasCocktailList .recipe-horizontal-card .recipe-card-redirection a .fa-chevron-right {
+  padding-left: 5px;
+}
+@media screen and (max-width: 768px) {
+  .ChristmasCocktailList .recipe-horizontal-card {
+    flex-flow: column;
+    margin-left: 6%;
+    margin-right: 6%;
+    padding-bottom: 20px;
+  }
+  .ChristmasCocktailList .recipe-horizontal-card .recipe-card-image-container {
+    width: 100%;
+    height: 240px;
+    margin-bottom: 20px;
+  }
+  .ChristmasCocktailList .recipe-horizontal-card .recipe-card-points {
+    position: unset;
+    margin-left: 7%;
+  }
+  .ChristmasCocktailList .recipe-horizontal-card .recipe-card-content {
+    width: 100%;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+}
+@media (min-width: 768px) {
+  .ChristmasCocktailList .vertical-card-container {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+}
+.ChristmasCocktailList .vertical-card-container .card-related-content {
+  font-family: 'Roboto', sans-serif;
+  height: 430px;
+  display: block;
+}
+@media (min-width: 768px) {
+  .ChristmasCocktailList .vertical-card-container .card-related-content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 33.3333%;
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 768px) {
+  .ChristmasCocktailList .vertical-card-container .card-related-content {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 4%;
+  }
+}
+.ChristmasCocktailList .vertical-card-container .card-related-content .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+  height: 250px;
+}
+.ChristmasCocktailList .vertical-card-container .card-related-content .image-container img {
+  width: 100%;
+  height: 100%;
+}
+.ChristmasCocktailList .vertical-card-container .card-related-content .copy-container {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 180px;
+}
+.ChristmasCocktailList .vertical-card-container .card-related-content .copy-container .copy-text {
+  padding: 20px 30px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.75;
+  color: #000000;
+}
+.ChristmasCocktailList .vertical-card-container .card-related-content .copy-container .copy-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #4092df;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  text-decoration: none;
+}
+.ChristmasCocktailList .vertical-card-container .card-related-content .copy-container .copy-link:hover {
+  border-bottom: 2px solid;
+  margin-bottom: -2px;
+}
+.ChristmasCocktailList .vertical-card-container .card-related-content .copy-container .copy-link i.fas.fa-angle-right {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #4092df;
+  position: absolute;
+  bottom: 4px;
+}
+.slds-col--padded.contentRegion.comm-layout-column {
+  padding: 0;
+}
+.cCP_NewsDetail .detail-date.p-16-white-bold,
+.cCP_NewsDetail .btn-div.content-button-container {
+  display: none;
+}
+.cCP_NewsDetail {
+  margin: unset;
+  padding: unset;
+}
+.detail-long-desc-html.reset-this.slds-size_12-of-12 {
+  background-color: #f2f2f2;
+}

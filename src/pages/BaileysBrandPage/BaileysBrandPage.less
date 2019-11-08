@@ -1,4 +1,4 @@
-.ChristmasCocktailsHome {
+.BaileysBrandPage {
 	text-align: left;
 	background-color: #f2f2f2;
 
@@ -51,7 +51,7 @@
 			line-height: 1.43;
 			color: #000000;
 			text-transform: uppercase;
-			border-bottom: 1px solid #7d7773;	
+			border-bottom: 1px solid #7d7773;
 		}
 		//MOBILE
 		@media screen and (max-width: 768px) {
@@ -89,7 +89,7 @@
 				margin-left: 83px;
 				margin-top: 25px;
 				width: 125px;
-    			background-color: #51ae00;
+				background-color: #51ae00;
 				div {
 					height: 100%;
 					span {
@@ -103,9 +103,9 @@
 			.title-container {
 				margin-top: 60px;
 				margin-bottom: 20px;
-				&.with-label {
-					margin-top: 20px;
-				}
+				// &.with-label {
+				// 	margin-top: 20px;
+				// }
 				.title {
 					font-size: 38px;
 					font-weight: bold;
@@ -195,7 +195,7 @@
 			@media screen and (max-width: 768px) {
 				flex-wrap: wrap;
 				margin-top: 0;
-				height: 660px;
+				height: 630px;
 				.label {
 					margin-left: 20px;
 					margin-top: 15px;
@@ -242,7 +242,6 @@
 	}
 
 	.image-text-block {
-		
 		display: flex;
 		padding-left: 18%;
 		.itb-image-container {
@@ -292,6 +291,7 @@
 			margin-left: -1rem;
 			flex-wrap: wrap;
 			align-items: flex-start;
+			padding-bottom: 0;
 		}
 		// HORIZONTAL CARD
 		.card-container {
@@ -407,6 +407,25 @@
 		@media (max-width: 768px) {
 			padding-left: 6%;
 			padding-right: 6%;
+		}
+		.list-ul {
+			&.mixed-content-block {
+				.copy-container {
+					.content-title {
+						margin-bottom: 0;
+						padding-top: 40px;
+					}
+					.content-text{
+						padding-bottom: 15px;
+						padding-top: 0;
+						margin-bottom: 0;
+					}
+					ul {
+						font-size: 16px;
+    					line-height: 26px;
+					}
+				}
+			}
 		}
 		//MIXED CONTENT BLOCK
 		.mixed-content-block {
@@ -542,6 +561,14 @@
 	}
 
 	.black-box {
+		//DESKTOP COMPONENT SEPARATION
+		@media screen and (min-width: 768px) {
+			margin-bottom: 80px;
+		}
+		//MOBILE COMPONENT SEPARATION
+		@media screen and (max-width: 768px) {
+			margin-bottom: 80px;
+		}
 		display: flex;
 		margin-right: 18%;
 		margin-left: 18%;
@@ -565,9 +592,6 @@
 			//MOBILE COMPONENT SEPARATION
 			@media screen and (max-width: 768px) {
 				margin-bottom: 80px;
-				.description-container {
-					width: 100%;
-				}
 			}
 			background-color: #ffffff;
 			border-radius: unset;
@@ -577,12 +601,6 @@
 			.description-container {
 				padding-top: unset;
 				width: 65%;
-			}
-			// MOBILE
-			@media screen and (max-width: 768px) {
-				.description-container {
-					width: 100%;
-				}
 			}
 		}
 		.image-container {
@@ -602,6 +620,7 @@
 			font-size: 18px;
 			line-height: 1.56;
 			font-weight: 300;
+			width: 65%;
 			.bold {
 				font-weight: bold;
 			}
@@ -610,7 +629,7 @@
 			height: 44px;
 			width: 130px;
 			position: absolute;
-			top: 55px;
+			top: 33px;
 			right: 40px;
 			.content-button {
 				width: 100%;
@@ -633,7 +652,8 @@
 		//MOBILE
 		@media screen and (max-width: 768px) {
 			flex-flow: column;
-			margin: 0;
+			margin-left: 0;
+			margin-right: 0;
 			border-radius: unset;
 			&.white-background {
 				.btn-container {
@@ -648,6 +668,7 @@
 				margin-bottom: -1px;
 			}
 			.description-container {
+				width: 100%;
 				padding-top: 20px;
 				padding-bottom: 20px;
 				padding-right: 35px;
@@ -663,110 +684,6 @@
 		}
 	}
 
-	.image-text-list-block {
-		//DESKTOP COMPONENT SEPARATION
-		@media screen and (min-width: 768px) {
-			margin-bottom: 20px;
-		}
-		//MOBILE COMPONENT SEPARATION
-		@media screen and (max-width: 768px) {
-			margin-bottom: 80px;
-		}
-		display: flex;
-		flex-wrap: wrap;
-		margin-left: 9%;
-		margin-right: 9%;
-		padding-left: 9%;
-		padding-right: 9%;
-		padding-top: 40px;
-		background-color: #ffffff;
-		.list-column {
-			display: flex;
-			min-height: 150px;
-			margin-bottom: 30px;
-			.list-column-image {
-				width: 195px;
-				height: 150px;
-				img {
-					width: 100%;
-					height: 100%;
-				}
-			}
-			.list-column-text {
-				width: 79%;
-				.list-column-text-title {
-					font-size: 18px;
-					font-weight: 500;
-					line-height: 1.56;
-					text-transform: uppercase;
-					margin-bottom: 10px;
-				}
-				.list-column-text-description {
-					font-size: 16px;
-					line-height: 1.63;
-					color: #3e3e3e;
-				}
-			}
-			&.image-left {
-				.list-column-image {
-					order: 1;
-				}
-				.list-column-text {
-					order: 2;
-					padding-left: 25px;
-				}
-			}
-			&.image-right {
-				.list-column-image {
-					order: 2;
-				}
-				.list-column-text {
-					order: 1;
-					padding-right: 25px;
-				}
-			}
-		}
-		//MOBILE
-		@media screen and (max-width: 768px) {
-			margin-left: 6%;
-			margin-right: 6%;
-			padding-left: 6%;
-			padding-right: 6%;
-			.list-column {
-				height: unset;
-				flex-flow: column;
-				.list-column-image {
-					width: 100%;
-					height: 220px;
-				}
-				.list-column-text {
-					margin-top: 10px;
-					padding: unset;
-					width: 100%;
-				}
-				&.image-left {
-					.list-column-image {
-						order: 1;
-						padding: unset;
-					}
-					.list-column-text {
-						order: 2;
-						padding: unset;
-					}
-				}
-				&.image-right {
-					.list-column-image {
-						order: 1;
-						padding: unset;
-					}
-					.list-column-text {
-						order: 2;
-						padding: unset;
-					}
-				}
-			}
-		}
-	}
 	.vertical-card-container {
 		@media (min-width: 768px) {
 			padding-left: 10%;
@@ -846,7 +763,6 @@
 		}
 		// MIXED CONTENT BLOCK
 		.mixed-content-block {
-			
 			//GENERAL AND PHONE
 			box-sizing: border-box; //FIXME: ??
 			font-family: 'Roboto', sans-serif;
@@ -1068,10 +984,10 @@
 				flex-wrap: wrap;
 				.content-container {
 					order: 1;
-					height: 830px;
+					padding-top: 361px;
+					height: 770px;
 					.title-container {
-						padding-left: 30px;
-						padding-top: 410px;
+						padding-left: 30px;	
 						padding-right: 30px;
 						width: unset;
 						font-size: 18px;
@@ -1167,105 +1083,885 @@
 			}
 		}
 	}
-	.horizontal-cards-container {
-		//Desktop
-		@media (min-width: 768px) {
-			display: flex;
-			margin-right: -1rem;
-			margin-left: -1rem;
-			flex-wrap: wrap;
-			align-items: flex-start;
+	.tab-table-container {
+		//DESKTOP COMPONENT SEPARATION
+		@media screen and (min-width: 768px) {
+			margin-bottom: 80px;
 		}
-		// HORIZONTAL CARD
-		.card-container {
-			margin-bottom: 25px;
-			.image-container {
-				background-color: rgba(64, 146, 223, 0.5);
-				img {
-					height: 100%;
-					width: 100%;
-				}
-			}
-			.content-container {
-				background-color: #ffffff;
-				.icon {
-					height: 35px;
-				}
-				.content-title {
-					font-size: 20px;
-					line-height: 32px;
-					font-weight: bold;
-					margin: unset;
-				}
-				.content-text {
-					font-size: 16px;
-					line-height: 26px;
-					margin: unset;
-				}
-			}
-			//DESKTOP
-			@media (min-width: 768px) {
-				height: 250px;
-				display: flex;
-				padding-right: 1rem;
-				padding-left: 1rem;
-				width: 50%;
-				flex: 1 1 auto;
-				margin-bottom: 35px;
-				.image-container {
-					width: 45%;
-				}
-				.content-container {
-					width: 54%;
-					padding-top: 44px;
-					padding-right: 30px;
-					padding-bottom: 30px;
-					padding-left: 50px;
-				}
-				&.left {
-					.image-container {
-						order: 0;
-						border-right: 5px solid #51ae00;
-					}
-					.content-container {
-						order: 1;
-					}
-				}
-				&.right {
-					.image-container {
-						order: 1;
-						border-left: 5px solid #51ae00;
-					}
-					.content-container {
-						order: 0;
+		//MOBILE COMPONENT SEPARATION
+		@media screen and (max-width: 768px) {
+			margin-bottom: 80px;
+		}
+		position: relative;
+		.porcentual-block {
+			z-index: 3;
+			bottom: -65px;
+			position: absolute;
+			width: 100%;
+			.porcentual-description {
+				font-size: 16px;
+				line-height: 1.63;
+				padding-top: 17px;
+				padding-bottom: 17px;
+				padding-left: 20px;
+				border: 4px solid #00b39f;
+				padding-right: 75px;
+				background-color: white;
+				.porcentual-number-container {
+					position: absolute;
+					bottom: -20px;
+					right: -35px;
+					color: white;
+					border-radius: 50%;
+					background-color: #00b39f;
+					width: 100px;
+					height: 100px;
+					.porcentual-number {
+						padding-top: 29px;
+						font-size: 25px;
+						font-weight: bold;
+						line-height: 1.6;
+						text-align: center;
+						color: #ffffff;
 					}
 				}
 			}
 			//MOBILE
 			@media (max-width: 768px) {
-				padding-left: 6%;
-				padding-right: 6%;
-				margin-bottom: 4%;
-				.image-container {
-					height: 260px;
-					width: 100%;
-					border-bottom: 5px solid #51ae00;
+				bottom: -100px;
+				left: -14px;
+				.porcentual-description {
+					padding-right: 80px;
+					.porcentual-number-container {
+						width: 110px;
+						height: 110px;
+						.porcentual-number {
+							padding-top: 35px;
+						}
+					}
 				}
-				.content-container {
+			}
+		}
+		.tab [type="radio"] {
+			display: none;
+		}
+
+		.tab [type="radio"]:checked ~ .label {
+			background: rgba(242, 175, 12, 0.12);
+			padding-bottom: 17px;
+			padding-top: 17px;
+			border-bottom: 2px solid #f2af0c;
+			z-index: 2;
+		}
+
+		//DESKTOP
+		@media (min-width: 768px) {
+			width: 100%;
+			height: 780px;
+			padding-right: 10%;
+			padding-left: 10%;
+		}
+
+		//MOBILE
+		@media (max-width: 768px) {
+			height: 320px;
+			margin-bottom: 40px;
+		}
+
+		//MOBILE SPECIAL FOR 320PX RESOLUTION
+		@media (max-width: 321px) {
+			height: 320px;
+			margin-bottom: 40px;
+		}
+
+		.tab [type="radio"]:checked ~ .label ~ .content {
+			z-index: 1;
+			display: table;
+		}
+
+		.tabs {
+			position: relative;
+			clear: both;
+			margin: 0;
+			padding-top: 25px;
+			white-space: nowrap;
+			display: flex;
+			width: 100%;
+			border-bottom: 2px solid #979797;
+			.download-tab-btn {
+				display: none;
+			}
+			//DESKTOP
+			@media (min-width: 768px) {
+				.download-tab-btn {
+					position: absolute;
+					top: 40px;
+					right: 0;
+					font-size: 14px;
+					display: block;
+					a {
+						color: #4092df;
+						i {
+							margin-right: 10px;
+						}
+					}
+				}
+			}
+			.tab {
+				vertical-align: top;
+
+				//DESKTOP
+				@media (min-width: 768px) {
+					&.show-desktop {
+						display: block;
+					}
+					&.show-phone {
+						display: none;
+					}
+				}
+				//MOBILE
+				@media (max-width: 768px) {
+					&.show-desktop {
+						display: none;
+					}
+					&.show-phone {
+						display: block;
+					}
+				}
+
+				.label {
+					font-size: 14px;
+					text-transform: uppercase;
+					font-weight: bold;
+					min-height: 50px;
+					line-height: 50px;
+					margin: auto;
+					padding-left: 20px;
+					padding-right: 20px;
+					padding-bottom: 17px;
+					padding-top: 17px;
+					border-bottom: 2px solid #979797;
+
+					&:hover {
+						cursor: pointer;
+					}
+				}
+
+				.content {
+					white-space: normal;
+					top: 77px;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					display: none;
 					width: 100%;
 					padding-top: 40px;
-					padding-bottom: 30px;
-					.icon {
-						padding-right: 30px;
-						padding-left: 30px;
+					padding-left: 10%;
+					padding-right: 10%;
+					padding-bottom: 50px;
+					position: absolute;
+					background-color: white;
+					height: 265px;
+					.text {
+						font-size: 16px;
+						line-height: 1.63;
+						color: #3e3e3e;
+						padding-bottom: 45px;
 					}
-					.content-title {
-						padding-right: 30px;
-						padding-left: 30px;
+					.youtube-video {
+						width: 100%;
+						height: 516px;
 					}
-					.content-text {
-						padding-right: 30px;
-						padding-left: 30px;
+					ol,
+					ul {
+						counter-reset: my-awesome-counter;
+						list-style: none;
+						padding-left: 45px;
+
+						li {
+							margin-bottom: 10px;
+							counter-increment: my-awesome-counter;
+							position: relative;
+							&:last-child {
+								margin-bottom: 0;
+							}
+
+							p {
+								font-family: Roboto;
+								font-size: 16px;
+								font-weight: normal;
+								font-stretch: normal;
+								font-style: normal;
+								line-height: 1.63;
+								letter-spacing: normal;
+								color: #000000;
+							}
+							&:before {
+								content: counter(my-awesome-counter);
+								color: #fff;
+								font-size: 11px;
+								font-weight: bold;
+								position: absolute;
+								--size: 25px;
+								left: calc(-1 * var(--size) - 20px);
+								line-height: var(--size);
+								width: var(--size);
+								height: var(--size);
+								top: 0;
+								background: #3e3e3e;
+								border-radius: 50%;
+								text-align: center;
+							}
+						}
+					}
+
+					ul {
+						padding-left: 25px;
+
+						li {
+							&:before {
+								content: "";
+								color: #fff;
+								/* font-size : 10px; */
+								font-weight: bold;
+								position: absolute;
+								--size: 8px;
+								left: calc(-1 * var(--size) - 15px);
+								line-height: var(--size);
+								width: var(--size);
+								height: var(--size);
+								top: 9px;
+								background: #7d7773;
+								border-radius: 50%;
+								text-align: center;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		//MOBILE
+		@media (max-width: 768px) {
+			flex-wrap: wrap;
+			height: 608px;
+			.tabs {
+				flex-wrap: wrap;
+				.tab {
+					margin-top: -6px;
+					flex-wrap: wrap;
+					justify-content: center;
+					border-bottom: none;
+
+					.content {
+						top: 72px;
+						padding-left: 5%;
+						padding-right: 5%;
+						.youtube-video {
+							height: 228px;
+						}
+					}
+				}
+				.tab [type="radio"]:checked ~ .label ~ .content {
+					z-index: 1;
+					display: table;
+					top: 72px;
+				}
+			}
+		}
+	}
+	.numeric-list-block {
+		//DESKTOP COMPONENT SEPARATION
+		@media screen and (min-width: 768px) {
+			margin-bottom: 120px;
+		}
+		//MOBILE COMPONENT SEPARATION
+		@media screen and (max-width: 768px) {
+			margin-bottom: 100px;
+		}
+		background-color: #ffffff;
+		padding-right: 18%;
+		padding-left: 18%;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		.numeric-list-title {
+			font-size: 28px;
+			font-weight: bold;
+			line-height: 1.43;
+			text-transform: uppercase;
+			padding-bottom: 40px;
+		}
+		ol,
+		ul {
+			counter-reset: my-awesome-counter;
+			list-style: none;
+			padding-left: 45px;
+
+			li {
+				margin-bottom: 30px;
+				counter-increment: my-awesome-counter;
+				position: relative;
+				font-size: 16px;
+				line-height: 1.63;
+				color: #3e3e3e;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				&:before {
+					content: counter(my-awesome-counter);
+					color: #fff;
+					font-size: 16px;
+					position: absolute;
+					--size: 35px;
+					left: calc(-1 * var(--size) - 20px);
+					line-height: var(--size);
+					width: var(--size);
+					height: var(--size);
+					top: 0;
+					background: #51ae00;
+					border-radius: 50%;
+					text-align: center;
+				}
+			}
+		}
+		//MOBILE
+		@media (max-width: 768px) {
+			padding-right: 6%;
+			padding-left: 6%;
+		}
+	}
+
+	.download-block {
+		//DESKTOP COMPONENT SEPARATION
+		@media screen and (min-width: 768px) {
+			margin-bottom: 80px;
+		}
+		//MOBILE COMPONENT SEPARATION
+		@media screen and (max-width: 768px) {
+			margin-bottom: 80px;
+		}
+		background-color: #ffffff;
+		.download-header {
+			position: relative;
+			border-bottom: 1px solid;
+			height: 95px;
+			.title {
+				font-size: 18px;
+				line-height: 28px;
+				text-transform: uppercase;
+				font-weight: bold;
+				text-align: left;
+				height: inherit;
+				padding-top: 35px;
+				padding-left: 60px;
+			}
+			.download-btn {
+				position: absolute;
+				top: 38px;
+				right: 40px;
+				font-size: 14px;
+				a {
+					color: #4092df;
+					i {
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+		.download-body {
+			padding: 40px;
+			.download-card-container {
+				display: flex;
+				.download-card {
+					width: 220px;
+					height: 355px;
+					margin-left: 20px;
+					&:first-child {
+						margin-left: 0;
+					}
+
+					.image-container {
+						height: 170px;
+						img {
+							height: 100%;
+							width: 100%;
+						}
+					}
+					.body-container {
+						background-color: #f2f2f2;
+						height: 185px;
+						text-align: left;
+						padding-top: 10px;
+						padding-left: 20px;
+						padding-right: 20px;
+						padding-bottom: 20px;
+						.title-text {
+							font-size: 12px;
+							font-weight: bold;
+							line-height: 22px;
+							color: #0041a5;
+							text-transform: uppercase;
+						}
+						.description-text {
+							padding-top: 10px;
+							font-size: 16px;
+							line-height: 20px;
+							word-break: break-word;
+						}
+						.download-card-btn {
+							margin-top: 20px;
+							border: 1px solid;
+							padding-top: 10px;
+							padding-left: 40px;
+							padding-bottom: 10px;
+							text-transform: uppercase;
+							font-size: 14px;
+							line-height: 24px;
+							.download-link-box {
+								color: #3e3e3e;
+								i {
+									margin-right: 10px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.download-footer {
+			padding-left: 40px;
+			padding-right: 40px;
+			padding-bottom: 40px;
+			font-size: 12px;
+			line-height: 18px;
+			text-align: left;
+			color: #3e3e3e;
+		}
+		//MOBILE
+		@media (max-width: 768px) {
+			.download-header {
+				.title {
+					padding-top: 21px;
+					padding-left: 21px;
+					height: unset;
+				}
+				.download-btn {
+					position: unset;
+					text-align: left;
+					padding-left: 20px;
+				}
+			}
+			.download-body {
+				padding: 20px;
+				.download-card-container {
+					flex-direction: column;
+					.download-card {
+						width: 100%;
+						height: unset;
+						margin-left: 0;
+						margin-bottom: 20px;
+						.image-container {
+							height: 225px;
+						}
+					}
+				}
+			}
+			.download-footer {
+				padding-left: 20px;
+				padding-right: 20px;
+				padding-bottom: 25px;
+			}
+		}
+	}
+
+	.content-card-recipes {
+		padding-left: 108px;
+		background: rgba(255, 255, 255, 0.5);
+		padding-top: 40px;
+		margin-bottom: 80px;
+		padding-bottom: 110px;
+		.recipe-header {
+			display: flex;
+			flex-direction: column;
+			.recipes-top {
+				display: flex;
+				position: relative;
+				.recipes-factor-and-difficulty {
+					position: absolute;
+					top: 0;
+					right: 109px;
+					.difficulty {
+						margin-top: 15px;
+					}
+				}
+				.recipes-title {
+					text-transform: uppercase;
+					font-size: 14px;
+					font-weight: 500;
+					line-height: 1.71;
+					color: #ffffff;
+					background-color: #00b39f;
+					padding: 8px 10px;
+					margin-bottom: 30px;
+				}
+			}
+			.recipes-description {
+				font-size: 16px;
+				line-height: 26px;
+				text-align: left;
+				padding-bottom: 60px;
+			}
+			.recipe-information {
+				.recipes-medium {
+					float: left;
+					display: inline-flex;
+					border-right: 2px solid #b9b9b9;
+					padding-left: 20px;
+					padding-right: 20px;
+					height: 50px;
+					width: 21.5%;
+					position: relative;
+					.recipes-medium-title {
+						display: flex;
+						font-size: 16px;
+						line-height: 26px;
+						text-transform: uppercase;
+						font-weight: bold;
+					}
+					.description {
+						position: absolute;
+						bottom: 0;
+					}
+				}
+			}
+			.only-mobile-recipes-factor-and-difficulty {
+				display: none;
+			}
+		}
+		.recipe-body {
+			.recipes-ingredients-method {
+				display: flex;
+				.recipes-image-content {
+					background-color: rgba(64, 146, 223, 0.5);
+					//DESKTOP
+					@media (min-width: 768px) {
+						width: 44%;
+						height: 316px;
+						margin-top: 25px;
+						margin-right: 25px;
+					}
+					img {
+						height: 100%;
+						width: 100%;
+					}
+				}
+				.tab-table-container {
+					position: relative;
+					.porcentual-block {
+						z-index: 3;
+						bottom: -65px;
+						position: absolute;
+						width: 100%;
+						.porcentual-description {
+							font-size: 16px;
+							line-height: 1.63;
+							padding-top: 17px;
+							padding-bottom: 17px;
+							padding-left: 20px;
+							border: 4px solid #00b39f;
+							padding-right: 75px;
+							background-color: white;
+							.porcentual-number-container {
+								position: absolute;
+								bottom: -20px;
+								right: -35px;
+								color: white;
+								border-radius: 50%;
+								background-color: #00b39f;
+								width: 100px;
+								height: 100px;
+								.porcentual-number {
+									padding-top: 29px;
+									font-size: 25px;
+									font-weight: bold;
+									line-height: 1.6;
+									text-align: center;
+									color: #ffffff;
+								}
+							}
+						}
+						//MOBILE
+						@media (max-width: 768px) {
+							bottom: -100px;
+							left: -14px;
+							.porcentual-description {
+								padding-right: 80px;
+								.porcentual-number-container {
+									width: 110px;
+									height: 110px;
+									.porcentual-number {
+										padding-top: 35px;
+									}
+								}
+							}
+						}					
+					}
+					.tab [type="radio"] {
+						display: none;
+					}
+
+					.tab [type="radio"]:checked ~ .label {
+						background: rgba(242, 175, 12, 0.12);
+						padding-bottom: 17px;
+						padding-top: 17px;
+						border-bottom: 2px solid #f2af0c;
+						z-index: 2;
+					}
+
+					//DESKTOP
+					@media (min-width: 768px) {
+						width: 44%;
+					}
+
+					//MOBILE
+					@media (max-width: 768px) {
+						height: 320px;
+						margin-bottom: 40px;
+					}
+
+					//MOBILE SPECIAL FOR 320PX RESOLUTION
+					@media (max-width: 321px) {
+						height: 320px;
+						margin-bottom: 40px;
+					}
+
+					.tab [type="radio"]:checked ~ .label ~ .content {
+						z-index: 1;
+						display: table;
+					}
+
+					.tabs {
+						position: relative;
+						clear: both;
+						margin: 0;
+						padding-top: 25px;
+						white-space: nowrap;
+						display: flex;
+						width: 100%;
+						border-bottom: 2px solid #979797;
+						.download-tab-btn {
+							display: none;
+						}
+						//DESKTOP
+						@media (min-width: 768px) {
+							.download-tab-btn {
+								position: absolute;
+								top: 40px;
+								right: 0;
+								font-size: 14px;
+								display: block;
+								a {
+									color: #4092df;
+									i {
+										margin-right: 10px;
+									}
+								}
+							}
+						}
+						.tab {
+							vertical-align: top;
+
+							.label {
+								font-size: 14px;
+								text-transform: uppercase;
+								font-weight: bold;
+								min-height: 50px;
+								line-height: 50px;
+								margin: auto;
+								padding-left: 20px;
+								padding-right: 20px;
+								padding-bottom: 17px;
+								padding-top: 17px;
+								border-bottom: 2px solid #979797;
+
+								&:hover {
+									cursor: pointer;
+								}
+							}
+
+							.content {
+								white-space: normal;
+								top: 77px;
+								left: 0;
+								right: 0;
+								bottom: 0;
+								display: none;
+								width: 100%;
+								padding: 20px;
+								position: absolute;
+								background-color: white;
+								height: 265px;
+
+								ol,
+								ul {
+									counter-reset: my-awesome-counter;
+									list-style: none;
+									padding-left: 45px;
+
+									li {
+										margin-bottom: 10px;
+										counter-increment: my-awesome-counter;
+										position: relative;
+										&:last-child {
+											margin-bottom: 0;
+										}
+
+										p {
+											font-family: Roboto;
+											font-size: 16px;
+											font-weight: normal;
+											font-stretch: normal;
+											font-style: normal;
+											line-height: 1.63;
+											letter-spacing: normal;
+											color: #000000;
+										}
+										&:before {
+											content: counter(my-awesome-counter);
+											color: #fff;
+											font-size: 11px;
+											font-weight: bold;
+											position: absolute;
+											--size: 25px;
+											left: calc(-1 * var(--size) - 20px);
+											line-height: var(--size);
+											width: var(--size);
+											height: var(--size);
+											top: 0;
+											background: #3e3e3e;
+											border-radius: 50%;
+											text-align: center;
+										}
+									}
+								}
+
+								ul {
+									padding-left: 25px;
+
+									li {
+										&:before {
+											content: "";
+											color: #fff;
+											/* font-size : 10px; */
+											font-weight: bold;
+											position: absolute;
+											--size: 8px;
+											left: calc(-1 * var(--size) - 15px);
+											line-height: var(--size);
+											width: var(--size);
+											height: var(--size);
+											top: 9px;
+											background: #7d7773;
+											border-radius: 50%;
+											text-align: center;
+										}
+									}
+								}
+							}
+						}
+					}
+
+					//MOBILE
+					@media (max-width: 768px) {
+						flex-wrap: wrap;
+
+						.tab {
+							margin-top: -6px;
+
+							.content {
+								top: 71px;
+							}
+						}
+						.tab [type="radio"]:checked ~ .label ~ .content {
+							z-index: 1;
+							display: table;
+							top: 71px;
+						}
+					}
+				}
+			}
+		}
+		//MOBILE
+		@media (max-width: 768px) {
+			padding-left: unset;
+			padding-right: unset;
+			padding-bottom: 40px;
+			margin-bottom: 81px;
+			.recipe-header {
+				padding-right: 6%;
+				padding-left: 6%;
+				.recipes-top {
+					.recipes-factor-and-difficulty {
+						display: none;
+					}
+					.recipes-title {
+						margin-bottom: 20px;
+					}
+				}
+				.recipes-description {
+					padding-bottom: 20px;
+				}
+				.recipe-information {
+					.recipes-medium {
+						float: unset;
+						display: block;
+						width: 100%;
+						border: none;
+						padding: 0;
+						margin-bottom: 20px;
+					}
+				}
+				.only-mobile-recipes-factor-and-difficulty {
+					display: block;
+					.wow-factor {
+						img {
+							height: 40px;
+						}
+					}
+					.difficulty {
+						margin-top: 20px;
+						img {
+							height: 40px;
+						}
+					}
+				}
+			}
+			.recipe-body {
+				padding-right: 6%;
+				padding-left: 6%;
+				.recipes-ingredients-method {
+					flex-direction: column;
+					.recipes-image-content {
+						margin-top: 25px;
+						margin-right: 25px;
+						width: 100%;
+					}
+				}
+			}
+		}
+		.only-mobile-download-tab-btn {
+			text-align: left;
+			display: none;
+			//MOBILE
+			@media (max-width: 768px) {
+				margin-top: 87px;
+				padding-right: 6%;
+				padding-left: 6%;
+				display: block;
+				a {
+					color: #4092df;
+					i {
+						margin-right: 10px;
 					}
 				}
 			}
