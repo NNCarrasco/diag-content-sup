@@ -1,456 +1,75 @@
 .BaileysBrandPage {
 	text-align: left;
 	background-color: #f2f2f2;
-	.tabs-table-container {
-		//DESKTOP COMPONENT SEPARATION
-		@media screen and (min-width: 768px) {
-			margin-bottom: 80px;
-		}
-		//MOBILE COMPONENT SEPARATION
-		@media screen and (max-width: 768px) {
-			margin-bottom: 80px;
-		}
-		position: relative;
-		.porcentual-block {
-			z-index: 3;
-			bottom: -65px;
-			position: absolute;
-			width: 100%;
-			.porcentual-description {
-				font-size: 16px;
-				line-height: 1.63;
-				padding-top: 17px;
-				padding-bottom: 17px;
-				padding-left: 20px;
-				border: 4px solid #00b39f;
-				padding-right: 75px;
-				background-color: white;
-				.porcentual-number-container {
-					position: absolute;
-					bottom: -20px;
-					right: -35px;
-					color: white;
-					border-radius: 50%;
-					background-color: #00b39f;
-					width: 100px;
-					height: 100px;
-					.porcentual-number {
-						padding-top: 29px;
-						font-size: 25px;
-						font-weight: bold;
-						line-height: 1.6;
-						text-align: center;
-						color: #ffffff;
-					}
-				}
+	.titles-and-descriptions {
+		.general-title {
+			//DESKTOP COMPONENT SEPARATION
+			@media screen and (min-width: 768px) {
+				padding-bottom: 40px;
 			}
-			//MOBILE
-			@media (max-width: 768px) {
-				bottom: -100px;
-				left: -14px;
-				.porcentual-description {
-					padding-right: 80px;
-					.porcentual-number-container {
-						width: 110px;
-						height: 110px;
-						.porcentual-number {
-							padding-top: 35px;
-						}
-					}
-				}
+			//MOBILE COMPONENT SEPARATION
+			@media screen and (max-width: 768px) {
+				padding-bottom: 40px;
 			}
-		}
-		.tab [type="radio"] {
-			display: none;
-		}
-
-		.tab [type="radio"]:checked ~ .label {
-			background: rgba(242, 175, 12, 0.12);
-			padding-bottom: 17px;
-			padding-top: 17px;
-			border-bottom: 2px solid #f2af0c;
-			z-index: 2;
-		}
-
-		//DESKTOP
-		@media (min-width: 768px) {
-			width: 100%;
-			height: 780px;
-			padding-right: 10%;
-			padding-left: 10%;
-		}
-
-		//MOBILE
-		@media (max-width: 768px) {
-			height: 320px;
-			margin-bottom: 40px;
-		}
-
-		//MOBILE SPECIAL FOR 320PX RESOLUTION
-		@media (max-width: 321px) {
-			height: 320px;
-			margin-bottom: 40px;
-		}
-
-		.tab [type="radio"]:checked ~ .label ~ .content {
-			z-index: 1;
-			display: flex;
-		}
-
-		.tabs {
-			position: relative;
-			clear: both;
-			margin: 0;
-			padding-top: 25px;
-			white-space: nowrap;
-			display: flex;
-			width: 100%;
-			border-bottom: 2px solid #979797;
-			.download-tab-btn {
-				display: none;
-			}
-			//DESKTOP
-			@media (min-width: 768px) {
-				.download-tab-btn {
-					position: absolute;
-					top: 40px;
-					right: 0;
-					font-size: 14px;
-					display: block;
-					a {
-						color: #4092df;
-						i {
-							margin-right: 10px;
-						}
-					}
-				}
-			}
-			.tab {
-				vertical-align: top;
-
-				//DESKTOP
-				@media (min-width: 768px) {
-					display: flex;
-					height: 650px;
-					padding-top: 0;
-					.text-container {
-						width: 300px;
-						padding-top: 170px;
-						.the-colection {
-							font-size: 16px;
-							font-weight: 500;
-							line-height: 1.63;
-							text-transform: uppercase;
-							border-bottom: 1px solid #b9b9b9;
-							padding-bottom: 5px;
-							margin-bottom: 40px;
-						}
-						.title {
-							font-size: 24px;
-							font-weight: bold;
-							line-height: 1.5;
-							padding-bottom: 20px;
-						}
-						.text {
-							font-size: 16px;
-							font-style: italic;
-							line-height: 1.63;
-							color: #3e3e3e;
-						}
-					}
-					.image-container {
-						height: 525px;
-						width: 435px;
-						margin-left: 70px;
-						margin-top: 70px;
-						img {
-							width: 100%;
-							height: 100%;
-						}
-					}
-					&.show-desktop {
-						display: block;
-					}
-					&.show-phone {
-						display: none;
-					}
-				}
-				//MOBILE
-				@media (max-width: 768px) {
-					&.show-desktop {
-						display: none;
-					}
-					&.show-phone {
-						display: block;
-					}
-				}
-
-				.label {
-					font-size: 14px;
-					text-transform: uppercase;
-					font-weight: bold;
-					min-height: 50px;
-					line-height: 50px;
-					margin: auto;
-					padding-left: 20px;
-					padding-right: 20px;
-					padding-bottom: 17px;
-					padding-top: 17px;
-					border-bottom: 2px solid #979797;
-
-					&:hover {
-						cursor: pointer;
-					}
-				}
-
-				.content {
-					white-space: normal;
-					top: 77px;
-					left: 0;
-					right: 0;
-					bottom: 0;
-					display: none;
-					width: 100%;
-					// padding-top: 40px;
-					padding-left: 10%;
-					padding-right: 10%;
-					padding-bottom: 50px;
-					position: absolute;
-					background-color: white;
-					height: 650px;
-					.text {
-						font-size: 16px;
-						line-height: 1.63;
-						color: #3e3e3e;
-						padding-bottom: 45px;
-					}
-					.youtube-video {
-						width: 100%;
-						height: 516px;
-					}
-					ol,
-					ul {
-						counter-reset: my-awesome-counter;
-						list-style: none;
-						padding-left: 45px;
-
-						li {
-							margin-bottom: 10px;
-							counter-increment: my-awesome-counter;
-							position: relative;
-							&:last-child {
-								margin-bottom: 0;
-							}
-
-							p {
-								font-family: Roboto;
-								font-size: 16px;
-								font-weight: normal;
-								font-stretch: normal;
-								font-style: normal;
-								line-height: 1.63;
-								letter-spacing: normal;
-								color: #000000;
-							}
-							&:before {
-								content: counter(my-awesome-counter);
-								color: #fff;
-								font-size: 11px;
-								font-weight: bold;
-								position: absolute;
-								--size: 25px;
-								left: calc(-1 * var(--size) - 20px);
-								line-height: var(--size);
-								width: var(--size);
-								height: var(--size);
-								top: 0;
-								background: #3e3e3e;
-								border-radius: 50%;
-								text-align: center;
-							}
-						}
-					}
-
-					ul {
-						padding-left: 25px;
-
-						li {
-							&:before {
-								content: "";
-								color: #fff;
-								/* font-size : 10px; */
-								font-weight: bold;
-								position: absolute;
-								--size: 8px;
-								left: calc(-1 * var(--size) - 15px);
-								line-height: var(--size);
-								width: var(--size);
-								height: var(--size);
-								top: 9px;
-								background: #7d7773;
-								border-radius: 50%;
-								text-align: center;
-							}
-						}
-					}
-				}
-			}
-		}
-
-		//MOBILE
-		@media (max-width: 768px) {
-			flex-wrap: wrap;
-			height: 608px;
-			.tabs {
-				flex-wrap: wrap;
-				.tab {
-					margin-top: -6px;
-					flex-wrap: wrap;
-					justify-content: center;
-					border-bottom: none;
-
-					.content {
-						top: 72px;
-						padding-left: 5%;
-						padding-right: 5%;
-						height: unset;
-						.youtube-video {
-							height: 228px;
-						}
-					}
-				}
-				.tab [type="radio"]:checked ~ .label ~ .content {
-					z-index: 1;
-					display: table;
-					top: 72px;
-				}
-			}
-		}
-	}
-	.small-banner-card-container {
-		@media (min-width: 768px) {
-			padding-left: 11%;
-			padding-right: 11%;
-		}
-		// MIXED CONTENT BLOCK
-		.mixed-content-block {
-			//GENERAL AND PHONE
-			box-sizing: border-box; //FIXME: ??
-			font-family: 'Roboto', sans-serif;
-			background-color: #ffffff;
-			height: 540px;
-			width: 335px;
-			.copy-container {
-				height: 288px;
-				box-sizing: border-box;
-				width: 100%;
-				.content-title {
-					font-size: 20px;
-					font-weight: bold;
-					line-height: 1.63;
-					color: #000000;
-					margin: 0;
-					text-transform: uppercase;
-					padding-top: 20px;
-				}
-				.content-text {
-					font-size: 16px;
-					padding-top: 10px;
-					line-height: 1.63;
-					color: #3e3e3e;
-					margin: 0;
-				}
-				.content-button {
-					width: 100%;
-					font-size: 14px;
-					text-align: center;
-					display: block;
-					padding: 13px 0;
-					background-color: #f2af0c;
-					color: #000;
-					text-decoration: none;
-					text-transform: uppercase;
-					position: absolute;
-					bottom: 2px;
-					font-weight: 500;
-					&:hover {
-						background-color: #ffc800;
-						color: #000;
-					}
-				}
-			}
-			.image-container {
-				width: 335px;
-				height: 250px;
-				background-color: rgba(64, 146, 223, 0.5);
-				img {
-					width: 100%;
-				}
-			}
-		}
-		//DESKTOP
-		@media (min-width: 768px) {
+			font-size: 28px;
+			font-weight: bold;
+			line-height: 1.43;
+			color: #000000;
 			padding-left: 18%;
 			padding-right: 18%;
-			padding-top: 80px;
-			.mixed-content-block {
-				height: 190px;
-				width: 100%;
-				.copy-container {
-					float: left;
-					height: 100%;
-					width: 63%;
-					padding-left: 35px;
-					padding-right: 80px;
-					padding-top: 30px;
-					.content-text {
-						padding-bottom: 20px;
-						font-size: 18px;
-					}
-					.content-button {
-						position: relative;
-						width: 185px;
-					}
-				}
-				.image-container {
-					height: 100%;
-					width: 37%;
-					float: left;
-					img {
-						height: 100%;
-						width: 100%;
-					}
-				}
+			text-transform: uppercase;
+		}
+		.general-description {
+			//DESKTOP COMPONENT SEPARATION
+			@media screen and (min-width: 768px) {
+				padding-bottom: 80px;
+			}
+			//MOBILE COMPONENT SEPARATION
+			@media screen and (max-width: 768px) {
+				padding-bottom: 80px;
+			}
+			font-size: 20px;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.6;
+			color: #3e3e3e;
+			padding-right: 18%;
+			padding-left: 18%;
+			&.small {
+				font-size: 16px;
 			}
 		}
+		.related-title {
+			//DESKTOP COMPONENT SEPARATION
+			@media screen and (min-width: 768px) {
+				margin-bottom: 50px;
+			}
+			//MOBILE COMPONENT SEPARATION
+			@media screen and (max-width: 768px) {
+				margin-bottom: 50px;
+			}
+			font-size: 28px;
+			font-weight: bold;
+			line-height: 1.43;
+			color: #000000;
+			text-transform: uppercase;
+			border-bottom: 1px solid #7d7773;
+		}
 		//MOBILE
-		@media (max-width: 768px) {
-			padding-top: 60px;
-			.mixed-content-block {
-				position: relative;
-				width: 100%;
-				height: unset; //FIXME:
-				.image-container {
-					width: 100%;
-					height: 220px;
-					img {
-						height: 100%;
-					}
-				}
-				.copy-container {
-					padding-left: 20px;
-					padding-right: 20px;
-					padding-bottom: 30px;
-					height: unset; //FIXME:
-					.content-text {
-						padding-top: 30px;
-						font-size: 18px;
-					}
-					.content-button {
-						position: relative;
-						margin-top: 30px;
-					}
-				}
+		@media screen and (max-width: 768px) {
+			.general-title {
+				font-size: 24px;
+				padding-left: 6%;
+				padding-right: 5%;
+			}
+			.general-description {
+				padding-left: 6%;
+				padding-right: 5%;
+			}
+			.related-title {
+				font-size: 24px;
+				margin-left: 6%;
+				margin-right: 6%;
 			}
 		}
 	}
@@ -532,19 +151,53 @@
 					position: absolute;
 					top: 0;
 					right: 109px;
+					.puntuation-block {
+						display: flex;
+						margin: 2px;
+						width: fit-content;
+						border: 1px solid #0041a5;
+						.p-title {
+							font-size: 13px;
+							font-weight: 500;
+							line-height: 1.38;
+							background-color: #0041a5;
+							color: #ffffff;
+							padding: 4px 8px;
+							text-transform: uppercase;
+							min-width: 100px;
+							text-align: center;
+						}
+						.puntuation-container {
+							padding-left: 10px;
+							min-width: 95px;
+							padding-right: 5px;
+							color: #bebebe;
+							.far.fa-grin {
+								font-size: 20px;
+								padding-right: 5px;
+								padding-top: 3px;
+							}
+							.fas.fa-cocktail {
+								font-size: 17px;
+								padding-right: 5px;
+								padding-top: 3px;
+							}
+							.selected {
+								color: #0041a5;
+							}
+						}
+					}
 					.difficulty {
 						margin-top: 15px;
 					}
 				}
 				.recipes-title {
 					text-transform: uppercase;
-					font-size: 14px;
-					font-weight: 500;
-					line-height: 1.71;
-					color: #ffffff;
-					background-color: #00b39f;
-					padding: 8px 10px;
 					margin-bottom: 30px;
+					font-size: 28px;
+					font-weight: bold;
+					line-height: 1.43;
+					color: #000000;
 				}
 			}
 			.recipes-description {
@@ -610,7 +263,7 @@
 							padding-top: 17px;
 							padding-bottom: 17px;
 							padding-left: 20px;
-							border: 4px solid #00b39f;
+							border: 4px solid #0041a5;
 							padding-right: 75px;
 							background-color: white;
 							.porcentual-number-container {
@@ -619,7 +272,7 @@
 								right: -35px;
 								color: white;
 								border-radius: 50%;
-								background-color: #00b39f;
+								background-color: #0041a5;
 								width: 100px;
 								height: 100px;
 								.porcentual-number {
@@ -646,7 +299,7 @@
 									}
 								}
 							}
-						}					
+						}
 					}
 					.tab [type="radio"] {
 						display: none;
@@ -847,6 +500,7 @@
 						display: none;
 					}
 					.recipes-title {
+						font-size: 24px;
 						margin-bottom: 20px;
 					}
 				}
@@ -865,6 +519,42 @@
 				}
 				.only-mobile-recipes-factor-and-difficulty {
 					display: block;
+					.puntuation-block {
+						display: flex;
+						margin: 2px;
+						width: fit-content;
+						border: 1px solid #0041a5;
+						.p-title {
+							font-size: 13px;
+							font-weight: 500;
+							line-height: 1.38;
+							background-color: #0041a5;
+							color: #ffffff;
+							padding: 4px 8px;
+							text-transform: uppercase;
+							min-width: 100px;
+							text-align: center;
+						}
+						.puntuation-container {
+							padding-left: 10px;
+							min-width: 95px;
+							padding-right: 5px;
+							color: #bebebe;
+							.far.fa-grin {
+								font-size: 20px;
+								padding-right: 5px;
+								padding-top: 3px;
+							}
+							.fas.fa-cocktail {
+								font-size: 17px;
+								padding-right: 5px;
+								padding-top: 3px;
+							}
+							.selected {
+								color: #0041a5;
+							}
+						}
+					}
 					.wow-factor {
 						img {
 							height: 40px;

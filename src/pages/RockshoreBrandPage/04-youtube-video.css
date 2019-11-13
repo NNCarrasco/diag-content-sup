@@ -1,0 +1,40 @@
+.youtube-video {
+  background-color: rgba(64, 146, 223, 0.5);
+}
+@media screen and (min-width: 768px) {
+  .youtube-video {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .youtube-video {
+    margin-bottom: 80px;
+  }
+}
+.youtube-video.one {
+  margin-left: 18%;
+  margin-right: 18%;
+}
+.youtube-video.one iframe {
+  width: 100%;
+  height: 515px;
+}
+.youtube-video.two {
+  margin-left: 9%;
+  margin-right: 9%;
+}
+.youtube-video.two iframe {
+  width: 100%;
+  height: 600px;
+}
+@media screen and (max-width: 768px) {
+  .youtube-video.one,
+  .youtube-video.two {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .youtube-video.one iframe,
+  .youtube-video.two iframe {
+    height: 230px;
+  }
+}

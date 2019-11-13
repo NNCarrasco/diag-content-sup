@@ -1,0 +1,198 @@
+<style>
+@media screen and (min-width: 768px) {
+  .banner-container {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner-container {
+    padding-bottom: 80px;
+  }
+}
+.banner-container .banner-card-container {
+  text-align: left;
+  background-color: #ffffff;
+}
+.banner-container .banner-card-container .label {
+  height: 40px;
+  margin-left: 83px;
+  margin-top: 25px;
+  width: 125px;
+  background-color: #51ae00;
+}
+.banner-container .banner-card-container .label div {
+  height: 100%;
+}
+.banner-container .banner-card-container .label div span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.banner-container .banner-card-container .title-container {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.banner-container .banner-card-container .title-container .title {
+  font-size: 38px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  color: black;
+  text-transform: uppercase;
+}
+.banner-container .banner-card-container .text-container .text {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #3e3e3e;
+}
+.banner-container .banner-card-container .btn-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.banner-container .banner-card-container .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.banner-container .banner-card-container .image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.banner-container .banner-card-container .image-container img {
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .banner-container .banner-card-container {
+    height: 420px;
+  }
+  .banner-container .banner-card-container .content-container {
+    padding-right: 110px;
+  }
+  .banner-container .banner-card-container .text-container,
+  .banner-container .banner-card-container .title-container {
+    padding-left: 83px;
+  }
+  .banner-container .banner-card-container .text-container {
+    padding-bottom: 20px;
+  }
+  .banner-container .banner-card-container .btn-container {
+    height: 45px;
+    width: 160px;
+    margin-left: 83px;
+  }
+  .banner-container .banner-card-container .image-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 425px solid #ffffff;
+    border-right: 80px solid transparent;
+    width: 0;
+  }
+  .banner-container .banner-card-container .image-container .desktop-img {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner-container .banner-card-container {
+    flex-wrap: wrap;
+    margin-top: 0;
+    height: 630px;
+  }
+  .banner-container .banner-card-container .label {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  .banner-container .banner-card-container .text-container,
+  .banner-container .banner-card-container .title-container {
+    padding: 20px;
+    padding-top: 0;
+    margin: 0;
+  }
+  .banner-container .banner-card-container .text-container .text,
+  .banner-container .banner-card-container .title-container .text {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.63;
+    color: #3e3e3e;
+  }
+  .banner-container .banner-card-container .text-container .title,
+  .banner-container .banner-card-container .title-container .title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .banner-container .banner-card-container .title-container {
+    margin-top: 75px;
+  }
+  .banner-container .banner-card-container .title-container.with-label {
+    margin-top: 20px;
+  }
+  .banner-container .banner-card-container .btn-container {
+    width: 88%;
+    height: 45px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .banner-container .banner-card-container .image-container .phone-img {
+    display: block;
+    position: absolute;
+    height: 280px;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+</style>
+
+<!-- BANNER -->
+<div class="banner-container">
+    <div class="banner-card-container slds-grid">
+        <div class="content-container slds-col slds-size_2-of-2 slds-large-size_1-of-2">
+            <!-- <div class="label">
+                    <div class="slds-align_absolute-center">
+                        <span>TREND ALERT</span>
+                    </div>
+                </div> -->
+            <div class="title-container with-label">
+                <h2 class="title">the bracing refreshment of the Atlantic Coast</h2>
+            </div>
+            <div class="text-container">
+                <p class="text">Light, refreshing tasting lager and cider, inspired by the Atlantic Coast. From the
+                    brewers of St James’s Gate, it’s had a phenomenal first year. Make sure you’re part of the second…
+                </p>
+            </div>
+            <!-- <div class="btn-container">
+                    <a href="#" target="_blank" class="content-button">download it now</a>
+                </div> -->
+        </div>
+        <div class="slds-col slds-size_2-of-2 slds-large-size_1-of-2">
+            <div class="image-container">
+                <img class="desktop-img"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1M"
+                    alt="" />
+                <img class="phone-img"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2P"
+                    alt="" />
+            </div>
+        </div>
+    </div>
+</div>

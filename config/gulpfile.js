@@ -15,7 +15,7 @@ gulp.task('style-inject', function(){
 gulp.task('watch', function() {
     gulp.watch('../src/pages/**/*.html', gulp.series('style-inject'));
     gulp.watch('../src/pages/**/*.css', gulp.series('style-inject'));
-    gulp.watch('../src/**/*.less', gulp.series('less'));  
+    gulp.watch('../src/**/*.less', gulp.series('less'));
 });
 
 gulp.task('default', gulp.series('watch')); 
