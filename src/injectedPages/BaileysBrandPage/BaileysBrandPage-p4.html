@@ -1,0 +1,351 @@
+<style>
+.BaileysBrandPage {
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .BaileysBrandPage .halloween-class {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .halloween-class {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+.BaileysBrandPage .halloween-class .tab-table-container .tab [type="radio"] {
+  display: none;
+}
+.BaileysBrandPage .halloween-class .tab-table-container .tab [type="radio"]:checked ~ .label {
+  background: rgba(242, 175, 12, 0.12);
+  padding-bottom: 17px;
+  padding-top: 17px;
+  border-bottom: 2px solid #f2af0c;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .BaileysBrandPage .halloween-class .tab-table-container {
+    height: 475px;
+  }
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .halloween-class .tab-table-container {
+    height: 320px;
+  }
+}
+@media (max-width: 321px) {
+  .BaileysBrandPage .halloween-class .tab-table-container {
+    height: 320px;
+  }
+}
+.BaileysBrandPage .halloween-class .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content {
+  z-index: 1;
+  display: table;
+}
+.BaileysBrandPage .halloween-class .tab-table-container .tabs {
+  position: relative;
+  clear: both;
+  margin: 0;
+  padding-top: 25px;
+  white-space: nowrap;
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid #979797;
+}
+.BaileysBrandPage .halloween-class .tab-table-container .tabs .tab {
+  vertical-align: top;
+}
+.BaileysBrandPage .halloween-class .tab-table-container .tabs .tab .label {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  min-height: 50px;
+  line-height: 50px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  padding-top: 17px;
+  border-bottom: 2px solid #979797;
+}
+.BaileysBrandPage .halloween-class .tab-table-container .tabs .tab .label:hover {
+  cursor: pointer;
+}
+.BaileysBrandPage .halloween-class .tab-table-container .tabs .tab .content {
+  white-space: normal;
+  top: 77px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  background-color: white;
+}
+.BaileysBrandPage .halloween-class .tab-table-container .tabs .tab .content ol,
+.BaileysBrandPage .halloween-class .tab-table-container .tabs .tab .content ul {
+  max-width: 350px;
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 45px;
+}
+.BaileysBrandPage .halloween-class .tab-table-container .tabs .tab .content ol li,
+.BaileysBrandPage .halloween-class .tab-table-container .tabs .tab .content ul li {
+  margin-bottom: 16px;
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+.BaileysBrandPage .halloween-class .tab-table-container .tabs .tab .content ol li p,
+.BaileysBrandPage .halloween-class .tab-table-container .tabs .tab .content ul li p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #000000;
+}
+.BaileysBrandPage .halloween-class .tab-table-container .tabs .tab .content ol li:before,
+.BaileysBrandPage .halloween-class .tab-table-container .tabs .tab .content ul li:before {
+  content: counter(my-awesome-counter);
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  position: absolute;
+  --size: 25px;
+  left: calc(-1 * var(--size) - 20px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  background: #3e3e3e;
+  border-radius: 50%;
+  text-align: center;
+}
+.BaileysBrandPage .halloween-class .tab-table-container .tabs .tab .content ul {
+  padding-left: 25px;
+}
+.BaileysBrandPage .halloween-class .tab-table-container .tabs .tab .content ul li:before {
+  content: "";
+  color: #fff;
+  /* font-size : 10px; */
+  font-weight: bold;
+  position: absolute;
+  --size: 8px;
+  left: calc(-1 * var(--size) - 15px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 9px;
+  background: #7d7773;
+  border-radius: 50%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .halloween-class .tab-table-container {
+    flex-wrap: wrap;
+  }
+  .BaileysBrandPage .halloween-class .tab-table-container .tab {
+    margin-top: -6px;
+  }
+  .BaileysBrandPage .halloween-class .tab-table-container .tab .content {
+    top: 71px;
+  }
+  .BaileysBrandPage .halloween-class .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content {
+    z-index: 1;
+    display: table;
+    top: 71px;
+  }
+}
+.BaileysBrandPage .title-card {
+  width: 520px;
+  height: 40px;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.BaileysBrandPage .subtitle-card {
+  width: 520px;
+  height: 52px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #3e3e3e;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.BaileysBrandPage .FULL-SIZE {
+  width: 520px;
+  height: 317px;
+  object-fit: cover;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.BaileysBrandPage .container-recipes {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .title-card {
+    width: unset;
+    height: unset;
+  }
+  .BaileysBrandPage .subtitle-card {
+    width: unset;
+    height: unset;
+    text-align: left;
+  }
+  .BaileysBrandPage .FULL-SIZE {
+    width: 334.7px;
+    height: 203.5px;
+    object-fit: cover;
+  }
+  .BaileysBrandPage .container-recipes {
+    display: block;
+    height: 1775px;
+  }
+  .BaileysBrandPage .recipe-card {
+    padding: 40px 0 20px 0;
+  }
+  .BaileysBrandPage .recipe-card.not-first {
+    border-top: 1px solid #b9b9b9;
+  }
+}
+
+</style>
+
+<div class="BaileysBrandPage">
+    <div class="halloween-class">
+        <div class="container-recipes">
+            <div class="recipe-card">
+                <div class="title-card">
+                    <p>Baileys iced latte</p>
+                </div>
+                <div class="subtitle-card">
+                    <p>For large events, use Baileys pre-mixed cans to create serves and use branded disposable cups</p>
+                </div>
+                <div>
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MX37"
+                        class="FULL-SIZE">
+                </div>
+                <div class="tab-table-container">
+                    <div class="tabs">
+                        <div class="tab">
+                            <input type="radio" id="tab-1" name="tab-group-1" checked>
+                            <label class="label" for="tab-1">Ingredients</label>
+                            <div class="ingredients spacer"></div>
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <p>Pour 250ml of cold milk into a glass of ice</p>
+                                    </li>
+                                    <li>
+                                        <p>Add a shot of espresso</p>
+                                    </li>
+                                    <li>
+                                        <p>Pour in 50ml of Baileys Original Irish Cream</p>
+                                    </li>
+                                    <li>
+                                        <p>Top with whipped cream and a sweet treat</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="radio" id="tab-2" name="tab-group-1">
+                            <label class="label" for="tab-2">Method</label>
+                            <div class="method spacer"></div>
+                            <div class="content">
+                                <ol>
+                                    <li>
+                                        <p>Pour 250ml of cold milk into a glass of ice</p>
+                                    </li>
+                                    <li>
+                                        <p>Add a shot of espresso</p>
+                                    </li>
+                                    <li>
+                                        <p>Pour in 50ml of Baileys Original Irish Cream</p>
+                                    </li>
+                                    <li>
+                                        <p>Top with whipped cream and a sweet treat</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-card not-first">
+                <div class="title-card">
+                    <p>BAILEYS PUMPKIN SPICED LATTE</p>
+                </div>
+                <div class="subtitle-card">
+                    <p>A delicious blend of baileys, coffee and unmistakably autumnal spices.</p>
+                </div>
+                <div>
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MX3C"
+                        class="FULL-SIZE">
+                </div>
+                <div class="tab-table-container">
+                    <div class="tabs">
+                        <div class="tab">
+                            <input type="radio" id="tab-3" name="tab-group-2" checked>
+                            <label class="label" for="tab-3">Ingredients</label>
+                            <div class="ingredients spacer"></div>
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <p>50ml Baileys Pumpkin Spice</p>
+                                    </li>
+                                    <li>
+                                        <p>250ml milk</p>
+                                    </li>
+                                    <li>
+                                        <p>1 shot of espresso</p>
+                                    </li>
+                                    <li>
+                                        <p>Whipped cream, nutmeg, cinnamon stick</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="radio" id="tab-4" name="tab-group-2">
+                            <label class="label" for="tab-4">Method</label>
+                            <div class="method spacer"></div>
+                            <div class="content">
+                                <ol>
+                                    <li>
+                                        <p>Pour 250ml of steaming milk into a cup</p>
+                                    </li>
+                                    <li>
+                                        <p>Add one espresso shot</p>
+                                    </li>
+                                    <li>
+                                        <p>Pour in 50ml of Baileys Pumpkin Spice</p>
+                                    </li>
+                                    <li>
+                                        <p>Add nutmeg, whipped cream and cinnamon stick to serve</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
