@@ -1,0 +1,371 @@
+<style>
+.tabs-table-container {
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .tabs-table-container {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .tabs-table-container {
+    margin-bottom: 80px;
+  }
+}
+.tabs-table-container .porcentual-block {
+  z-index: 3;
+  bottom: -65px;
+  position: absolute;
+  width: 100%;
+}
+.tabs-table-container .porcentual-block .porcentual-description {
+  font-size: 16px;
+  line-height: 1.63;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  border: 4px solid #00b39f;
+  padding-right: 75px;
+  background-color: white;
+}
+.tabs-table-container .porcentual-block .porcentual-description .porcentual-number-container {
+  position: absolute;
+  bottom: -20px;
+  right: -35px;
+  color: white;
+  border-radius: 50%;
+  background-color: #00b39f;
+  width: 100px;
+  height: 100px;
+}
+.tabs-table-container .porcentual-block .porcentual-description .porcentual-number-container .porcentual-number {
+  padding-top: 29px;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.6;
+  text-align: center;
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .tabs-table-container .porcentual-block {
+    bottom: -100px;
+    left: -14px;
+  }
+  .tabs-table-container .porcentual-block .porcentual-description {
+    padding-right: 80px;
+  }
+  .tabs-table-container .porcentual-block .porcentual-description .porcentual-number-container {
+    width: 110px;
+    height: 110px;
+  }
+  .tabs-table-container .porcentual-block .porcentual-description .porcentual-number-container .porcentual-number {
+    padding-top: 35px;
+  }
+}
+.tabs-table-container .tab [type="radio"] {
+  display: none;
+}
+.tabs-table-container .tab [type="radio"]:checked ~ .label {
+  background: rgba(242, 175, 12, 0.12);
+  padding-bottom: 17px;
+  padding-top: 17px;
+  border-bottom: 2px solid #f2af0c;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .tabs-table-container {
+    width: 100%;
+    height: 780px;
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+}
+@media (max-width: 768px) {
+  .tabs-table-container {
+    height: 320px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 321px) {
+  .tabs-table-container {
+    height: 320px;
+    margin-bottom: 40px;
+  }
+}
+.tabs-table-container .tab [type="radio"]:checked ~ .label ~ .content {
+  z-index: 1;
+  display: flex;
+}
+.tabs-table-container .tabs {
+  position: relative;
+  clear: both;
+  margin: 0;
+  padding-top: 25px;
+  white-space: nowrap;
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid #979797;
+}
+.tabs-table-container .tabs .download-tab-btn {
+  display: none;
+}
+@media (min-width: 768px) {
+  .tabs-table-container .tabs .download-tab-btn {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    font-size: 14px;
+    display: block;
+  }
+  .tabs-table-container .tabs .download-tab-btn a {
+    color: #4092df;
+  }
+  .tabs-table-container .tabs .download-tab-btn a i {
+    margin-right: 10px;
+  }
+}
+.tabs-table-container .tabs .tab {
+  vertical-align: top;
+}
+.tabs-table-container .tabs .tab .text-container .the-colection {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  text-transform: uppercase;
+  border-bottom: 1px solid #b9b9b9;
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+}
+.tabs-table-container .tabs .tab .text-container .title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+.tabs-table-container .tabs .tab .text-container .text {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.63;
+  color: #3e3e3e;
+}
+@media (min-width: 768px) {
+  .tabs-table-container .tabs .tab {
+    display: block;
+    height: 650px;
+    padding-top: 0;
+  }
+  .tabs-table-container .tabs .tab .text-container {
+    width: 300px;
+    padding-top: 170px;
+  }
+  .tabs-table-container .tabs .tab .image-container {
+    height: 525px;
+    width: 435px;
+    margin-left: 70px;
+    margin-top: 70px;
+  }
+  .tabs-table-container .tabs .tab .image-container img {
+    width: 100%;
+    height: 100%;
+  }
+  .tabs-table-container .tabs .tab.show-desktop {
+    display: block;
+  }
+  .tabs-table-container .tabs .tab.show-phone {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .tabs-table-container .tabs .tab .the-colection {
+    padding-top: 20px;
+  }
+  .tabs-table-container .tabs .tab .image-container {
+    width: 252px;
+    height: 302px;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .tabs-table-container .tabs .tab.show-desktop {
+    display: none;
+  }
+  .tabs-table-container .tabs .tab.show-phone {
+    display: block;
+  }
+}
+.tabs-table-container .tabs .tab .label {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  min-height: 50px;
+  line-height: 50px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  padding-top: 17px;
+  border-bottom: 2px solid #979797;
+}
+.tabs-table-container .tabs .tab .label:hover {
+  cursor: pointer;
+}
+.tabs-table-container .tabs .tab .content {
+  white-space: normal;
+  top: 77px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 50px;
+  position: absolute;
+  background-color: white;
+  height: 650px;
+}
+.tabs-table-container .tabs .tab .content .text {
+  font-size: 16px;
+  line-height: 1.63;
+  color: #3e3e3e;
+  padding-bottom: 45px;
+}
+.tabs-table-container .tabs .tab .content .youtube-video {
+  width: 100%;
+  height: 516px;
+}
+.tabs-table-container .tabs .tab .content ol,
+.tabs-table-container .tabs .tab .content ul {
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 45px;
+}
+.tabs-table-container .tabs .tab .content ol li,
+.tabs-table-container .tabs .tab .content ul li {
+  margin-bottom: 10px;
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+.tabs-table-container .tabs .tab .content ol li:last-child,
+.tabs-table-container .tabs .tab .content ul li:last-child {
+  margin-bottom: 0;
+}
+.tabs-table-container .tabs .tab .content ol li p,
+.tabs-table-container .tabs .tab .content ul li p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #000000;
+}
+.tabs-table-container .tabs .tab .content ol li:before,
+.tabs-table-container .tabs .tab .content ul li:before {
+  content: counter(my-awesome-counter);
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  position: absolute;
+  --size: 25px;
+  left: calc(-1 * var(--size) - 20px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  background: #3e3e3e;
+  border-radius: 50%;
+  text-align: center;
+}
+.tabs-table-container .tabs .tab .content ul {
+  padding-left: 25px;
+}
+.tabs-table-container .tabs .tab .content ul li:before {
+  content: "";
+  color: #fff;
+  /* font-size : 10px; */
+  font-weight: bold;
+  position: absolute;
+  --size: 8px;
+  left: calc(-1 * var(--size) - 15px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 9px;
+  background: #7d7773;
+  border-radius: 50%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .tabs-table-container {
+    flex-wrap: wrap;
+    height: 720px;
+  }
+  .tabs-table-container .tabs {
+    flex-wrap: wrap;
+  }
+  .tabs-table-container .tabs .tab {
+    margin-top: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: none;
+  }
+  .tabs-table-container .tabs .tab .content {
+    top: 128px;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: unset;
+  }
+  .tabs-table-container .tabs .tab .content .youtube-video {
+    height: 228px;
+  }
+  .tabs-table-container .tabs .tab [type="radio"]:checked ~ .label ~ .content {
+    z-index: 1;
+    display: table;
+    top: 130px;
+  }
+}
+
+</style>
+<div class="tabs-table-container">
+	<div class="tabs">
+		<!-- <div class="download-tab-btn">
+			<a href="/"><i class="fas fa-download"></i>Download recipe card</a>
+		</div> -->
+		<div class="tab">
+			<input type="radio" id="tab-1" name="tab-group-1" checked>
+			<label class="label" for="tab-1">SPICED GOLD</label>
+			<div class="ingredients spacer"></div>
+			<div class="content">
+				<div class="text-container">
+					<p class="the-colection">MEET THE CREW</p>
+					<p class="title">CAPTAIN MORGAN original
+						SPICED GOLD</p>
+					<p class="text">Notes of rich natural vanilla, brown sugar, dried fruit, warming spices with hints of oak, come together to
+						create a perfectly balanced spirit with a smooth finish.</p>
+				</div>
+				<div class="image-container">
+					<img
+						src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+				</div>
+			</div>
+		</div>
+		<div class="tab">
+			<input type="radio" id="tab-2" name="tab-group-1">
+			<label class="label" for="tab-2">WHITE RUM</label>
+			<div class="method spacer"></div>
+			<div class="content">
+				<div class="text-container">
+					<p class="the-colection">MEET THE CREW</p>
+					<p class="title">CAPTAIN MORGAN
+						WHITE RUM</p>
+					<p class="text">Medium-bodied, crisp and clean with a slight sweet aftertaste.</p>
+				</div>
+				<div class="image-container">
+					<img
+						src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
