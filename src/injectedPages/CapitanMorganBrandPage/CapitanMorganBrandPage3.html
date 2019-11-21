@@ -1,0 +1,136 @@
+<style>
+.horizontal-cards-container {
+  padding-bottom: 35px;
+}
+@media (min-width: 768px) {
+  .horizontal-cards-container {
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-bottom: 0;
+  }
+}
+.horizontal-cards-container .card-container {
+  text-align: left;
+  margin-bottom: 25px;
+}
+.horizontal-cards-container .card-container .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.horizontal-cards-container .card-container .image-container img {
+  height: 100%;
+  width: 100%;
+}
+.horizontal-cards-container .card-container .content-container {
+  background-color: #ffffff;
+}
+.horizontal-cards-container .card-container .content-container .icon {
+  height: 35px;
+}
+.horizontal-cards-container .card-container .content-container .content-title {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  margin: unset;
+}
+.horizontal-cards-container .card-container .content-container .content-text {
+  font-size: 16px;
+  line-height: 26px;
+  margin: unset;
+}
+@media (min-width: 768px) {
+  .horizontal-cards-container .card-container {
+    height: 250px;
+    display: flex;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 50%;
+    flex: 1 1 auto;
+    margin-bottom: 35px;
+  }
+  .horizontal-cards-container .card-container .image-container {
+    width: 45%;
+  }
+  .horizontal-cards-container .card-container .content-container {
+    width: 54%;
+    padding-top: 44px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+  }
+  .horizontal-cards-container .card-container.image-left .image-container {
+    order: 0;
+    border-right: 5px solid #be63f7;
+  }
+  .horizontal-cards-container .card-container.image-left .content-container {
+    order: 1;
+  }
+  .horizontal-cards-container .card-container.image-right .image-container {
+    order: 1;
+    border-left: 5px solid #be63f7;
+  }
+  .horizontal-cards-container .card-container.image-right .content-container {
+    order: 0;
+  }
+}
+@media (max-width: 768px) {
+  .horizontal-cards-container .card-container {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 4%;
+  }
+  .horizontal-cards-container .card-container .image-container {
+    height: 260px;
+    width: 100%;
+    border-bottom: 5px solid #be63f7;
+  }
+  .horizontal-cards-container .card-container .content-container {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .horizontal-cards-container .card-container .content-container .icon {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .horizontal-cards-container .card-container .content-container .content-title {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .horizontal-cards-container .card-container .content-container .content-text {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+</style>
+
+<!-- HORIZONTAL CARDS -->
+<div class="horizontal-cards-container">
+    <div class="card-container image-left">
+        <div class="image-container">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1R" />
+        </div>
+        <div class="content-container">
+            <img class="icon"
+                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1l" />
+            <p class="content-title">Taste sensation</p>
+            <p class="content-text">Less challenging than whiskey, more flavoursome than vodka. Perfect for consumers
+                wanting something new</p>
+        </div>
+    </div>
+    <div class="card-container image-left">
+        <div class="image-container">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1W" />
+        </div>
+        <div class="content-container">
+            <img class="icon"
+                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1q" />
+            <p class="content-title">Broad appeal</p>
+            <p class="content-text">From long refreshing serves to rich and smooth digestifs, rum offers something for
+                everyone</p>
+        </div>
+    </div>
+</div>
