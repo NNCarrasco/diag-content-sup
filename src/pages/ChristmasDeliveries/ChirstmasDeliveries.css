@@ -1,0 +1,407 @@
+.christmas-deliveries {
+  background-color: #F2F2F2;
+}
+@media screen and (min-width: 768px) {
+  .christmas-deliveries .banner-container {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .christmas-deliveries .banner-container {
+    padding-bottom: 80px;
+  }
+}
+.christmas-deliveries .banner-container .banner-card-container {
+  text-align: left;
+  background-color: #ffffff;
+}
+.christmas-deliveries .banner-container .banner-card-container .label {
+  height: 40px;
+  margin-left: 83px;
+  margin-top: 25px;
+  width: 125px;
+  background-color: #51ae00;
+}
+.christmas-deliveries .banner-container .banner-card-container .label div {
+  height: 100%;
+}
+.christmas-deliveries .banner-container .banner-card-container .label div span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.christmas-deliveries .banner-container .banner-card-container .title-container {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.christmas-deliveries .banner-container .banner-card-container .title-container.with-label {
+  margin-top: 20px;
+}
+.christmas-deliveries .banner-container .banner-card-container .title-container .title {
+  font-size: 38px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  color: black;
+  text-transform: uppercase;
+}
+.christmas-deliveries .banner-container .banner-card-container .text-container .text {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #3e3e3e;
+}
+.christmas-deliveries .banner-container .banner-card-container .btn-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.christmas-deliveries .banner-container .banner-card-container .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.christmas-deliveries .banner-container .banner-card-container .image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.christmas-deliveries .banner-container .banner-card-container .image-container img {
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .christmas-deliveries .banner-container .banner-card-container {
+    height: 420px;
+  }
+  .christmas-deliveries .banner-container .banner-card-container .content-container {
+    padding-right: 110px;
+  }
+  .christmas-deliveries .banner-container .banner-card-container .text-container,
+  .christmas-deliveries .banner-container .banner-card-container .title-container {
+    padding-left: 83px;
+  }
+  .christmas-deliveries .banner-container .banner-card-container .text-container {
+    padding-bottom: 20px;
+  }
+  .christmas-deliveries .banner-container .banner-card-container .btn-container {
+    height: 45px;
+    width: 160px;
+    margin-left: 83px;
+  }
+  .christmas-deliveries .banner-container .banner-card-container .image-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 425px solid #ffffff;
+    border-right: 80px solid transparent;
+    width: 0;
+  }
+  .christmas-deliveries .banner-container .banner-card-container .image-container .desktop-img {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .christmas-deliveries .banner-container .banner-card-container {
+    flex-wrap: wrap;
+    margin-top: 0;
+    height: 630px;
+  }
+  .christmas-deliveries .banner-container .banner-card-container .label {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  .christmas-deliveries .banner-container .banner-card-container .text-container,
+  .christmas-deliveries .banner-container .banner-card-container .title-container {
+    padding: 20px;
+    padding-top: 0;
+    margin: 0;
+  }
+  .christmas-deliveries .banner-container .banner-card-container .text-container .text,
+  .christmas-deliveries .banner-container .banner-card-container .title-container .text {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.63;
+    color: #3e3e3e;
+  }
+  .christmas-deliveries .banner-container .banner-card-container .text-container .title,
+  .christmas-deliveries .banner-container .banner-card-container .title-container .title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .christmas-deliveries .banner-container .banner-card-container .title-container {
+    margin-top: 75px;
+  }
+  .christmas-deliveries .banner-container .banner-card-container .title-container.with-label {
+    margin-top: 20px;
+  }
+  .christmas-deliveries .banner-container .banner-card-container .btn-container {
+    width: 88%;
+    height: 45px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .christmas-deliveries .banner-container .banner-card-container .image-container .phone-img {
+    display: block;
+    position: absolute;
+    height: 280px;
+    left: 0;
+    bottom: 0;
+  }
+}
+.christmas-deliveries .black-box {
+  display: flex;
+  margin-right: 18%;
+  margin-left: 18%;
+  position: relative;
+  color: white;
+  background-color: #3e3e3e;
+  border-radius: 56px 0px 0px 56px;
+}
+@media screen and (min-width: 768px) {
+  .christmas-deliveries .black-box {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .christmas-deliveries .black-box {
+    margin-bottom: 20px;
+  }
+}
+.christmas-deliveries .black-box.white-background {
+  background-color: #ffffff;
+  border-radius: unset;
+  color: black;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .christmas-deliveries .black-box.white-background {
+    margin-bottom: 80px;
+    margin-right: 9%;
+    margin-left: 9%;
+  }
+  .christmas-deliveries .black-box.white-background .description-container {
+    padding-left: 11%;
+  }
+  .christmas-deliveries .black-box.white-background .btn-container {
+    right: 11%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .christmas-deliveries .black-box.white-background {
+    margin-bottom: 80px;
+  }
+}
+.christmas-deliveries .black-box.white-background .description-container {
+  padding-top: unset;
+  width: 65%;
+}
+.christmas-deliveries .black-box .image-container {
+  height: 110px;
+  width: 110px;
+  background-color: rgba(64, 146, 223, 0.5);
+  border-radius: 56px;
+  margin-left: -2px;
+}
+.christmas-deliveries .black-box .image-container img {
+  height: 100%;
+  width: 100%;
+}
+.christmas-deliveries .black-box .description-container {
+  padding-top: 30px;
+  padding-left: 40px;
+  font-size: 18px;
+  line-height: 1.56;
+  font-weight: 300;
+  width: 65%;
+}
+.christmas-deliveries .black-box .description-container .bold {
+  font-weight: bold;
+}
+.christmas-deliveries .black-box .btn-container {
+  height: 44px;
+  width: 130px;
+  position: absolute;
+  top: 33px;
+  right: 40px;
+}
+.christmas-deliveries .black-box .btn-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.christmas-deliveries .black-box .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+@media screen and (max-width: 768px) {
+  .christmas-deliveries .black-box {
+    flex-flow: column;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: unset;
+  }
+  .christmas-deliveries .black-box.white-background .btn-container {
+    margin-bottom: unset;
+  }
+  .christmas-deliveries .black-box .image-container {
+    height: 110px;
+    width: 110px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: -1px;
+  }
+  .christmas-deliveries .black-box .description-container {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+  .christmas-deliveries .black-box .btn-container {
+    position: unset;
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 40px;
+  }
+}
+.christmas-deliveries .week-schedule-container {
+  padding: 30px 20px;
+  margin-bottom: 20px;
+  background: white;
+}
+.christmas-deliveries .week-schedule-container .week-schedule-header {
+  text-align: left;
+  padding-bottom: 15px;
+}
+.christmas-deliveries .week-schedule-container .week-schedule-header .week-schedule-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  color: #000000;
+}
+@media screen and (min-width: 768px) {
+  .christmas-deliveries .week-schedule-container .week-schedule-header .week-schedule-title {
+    font-size: 28px;
+  }
+}
+.christmas-deliveries .week-schedule-container .week-schedule-header .week-schedule-title i {
+  padding-right: 10px;
+}
+.christmas-deliveries .week-schedule-container .week-schedule-header .week-schedule-info {
+  padding-left: 30px;
+  font-size: 12px;
+  color: #ef2446;
+}
+@media screen and (min-width: 768px) {
+  .christmas-deliveries .week-schedule-container .week-schedule-header .week-schedule-info {
+    padding-left: 0;
+  }
+}
+.christmas-deliveries .week-schedule-container .week-schedule-table {
+  padding-top: 15px;
+}
+.christmas-deliveries .week-schedule-container .week-schedule-table .week-schedule-table-header {
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+}
+.christmas-deliveries .week-schedule-container .week-schedule-table .week-schedule-table-header .week-schedule-table-header-cell {
+  padding: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .christmas-deliveries .week-schedule-container .week-schedule-table .week-schedule-table-header .week-schedule-table-header-cell {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 768px) {
+  .christmas-deliveries .week-schedule-container .week-schedule-table .week-schedule-table-header .week-schedule-table-header-cell.cutoff {
+    display: none;
+  }
+}
+.christmas-deliveries .week-schedule-container .week-schedule-table .week-schedule-table-header .week-schedule-table-header-cell.cutoff.desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .christmas-deliveries .week-schedule-container .week-schedule-table .week-schedule-table-header .week-schedule-table-header-cell.cutoff.desktop {
+    display: table-cell;
+  }
+}
+.christmas-deliveries .week-schedule-container .week-schedule-table .day-schedule-table-row {
+  height: 80px;
+  border-bottom: 1px solid #f2f2f2;
+}
+@media screen and (min-width: 768px) {
+  .christmas-deliveries .week-schedule-container .week-schedule-table .day-schedule-table-row {
+    display: none;
+  }
+}
+.christmas-deliveries .week-schedule-container .week-schedule-table .day-schedule-table-row.desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .christmas-deliveries .week-schedule-container .week-schedule-table .day-schedule-table-row.desktop {
+    display: table-row;
+  }
+}
+.christmas-deliveries .week-schedule-container .week-schedule-table .day-schedule-table-row.desktop .day-schedule-table-cell {
+  text-align: left;
+  padding-left: 10px;
+}
+.christmas-deliveries .week-schedule-container .week-schedule-table .day-schedule-table-row .day-schedule-table-cell {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.christmas-deliveries .week-schedule-container .week-schedule-table .day-schedule-table-row .day-schedule-table-cell.bold {
+  font-weight: 500;
+}
+.christmas-deliveries .week-schedule-container .week-schedule-table .day-schedule-table-row .day-schedule-table-cell.affected {
+  font-weight: 500;
+  color: #ef2446;
+}
+.christmas-deliveries .week-schedule-container .week-schedule-table .day-schedule-table-row .day-schedule-table-cell .double-order {
+  font-weight: 500;
+  font-size: 14px;
+  color: #ef2446;
+}
+.slds-col--padded.contentRegion.comm-layout-column {
+  padding: 0;
+}
+.cCP_NewsDetail .detail-date.p-16-white-bold,
+.cCP_NewsDetail .btn-div.content-button-container {
+  display: none;
+}
+.cCP_NewsDetail {
+  margin: unset;
+  padding: unset;
+}

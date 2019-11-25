@@ -1,0 +1,481 @@
+.christmas-deliveries {
+	background-color: #F2F2F2;
+
+	.banner-container {
+
+		//DESKTOP COMPONENT SEPARATION
+		@media screen and (min-width: 768px) {
+			padding-bottom: 40px;
+		}
+
+		//MOBILE COMPONENT SEPARATION
+		@media screen and (max-width: 768px) {
+			padding-bottom: 80px;
+		}
+
+		.banner-card-container {
+			text-align      : left;
+			background-color: #ffffff;
+
+			.label {
+				height          : 40px;
+				margin-left     : 83px;
+				margin-top      : 25px;
+				width           : 125px;
+				background-color: #51ae00;
+
+				div {
+					height: 100%;
+
+					span {
+						font-size     : 14px;
+						font-weight   : bold;
+						color         : #ffffff;
+						text-transform: uppercase;
+					}
+				}
+			}
+
+			.title-container {
+				margin-top   : 60px;
+				margin-bottom: 20px;
+
+				&.with-label {
+					margin-top: 20px;
+				}
+
+				.title {
+					font-size     : 38px;
+					font-weight   : bold;
+					font-style    : normal;
+					font-stretch  : normal;
+					line-height   : 1.32;
+					letter-spacing: normal;
+					color         : black;
+					text-transform: uppercase;
+				}
+			}
+
+			.text-container {
+				.text {
+					font-size     : 16px;
+					font-weight   : normal;
+					font-style    : normal;
+					font-stretch  : normal;
+					line-height   : 1.63;
+					letter-spacing: normal;
+					color         : #3e3e3e;
+				}
+			}
+
+			.btn-container {
+				.content-button {
+					width           : 100%;
+					font-size       : 14px;
+					text-align      : center;
+					display         : block;
+					padding         : 13px 0;
+					background-color: #f2af0c;
+					color           : #000;
+					text-decoration : none;
+					text-transform  : uppercase;
+					bottom          : 2px;
+					font-weight     : 500;
+
+					&:hover {
+						background-color: #ffc800;
+						color           : #000;
+					}
+				}
+			}
+
+			.image-container {
+				position        : relative;
+				width           : 100%;
+				height          : 100%;
+				background-color: rgba(64, 146, 223, 0.5);
+
+				img {
+					height : 100%;
+					width  : 100%;
+					display: none;
+				}
+			}
+
+			//DESKTOP
+			@media screen and (min-width: 768px) {
+				height: 420px;
+
+				.content-container {
+					padding-right: 110px;
+				}
+
+				.text-container,
+				.title-container {
+					padding-left: 83px;
+				}
+
+				.text-container {
+					padding-bottom: 20px;
+				}
+
+				.btn-container {
+					height     : 45px;
+					width      : 160px;
+					margin-left: 83px;
+				}
+
+				.image-container {
+					&:before {
+						content     : '';
+						position    : absolute;
+						top         : 0;
+						left        : 0;
+						border-top  : 425px solid #ffffff;
+						border-right: 80px solid transparent;
+						width       : 0;
+					}
+
+					.desktop-img {
+						display: block;
+					}
+				}
+			}
+
+			//MOBILE
+			@media screen and (max-width: 768px) {
+				flex-wrap : wrap;
+				margin-top: 0;
+				height    : 630px;
+
+				.label {
+					margin-left: 20px;
+					margin-top : 15px;
+				}
+
+				.text-container,
+				.title-container {
+					padding    : 20px;
+					padding-top: 0;
+					margin     : 0;
+
+					.text {
+						font-size  : 16px;
+						font-weight: normal;
+						line-height: 1.63;
+						color      : #3e3e3e;
+					}
+
+					.title {
+						font-size  : 28px;
+						font-weight: bold;
+					}
+				}
+
+				.title-container {
+					margin-top: 75px;
+
+					&.with-label {
+						margin-top: 20px;
+					}
+				}
+
+				.btn-container {
+					width       : 88%;
+					height      : 45px;
+					margin-left : 6%;
+					margin-right: 6%;
+				}
+
+				.image-container {
+					.phone-img {
+						display : block;
+						position: absolute;
+						height  : 280px;
+						left    : 0;
+						bottom  : 0;
+					}
+				}
+			}
+		}
+	}
+
+	.black-box {
+
+
+		//DESKTOP COMPONENT SEPARATION
+		@media screen and (min-width: 768px) {
+			margin-bottom: 80px;
+		}
+
+		//MOBILE COMPONENT SEPARATION
+		@media screen and (max-width: 768px) {
+			margin-bottom: 20px;
+		}
+
+		display         : flex;
+		margin-right    : 18%;
+		margin-left     : 18%;
+		position        : relative;
+		color           : white;
+		background-color: #3e3e3e;
+		border-radius   : 56px 0px 0px 56px;
+
+		&.white-background {
+
+			//DESKTOP COMPONENT SEPARATION
+			@media screen and (min-width: 768px) {
+				margin-bottom: 80px;
+				margin-right : 9%;
+				margin-left  : 9%;
+
+				.description-container {
+					padding-left: 11%;
+				}
+
+				.btn-container {
+					right: 11%;
+				}
+			}
+
+			//MOBILE COMPONENT SEPARATION
+			@media screen and (max-width: 768px) {
+				margin-bottom: 80px;
+			}
+
+			background-color: #ffffff;
+			border-radius   : unset;
+			color           : black;
+			padding-top     : 40px;
+			padding-bottom  : 40px;
+
+			.description-container {
+				padding-top: unset;
+				width      : 65%;
+			}
+		}
+
+		.image-container {
+			height          : 110px;
+			width           : 110px;
+			background-color: rgba(64, 146, 223, 0.5);
+			border-radius   : 56px;
+			margin-left     : -2px;
+
+			img {
+				height: 100%;
+				width : 100%;
+			}
+		}
+
+		.description-container {
+			padding-top : 30px;
+			padding-left: 40px;
+			font-size   : 18px;
+			line-height : 1.56;
+			font-weight : 300;
+			width       : 65%;
+
+			.bold {
+				font-weight: bold;
+			}
+		}
+
+		.btn-container {
+			height  : 44px;
+			width   : 130px;
+			position: absolute;
+			top     : 33px;
+			right   : 40px;
+
+			.content-button {
+				width           : 100%;
+				font-size       : 14px;
+				text-align      : center;
+				display         : block;
+				padding         : 13px 0;
+				background-color: #f2af0c;
+				color           : #000;
+				text-decoration : none;
+				text-transform  : uppercase;
+				bottom          : 2px;
+				font-weight     : 500;
+
+				&:hover {
+					background-color: #ffc800;
+					color           : #000;
+				}
+			}
+		}
+
+		//MOBILE
+		@media screen and (max-width: 768px) {
+			flex-flow    : column;
+			margin-left  : 0;
+			margin-right : 0;
+			border-radius: unset;
+
+			&.white-background {
+				.btn-container {
+					margin-bottom: unset;
+				}
+			}
+
+			.image-container {
+				height       : 110px;
+				width        : 110px;
+				margin       : auto;
+				margin-top   : 20px;
+				margin-bottom: -1px;
+			}
+
+			.description-container {
+				width         : 100%;
+				padding-top   : 20px;
+				padding-bottom: 20px;
+				padding-right : 35px;
+				padding-left  : 35px;
+			}
+
+			.btn-container {
+				position     : unset;
+				width        : 88%;
+				margin-left  : 6%;
+				margin-right : 6%;
+				margin-bottom: 40px;
+			}
+		}
+	}
+
+	.week-schedule-container {
+		padding      : 30px 20px;
+		margin-bottom: 20px;
+		background   : white;
+
+		.week-schedule-header {
+			text-align    : left;
+			padding-bottom: 15px;
+
+			.week-schedule-title {
+				font-size  : 16px;
+				font-weight: 500;
+				line-height: 1.63;
+				color      : #000000;
+
+				@media screen and (min-width: 768px) {
+					font-size: 28px;
+				}
+
+				i {
+					padding-right: 10px;
+				}
+			}
+
+			.week-schedule-info {
+				padding-left: 30px;
+				font-size   : 12px;
+				color       : #ef2446;
+
+				@media screen and (min-width: 768px) {
+					padding-left: 0;
+				}
+			}
+		}
+
+		.week-schedule-table {
+			padding-top: 15px;
+
+			.week-schedule-table-header {
+				border-bottom : 1px solid black;
+				font-weight   : bold;
+				text-transform: uppercase;
+				text-align    : center;
+				font-size     : 14px;
+
+				.week-schedule-table-header-cell {
+					padding   : 10px;
+					text-align: center;
+
+					@media screen and (min-width: 768px) {
+						text-align: left;
+					}
+
+					&.cutoff {
+
+						@media screen and (min-width: 768px) {
+							display: none;
+						}
+
+						&.desktop {
+							display: none;
+
+							@media screen and (min-width: 768px) {
+								display: table-cell;
+							}
+
+						}
+					}
+				}
+			}
+
+			.day-schedule-table-row {
+				height       : 80px;
+				border-bottom: 1px solid rgb(242, 242, 242);
+
+				@media screen and (min-width: 768px) {
+					display: none;
+				}
+
+				&.desktop {
+					display: none;
+
+
+					@media screen and (min-width: 768px) {
+						display: table-row;
+					}
+
+					.day-schedule-table-cell {
+						text-align  : left;
+						padding-left: 10px;
+					}
+				}
+
+				.day-schedule-table-cell {
+					text-align    : center;
+					padding-top   : 10px;
+					padding-bottom: 10px;
+
+					&.bold {
+						font-weight: 500;
+					}
+
+					&.affected {
+						font-weight: 500;
+						color      : #ef2446;
+					}
+
+					.double-order {
+						font-weight: 500;
+						font-size  : 14px;
+						color      : #ef2446;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Edit styles out content page
+.slds-col--padded.contentRegion.comm-layout-column {
+	padding: 0;
+}
+
+.cCP_NewsDetail .detail-date.p-16-white-bold,
+.cCP_NewsDetail .btn-div.content-button-container {
+	display: none;
+}
+
+.cCP_NewsDetail {
+	margin : unset;
+	padding: unset;
+}
