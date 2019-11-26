@@ -1,0 +1,472 @@
+<style>
+.gastronomy-about {
+  background-color: #F2F2F2;
+}
+@media screen and (min-width: 768px) {
+  .gastronomy-about .banner-container {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gastronomy-about .banner-container {
+    padding-bottom: 40px;
+  }
+}
+.gastronomy-about .banner-container .banner-card-container {
+  text-align: left;
+  background-color: #ffffff;
+}
+.gastronomy-about .banner-container .banner-card-container .label {
+  height: 40px;
+  margin-left: 83px;
+  margin-top: 25px;
+  width: 125px;
+  background-color: #51ae00;
+}
+.gastronomy-about .banner-container .banner-card-container .label div {
+  height: 100%;
+}
+.gastronomy-about .banner-container .banner-card-container .label div span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.gastronomy-about .banner-container .banner-card-container .title-container {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.gastronomy-about .banner-container .banner-card-container .title-container.with-label {
+  margin-top: 20px;
+}
+.gastronomy-about .banner-container .banner-card-container .title-container .title {
+  font-size: 38px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  color: black;
+  text-transform: uppercase;
+}
+.gastronomy-about .banner-container .banner-card-container .text-container .text {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #3e3e3e;
+}
+.gastronomy-about .banner-container .banner-card-container .btn-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.gastronomy-about .banner-container .banner-card-container .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.gastronomy-about .banner-container .banner-card-container .image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.gastronomy-about .banner-container .banner-card-container .image-container img {
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .gastronomy-about .banner-container .banner-card-container {
+    height: 420px;
+  }
+  .gastronomy-about .banner-container .banner-card-container .content-container {
+    padding-right: 110px;
+  }
+  .gastronomy-about .banner-container .banner-card-container .text-container,
+  .gastronomy-about .banner-container .banner-card-container .title-container {
+    padding-left: 83px;
+  }
+  .gastronomy-about .banner-container .banner-card-container .text-container {
+    padding-bottom: 20px;
+  }
+  .gastronomy-about .banner-container .banner-card-container .btn-container {
+    height: 45px;
+    width: 160px;
+    margin-left: 83px;
+  }
+  .gastronomy-about .banner-container .banner-card-container .image-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 425px solid #ffffff;
+    border-right: 80px solid transparent;
+    width: 0;
+  }
+  .gastronomy-about .banner-container .banner-card-container .image-container .desktop-img {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gastronomy-about .banner-container .banner-card-container {
+    flex-wrap: wrap;
+    margin-top: 0;
+    height: 630px;
+  }
+  .gastronomy-about .banner-container .banner-card-container .label {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  .gastronomy-about .banner-container .banner-card-container .text-container,
+  .gastronomy-about .banner-container .banner-card-container .title-container {
+    padding: 20px;
+    padding-top: 0;
+    margin: 0;
+  }
+  .gastronomy-about .banner-container .banner-card-container .text-container .text,
+  .gastronomy-about .banner-container .banner-card-container .title-container .text {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.63;
+    color: #3e3e3e;
+  }
+  .gastronomy-about .banner-container .banner-card-container .text-container .title,
+  .gastronomy-about .banner-container .banner-card-container .title-container .title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .gastronomy-about .banner-container .banner-card-container .title-container {
+    margin-top: 75px;
+  }
+  .gastronomy-about .banner-container .banner-card-container .title-container.with-label {
+    margin-top: 20px;
+  }
+  .gastronomy-about .banner-container .banner-card-container .btn-container {
+    width: 88%;
+    height: 45px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .gastronomy-about .banner-container .banner-card-container .image-container .phone-img {
+    display: block;
+    position: absolute;
+    height: 280px;
+    left: 0;
+    bottom: 0;
+  }
+}
+.gastronomy-about .about-text-container {
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+@media screen and (min-width: 768px) {
+  .gastronomy-about .about-text-container {
+    padding: 0 210px;
+  }
+}
+.gastronomy-about .about-text-container .main-text {
+  font-size: 20px;
+  text-align: left;
+  line-height: 1.6;
+  color: #3e3e3e;
+  margin-bottom: 40px;
+}
+.gastronomy-about .about-text-container .sub-text {
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.63;
+  color: #3e3e3e;
+}
+.gastronomy-about .about-text-container .sub-text a {
+  color: #4092df;
+  font-weight: 500;
+}
+.gastronomy-about .mark-images-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.gastronomy-about .mark-images-container .image {
+  background-color: rgba(64, 146, 223, 0.5);
+  width: 100%;
+  height: 280px;
+  margin: 10px 0;
+}
+@media screen and (min-width: 768px) {
+  .gastronomy-about .mark-images-container .image {
+    width: 40%;
+    max-width: 519px;
+    height: 389px;
+  }
+}
+.gastronomy-about .related-content-container {
+  padding: 30px 0 80px 0;
+}
+.gastronomy-about .related-content-container .titles-and-descriptions .general-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  padding-left: 18%;
+  padding-right: 18%;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .gastronomy-about .related-content-container .titles-and-descriptions .general-title {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gastronomy-about .related-content-container .titles-and-descriptions .general-title {
+    padding-bottom: 40px;
+  }
+}
+.gastronomy-about .related-content-container .titles-and-descriptions .general-description {
+  font-size: 20px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  color: #3e3e3e;
+  padding-right: 18%;
+  padding-left: 18%;
+}
+@media screen and (min-width: 768px) {
+  .gastronomy-about .related-content-container .titles-and-descriptions .general-description {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gastronomy-about .related-content-container .titles-and-descriptions .general-description {
+    padding-bottom: 80px;
+  }
+}
+.gastronomy-about .related-content-container .titles-and-descriptions .related-title {
+  text-align: left;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  text-transform: uppercase;
+  border-bottom: 1px solid #7d7773;
+}
+@media screen and (min-width: 768px) {
+  .gastronomy-about .related-content-container .titles-and-descriptions .related-title {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gastronomy-about .related-content-container .titles-and-descriptions .related-title {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gastronomy-about .related-content-container .titles-and-descriptions .general-title {
+    font-size: 24px;
+    padding-left: 6%;
+    padding-right: 5%;
+  }
+  .gastronomy-about .related-content-container .titles-and-descriptions .general-description {
+    padding-left: 6%;
+    padding-right: 5%;
+  }
+  .gastronomy-about .related-content-container .titles-and-descriptions .related-title {
+    font-size: 24px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+}
+@media (min-width: 768px) {
+  .gastronomy-about .related-content-container .vertical-card-container-related-article {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+}
+.gastronomy-about .related-content-container .vertical-card-container-related-article .card-related-content {
+  font-family: 'Roboto', sans-serif;
+  height: 450px;
+  display: block;
+}
+@media (min-width: 768px) {
+  .gastronomy-about .related-content-container .vertical-card-container-related-article .card-related-content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 33.3333%;
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 768px) {
+  .gastronomy-about .related-content-container .vertical-card-container-related-article .card-related-content {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 4%;
+  }
+}
+.gastronomy-about .related-content-container .vertical-card-container-related-article .card-related-content .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+  height: 225px;
+}
+.gastronomy-about .related-content-container .vertical-card-container-related-article .card-related-content .image-container img {
+  width: 100%;
+  height: 100%;
+}
+.gastronomy-about .related-content-container .vertical-card-container-related-article .card-related-content .copy-container {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+.gastronomy-about .related-content-container .vertical-card-container-related-article .card-related-content .copy-container .copy-text {
+  padding: 20px 30px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.75;
+  color: #000000;
+  text-align: left;
+}
+.gastronomy-about .related-content-container .vertical-card-container-related-article .card-related-content .copy-container .copy-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #4092df;
+  text-transform: capitalize;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  text-decoration: none;
+}
+.gastronomy-about .related-content-container .vertical-card-container-related-article .card-related-content .copy-container .copy-link:hover {
+  border-bottom: 2px solid;
+  margin-bottom: -2px;
+}
+.gastronomy-about .related-content-container .vertical-card-container-related-article .card-related-content .copy-container .copy-link i.fas.fa-angle-right {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #4092df;
+  position: absolute;
+  bottom: 4px;
+}
+.slds-col--padded.contentRegion.comm-layout-column {
+  padding: 0;
+}
+.cCP_NewsDetail .detail-date.p-16-white-bold,
+.cCP_NewsDetail .btn-div.content-button-container {
+  display: none;
+}
+.cCP_NewsDetail {
+  margin: unset;
+  padding: unset;
+}
+
+</style>
+<div class="gastronomy-about">
+	<div class="banner-container">
+		<div class="banner-card-container slds-grid">
+			<div class="content-container slds-col slds-size_2-of-2 slds-large-size_1-of-2">
+				<!-- <div class="label">
+							<div class="slds-align_absolute-center">
+								<span>TREND ALERT</span>
+							</div>
+						</div> -->
+				<div class="title-container with-label">
+					<h2 class="title">Introducing Mark Moriarty</h2>
+				</div>
+				<div class="text-container">
+					<p class="text">As Diageo’s Head Chef in Residence Mark uses his knowledge of spirits to bring their unique characteristics
+						to life through food, creating uniquely immersive taste experiences.</p>
+				</div>
+				<!-- <div class="btn-container">
+							<a href="#" target="_blank" class="content-button">download it now</a>
+						</div> -->
+			</div>
+			<div class="slds-col slds-size_2-of-2 slds-large-size_1-of-2">
+				<div class="image-container">
+					<img class="desktop-img"
+						src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaP1"
+						alt="" />
+					<img class="phone-img"
+						src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaP6"
+						alt="" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="about-text-container">
+		<p class="main-text">
+			An award-winning chef, Mark is also a business owner, his innovative pop-up restaurant concept taking him to some of the
+			world’s most glamorous locations.
+		</p>
+		<p class="sub-text">
+			He was named in Forbes’ ‘30 Under 30’ for Innovation in the Arts in 2018, is a previous winner of the San Pellegrino World
+			Young Chef of the Year, recently appeared on the BBC’s Saturday Kitchen and has just launched a new television series
+			documenting his approach to cooking called ‘Beyond the Menu’.
+
+			Mark’s talent and passion for food, flavour and storytelling, as well as his international accolades, make him the perfect
+			person to step up to the plate as Diageo’s first ever Head Chef in Residence.
+
+			Stay up to date with all Mark’s latest adventures on <a href="">Instagram</a>.
+		</p>
+	</div>
+	<div class="mark-images-container">
+		<img src="" alt="" class="image">
+		<img src="" alt="" class="image">
+	</div>
+	<div class="related-content-container">
+		<div class="titles-and-descriptions">
+			<p class="related-title">RELATED CONTENT</p>
+		</div>
+
+		<div class="vertical-card-container-related-article">
+
+			<div class="card-related-content">
+				<div class="image-container">
+					<!-- <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOqe" /> -->
+				</div>
+				<div class="copy-container">
+					<p class="copy-text">Increase sales and boost profitability with our handy guide to beed and food pairings</p>
+					<a href="https://www.mydiageo.com/s/cp-content/a4P4G000000KEN9" class="copy-link">Find out more<i
+							class="fas fa-angle-right"></i></a>
+				</div>
+			</div>
+
+			<div class="card-related-content">
+				<div class="image-container">
+					<!-- <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOkv" /> -->
+				</div>
+				<div class="copy-container">
+					<p class="copy-text">Would you like the Bill or a Baileys? </p>
+					<a
+						href="https://www.mydiageo.com/s/cp-content/a4PD00000001VDUMA2/trendsbeerinsightjune18?retUrl=https%3A%2F%2Fwww.mydiageo.com%2Fs%2Fdiscover"
+						class="copy-link">Find out more<i class="fas fa-angle-right"></i></a>
+				</div>
+			</div>
+
+			<div class="card-related-content">
+				<div class="image-container">
+					<!-- <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOl0" /> -->
+				</div>
+				<div class="copy-container">
+					<p class="copy-text">COcktail of the week: We asked masters of mixology for tantalising tips on this week’s tastiest cocktail
+					</p>
+					<a href="https://www.mydiageo.com/s/landing?menu=IRL-get-the-basics-right" class="copy-link">Find out
+						more<i class="fas fa-angle-right"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
