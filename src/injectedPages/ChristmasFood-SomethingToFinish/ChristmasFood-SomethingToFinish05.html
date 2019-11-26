@@ -1,0 +1,139 @@
+<style>
+.black-box {
+  display: flex;
+  margin-right: 18%;
+  margin-left: 18%;
+  position: relative;
+  color: white;
+  background-color: #3e3e3e;
+}
+@media screen and (min-width: 768px) {
+  .black-box {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .black-box {
+    margin-bottom: 80px;
+  }
+}
+.black-box.white-background {
+  background-color: #ffffff;
+  border-radius: unset;
+  color: black;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .black-box.white-background {
+    margin-bottom: 80px;
+    margin-right: 9%;
+    margin-left: 9%;
+  }
+  .black-box.white-background .description-container {
+    padding-left: 11%;
+  }
+  .black-box.white-background .btn-container {
+    right: 11%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .black-box.white-background {
+    margin-bottom: 80px;
+  }
+}
+.black-box.white-background .description-container {
+  padding-top: unset;
+  width: 65%;
+}
+.black-box .image-container {
+  height: 110px;
+  width: 110px;
+  background-color: rgba(64, 146, 223, 0.5);
+  margin-left: -2px;
+}
+.black-box .image-container img {
+  height: 100%;
+  width: 100%;
+}
+.black-box .description-container {
+  padding-top: 30px;
+  padding-left: 11px;
+  font-size: 18px;
+  line-height: 1.56;
+  font-weight: 300;
+  width: 65%;
+}
+.black-box .description-container .bold {
+  font-weight: bold;
+}
+.black-box .btn-container {
+  height: 44px;
+  width: 130px;
+  position: absolute;
+  top: 33px;
+  right: 40px;
+}
+.black-box .btn-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.black-box .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+@media screen and (max-width: 768px) {
+  .black-box {
+    flex-flow: column;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: unset;
+  }
+  .black-box.white-background .btn-container {
+    margin-bottom: unset;
+  }
+  .black-box .image-container {
+    height: 110px;
+    width: 110px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: -1px;
+  }
+  .black-box .description-container {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+  .black-box .btn-container {
+    position: unset;
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 40px;
+  }
+}
+
+</style>
+
+<div class="black-box">
+    <div class="image-container">
+        <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+    </div>
+    <div class="description-container">
+        <p>Check out our <b>Christmas Cocktails</b> page for more tips on earning extra profit from every drink this festive season.</p>
+    </div>
+    <div class="btn-container">
+        <a href="#" target="_blank" class="content-button">GET RECIPES</a>
+    </div>
+</div>

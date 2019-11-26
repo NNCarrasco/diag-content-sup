@@ -1,0 +1,506 @@
+<style>
+.christmas-food-something-to-finish03 .content-card-recipes {
+  padding-left: 108px;
+  background: rgba(255, 255, 255, 0.5);
+  padding-top: 40px;
+  margin-bottom: 80px;
+  padding-bottom: 110px;
+  text-align: left;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-header {
+  display: flex;
+  flex-direction: column;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-header .recipes-top {
+  position: relative;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty {
+  position: absolute;
+  top: 0;
+  right: 109px;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block {
+  display: flex;
+  margin: 2px;
+  width: fit-content;
+  border: 1px solid #00b39f;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block .p-title {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.38;
+  background-color: #00b39f;
+  color: #ffffff;
+  padding: 4px 8px;
+  text-transform: uppercase;
+  min-width: 100px;
+  text-align: center;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block .puntuation-container {
+  padding-left: 10px;
+  min-width: 95px;
+  padding-right: 5px;
+  color: #bebebe;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block .puntuation-container .far.fa-grin {
+  font-size: 20px;
+  padding-right: 5px;
+  padding-top: 3px;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block .puntuation-container .fas.fa-cocktail {
+  font-size: 17px;
+  padding-right: 5px;
+  padding-top: 3px;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block .puntuation-container .selected {
+  color: #00b39f;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .difficulty {
+  margin-top: 15px;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-header .recipes-top .recipes-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-header .recipes-top .recipes-tag-container {
+  display: flex;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-header .recipes-top .recipes-tag-container .recipes-tag {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #ffffff;
+  background-color: #00b39f;
+  padding: 8px 10px;
+  margin-bottom: 30px;
+  margin-left: 5px;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-header .recipes-top .recipes-tag-container .recipes-tag:first-child {
+  margin-left: 0;
+}
+@media (max-width: 768px) {
+  .christmas-food-something-to-finish03 .content-card-recipes .recipe-header .recipes-top .recipes-tag-container {
+    flex-flow: wrap;
+  }
+  .christmas-food-something-to-finish03 .content-card-recipes .recipe-header .recipes-top .recipes-tag-container .recipes-tag {
+    margin-bottom: 10px;
+  }
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-header .recipes-description {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: left;
+  padding-bottom: 60px;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-header .recipe-information .recipes-medium {
+  float: left;
+  display: inline-flex;
+  border-right: 2px solid #b9b9b9;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 50px;
+  width: 21.5%;
+  position: relative;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-header .recipe-information .recipes-medium .recipes-medium-title {
+  display: flex;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-header .recipe-information .recipes-medium .description {
+  position: absolute;
+  bottom: 0;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty {
+  display: none;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method {
+  display: flex;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content {
+  background-color: rgba(64, 146, 223, 0.5);
+}
+@media (min-width: 768px) {
+  .christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content {
+    width: 44%;
+    height: 316px;
+    margin-top: 25px;
+    margin-right: 25px;
+  }
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content img {
+  height: 100%;
+  width: 100%;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
+  position: relative;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block {
+  z-index: 3;
+  bottom: -65px;
+  position: absolute;
+  width: 100%;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-description .porcentual-number-container {
+  position: absolute;
+  bottom: 30px;
+  right: -35px;
+  color: white;
+  border-radius: 50%;
+  background-color: #00b39f;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-description .porcentual-number-container .porcentual-number {
+  padding-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block {
+    bottom: -100px;
+    left: -14px;
+  }
+  .christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-description {
+    padding-right: 80px;
+  }
+  .christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-description .porcentual-number-container {
+    width: 110px;
+    height: 110px;
+  }
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"] {
+  display: none;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label {
+  background: rgba(242, 175, 12, 0.12);
+  padding-bottom: 17px;
+  padding-top: 17px;
+  border-bottom: 2px solid #f2af0c;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
+    width: 44%;
+  }
+}
+@media (max-width: 768px) {
+  .christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
+    height: 320px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 321px) {
+  .christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
+    height: 320px;
+    margin-bottom: 40px;
+  }
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content {
+  z-index: 1;
+  display: table;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs {
+  position: relative;
+  clear: both;
+  margin: 0;
+  padding-top: 25px;
+  white-space: nowrap;
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid #979797;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .download-tab-btn {
+  display: none;
+}
+@media (min-width: 768px) {
+  .christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .download-tab-btn {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    font-size: 14px;
+    display: block;
+  }
+  .christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .download-tab-btn a {
+    color: #4092df;
+  }
+  .christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .download-tab-btn a i {
+    margin-right: 10px;
+  }
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab {
+  vertical-align: top;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .label {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  min-height: 50px;
+  line-height: 50px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  padding-top: 17px;
+  border-bottom: 2px solid #979797;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .label:hover {
+  cursor: pointer;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content {
+  white-space: normal;
+  top: 77px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  background-color: white;
+  height: 265px;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol,
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul {
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 45px;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li,
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li {
+  margin-bottom: 10px;
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li:last-child,
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li:last-child {
+  margin-bottom: 0;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li p,
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #000000;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li:before,
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li:before {
+  content: counter(my-awesome-counter);
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  position: absolute;
+  --size: 25px;
+  left: calc(-1 * var(--size) - 20px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  background: #3e3e3e;
+  border-radius: 50%;
+  text-align: center;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul {
+  padding-left: 25px;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li:before {
+  content: "";
+  color: #fff;
+  /* font-size : 10px; */
+  font-weight: bold;
+  position: absolute;
+  --size: 8px;
+  left: calc(-1 * var(--size) - 15px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 9px;
+  background: #7d7773;
+  border-radius: 50%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
+    flex-wrap: wrap;
+  }
+  .christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab {
+    margin-top: -6px;
+  }
+  .christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab .content {
+    top: 71px;
+  }
+  .christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content {
+    z-index: 1;
+    display: table;
+    top: 71px;
+  }
+}
+@media (max-width: 768px) {
+  .christmas-food-something-to-finish03 .content-card-recipes {
+    padding-left: unset;
+    padding-right: unset;
+    padding-bottom: 40px;
+    margin-bottom: 81px;
+  }
+  .christmas-food-something-to-finish03 .content-card-recipes .recipe-header {
+    padding-right: 6%;
+    padding-left: 6%;
+  }
+  .christmas-food-something-to-finish03 .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty {
+    display: none;
+  }
+  .christmas-food-something-to-finish03 .content-card-recipes .recipe-header .recipes-top .recipes-title {
+    margin-bottom: 20px;
+  }
+  .christmas-food-something-to-finish03 .content-card-recipes .recipe-header .recipes-description {
+    padding-bottom: 20px;
+  }
+  .christmas-food-something-to-finish03 .content-card-recipes .recipe-header .recipe-information .recipes-medium {
+    float: unset;
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .christmas-food-something-to-finish03 .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty {
+    display: block;
+  }
+  .christmas-food-something-to-finish03 .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .wow-factor img {
+    height: 40px;
+  }
+  .christmas-food-something-to-finish03 .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .difficulty {
+    margin-top: 20px;
+  }
+  .christmas-food-something-to-finish03 .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .difficulty img {
+    height: 40px;
+  }
+  .christmas-food-something-to-finish03 .content-card-recipes .recipe-body {
+    padding-right: 6%;
+    padding-left: 6%;
+  }
+  .christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method {
+    flex-direction: column;
+  }
+  .christmas-food-something-to-finish03 .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content {
+    margin-top: 25px;
+    margin-right: 25px;
+    width: 100%;
+  }
+}
+.christmas-food-something-to-finish03 .content-card-recipes .only-mobile-download-tab-btn {
+  text-align: left;
+  display: none;
+}
+@media (max-width: 768px) {
+  .christmas-food-something-to-finish03 .content-card-recipes .only-mobile-download-tab-btn {
+    margin-top: 87px;
+    padding-right: 6%;
+    padding-left: 6%;
+    display: block;
+  }
+  .christmas-food-something-to-finish03 .content-card-recipes .only-mobile-download-tab-btn a {
+    color: #4092df;
+  }
+  .christmas-food-something-to-finish03 .content-card-recipes .only-mobile-download-tab-btn a i {
+    margin-right: 10px;
+  }
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-header .recipe-suggestion {
+  font-size: 20px;
+  color: #3e3e3e;
+  padding-bottom: 10px;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-header .recipe-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.christmas-food-something-to-finish03 .content-card-recipes .recipe-header .recipe-description {
+  font-size: 16px;
+  color: #3e3e3e;
+  padding-bottom: 15px;
+}
+
+</style>
+
+<div class="christmas-food-something-to-finish03">
+    <div class="content-card-recipes">
+        <div class="recipe-header">
+            <div class="recipe-suggestion">
+                <p>Starter Suggestion</p>
+            </div>
+            <div class="recipe-title">
+                <p>Fresh pineapple on ice with lime and salt</p>
+            </div>
+            <div class="recipe-description">
+                <p>This light and sweet treat is perfect for serving alongside post-dinner drinks.</p>
+            </div>
+        </div>
+        <div class="recipe-body">
+            <div class="recipes-ingredients-method">
+                <div class="recipes-image-content">
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+                </div>
+                <div class="tab-table-container">
+                    <div class="tabs">
+                        <!-- <div class="download-tab-btn">
+                            <a href="/"><i class="fas fa-download"></i>Download recipe card</a>
+                        </div> -->
+                        <div class="tab">
+                            <input type="radio" id="tab-7" name="tab-group-4" checked>
+                            <label class="label" for="tab-7">Ingredients</label>
+                            <div class="ingredients spacer"></div>
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <p>One large ripe pineapple</p>
+                                    </li>
+                                    <li>
+                                        <p>300g crushed ice</p>
+                                    </li>
+                                    <li>
+                                        <p>Two limes</p>
+                                    </li>
+                                    <li>
+                                        <p>Maldon salt</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="radio" id="tab-8" name="tab-group-4">
+                            <label class="label" for="tab-8">Method</label>
+                            <div class="method spacer"></div>
+                            <div class="content">
+                                <ol>
+                                    <li>
+                                        <p>Peel and portion the pineapple into long fingers <br> (approx 7x3cm)</p>
+                                    </li>
+                                    <li>
+                                        <p>Season with some lime zest and salt and serve over ice</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="only-mobile-download-tab-btn">
+            <a href="/"><i class="fas fa-download"></i>Download recipe card</a>
+        </div> -->
+    </div>
+</div>
