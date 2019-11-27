@@ -1,0 +1,285 @@
+.johnnie-walker-highballs03 {
+	text-align: left;
+	.halloween-class {
+		@media (min-width: 768px) {
+			padding-left: 8%;
+            padding-right: 8%;
+		}
+		//MOBILE
+		@media (max-width: 768px) {
+			padding-left: 6%;
+			padding-right: 6%;
+		}
+
+		.tab-table-container {
+			.tab [type="radio"] {
+				display: none;
+			}
+
+			.tab [type="radio"]:checked ~ .label {
+				background: rgba(242, 175, 12, 0.12);
+				padding-bottom: 17px;
+				padding-top: 17px;
+				border-bottom: 2px solid #f2af0c;
+				z-index: 2;
+			}
+
+			//DESKTOP
+			@media (min-width: 768px) {
+                height: 289px;
+			}
+
+			//MOBILE
+			@media (max-width: 768px) {
+				height: 320px;
+			}
+
+			//MOBILE SPECIAL FOR 320PX RESOLUTION
+			@media (max-width: 321px) {
+				height: 320px;
+			}
+
+			.tab [type="radio"]:checked ~ .label ~ .content {
+				z-index: 1;
+				display: table;
+			}
+
+			.tabs {
+				position: relative;
+				clear: both;
+				margin: 0;
+				padding-top: 25px;
+				white-space: nowrap;
+				display: flex;
+				width: 100%;
+				border-bottom: 2px solid #979797;
+
+				.tab {
+					vertical-align: top;
+
+					.label {
+						font-size: 14px;
+						text-transform: uppercase;
+						font-weight: bold;
+						min-height: 50px;
+						line-height: 50px;
+						margin: auto;
+						padding-left: 20px;
+						padding-right: 20px;
+						padding-bottom: 17px;
+						padding-top: 17px;
+						border-bottom: 2px solid #979797;
+
+						&:hover {
+							cursor: pointer;
+						}
+					}
+
+					.content {
+						white-space: normal;
+						top: 77px;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						display: none;
+						width: 100%;
+						padding: 20px;
+						position: absolute;
+						background-color: white;
+
+						ol,
+						ul {
+							max-width: 350px;
+							counter-reset: my-awesome-counter;
+							list-style: none;
+							padding-left: 45px;
+
+							li {
+								margin-bottom: 16px;
+								counter-increment: my-awesome-counter;
+								position: relative;
+
+								p {
+									font-family: Roboto;
+									font-size: 16px;
+									font-weight: normal;
+									font-stretch: normal;
+									font-style: normal;
+									line-height: 1.63;
+									letter-spacing: normal;
+									color: #000000;
+								}
+								&:before {
+									content: counter(my-awesome-counter);
+									color: #fff;
+									font-size: 11px;
+									font-weight: bold;
+									position: absolute;
+									--size: 25px;
+									left: calc(-1 * var(--size) - 20px);
+									line-height: var(--size);
+									width: var(--size);
+									height: var(--size);
+									top: 0;
+									background: #3e3e3e;
+									border-radius: 50%;
+									text-align: center;
+								}
+							}
+						}
+
+						ul {
+							padding-left: 25px;
+
+							li {
+								&:before {
+									content: "";
+									color: #fff;
+									/* font-size : 10px; */
+									font-weight: bold;
+									position: absolute;
+									--size: 8px;
+									left: calc(-1 * var(--size) - 15px);
+									line-height: var(--size);
+									width: var(--size);
+									height: var(--size);
+									top: 9px;
+									background: #7d7773;
+									border-radius: 50%;
+									text-align: center;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			//MOBILE
+			@media (max-width: 768px) {
+				flex-wrap: wrap;
+
+				.tab {
+					margin-top: -6px;
+
+					.content {
+						top: 71px;
+					}
+				}
+				.tab [type="radio"]:checked ~ .label ~ .content {
+					z-index: 1;
+					display: table;
+					top: 71px;
+				}
+			}
+		}
+	}
+
+	.title-card {
+		width: 520px;
+		height: 40px;
+		font-family: Roboto;
+		font-size: 28px;
+		font-weight: bold;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.43;
+		letter-spacing: normal;
+		color: #000000;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+    }
+    .recipe-tag{
+        background-color: #00b39f;
+        color: #ffffff;
+        padding: 8px 10px;
+        width: fit-content;
+        margin-bottom: 20px;
+    }
+
+	.subtitle-card {
+		width: 520px;
+		font-family: Roboto;
+		font-size: 16px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.63;
+		letter-spacing: normal;
+		color: #3e3e3e;
+		text-align: left;
+        margin-bottom: 20px;
+        
+        @media (min-width: 768px) {
+            min-height: 65px;
+        }
+	}
+
+	.FULL-SIZE {
+		width: 520px;
+		height: 317px;
+		object-fit: cover;
+		background-color: rgba(64, 146, 223, 0.5);
+	}
+
+	.container-recipes {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	@media (max-width: 768px) {
+		.title-card {
+			width: unset;
+			height: unset;
+		}
+
+		.subtitle-card {
+			width: unset;
+			height: unset;
+			text-align: left;
+		}
+
+		.FULL-SIZE {
+			width: 334.7px;
+			height: 203.5px;
+			object-fit: cover;
+		}
+
+		.container-recipes {
+			display: block;
+		}
+
+		.recipe-card {
+			&.not-first {
+				border-top: 1px solid #b9b9b9;
+			}
+			padding: 40px 0 20px 0;
+		}
+	}
+	.halloween-class .container-recipes .recipe-card .tab-table-container .tabs .download-tab-btn.desktop-only {
+		display: none;
+		@media screen and (min-width: 768px) {
+			position: absolute;
+			right: 0;
+			top: 35px;
+			display: block;
+		}
+		a {
+			color: #4092df;
+			i {
+				margin-right: 10px;
+			}
+		}
+	}
+	.halloween-class .container-recipes .recipe-card .download-tab-btn.mobile-only {
+		display: none;
+		@media screen and (max-width: 768px) {
+			display: block;
+		}
+		a {
+			color: #4092df;
+			i {
+				margin-right: 10px;
+			}
+		}
+	}
+}
