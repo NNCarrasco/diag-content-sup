@@ -1,0 +1,1052 @@
+.christmas-food-main-page {
+  text-align: left;
+  background-color: #f2f2f2;
+  position: relative;
+}
+.christmas-food-main-page .titles-and-descriptions .general-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  padding-left: 18%;
+  padding-right: 18%;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .christmas-food-main-page .titles-and-descriptions .general-title {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .christmas-food-main-page .titles-and-descriptions .general-title {
+    padding-bottom: 40px;
+  }
+}
+.christmas-food-main-page .titles-and-descriptions .general-description {
+  font-size: 20px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  color: #3e3e3e;
+  padding-right: 18%;
+  padding-left: 18%;
+}
+@media screen and (min-width: 768px) {
+  .christmas-food-main-page .titles-and-descriptions .general-description {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .christmas-food-main-page .titles-and-descriptions .general-description {
+    padding-bottom: 80px;
+  }
+}
+.christmas-food-main-page .titles-and-descriptions .related-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  text-transform: uppercase;
+  border-bottom: 1px solid #7d7773;
+}
+@media screen and (min-width: 768px) {
+  .christmas-food-main-page .titles-and-descriptions .related-title {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .christmas-food-main-page .titles-and-descriptions .related-title {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .christmas-food-main-page .titles-and-descriptions .general-title {
+    font-size: 24px;
+    padding-left: 6%;
+    padding-right: 5%;
+  }
+  .christmas-food-main-page .titles-and-descriptions .general-description {
+    padding-left: 6%;
+    padding-right: 5%;
+  }
+  .christmas-food-main-page .titles-and-descriptions .related-title {
+    font-size: 24px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .christmas-food-main-page .banner-container {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .christmas-food-main-page .banner-container {
+    padding-bottom: 80px;
+  }
+}
+.christmas-food-main-page .banner-container .banner-card-container {
+  text-align: left;
+  background-color: #ffffff;
+}
+.christmas-food-main-page .banner-container .banner-card-container .label {
+  height: 40px;
+  margin-left: 83px;
+  margin-top: 25px;
+  width: 125px;
+  background-color: #51ae00;
+}
+.christmas-food-main-page .banner-container .banner-card-container .label div {
+  height: 100%;
+}
+.christmas-food-main-page .banner-container .banner-card-container .label div span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.christmas-food-main-page .banner-container .banner-card-container .title-container {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.christmas-food-main-page .banner-container .banner-card-container .title-container .title {
+  font-size: 38px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  color: black;
+  text-transform: uppercase;
+}
+.christmas-food-main-page .banner-container .banner-card-container .text-container .text {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #3e3e3e;
+}
+.christmas-food-main-page .banner-container .banner-card-container .btn-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.christmas-food-main-page .banner-container .banner-card-container .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.christmas-food-main-page .banner-container .banner-card-container .image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.christmas-food-main-page .banner-container .banner-card-container .image-container img {
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .christmas-food-main-page .banner-container .banner-card-container {
+    height: 420px;
+  }
+  .christmas-food-main-page .banner-container .banner-card-container .content-container {
+    padding-right: 110px;
+  }
+  .christmas-food-main-page .banner-container .banner-card-container .text-container,
+  .christmas-food-main-page .banner-container .banner-card-container .title-container {
+    padding-left: 83px;
+  }
+  .christmas-food-main-page .banner-container .banner-card-container .text-container {
+    padding-bottom: 20px;
+  }
+  .christmas-food-main-page .banner-container .banner-card-container .btn-container {
+    height: 45px;
+    width: 160px;
+    margin-left: 83px;
+  }
+  .christmas-food-main-page .banner-container .banner-card-container .image-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 425px solid #ffffff;
+    border-right: 80px solid transparent;
+    width: 0;
+  }
+  .christmas-food-main-page .banner-container .banner-card-container .image-container .desktop-img {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .christmas-food-main-page .banner-container .banner-card-container {
+    flex-wrap: wrap;
+    margin-top: 0;
+    height: 540px;
+  }
+  .christmas-food-main-page .banner-container .banner-card-container .label {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  .christmas-food-main-page .banner-container .banner-card-container .text-container,
+  .christmas-food-main-page .banner-container .banner-card-container .title-container {
+    padding: 20px;
+    padding-top: 0;
+    margin: 0;
+  }
+  .christmas-food-main-page .banner-container .banner-card-container .text-container .text,
+  .christmas-food-main-page .banner-container .banner-card-container .title-container .text {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.63;
+    color: #3e3e3e;
+  }
+  .christmas-food-main-page .banner-container .banner-card-container .text-container .title,
+  .christmas-food-main-page .banner-container .banner-card-container .title-container .title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .christmas-food-main-page .banner-container .banner-card-container .title-container {
+    margin-top: 75px;
+  }
+  .christmas-food-main-page .banner-container .banner-card-container .title-container.with-label {
+    margin-top: 20px;
+  }
+  .christmas-food-main-page .banner-container .banner-card-container .btn-container {
+    width: 88%;
+    height: 45px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .christmas-food-main-page .banner-container .banner-card-container .image-container .phone-img {
+    display: block;
+    position: absolute;
+    height: 280px;
+    left: 0;
+    bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .christmas-food-main-page .mixed-content-card-container {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .christmas-food-main-page .mixed-content-card-container {
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 768px) {
+  .christmas-food-main-page .mixed-content-card-container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media (max-width: 768px) {
+  .christmas-food-main-page .mixed-content-card-container {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+.christmas-food-main-page .mixed-content-card-container .mixed-content-block {
+  font-family: 'Roboto', sans-serif;
+  background-color: transparent;
+}
+.christmas-food-main-page .mixed-content-card-container .mixed-content-block .copy-container .content-title {
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+.christmas-food-main-page .mixed-content-card-container .mixed-content-block .copy-container .content-text {
+  color: #3e3e3e;
+}
+.christmas-food-main-page .mixed-content-card-container .mixed-content-block .copy-container .content-button {
+  font-size: 14px;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.christmas-food-main-page .mixed-content-card-container .mixed-content-block .copy-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.christmas-food-main-page .mixed-content-card-container .mixed-content-block .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.christmas-food-main-page .mixed-content-card-container .mixed-content-block .image-container img {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .christmas-food-main-page .mixed-content-card-container .mixed-content-block {
+    width: 100%;
+    display: flex;
+    height: 340px;
+    margin-bottom: 80px;
+  }
+  .christmas-food-main-page .mixed-content-card-container .mixed-content-block.image-left .copy-container {
+    order: 0;
+    padding-right: 115px;
+  }
+  .christmas-food-main-page .mixed-content-card-container .mixed-content-block.image-left .image-container {
+    order: 1;
+  }
+  .christmas-food-main-page .mixed-content-card-container .mixed-content-block.image-right .copy-container {
+    order: 1;
+    padding-left: 115px;
+  }
+  .christmas-food-main-page .mixed-content-card-container .mixed-content-block.image-right .image-container {
+    order: 0;
+  }
+  .christmas-food-main-page .mixed-content-card-container .mixed-content-block .copy-container {
+    height: 100%;
+    width: 100%;
+  }
+  .christmas-food-main-page .mixed-content-card-container .mixed-content-block .copy-container .content-title {
+    font-size: 18px;
+    padding-top: 60px;
+    line-height: 40px;
+  }
+  .christmas-food-main-page .mixed-content-card-container .mixed-content-block .copy-container .content-button {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+  .christmas-food-main-page .mixed-content-card-container .mixed-content-block .copy-container .content-text {
+    padding: 20px 0;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .christmas-food-main-page .mixed-content-card-container .mixed-content-block .image-container {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .christmas-food-main-page .mixed-content-card-container .mixed-content-block {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: unset;
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
+  .christmas-food-main-page .mixed-content-card-container .mixed-content-block .copy-container {
+    width: 100%;
+  }
+  .christmas-food-main-page .mixed-content-card-container .mixed-content-block .copy-container .content-title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 32px;
+    color: #000000;
+    text-transform: uppercase;
+    padding-top: 20px;
+  }
+  .christmas-food-main-page .mixed-content-card-container .mixed-content-block .copy-container .content-text {
+    font-size: 16px;
+    padding-top: 10px;
+    line-height: 26px;
+    color: #3e3e3e;
+  }
+  .christmas-food-main-page .mixed-content-card-container .mixed-content-block .copy-container .content-button {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 13px 0;
+    background-color: #f2af0c;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    bottom: 2px;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+  .christmas-food-main-page .mixed-content-card-container .mixed-content-block .image-container {
+    height: 250px;
+    margin-left: -7%;
+    margin-right: -7%;
+    width: 114%;
+    background-color: rgba(64, 146, 223, 0.5);
+  }
+  .christmas-food-main-page .mixed-content-card-container .mixed-content-block .image-container img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.christmas-food-main-page .image-text-list-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 9%;
+  margin-right: 9%;
+  padding-left: 9%;
+  padding-right: 9%;
+  padding-top: 40px;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .christmas-food-main-page .image-text-list-block {
+    margin-bottom: 120px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .christmas-food-main-page .image-text-list-block {
+    margin-bottom: 100px;
+  }
+}
+.christmas-food-main-page .image-text-list-block .list-column {
+  display: flex;
+  min-height: 150px;
+  margin-bottom: 30px;
+}
+.christmas-food-main-page .image-text-list-block .list-column .list-column-image {
+  width: 195px;
+  height: 150px;
+}
+.christmas-food-main-page .image-text-list-block .list-column .list-column-image img {
+  width: 100%;
+  height: 100%;
+}
+.christmas-food-main-page .image-text-list-block .list-column .list-column-text {
+  width: 79%;
+}
+.christmas-food-main-page .image-text-list-block .list-column .list-column-text .list-column-text-title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.56;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.christmas-food-main-page .image-text-list-block .list-column .list-column-text .list-column-text-description {
+  font-size: 16px;
+  line-height: 1.63;
+  color: #3e3e3e;
+}
+.christmas-food-main-page .image-text-list-block .list-column.image-left .list-column-image {
+  order: 1;
+}
+.christmas-food-main-page .image-text-list-block .list-column.image-left .list-column-text {
+  order: 2;
+  padding-left: 25px;
+}
+.christmas-food-main-page .image-text-list-block .list-column.image-right .list-column-image {
+  order: 2;
+}
+.christmas-food-main-page .image-text-list-block .list-column.image-right .list-column-text {
+  order: 1;
+  padding-right: 25px;
+}
+@media screen and (max-width: 768px) {
+  .christmas-food-main-page .image-text-list-block {
+    margin-left: 6%;
+    margin-right: 6%;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .christmas-food-main-page .image-text-list-block .list-column {
+    height: unset;
+    flex-flow: column;
+  }
+  .christmas-food-main-page .image-text-list-block .list-column .list-column-image {
+    width: 100%;
+    height: 220px;
+  }
+  .christmas-food-main-page .image-text-list-block .list-column .list-column-text {
+    margin-top: 10px;
+    padding: unset;
+    width: 100%;
+  }
+  .christmas-food-main-page .image-text-list-block .list-column.image-left .list-column-image {
+    order: 1;
+    padding: unset;
+  }
+  .christmas-food-main-page .image-text-list-block .list-column.image-left .list-column-text {
+    order: 2;
+    padding: unset;
+  }
+  .christmas-food-main-page .image-text-list-block .list-column.image-right .list-column-image {
+    order: 1;
+    padding: unset;
+  }
+  .christmas-food-main-page .image-text-list-block .list-column.image-right .list-column-text {
+    order: 2;
+    padding: unset;
+  }
+}
+@media (min-width: 768px) {
+  .christmas-food-main-page .vertical-card-container {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+}
+.christmas-food-main-page .vertical-card-container .card-related-content {
+  font-family: 'Roboto', sans-serif;
+  height: 430px;
+  display: block;
+}
+@media (min-width: 768px) {
+  .christmas-food-main-page .vertical-card-container .card-related-content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 33.3333%;
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 768px) {
+  .christmas-food-main-page .vertical-card-container .card-related-content {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 4%;
+  }
+}
+.christmas-food-main-page .vertical-card-container .card-related-content .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+  height: 250px;
+}
+.christmas-food-main-page .vertical-card-container .card-related-content .image-container img {
+  width: 100%;
+  height: 100%;
+}
+.christmas-food-main-page .vertical-card-container .card-related-content .copy-container {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 180px;
+}
+.christmas-food-main-page .vertical-card-container .card-related-content .copy-container .copy-text {
+  padding: 20px 30px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.75;
+  color: #000000;
+}
+.christmas-food-main-page .vertical-card-container .card-related-content .copy-container .copy-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #4092df;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  text-decoration: none;
+}
+.christmas-food-main-page .vertical-card-container .card-related-content .copy-container .copy-link:hover {
+  border-bottom: 2px solid;
+  margin-bottom: -2px;
+}
+.christmas-food-main-page .vertical-card-container .card-related-content .copy-container .copy-link i.fas.fa-angle-right {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #4092df;
+  position: absolute;
+  bottom: 4px;
+}
+@media screen and (min-width: 768px) {
+  .christmas-food-main-page .image-outside-horizontal-card-container {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .christmas-food-main-page .image-outside-horizontal-card-container {
+    margin-bottom: 80px;
+  }
+}
+.christmas-food-main-page .image-outside-horizontal-card-container .image-outside-horizontal-card {
+  display: flex;
+  width: 845px;
+  height: 334px;
+  position: relative;
+}
+.christmas-food-main-page .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container {
+  width: 100%;
+  border: 5px solid #51ae00;
+  z-index: 1;
+}
+.christmas-food-main-page .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
+  width: 380px;
+  padding-left: 80px;
+  padding-top: 35px;
+  padding-right: 85px;
+}
+.christmas-food-main-page .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
+  padding: 0;
+  width: 380px;
+  padding-left: 70px;
+  padding-top: 20px;
+  padding-right: 85px;
+}
+.christmas-food-main-page .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.christmas-food-main-page .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.christmas-food-main-page .image-outside-horizontal-card-container .image-outside-horizontal-card .image-container {
+  position: absolute;
+  right: -100px;
+  top: -40px;
+  z-index: 0;
+  height: 415px;
+  width: 410px;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.christmas-food-main-page .image-outside-horizontal-card-container .image-outside-horizontal-card .image-container img {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .christmas-food-main-page .image-outside-horizontal-card-container {
+    padding-left: 14%;
+  }
+  .christmas-food-main-page .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
+    padding-top: 90px;
+    width: 530px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .christmas-food-main-page .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
+    width: 530px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .christmas-food-main-page .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container {
+    width: 162px;
+    height: 44px;
+    margin-top: 25px;
+    margin-left: 180px;
+  }
+}
+@media (max-width: 768px) {
+  .christmas-food-main-page .image-outside-horizontal-card-container {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .christmas-food-main-page .image-outside-horizontal-card-container .image-outside-horizontal-card {
+    width: 100%;
+    height: unset;
+    flex-wrap: wrap;
+  }
+  .christmas-food-main-page .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container {
+    order: 1;
+    padding-bottom: 20px;
+  }
+  .christmas-food-main-page .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
+    padding-left: 30px;
+    padding-top: 410px;
+    padding-right: 30px;
+    width: unset;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .christmas-food-main-page .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
+    font-size: 20px;
+    text-align: center;
+    color: #3e3e3e;
+    width: unset;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 30px;
+  }
+  .christmas-food-main-page .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container {
+    height: 45px;
+    width: 160px;
+    margin-top: 40px;
+    margin-left: 25%;
+  }
+  .christmas-food-main-page .image-outside-horizontal-card-container .image-outside-horizontal-card .image-container {
+    order: 0;
+    position: absolute;
+    top: -30px;
+    z-index: 0;
+    width: 102vw;
+    right: -6.7%;
+  }
+}
+.christmas-food-main-page .youtube-video {
+  background-color: rgba(64, 146, 223, 0.5);
+}
+@media screen and (min-width: 768px) {
+  .christmas-food-main-page .youtube-video {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .christmas-food-main-page .youtube-video {
+    margin-bottom: 80px;
+  }
+}
+.christmas-food-main-page .youtube-video.one {
+  margin-left: 18%;
+  margin-right: 18%;
+}
+.christmas-food-main-page .youtube-video.one iframe {
+  width: 100%;
+  height: 515px;
+}
+.christmas-food-main-page .youtube-video.two {
+  margin-left: 9%;
+  margin-right: 9%;
+}
+.christmas-food-main-page .youtube-video.two iframe {
+  width: 100%;
+  height: 600px;
+}
+@media screen and (max-width: 768px) {
+  .christmas-food-main-page .youtube-video.one,
+  .christmas-food-main-page .youtube-video.two {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .christmas-food-main-page .youtube-video.one iframe,
+  .christmas-food-main-page .youtube-video.two iframe {
+    height: 230px;
+  }
+}
+.christmas-food-main-page .black-box {
+  display: flex;
+  margin-right: 18%;
+  margin-left: 18%;
+  position: relative;
+  color: white;
+  background-color: #3e3e3e;
+}
+@media screen and (min-width: 768px) {
+  .christmas-food-main-page .black-box {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .christmas-food-main-page .black-box {
+    margin-bottom: 80px;
+  }
+}
+.christmas-food-main-page .black-box.white-background {
+  background-color: #ffffff;
+  border-radius: unset;
+  color: black;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .christmas-food-main-page .black-box.white-background {
+    margin-bottom: 80px;
+    margin-right: 9%;
+    margin-left: 9%;
+  }
+  .christmas-food-main-page .black-box.white-background .description-container {
+    padding-left: 11%;
+  }
+  .christmas-food-main-page .black-box.white-background .btn-container {
+    right: 11%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .christmas-food-main-page .black-box.white-background {
+    margin-bottom: 80px;
+  }
+}
+.christmas-food-main-page .black-box.white-background .description-container {
+  padding-top: unset;
+  width: 65%;
+}
+.christmas-food-main-page .black-box .image-container {
+  height: 110px;
+  width: 110px;
+  background-color: rgba(64, 146, 223, 0.5);
+  margin-left: -2px;
+}
+.christmas-food-main-page .black-box .image-container img {
+  height: 100%;
+  width: 100%;
+}
+.christmas-food-main-page .black-box .description-container {
+  padding-top: 30px;
+  padding-left: 11px;
+  font-size: 18px;
+  line-height: 1.56;
+  font-weight: 300;
+  width: 65%;
+}
+.christmas-food-main-page .black-box .description-container .bold {
+  font-weight: bold;
+}
+.christmas-food-main-page .black-box .btn-container {
+  height: 44px;
+  width: 130px;
+  position: absolute;
+  top: 33px;
+  right: 40px;
+}
+.christmas-food-main-page .black-box .btn-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.christmas-food-main-page .black-box .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+@media screen and (max-width: 768px) {
+  .christmas-food-main-page .black-box {
+    flex-flow: column;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: unset;
+  }
+  .christmas-food-main-page .black-box.white-background .btn-container {
+    margin-bottom: unset;
+  }
+  .christmas-food-main-page .black-box .image-container {
+    height: 110px;
+    width: 110px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: -1px;
+  }
+  .christmas-food-main-page .black-box .description-container {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+  .christmas-food-main-page .black-box .btn-container {
+    position: unset;
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 40px;
+  }
+}
+.christmas-food-main-page .download-block {
+  background-color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .christmas-food-main-page .download-block {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .christmas-food-main-page .download-block {
+    margin-bottom: 60px;
+  }
+}
+.christmas-food-main-page .download-block .download-header {
+  position: relative;
+  border-bottom: 1px solid #e3e3e3;
+  border-top: 1px solid #e3e3e3;
+  height: 95px;
+}
+.christmas-food-main-page .download-block .download-header .title {
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
+  height: inherit;
+  padding-top: 35px;
+  padding-left: 60px;
+}
+.christmas-food-main-page .download-block .download-header .download-btn {
+  position: absolute;
+  top: 38px;
+  right: 40px;
+  font-size: 14px;
+}
+.christmas-food-main-page .download-block .download-header .download-btn a {
+  color: #4092df;
+}
+.christmas-food-main-page .download-block .download-header .download-btn a i {
+  margin-right: 10px;
+}
+.christmas-food-main-page .download-block .download-body {
+  padding: 40px;
+  padding-bottom: 0;
+}
+.christmas-food-main-page .download-block .download-body .download-card-container {
+  display: flex;
+  padding-bottom: 20px;
+}
+.christmas-food-main-page .download-block .download-body .download-card-container .download-card {
+  width: 220px;
+  height: 355px;
+  margin-left: 20px;
+}
+.christmas-food-main-page .download-block .download-body .download-card-container .download-card:first-child {
+  margin-left: 0;
+}
+.christmas-food-main-page .download-block .download-body .download-card-container .download-card .image-container {
+  height: 170px;
+}
+.christmas-food-main-page .download-block .download-body .download-card-container .download-card .image-container img {
+  height: 100%;
+  width: 100%;
+}
+.christmas-food-main-page .download-block .download-body .download-card-container .download-card .body-container {
+  background-color: #f2f2f2;
+  height: 185px;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+.christmas-food-main-page .download-block .download-body .download-card-container .download-card .body-container .title-text {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 22px;
+  color: #0041a5;
+  text-transform: uppercase;
+}
+.christmas-food-main-page .download-block .download-body .download-card-container .download-card .body-container .description-text {
+  padding-top: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  word-break: break-word;
+}
+.christmas-food-main-page .download-block .download-body .download-card-container .download-card .body-container .download-card-btn {
+  margin-top: 20px;
+  border: 1px solid;
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+}
+.christmas-food-main-page .download-block .download-body .download-card-container .download-card .body-container .download-card-btn .download-link-box {
+  color: #3e3e3e;
+}
+.christmas-food-main-page .download-block .download-body .download-card-container .download-card .body-container .download-card-btn .download-link-box i {
+  margin-right: 10px;
+}
+.christmas-food-main-page .download-block .download-footer {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+  color: #3e3e3e;
+}
+@media (max-width: 768px) {
+  .christmas-food-main-page .download-block .download-header .title {
+    padding-top: 21px;
+    padding-left: 21px;
+    height: unset;
+  }
+  .christmas-food-main-page .download-block .download-header .download-btn {
+    position: unset;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .christmas-food-main-page .download-block .download-body {
+    padding: 20px;
+  }
+  .christmas-food-main-page .download-block .download-body .download-card-container {
+    flex-direction: column;
+  }
+  .christmas-food-main-page .download-block .download-body .download-card-container .download-card {
+    width: 100%;
+    height: unset;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .christmas-food-main-page .download-block .download-body .download-card-container .download-card .image-container {
+    height: 225px;
+  }
+  .christmas-food-main-page .download-block .download-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+  }
+}
+.christmas-food-main-page .profile-section .profile-image {
+  height: 80px;
+  width: 80px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.christmas-food-main-page .profile-section .profile-image img {
+  width: 100%;
+  height: auto;
+}
+.christmas-food-main-page .profile-section .profile-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+.christmas-food-main-page .profile-section .profile-description {
+  font-size: 14px;
+  color: #3e3e3e;
+  margin-bottom: 15px;
+}
+.christmas-food-main-page .profile-section .profile-social {
+  font-size: 20px;
+}
+.christmas-food-main-page .profile-section .profile-social a {
+  margin-right: 20px;
+  color: #4092df;
+}
+@media (max-width: 767px) {
+  .christmas-food-main-page .profile-section {
+    margin-left: 6%;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .christmas-food-main-page .profile-section {
+    width: 135px;
+    position: absolute;
+    top: 490px;
+  }
+}
+.slds-col--padded.contentRegion.comm-layout-column {
+  padding: 0;
+}
+.cCP_NewsDetail .detail-date.p-16-white-bold,
+.cCP_NewsDetail .btn-div.content-button-container {
+  display: none;
+}
+.cCP_NewsDetail {
+  margin: unset;
+  padding: unset;
+}
