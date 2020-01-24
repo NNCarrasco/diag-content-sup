@@ -1,0 +1,108 @@
+.ChristmasAtmosphere {
+	text-align: left;
+	.tips-component-container {
+		background-color: #fff;
+		margin-left: 9%;
+		margin-right: 9%;
+		padding-left: 9%;
+		padding-right: 9%;
+		padding-top: 60px;
+		text-align: left;
+		.description-container {
+			position: relative;
+			height: 415px;
+			.image-container {
+				height: 415px;
+				width: 410px;
+				background-color: rgba(64, 146, 223, 0.5);
+				overflow: hidden;
+				position: absolute;
+				right: 0;
+				img {
+					width: auto;
+					height: 100%;
+					max-width: unset;
+				}
+			}
+			.text-container {
+				width: 45%;
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+				.tips-desc-title {
+					text-transform: uppercase;
+					font-weight: bold;
+					font-size: 16px;
+					padding-bottom: 10px;
+				}
+				.tips-desc-description {
+					font-size: 13px;
+					font-weight: 500;
+				}
+			}
+			&.image-left {
+				.image-container {
+					right: unset;
+					left: 0;
+				}
+				.text-container {
+					margin-left: 55%;
+				}
+			}
+		}
+		.tips-list {
+			padding-top: 40px;
+			padding-bottom: 20px;
+			.tip {
+				display: flex;
+				padding-bottom: 40px;
+				.tip-img {
+					width: 80px;
+					height: 80px;
+				}
+				.tip-texts {
+					display: flex;
+					flex-direction: column;
+					padding-left: 20px;
+					justify-content: center;
+					.tip-title {
+						font-weight: bold;
+					}
+				}
+			}
+		}
+		//MOBILE
+		@media (max-width: 768px) {
+			margin: 0;
+			padding-top: 30px;
+			padding-left: 6%;
+			padding-right: 6%;
+			margin-bottom: 40px;
+			.description-container {
+				height: unset;
+				.image-container {
+					position: relative;
+					height: 250px;
+					width: 100%;
+				}
+				.text-container {
+					top: unset;
+					transform: unset;
+					width: 100%;
+					padding-top: 20px;
+					.tips-desc-title {
+						font-size: 20px;
+					}
+					.tips-desc-description {
+						font-size: 16px;
+					}
+				}
+				&.image-left {
+					.text-container {
+						margin: unset;
+					}
+				}
+			}
+		}
+	}
+}

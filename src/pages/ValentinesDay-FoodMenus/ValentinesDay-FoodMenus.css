@@ -1,0 +1,1500 @@
+.ValentinesDay-FoodMenus .banner-container {
+  font-family: Roboto, sans-serif;
+}
+.ValentinesDay-FoodMenus .banner-container .banner-card-container {
+  text-align: left;
+  background-color: #ffffff;
+  display: flex;
+}
+.ValentinesDay-FoodMenus .banner-container .banner-card-container .content-container {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.ValentinesDay-FoodMenus .banner-container .banner-card-container .content-container .label {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: auto;
+  height: 40px;
+  margin-left: 83px;
+  margin-top: 25px;
+  width: 125px;
+  background-color: #51ae00;
+}
+.ValentinesDay-FoodMenus .banner-container .banner-card-container .content-container .label span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.ValentinesDay-FoodMenus .banner-container .banner-card-container .content-container .title-container {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.ValentinesDay-FoodMenus .banner-container .banner-card-container .content-container .title-container.with-label {
+  margin-top: 20px;
+}
+.ValentinesDay-FoodMenus .banner-container .banner-card-container .content-container .title-container .title {
+  font-size: 38px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  color: black;
+  text-transform: uppercase;
+}
+.ValentinesDay-FoodMenus .banner-container .banner-card-container .content-container .text-container .text {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #3e3e3e;
+}
+.ValentinesDay-FoodMenus .banner-container .banner-card-container .content-container .btn-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.ValentinesDay-FoodMenus .banner-container .banner-card-container .content-container .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.ValentinesDay-FoodMenus .banner-container .banner-card-container .concont {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.ValentinesDay-FoodMenus .banner-container .banner-card-container .concont .image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.ValentinesDay-FoodMenus .banner-container .banner-card-container .concont .image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .ValentinesDay-FoodMenus .banner-container .banner-card-container {
+    height: 420px;
+  }
+  .ValentinesDay-FoodMenus .banner-container .banner-card-container .text-container,
+  .ValentinesDay-FoodMenus .banner-container .banner-card-container .title-container {
+    padding-left: 83px;
+  }
+  .ValentinesDay-FoodMenus .banner-container .banner-card-container .text-container {
+    padding-bottom: 20px;
+  }
+  .ValentinesDay-FoodMenus .banner-container .banner-card-container .btn-container {
+    height: 45px;
+    width: 160px;
+    margin-left: 83px;
+    margin-bottom: 30px;
+  }
+  .ValentinesDay-FoodMenus .banner-container .banner-card-container .concont .image-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 425px solid #ffffff;
+    border-right: 80px solid transparent;
+    width: 0;
+  }
+  .ValentinesDay-FoodMenus .banner-container .banner-card-container .concont .image-container .desktop-img {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ValentinesDay-FoodMenus .banner-container .banner-card-container {
+    flex-flow: column;
+    margin-top: 0;
+  }
+  .ValentinesDay-FoodMenus .banner-container .banner-card-container .content-container {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .ValentinesDay-FoodMenus .banner-container .banner-card-container .content-container .label {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  .ValentinesDay-FoodMenus .banner-container .banner-card-container .content-container .text-container,
+  .ValentinesDay-FoodMenus .banner-container .banner-card-container .content-container .title-container {
+    padding: 20px;
+    margin: 0;
+  }
+  .ValentinesDay-FoodMenus .banner-container .banner-card-container .content-container .text-container .text,
+  .ValentinesDay-FoodMenus .banner-container .banner-card-container .content-container .title-container .text {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.63;
+    color: #3e3e3e;
+    margin: 0;
+  }
+  .ValentinesDay-FoodMenus .banner-container .banner-card-container .content-container .text-container .title,
+  .ValentinesDay-FoodMenus .banner-container .banner-card-container .content-container .title-container .title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .ValentinesDay-FoodMenus .banner-container .banner-card-container .content-container .title-container {
+    margin: 30px 0;
+  }
+  .ValentinesDay-FoodMenus .banner-container .banner-card-container .content-container .title-container.with-label {
+    margin-top: 20px;
+  }
+  .ValentinesDay-FoodMenus .banner-container .banner-card-container .content-container .btn-container {
+    width: 88%;
+    height: 45px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .ValentinesDay-FoodMenus .banner-container .banner-card-container .concont {
+    width: 100%;
+    height: 280px;
+  }
+  .ValentinesDay-FoodMenus .banner-container .banner-card-container .concont .image-container .phone-img {
+    display: block;
+    position: absolute;
+    height: 280px;
+    left: 0;
+    bottom: 0;
+  }
+}
+.ValentinesDay-FoodMenus .icon-and-description-container {
+  display: flex;
+  text-align: left;
+}
+.ValentinesDay-FoodMenus .icon-and-description-container .item-container {
+  display: flex;
+}
+.ValentinesDay-FoodMenus .icon-and-description-container .item-container .image-container {
+  height: 96px;
+  width: 96px;
+}
+.ValentinesDay-FoodMenus .icon-and-description-container .item-container .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.ValentinesDay-FoodMenus .icon-and-description-container .item-container .descrition-container {
+  text-align: left;
+  width: 240px;
+  margin-left: 40px;
+  padding-right: 30px;
+}
+.ValentinesDay-FoodMenus .icon-and-description-container .item-container .descrition-container .title {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.ValentinesDay-FoodMenus .icon-and-description-container .item-container .descrition-container .description {
+  font-size: 18px;
+  line-height: 1.56;
+}
+@media screen and (min-width: 768px) {
+  .ValentinesDay-FoodMenus .icon-and-description-container .item-container {
+    border-right: 1px solid black;
+    margin-left: 70px;
+  }
+  .ValentinesDay-FoodMenus .icon-and-description-container .item-container:last-child {
+    border-right: unset;
+  }
+  .ValentinesDay-FoodMenus .icon-and-description-container .item-container:first-child {
+    margin-left: unset;
+  }
+}
+@media (max-width: 768px) {
+  .ValentinesDay-FoodMenus .icon-and-description-container {
+    flex-flow: column;
+  }
+  .ValentinesDay-FoodMenus .icon-and-description-container .item-container {
+    flex-flow: column;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .ValentinesDay-FoodMenus .icon-and-description-container .item-container .image-container {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .ValentinesDay-FoodMenus .icon-and-description-container .item-container .descrition-container {
+    width: 88%;
+    margin-right: 6%;
+    margin-left: 6%;
+    padding: unset;
+  }
+}
+@media (min-width: 768px) {
+  .ValentinesDay-FoodMenus .mixed-content-card-container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media (max-width: 768px) {
+  .ValentinesDay-FoodMenus .mixed-content-card-container {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+.ValentinesDay-FoodMenus .mixed-content-card-container .mixed-content-block {
+  font-family: 'Roboto', sans-serif;
+  background-color: transparent;
+  box-sizing: content-box;
+  text-align: left;
+}
+.ValentinesDay-FoodMenus .mixed-content-card-container .mixed-content-block .copy-container .content-title {
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+.ValentinesDay-FoodMenus .mixed-content-card-container .mixed-content-block .copy-container .content-text {
+  color: #3e3e3e;
+}
+.ValentinesDay-FoodMenus .mixed-content-card-container .mixed-content-block .copy-container .content-button {
+  font-size: 14px;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.ValentinesDay-FoodMenus .mixed-content-card-container .mixed-content-block .copy-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.ValentinesDay-FoodMenus .mixed-content-card-container .mixed-content-block .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.ValentinesDay-FoodMenus .mixed-content-card-container .mixed-content-block .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .ValentinesDay-FoodMenus .mixed-content-card-container .mixed-content-block {
+    width: 100%;
+    display: flex;
+    height: 340px;
+    padding-bottom: 80px;
+    min-height: 390px;
+  }
+  .ValentinesDay-FoodMenus .mixed-content-card-container .mixed-content-block:last-child {
+    padding-bottom: 0;
+  }
+  .ValentinesDay-FoodMenus .mixed-content-card-container .mixed-content-block.text-left .copy-container {
+    order: 0;
+    padding-right: 115px;
+  }
+  .ValentinesDay-FoodMenus .mixed-content-card-container .mixed-content-block.text-left .image-container {
+    order: 1;
+  }
+  .ValentinesDay-FoodMenus .mixed-content-card-container .mixed-content-block.text-right .copy-container {
+    order: 1;
+    padding-left: 115px;
+  }
+  .ValentinesDay-FoodMenus .mixed-content-card-container .mixed-content-block.text-right .image-container {
+    order: 0;
+  }
+  .ValentinesDay-FoodMenus .mixed-content-card-container .mixed-content-block .copy-container {
+    height: 100%;
+    width: 100%;
+  }
+  .ValentinesDay-FoodMenus .mixed-content-card-container .mixed-content-block .copy-container .content-title {
+    font-size: 18px;
+    padding-top: 60px;
+  }
+  .ValentinesDay-FoodMenus .mixed-content-card-container .mixed-content-block .copy-container .content-button {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+  .ValentinesDay-FoodMenus .mixed-content-card-container .mixed-content-block .copy-container .content-text {
+    padding: 20px 0;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .ValentinesDay-FoodMenus .mixed-content-card-container .mixed-content-block .image-container {
+    height: 390px;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .ValentinesDay-FoodMenus .mixed-content-card-container .mixed-content-block {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: unset;
+    padding-bottom: 40px;
+    margin: 0;
+  }
+  .ValentinesDay-FoodMenus .mixed-content-card-container .mixed-content-block .copy-container {
+    width: 100%;
+  }
+  .ValentinesDay-FoodMenus .mixed-content-card-container .mixed-content-block .copy-container .content-title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 32px;
+    color: #000000;
+    text-transform: uppercase;
+    padding-top: 20px;
+  }
+  .ValentinesDay-FoodMenus .mixed-content-card-container .mixed-content-block .copy-container .content-text {
+    font-size: 16px;
+    padding-top: 10px;
+    color: #3e3e3e;
+  }
+  .ValentinesDay-FoodMenus .mixed-content-card-container .mixed-content-block .copy-container .content-button {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 13px 0;
+    background-color: #f2af0c;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    bottom: 2px;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+  .ValentinesDay-FoodMenus .mixed-content-card-container .mixed-content-block .image-container {
+    height: 250px;
+    margin-left: -7%;
+    margin-right: -7%;
+    width: 114%;
+    background-color: rgba(64, 146, 223, 0.5);
+  }
+  .ValentinesDay-FoodMenus .mixed-content-card-container .mixed-content-block .image-container img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.ValentinesDay-FoodMenus .box-container {
+  display: flex;
+  margin-right: 18%;
+  margin-left: 18%;
+  position: relative;
+  color: white;
+  background-color: #3e3e3e;
+  height: unset;
+  align-items: center;
+}
+.ValentinesDay-FoodMenus .box-container .image-container {
+  height: 208px;
+  width: 300px;
+  min-width: 110px;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.ValentinesDay-FoodMenus .box-container .image-container img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.ValentinesDay-FoodMenus .box-container .body-container {
+  width: 100%;
+  text-align: left;
+}
+.ValentinesDay-FoodMenus .box-container .body-container .box-text {
+  margin: 0;
+  margin-left: 20px;
+  font-size: 18px;
+  line-height: 1.56;
+  font-weight: 300;
+  width: 65%;
+}
+.ValentinesDay-FoodMenus .box-container .body-container .box-button {
+  height: 44px;
+  width: 130px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 40px;
+  margin: auto 0;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.ValentinesDay-FoodMenus .box-container .body-container .box-button.display-block {
+  position: unset;
+}
+.ValentinesDay-FoodMenus .box-container .body-container .box-button .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.ValentinesDay-FoodMenus .box-container .body-container .box-button .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.ValentinesDay-FoodMenus .box-container.round-image {
+  border-radius: 56px 0px 0px 56px;
+}
+.ValentinesDay-FoodMenus .box-container.round-image .image-container {
+  border-radius: 56px;
+  margin-left: -2px;
+}
+@media screen and (max-width: 768px) {
+  .ValentinesDay-FoodMenus .box-container,
+  .ValentinesDay-FoodMenus .box-container.round-image {
+    flex-flow: column;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: unset;
+  }
+  .ValentinesDay-FoodMenus .box-container .image-container,
+  .ValentinesDay-FoodMenus .box-container.round-image .image-container {
+    height: 110px;
+    width: 110px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: -1px;
+  }
+  .ValentinesDay-FoodMenus .box-container .body-container .box-text,
+  .ValentinesDay-FoodMenus .box-container.round-image .body-container .box-text {
+    text-align: center;
+    width: unset;
+    margin: unset;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+  .ValentinesDay-FoodMenus .box-container .body-container .box-button,
+  .ValentinesDay-FoodMenus .box-container.round-image .body-container .box-button {
+    position: unset;
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 40px;
+  }
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes {
+  padding-left: 108px;
+  background: rgba(255, 255, 255, 0.5);
+  padding-top: 40px;
+  padding-bottom: 110px;
+  text-align: left;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes.transparent-background {
+  background-color: transparent;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header {
+  display: flex;
+  flex-direction: column;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .recipes-top {
+  position: relative;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty {
+  position: absolute;
+  top: 0;
+  right: 109px;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .recipes-top .recipes-title {
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .recipes-top .recipes-tag-container {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .recipes-top .recipes-tag-container .recipes-tag {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #ffffff;
+  background-color: #00b39f;
+  padding: 8px 10px;
+  margin-left: 5px;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .recipes-top .recipes-tag-container .recipes-tag:first-child {
+  margin-left: 0;
+}
+@media (max-width: 768px) {
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .recipes-top .recipes-tag-container {
+    flex-flow: wrap;
+    padding-bottom: 10px;
+  }
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .recipes-description {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: left;
+  padding-bottom: 40px;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .recipe-information .recipes-medium {
+  float: left;
+  display: inline-flex;
+  border-right: 2px solid #b9b9b9;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 50px;
+  width: 21.5%;
+  position: relative;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .recipe-information .recipes-medium .recipes-medium-title {
+  display: flex;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .recipe-information .recipes-medium .description {
+  position: absolute;
+  bottom: 0;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty {
+  display: none;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block,
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .puntuation-block {
+  display: flex;
+  margin: 2px;
+  width: fit-content;
+  border: 1px solid #00b39f;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block .p-title,
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .puntuation-block .p-title {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.38;
+  background-color: #00b39f;
+  color: #ffffff;
+  padding: 4px 8px;
+  text-transform: uppercase;
+  min-width: 100px;
+  width: 100px;
+  white-space: nowrap;
+  text-align: center;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block .puntuation-container,
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .puntuation-block .puntuation-container {
+  padding-left: 10px;
+  min-width: 95px;
+  padding-right: 5px;
+  color: #bebebe;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block .puntuation-container .far.fa-grin,
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .puntuation-block .puntuation-container .far.fa-grin {
+  font-size: 20px;
+  padding-right: 5px;
+  padding-top: 3px;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block .puntuation-container .fas.fa-cocktail,
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .puntuation-block .puntuation-container .fas.fa-cocktail {
+  font-size: 17px;
+  padding-right: 5px;
+  padding-top: 3px;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block .puntuation-container .selected,
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .puntuation-block .puntuation-container .selected {
+  color: #00b39f;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .difficulty,
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .difficulty {
+  margin-top: 15px;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method {
+  display: flex;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content {
+  background-color: rgba(64, 146, 223, 0.5);
+}
+@media (min-width: 768px) {
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content {
+    width: 44%;
+    height: 316px;
+    margin-top: 25px;
+    margin-right: 25px;
+  }
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
+  height: 350px;
+  position: relative;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block {
+  z-index: 3;
+  bottom: -65px;
+  position: absolute;
+  width: 100%;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-content .porcentual-number-container {
+  position: absolute;
+  bottom: -15px;
+  right: -35px;
+  color: white;
+  border-radius: 50%;
+  background-color: #00b39f;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-content .porcentual-number-container .porcentual-number {
+  padding-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: #ffffff;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-content.with-description {
+  font-size: 16px;
+  line-height: 1.63;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  border: 4px solid #00b39f;
+  padding-right: 75px;
+  background-color: white;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-content.with-description .porcentual-number-container {
+  bottom: -15px;
+}
+@media (max-width: 768px) {
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block {
+    bottom: -100px;
+    left: -14px;
+  }
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-description {
+    padding-right: 80px;
+  }
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-description .porcentual-number-container {
+    width: 110px;
+    height: 110px;
+  }
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"] {
+  display: none;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label {
+  background: rgba(242, 175, 12, 0.12);
+  padding-bottom: 17px;
+  padding-top: 17px;
+  border-bottom: 2px solid #f2af0c;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
+    width: 44%;
+  }
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content {
+  z-index: 1;
+  display: table;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content#churros-ingredients-content {
+  height: 266px;
+  display: block;
+  overflow: auto;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content#churros-method-content {
+  height: 266px;
+  display: block;
+  overflow: auto;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs {
+  position: relative;
+  clear: both;
+  margin: 0;
+  padding-top: 25px;
+  white-space: nowrap;
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid #979797;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .download-tab-btn {
+  display: none;
+}
+@media (min-width: 768px) {
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .download-tab-btn {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    font-size: 14px;
+    display: block;
+  }
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .download-tab-btn a {
+    color: #4092df;
+  }
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .download-tab-btn a i {
+    margin-right: 10px;
+  }
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab {
+  vertical-align: top;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .label {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  min-height: 50px;
+  line-height: 50px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  padding-top: 17px;
+  border-bottom: 2px solid #979797;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .label:hover {
+  cursor: pointer;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content {
+  white-space: normal;
+  top: 77px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  background-color: white;
+  height: 275px;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol,
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul {
+  height: inherit;
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 45px;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li,
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li {
+  margin-bottom: 10px;
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li:last-child,
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li:last-child {
+  margin-bottom: 0;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li p,
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #000000;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li:before,
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li:before {
+  content: counter(my-awesome-counter);
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  position: absolute;
+  --size: 25px;
+  left: calc(-1 * var(--size) - 20px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  background: #3e3e3e;
+  border-radius: 50%;
+  text-align: center;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul {
+  padding-left: 25px;
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li:before {
+  content: "";
+  color: #fff;
+  /* font-size : 10px; */
+  font-weight: bold;
+  position: absolute;
+  --size: 8px;
+  left: calc(-1 * var(--size) - 15px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 9px;
+  background: #7d7773;
+  border-radius: 50%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
+    flex-wrap: wrap;
+  }
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab {
+    margin-top: -6px;
+  }
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab .content {
+    top: 71px;
+  }
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content {
+    z-index: 1;
+    display: table;
+    top: 71px;
+  }
+}
+@media (max-width: 768px) {
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes {
+    padding-left: unset;
+    padding-right: unset;
+    padding-bottom: 40px;
+  }
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header {
+    padding-right: 6%;
+    padding-left: 6%;
+  }
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty {
+    display: none;
+  }
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .recipes-top .recipes-title {
+    margin-bottom: 20px;
+  }
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .recipes-description {
+    padding-bottom: 20px;
+  }
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .recipe-information .recipes-medium {
+    float: unset;
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty {
+    display: block;
+  }
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .wow-factor img {
+    height: 40px;
+  }
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .difficulty {
+    margin-top: 20px;
+  }
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .difficulty img {
+    height: 40px;
+  }
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body {
+    padding-right: 6%;
+    padding-left: 6%;
+  }
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method {
+    flex-direction: column;
+  }
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content {
+    margin-top: 25px;
+    margin-right: 25px;
+    width: 100%;
+  }
+}
+.ValentinesDay-FoodMenus .recipe .content-card-recipes .only-mobile-download-tab-btn {
+  text-align: left;
+  display: none;
+}
+@media (max-width: 768px) {
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes .only-mobile-download-tab-btn {
+    margin-top: 87px;
+    padding-right: 6%;
+    padding-left: 6%;
+    display: block;
+  }
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes .only-mobile-download-tab-btn a {
+    color: #4092df;
+  }
+  .ValentinesDay-FoodMenus .recipe .content-card-recipes .only-mobile-download-tab-btn a i {
+    margin-right: 10px;
+  }
+}
+.ValentinesDay-FoodMenus .recipe.doble-recipe {
+  display: flex;
+}
+.ValentinesDay-FoodMenus .recipe.doble-recipe .content-card-recipes.one-of-two {
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  width: 50%;
+  padding-left: unset;
+  padding-right: unset;
+  padding-bottom: 40px;
+}
+.ValentinesDay-FoodMenus .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header .recipes-top .recipes-tag-container {
+  flex-flow: wrap;
+  padding-bottom: 10px;
+}
+.ValentinesDay-FoodMenus .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body .recipes-ingredients-method .tab-table-container {
+  width: 100%;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+.ValentinesDay-FoodMenus .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-description {
+  padding-right: 80px;
+}
+.ValentinesDay-FoodMenus .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-description .porcentual-number-container {
+  width: 110px;
+  height: 110px;
+}
+.ValentinesDay-FoodMenus .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body .recipes-ingredients-method .tab-table-container .tab {
+  margin-top: -6px;
+}
+.ValentinesDay-FoodMenus .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body .recipes-ingredients-method .tab-table-container .tab .content {
+  top: 71px;
+}
+.ValentinesDay-FoodMenus .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content {
+  z-index: 1;
+  display: table;
+  top: 71px;
+}
+.ValentinesDay-FoodMenus .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header {
+  padding-right: 6%;
+  padding-left: 6%;
+}
+.ValentinesDay-FoodMenus .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header .recipes-top .recipes-factor-and-difficulty {
+  display: none;
+}
+.ValentinesDay-FoodMenus .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header .recipes-top .recipes-title {
+  margin-bottom: 20px;
+}
+.ValentinesDay-FoodMenus .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header .recipes-description {
+  padding-bottom: 20px;
+}
+.ValentinesDay-FoodMenus .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header .recipe-information .recipes-medium {
+  float: unset;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.ValentinesDay-FoodMenus .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header .only-mobile-recipes-factor-and-difficulty {
+  display: block;
+}
+.ValentinesDay-FoodMenus .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header .only-mobile-recipes-factor-and-difficulty .wow-factor img {
+  height: 40px;
+}
+.ValentinesDay-FoodMenus .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header .only-mobile-recipes-factor-and-difficulty .difficulty {
+  margin-top: 20px;
+}
+.ValentinesDay-FoodMenus .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header .only-mobile-recipes-factor-and-difficulty .difficulty img {
+  height: 40px;
+}
+.ValentinesDay-FoodMenus .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body {
+  padding-right: 6%;
+  padding-left: 6%;
+}
+.ValentinesDay-FoodMenus .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body .recipes-ingredients-method {
+  flex-direction: column;
+}
+.ValentinesDay-FoodMenus .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body .recipes-ingredients-method .recipes-image-content {
+  margin-top: 25px;
+  margin-right: 25px;
+  width: 100%;
+}
+.ValentinesDay-FoodMenus .recipe.doble-recipe .content-card-recipes .only-mobile-download-tab-btn {
+  margin-top: 87px;
+  padding-right: 6%;
+  padding-left: 6%;
+  display: block;
+}
+.ValentinesDay-FoodMenus .recipe.doble-recipe .content-card-recipes .only-mobile-download-tab-btn a {
+  color: #4092df;
+}
+.ValentinesDay-FoodMenus .recipe.doble-recipe .content-card-recipes .only-mobile-download-tab-btn a i {
+  margin-right: 10px;
+}
+@media (max-width: 768px) {
+  .ValentinesDay-FoodMenus .recipe.doble-recipe {
+    flex-direction: column;
+  }
+  .ValentinesDay-FoodMenus .recipe.doble-recipe .content-card-recipes.one-of-two {
+    width: 100%;
+  }
+}
+.ValentinesDay-FoodMenus .image-outside-horizontal-card-container .image-outside-horizontal-card {
+  display: flex;
+  width: 845px;
+  height: 334px;
+  position: relative;
+}
+.ValentinesDay-FoodMenus .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container {
+  width: 100%;
+  border: 5px solid #50af01;
+  z-index: 1;
+}
+.ValentinesDay-FoodMenus .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
+  width: 380px;
+  padding-left: 80px;
+  padding-top: 35px;
+  padding-right: 85px;
+}
+.ValentinesDay-FoodMenus .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
+  padding: 0;
+  width: 380px;
+  padding-left: 80px;
+  padding-top: 20px;
+  padding-right: 85px;
+}
+.ValentinesDay-FoodMenus .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.ValentinesDay-FoodMenus .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.ValentinesDay-FoodMenus .image-outside-horizontal-card-container .image-outside-horizontal-card .image-container {
+  position: absolute;
+  right: -100px;
+  top: -40px;
+  z-index: 0;
+  height: 415px;
+  width: 410px;
+  background-color: rgba(64, 146, 223, 0.5);
+  overflow: hidden;
+}
+.ValentinesDay-FoodMenus .image-outside-horizontal-card-container .image-outside-horizontal-card .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .ValentinesDay-FoodMenus .image-outside-horizontal-card-container {
+    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-left: 14%;
+  }
+  .ValentinesDay-FoodMenus .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
+    width: 530px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .ValentinesDay-FoodMenus .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
+    width: 550px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .ValentinesDay-FoodMenus .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container {
+    width: 162px;
+    height: 44px;
+    margin-top: 30px;
+    margin-left: 180px;
+    margin-bottom: 20px;
+  }
+  .ValentinesDay-FoodMenus .image-outside-horizontal-card-container .image-outside-horizontal-card.image-left .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .ValentinesDay-FoodMenus .image-outside-horizontal-card-container .image-outside-horizontal-card.image-left .content-container .title-container {
+    padding-top: 0;
+  }
+  .ValentinesDay-FoodMenus .image-outside-horizontal-card-container .image-outside-horizontal-card.image-left .image-container {
+    right: unset;
+    left: -100px;
+  }
+  .ValentinesDay-FoodMenus .image-outside-horizontal-card-container .image-outside-horizontal-card.only-text {
+    height: unset;
+  }
+  .ValentinesDay-FoodMenus .image-outside-horizontal-card-container .image-outside-horizontal-card.only-text .content-container {
+    border: 5px solid #50af01;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .ValentinesDay-FoodMenus .image-outside-horizontal-card-container {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 30px;
+  }
+  .ValentinesDay-FoodMenus .image-outside-horizontal-card-container .image-outside-horizontal-card {
+    width: 100%;
+    height: unset;
+    flex-wrap: wrap;
+  }
+  .ValentinesDay-FoodMenus .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container {
+    padding-bottom: 20px;
+    order: 1;
+  }
+  .ValentinesDay-FoodMenus .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
+    padding-left: 30px;
+    padding-top: 410px;
+    padding-right: 30px;
+    width: unset;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .ValentinesDay-FoodMenus .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
+    font-size: 20px;
+    text-align: center;
+    color: #3e3e3e;
+    width: unset;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 30px;
+  }
+  .ValentinesDay-FoodMenus .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container {
+    height: 45px;
+    width: 160px;
+    margin-top: 40px;
+    margin-left: 25%;
+  }
+  .ValentinesDay-FoodMenus .image-outside-horizontal-card-container .image-outside-horizontal-card .image-container {
+    order: 0;
+    position: absolute;
+    top: -30px;
+    z-index: 0;
+    width: 102vw;
+    right: -6.7%;
+  }
+  .ValentinesDay-FoodMenus .image-outside-horizontal-card-container .image-outside-horizontal-card.only-text .content-container {
+    border: 5px solid #50af01;
+    padding-top: 20px;
+  }
+  .ValentinesDay-FoodMenus .image-outside-horizontal-card-container .image-outside-horizontal-card.only-text .content-container .title-container {
+    padding-top: 0;
+  }
+}
+.ValentinesDay-FoodMenus .download-block {
+  background-color: #ffffff;
+}
+.ValentinesDay-FoodMenus .download-block .download-header {
+  position: relative;
+  border-bottom: 1px solid #e3e3e3;
+  border-top: 1px solid #e3e3e3;
+  height: 95px;
+}
+.ValentinesDay-FoodMenus .download-block .download-header .title {
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
+  height: inherit;
+  padding-top: 35px;
+  padding-left: 60px;
+}
+.ValentinesDay-FoodMenus .download-block .download-header .download-btn {
+  position: absolute;
+  top: 38px;
+  right: 40px;
+  font-size: 14px;
+}
+.ValentinesDay-FoodMenus .download-block .download-header .download-btn a {
+  color: #4092df;
+}
+.ValentinesDay-FoodMenus .download-block .download-header .download-btn a i {
+  margin-right: 10px;
+}
+.ValentinesDay-FoodMenus .download-block .download-body {
+  padding: 40px;
+  padding-bottom: 0;
+}
+.ValentinesDay-FoodMenus .download-block .download-body .download-card-container {
+  display: flex;
+  padding-bottom: 20px;
+}
+.ValentinesDay-FoodMenus .download-block .download-body .download-card-container .download-card {
+  width: 220px;
+  height: 355px;
+  margin-left: 20px;
+}
+.ValentinesDay-FoodMenus .download-block .download-body .download-card-container .download-card:first-child {
+  margin-left: 0;
+}
+.ValentinesDay-FoodMenus .download-block .download-body .download-card-container .download-card .image-container {
+  height: 170px;
+}
+.ValentinesDay-FoodMenus .download-block .download-body .download-card-container .download-card .image-container img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.ValentinesDay-FoodMenus .download-block .download-body .download-card-container .download-card .body-container {
+  background-color: #f2f2f2;
+  height: 185px;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+.ValentinesDay-FoodMenus .download-block .download-body .download-card-container .download-card .body-container .title-text {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 22px;
+  color: #0041a5;
+  text-transform: uppercase;
+}
+.ValentinesDay-FoodMenus .download-block .download-body .download-card-container .download-card .body-container .description-text {
+  padding-top: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  word-break: break-word;
+}
+.ValentinesDay-FoodMenus .download-block .download-body .download-card-container .download-card .body-container .download-card-btn {
+  margin-top: 20px;
+  border: 1px solid;
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+}
+.ValentinesDay-FoodMenus .download-block .download-body .download-card-container .download-card .body-container .download-card-btn .download-link-box {
+  color: #3e3e3e;
+}
+.ValentinesDay-FoodMenus .download-block .download-body .download-card-container .download-card .body-container .download-card-btn .download-link-box i {
+  margin-right: 10px;
+}
+.ValentinesDay-FoodMenus .download-block .download-footer {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+  color: #3e3e3e;
+}
+@media (max-width: 768px) {
+  .ValentinesDay-FoodMenus .download-block .download-header .title {
+    padding-top: 21px;
+    padding-left: 21px;
+    height: unset;
+  }
+  .ValentinesDay-FoodMenus .download-block .download-header .download-btn {
+    position: unset;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .ValentinesDay-FoodMenus .download-block .download-body {
+    padding: 20px;
+  }
+  .ValentinesDay-FoodMenus .download-block .download-body .download-card-container {
+    flex-direction: column;
+  }
+  .ValentinesDay-FoodMenus .download-block .download-body .download-card-container .download-card {
+    width: 100%;
+    height: unset;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .ValentinesDay-FoodMenus .download-block .download-body .download-card-container .download-card .image-container {
+    height: 225px;
+  }
+  .ValentinesDay-FoodMenus .download-block .download-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+  }
+}
+.ValentinesDay-FoodMenus .titles-and-descriptions .related-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  text-transform: uppercase;
+  border-bottom: 1px solid #7d7773;
+}
+@media screen and (min-width: 768px) {
+  .ValentinesDay-FoodMenus .titles-and-descriptions .related-title {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ValentinesDay-FoodMenus .titles-and-descriptions .related-title {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ValentinesDay-FoodMenus .titles-and-descriptions .related-title {
+    font-size: 24px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+}
+.ValentinesDay-FoodMenus .vertical-card-container-related-article {
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .ValentinesDay-FoodMenus .vertical-card-container-related-article {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+}
+.ValentinesDay-FoodMenus .vertical-card-container-related-article .card-related-content {
+  font-family: 'Roboto', sans-serif;
+  height: 430px;
+  display: block;
+}
+@media (min-width: 768px) {
+  .ValentinesDay-FoodMenus .vertical-card-container-related-article .card-related-content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 33.3333%;
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 768px) {
+  .ValentinesDay-FoodMenus .vertical-card-container-related-article .card-related-content {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 4%;
+  }
+}
+.ValentinesDay-FoodMenus .vertical-card-container-related-article .card-related-content .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+  height: 250px;
+}
+.ValentinesDay-FoodMenus .vertical-card-container-related-article .card-related-content .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ValentinesDay-FoodMenus .vertical-card-container-related-article .card-related-content .copy-container {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 180px;
+}
+.ValentinesDay-FoodMenus .vertical-card-container-related-article .card-related-content .copy-container .copy-text {
+  padding: 20px 30px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.75;
+  color: #000000;
+}
+.ValentinesDay-FoodMenus .vertical-card-container-related-article .card-related-content .copy-container .copy-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #4092df;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  text-decoration: none;
+}
+.ValentinesDay-FoodMenus .vertical-card-container-related-article .card-related-content .copy-container .copy-link:hover {
+  border-bottom: 2px solid;
+  margin-bottom: -2px;
+}
+.ValentinesDay-FoodMenus .vertical-card-container-related-article .card-related-content .copy-container .copy-link i.fas.fa-angle-right {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #4092df;
+  position: absolute;
+  bottom: 4px;
+}
+.ValentinesDay-FoodMenus .titles-and-descriptions {
+  text-align: left;
+}
+.ValentinesDay-FoodMenus .titles-and-descriptions .notes {
+  padding-left: 18%;
+  padding-right: 18%;
+  word-break: break-all;
+}
+.ValentinesDay-FoodMenus .titles-and-descriptions .general-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  padding-left: 18%;
+  padding-right: 18%;
+  text-transform: uppercase;
+}
+.ValentinesDay-FoodMenus .titles-and-descriptions .general-description {
+  font-size: 20px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  color: #3e3e3e;
+  padding-right: 18%;
+  padding-left: 18%;
+}
+@media screen and (max-width: 768px) {
+  .ValentinesDay-FoodMenus .titles-and-descriptions .notes {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .ValentinesDay-FoodMenus .titles-and-descriptions .general-title {
+    padding-left: 6%;
+    padding-right: 6%;
+    font-size: 24px;
+  }
+  .ValentinesDay-FoodMenus .titles-and-descriptions .general-description {
+    padding-left: 6%;
+    padding-right: 5%;
+  }
+}
+#churros-tab-table-container {
+  height: unset;
+}
+@media screen and (max-width: 768px) {
+  #churros-tab-table-container {
+    height: 325px;
+  }
+}
+#spacer20 {
+  padding-bottom: 20px;
+}
+#spacer40 {
+  padding-bottom: 40px;
+}
+#spacer80 {
+  padding-bottom: 80px;
+}
+.slds-col--padded.contentRegion.comm-layout-column {
+  padding: 0;
+}
+.cCP_NewsDetail .detail-date.p-16-white-bold,
+.cCP_NewsDetail .btn-div.content-button-container {
+  display: none;
+}
+.cCP_NewsDetail {
+  margin: unset;
+  padding: unset;
+  background-color: unset;
+}

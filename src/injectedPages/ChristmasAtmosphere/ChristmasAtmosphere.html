@@ -1,0 +1,926 @@
+<style>
+.ChristmasAtmosphere {
+  text-align: left;
+  background-color: #f2f2f2;
+}
+.ChristmasAtmosphere .titles-and-descriptions .general-title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  padding-left: 18%;
+  padding-right: 18%;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.ChristmasAtmosphere .titles-and-descriptions .general-description {
+  font-size: 19px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  color: #3e3e3e;
+  padding-right: 9%;
+  padding-left: 9%;
+  padding-bottom: 80px;
+}
+.ChristmasAtmosphere .titles-and-descriptions .related-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  text-transform: uppercase;
+  border-bottom: 1px solid #7d7773;
+  margin-bottom: 50px;
+  margin-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  .ChristmasAtmosphere .titles-and-descriptions .general-title {
+    padding-left: 6%;
+    padding-right: 6%;
+    font-size: 24px;
+  }
+  .ChristmasAtmosphere .titles-and-descriptions .general-description {
+    padding-left: 6%;
+    padding-right: 5%;
+  }
+  .ChristmasAtmosphere .titles-and-descriptions .related-title {
+    font-size: 24px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+}
+.ChristmasAtmosphere .banner-container .banner-card-container {
+  text-align: left;
+  background-color: #ffffff;
+}
+.ChristmasAtmosphere .banner-container .banner-card-container .label {
+  width: 60px;
+  height: 40px;
+  margin-left: 83px;
+  margin-top: 25px;
+}
+.ChristmasAtmosphere .banner-container .banner-card-container .label div {
+  height: 100%;
+}
+.ChristmasAtmosphere .banner-container .banner-card-container .label div span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.ChristmasAtmosphere .banner-container .banner-card-container .title-container {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.ChristmasAtmosphere .banner-container .banner-card-container .title-container.with-label {
+  margin-top: 20px;
+}
+.ChristmasAtmosphere .banner-container .banner-card-container .title-container .title {
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  color: black;
+  text-transform: uppercase;
+}
+.ChristmasAtmosphere .banner-container .banner-card-container .text-container .text {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #3e3e3e;
+}
+.ChristmasAtmosphere .banner-container .banner-card-container .btn-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.ChristmasAtmosphere .banner-container .banner-card-container .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.ChristmasAtmosphere .banner-container .banner-card-container .image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.ChristmasAtmosphere .banner-container .banner-card-container .image-container img {
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .ChristmasAtmosphere .banner-container .banner-card-container {
+    height: 420px;
+    margin-bottom: 40px;
+  }
+  .ChristmasAtmosphere .banner-container .banner-card-container .content-container {
+    padding-right: 110px;
+  }
+  .ChristmasAtmosphere .banner-container .banner-card-container .text-container,
+  .ChristmasAtmosphere .banner-container .banner-card-container .title-container {
+    padding-left: 83px;
+  }
+  .ChristmasAtmosphere .banner-container .banner-card-container .text-container {
+    padding-bottom: 20px;
+  }
+  .ChristmasAtmosphere .banner-container .banner-card-container .btn-container {
+    height: 45px;
+    width: 160px;
+    margin-left: 83px;
+  }
+  .ChristmasAtmosphere .banner-container .banner-card-container .image-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 425px solid #ffffff;
+    border-right: 80px solid transparent;
+    width: 0;
+  }
+  .ChristmasAtmosphere .banner-container .banner-card-container .image-container .desktop-img {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ChristmasAtmosphere .banner-container .banner-card-container {
+    flex-wrap: wrap;
+    margin-top: 0;
+    height: 660px;
+    margin-bottom: 45px;
+  }
+  .ChristmasAtmosphere .banner-container .banner-card-container .label {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  .ChristmasAtmosphere .banner-container .banner-card-container .text-container,
+  .ChristmasAtmosphere .banner-container .banner-card-container .title-container {
+    padding: 20px;
+    padding-top: 0;
+    margin: 0;
+  }
+  .ChristmasAtmosphere .banner-container .banner-card-container .text-container .text,
+  .ChristmasAtmosphere .banner-container .banner-card-container .title-container .text {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.63;
+    color: #3e3e3e;
+  }
+  .ChristmasAtmosphere .banner-container .banner-card-container .text-container .title,
+  .ChristmasAtmosphere .banner-container .banner-card-container .title-container .title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .ChristmasAtmosphere .banner-container .banner-card-container .title-container {
+    margin-top: 75px;
+  }
+  .ChristmasAtmosphere .banner-container .banner-card-container .title-container.with-label {
+    margin-top: 20px;
+  }
+  .ChristmasAtmosphere .banner-container .banner-card-container .btn-container {
+    width: 88%;
+    height: 45px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .ChristmasAtmosphere .banner-container .banner-card-container .image-container .phone-img {
+    display: block;
+    position: absolute;
+    height: 280px;
+    left: 0;
+    bottom: 0;
+  }
+}
+.ChristmasAtmosphere .vertical-card-container {
+  padding-bottom: 80px;
+}
+@media (min-width: 768px) {
+  .ChristmasAtmosphere .vertical-card-container {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+}
+.ChristmasAtmosphere .vertical-card-container .card-related-content {
+  font-family: 'Roboto', sans-serif;
+  height: 430px;
+  display: block;
+}
+@media (min-width: 768px) {
+  .ChristmasAtmosphere .vertical-card-container .card-related-content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 33.3333%;
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 768px) {
+  .ChristmasAtmosphere .vertical-card-container .card-related-content {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 4%;
+  }
+}
+.ChristmasAtmosphere .vertical-card-container .card-related-content .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+  height: 250px;
+  overflow: hidden;
+}
+.ChristmasAtmosphere .vertical-card-container .card-related-content .image-container img {
+  width: 100%;
+  height: auto;
+}
+.ChristmasAtmosphere .vertical-card-container .card-related-content .copy-container {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 180px;
+}
+.ChristmasAtmosphere .vertical-card-container .card-related-content .copy-container .copy-text {
+  padding: 20px 30px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.75;
+  color: #000000;
+}
+.ChristmasAtmosphere .vertical-card-container .card-related-content .copy-container .copy-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #4092df;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  text-decoration: none;
+}
+.ChristmasAtmosphere .vertical-card-container .card-related-content .copy-container .copy-link:hover {
+  border-bottom: 2px solid;
+  margin-bottom: -2px;
+}
+.ChristmasAtmosphere .vertical-card-container .card-related-content .copy-container .copy-link i.fas.fa-angle-right {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #4092df;
+  position: absolute;
+  bottom: 4px;
+}
+.ChristmasAtmosphere .image-outside-horizontal-card-container .image-outside-horizontal-card {
+  display: flex;
+  width: 845px;
+  height: 334px;
+  position: relative;
+}
+.ChristmasAtmosphere .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container {
+  width: 100%;
+  border: 5px solid #50af01;
+  z-index: 1;
+}
+.ChristmasAtmosphere .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
+  width: 380px;
+  padding-left: 80px;
+  padding-top: 35px;
+  padding-right: 85px;
+}
+.ChristmasAtmosphere .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
+  padding: 0;
+  width: 380px;
+  padding-left: 80px;
+  padding-top: 20px;
+  padding-right: 85px;
+}
+.ChristmasAtmosphere .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.ChristmasAtmosphere .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.ChristmasAtmosphere .image-outside-horizontal-card-container .image-outside-horizontal-card .image-container {
+  position: absolute;
+  right: -100px;
+  top: -40px;
+  z-index: 0;
+  height: 415px;
+  width: 410px;
+  background-color: rgba(64, 146, 223, 0.5);
+  overflow: hidden;
+}
+.ChristmasAtmosphere .image-outside-horizontal-card-container .image-outside-horizontal-card .image-container img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .ChristmasAtmosphere .image-outside-horizontal-card-container {
+    padding-bottom: 120px;
+    padding-top: 40px;
+    padding-left: 14%;
+  }
+  .ChristmasAtmosphere .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
+    width: 530px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .ChristmasAtmosphere .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
+    width: 550px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .ChristmasAtmosphere .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container {
+    width: 162px;
+    height: 44px;
+    margin-top: 30px;
+    margin-left: 180px;
+    margin-bottom: 20px;
+  }
+  .ChristmasAtmosphere .image-outside-horizontal-card-container .image-outside-horizontal-card.image-left .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .ChristmasAtmosphere .image-outside-horizontal-card-container .image-outside-horizontal-card.image-left .content-container .title-container {
+    padding-top: 0;
+  }
+  .ChristmasAtmosphere .image-outside-horizontal-card-container .image-outside-horizontal-card.image-left .image-container {
+    right: unset;
+    left: -100px;
+  }
+  .ChristmasAtmosphere .image-outside-horizontal-card-container .image-outside-horizontal-card.only-text {
+    height: unset;
+  }
+  .ChristmasAtmosphere .image-outside-horizontal-card-container .image-outside-horizontal-card.only-text .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .ChristmasAtmosphere .image-outside-horizontal-card-container {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 80px;
+  }
+  .ChristmasAtmosphere .image-outside-horizontal-card-container .image-outside-horizontal-card {
+    width: 100%;
+    height: unset;
+    flex-wrap: wrap;
+  }
+  .ChristmasAtmosphere .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container {
+    padding-bottom: 20px;
+    order: 1;
+  }
+  .ChristmasAtmosphere .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
+    padding-left: 30px;
+    padding-top: 410px;
+    padding-right: 30px;
+    width: unset;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .ChristmasAtmosphere .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
+    font-size: 20px;
+    text-align: center;
+    color: #3e3e3e;
+    width: unset;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 30px;
+  }
+  .ChristmasAtmosphere .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container {
+    height: 45px;
+    width: 160px;
+    margin-top: 40px;
+    margin-left: 25%;
+  }
+  .ChristmasAtmosphere .image-outside-horizontal-card-container .image-outside-horizontal-card .image-container {
+    order: 0;
+    position: absolute;
+    top: -30px;
+    z-index: 0;
+    width: 102vw;
+    right: -6.7%;
+  }
+  .ChristmasAtmosphere .image-outside-horizontal-card-container .image-outside-horizontal-card.only-text .content-container {
+    padding-top: 20px;
+  }
+  .ChristmasAtmosphere .image-outside-horizontal-card-container .image-outside-horizontal-card.only-text .content-container .title-container {
+    padding-top: 0;
+  }
+}
+.ChristmasAtmosphere .tips-component-container {
+  background-color: #fff;
+  margin-left: 9%;
+  margin-right: 9%;
+  padding-left: 9%;
+  padding-right: 9%;
+  padding-top: 60px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+.ChristmasAtmosphere .tips-component-container .description-container {
+  position: relative;
+  height: 415px;
+}
+.ChristmasAtmosphere .tips-component-container .description-container .image-container {
+  height: 415px;
+  width: 410px;
+  background-color: rgba(64, 146, 223, 0.5);
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+}
+.ChristmasAtmosphere .tips-component-container .description-container .image-container img {
+  width: auto;
+  height: 100%;
+  max-width: unset;
+}
+.ChristmasAtmosphere .tips-component-container .description-container .text-container {
+  width: 45%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.ChristmasAtmosphere .tips-component-container .description-container .text-container .tips-desc-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.ChristmasAtmosphere .tips-component-container .description-container .text-container .tips-desc-description {
+  font-size: 13px;
+  font-weight: 500;
+}
+.ChristmasAtmosphere .tips-component-container .description-container.image-left .image-container {
+  right: unset;
+  left: 0;
+}
+.ChristmasAtmosphere .tips-component-container .description-container.image-left .text-container {
+  margin-left: 55%;
+}
+.ChristmasAtmosphere .tips-component-container .tips-list {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.ChristmasAtmosphere .tips-component-container .tips-list .tip {
+  display: flex;
+  padding-bottom: 40px;
+}
+.ChristmasAtmosphere .tips-component-container .tips-list .tip .tip-img {
+  width: 80px;
+  height: 80px;
+}
+.ChristmasAtmosphere .tips-component-container .tips-list .tip .tip-texts {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  justify-content: center;
+}
+.ChristmasAtmosphere .tips-component-container .tips-list .tip .tip-texts .tip-title {
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .ChristmasAtmosphere .tips-component-container {
+    margin: 0;
+    padding-top: 30px;
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 40px;
+  }
+  .ChristmasAtmosphere .tips-component-container .description-container {
+    height: unset;
+  }
+  .ChristmasAtmosphere .tips-component-container .description-container .image-container {
+    position: relative;
+    height: 250px;
+    width: 100%;
+  }
+  .ChristmasAtmosphere .tips-component-container .description-container .text-container {
+    top: unset;
+    transform: unset;
+    width: 100%;
+    padding-top: 20px;
+  }
+  .ChristmasAtmosphere .tips-component-container .description-container .text-container .tips-desc-title {
+    font-size: 20px;
+  }
+  .ChristmasAtmosphere .tips-component-container .description-container .text-container .tips-desc-description {
+    font-size: 16px;
+  }
+  .ChristmasAtmosphere .tips-component-container .description-container.image-left .text-container {
+    margin: unset;
+  }
+}
+.ChristmasAtmosphere .image-text-block {
+  display: flex;
+  padding-left: 18%;
+  padding-bottom: 40px;
+}
+.ChristmasAtmosphere .image-text-block .itb-image-container {
+  width: 125px;
+  height: 80px;
+  margin-right: 25px;
+}
+.ChristmasAtmosphere .image-text-block .itb-image-container img {
+  height: 100%;
+  width: 100%;
+}
+.ChristmasAtmosphere .image-text-block .itb-text-container {
+  width: 735px;
+  font-size: 16px;
+  color: #3e3e3e;
+  margin: auto 0;
+}
+@media (max-width: 768px) {
+  .ChristmasAtmosphere .image-text-block {
+    flex-flow: column;
+    padding-left: 6%;
+    padding-right: 6%;
+    text-align: center;
+  }
+  .ChristmasAtmosphere .image-text-block .itb-image-container {
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .ChristmasAtmosphere .image-text-block .itb-text-container {
+    width: unset;
+    margin: unset;
+    padding: unset;
+  }
+}
+.slds-col--padded.contentRegion.comm-layout-column {
+  padding: 0;
+}
+.cCP_NewsDetail .detail-date.p-16-white-bold,
+.cCP_NewsDetail .btn-div.content-button-container {
+  display: none;
+}
+.cCP_NewsDetail {
+  margin: unset;
+  padding: unset;
+}
+
+</style>
+
+<div class="ChristmasAtmosphere">
+    <!-- BANNER -->
+    <div class="banner-container">
+        <div class="banner-card-container slds-grid">
+            <div class="content-container slds-col slds-size_2-of-2 slds-large-size_1-of-2">
+                <div class="label">
+                    <div class="slds-align_absolute-center">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="title-container with-label">
+                    <h2 class="title">improve you christmas cheer whilst increasing your seasonal sales - fa la la</h2>
+                </div>
+                <!-- <div class="text-container">
+                    <p class="text">We’re touring the country to share the essentials of great bar business with venues
+                        all over Ireland. And we’ve packaged the highlights together in one handy guide.</p>
+                </div> -->
+                <!-- <div class="btn-container">
+                    <a href="#" target="_blank" class="content-button">download it now</a>
+                </div> -->
+            </div>
+            <div class="slds-col slds-size_2-of-2 slds-large-size_1-of-2">
+                <div class="image-container">
+                    <img class="desktop-img"
+                        src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1M"
+                        alt="" />
+                    <img class="phone-img"
+                        src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2P"
+                        alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="titles-and-descriptions">
+        <p class="general-title">Create aChristmas atmosphere in your venue –it’s easy with our handy guide</p>
+    </div>
+
+    <!-- <div class="image-and-text" >
+        <img class="image" src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2P" alt="">
+        <p class="text"><b>59%</b> of customers spend <b>£21</b> more if the venue had impressive Christmas decorations and displays</p>
+    </div> -->
+
+    <div class="image-text-block">
+        <div class="itb-image-container">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2A" alt="" />
+        </div>
+        <div class="itb-text-container">
+            <p>Most customers (59%) spend almost an hour longer if the venue has impressive Christmas decorations and
+                displays <a
+                    href="http://trade.inapub.co.uk/back-bar/item/3422-christmas-decorating-ideas-for-pubs">*</a></p>
+        </div>
+    </div>
+
+    <div class="titles-and-descriptions">
+        <p class="general-description">Christmas is the most important time of the year for pubs and bars because
+            customers are inclined to visit more, spend more and stay longer. Ensure your share of season’s greetings
+            with a few tips and tricks which are low on cost but high on returns. Create an atmosphere destined to
+            attract footfall, increase dwell time and make more revenue. Here’s how:</p>
+    </div>
+
+    <div class="tips-component-container">
+        <div class="description-container">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2F"
+                    alt="">
+            </div>
+            <div class="text-container">
+                <div class="tips-desc-title">
+                    <p>The right decorations</p>
+                </div>
+                <div class="tips-desc-description">
+                    <p>Decor is vital in creating the warm atmosphere in which customers want to linger and spend more.
+                        There’s no point sticking up tatty banners. Invest in decorations that reinforce the values
+                        which are important to your business.</p>
+                </div>
+            </div>
+        </div>
+        <div class="tips-list">
+
+            <div class="tip">
+                <img class="tip-img"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2F" alt="">
+                <div class="tip-texts">
+                    <p class="tip-title">Tip 1</p>
+                    <p class="tip-description">If you’re small and quirky, do the same with your decorations –add some
+                        handmade felt robins to the tree and make a few paper chains.</p>
+                </div>
+            </div>
+            <div class="tip">
+                <img class="tip-img"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2F" alt="">
+                <div class="tip-texts">
+                    <p class="tip-title">Tip 2</p>
+                    <p class="tip-description">If your venue is traditional put some bold foliage around fireplaces or
+                        doorways using wreaths and garlands. Secure with cable ties.</p>
+                </div>
+            </div>
+            <div class="tip">
+                <img class="tip-img"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2F" alt="">
+                <div class="tip-texts">
+                    <p class="tip-title">Tip 3</p>
+                    <p class="tip-description">Set up a Christmas table –ideally near the door –to showcase your
+                        Christmas menu, events and promotions</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="tips-component-container">
+        <div class="description-container image-left">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2F"
+                    alt="">
+            </div>
+            <div class="text-container">
+                <div class="tips-desc-title">
+                    <p>Non alcoholic extras</p>
+                </div>
+                <div class="tips-desc-description">
+                    <p>Nothing creates a warming glow like a freebie, but be careful to think of something that’s of
+                        minimal cost to you but can leave a lasting positive impression on the customer. Nail this and
+                        they’ll be back, and better yet, will share their experience with friends. </p>
+                </div>
+            </div>
+        </div>
+        <div class="tips-list">
+
+            <div class="tip">
+                <img class="tip-img"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2F" alt="">
+                <div class="tip-texts">
+                    <p class="tip-title">Tip 1</p>
+                    <p class="tip-description">Bake some gingerbread as a side to cocktails or coffee or have some to
+                        take on the bar. You could even use icing kits to encourage customers to create their own
+                        designs.</p>
+                </div>
+            </div>
+            <div class="tip">
+                <img class="tip-img"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2F" alt="">
+                <div class="tip-texts">
+                    <p class="tip-title">Tip 2</p>
+                    <p class="tip-description">If you have a food-led outlet, pop some table decorations out to create a
+                        yuletide feel for meals. Either buy some ready-made or do some team building as your staff make
+                        them.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="tips-component-container">
+        <div class="description-container">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2F"
+                    alt="">
+            </div>
+            <div class="text-container">
+                <div class="tips-desc-title">
+                    <p>Lighting</p>
+                </div>
+                <div class="tips-desc-description">
+                    <p>Locate a part of your venue that could accommodate some homely low lighting. Whether it’s a
+                        string of fairy lights or a group of candles, soft lighting creates the intimate and warming
+                        feeling that makes customers want to linger. You could also try several lamps each with low
+                        wattage rather than fewer more powerful bulbs to keep things cosy.</p>
+                </div>
+            </div>
+        </div>
+        <div class="tips-list">
+
+            <div class="tip">
+                <img class="tip-img"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2F" alt="">
+                <div class="tip-texts">
+                    <p class="tip-title">Tip</p>
+                    <p class="tip-description">Place lights in the corners of spaces to help avoid shadows.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="tips-component-container">
+        <div class="description-container image-left">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2F"
+                    alt="">
+            </div>
+            <div class="text-container">
+                <div class="tips-desc-title">
+                    <p>Give it a seasonal twist</p>
+                </div>
+                <div class="tips-desc-description">
+                    <p>While you may already be offering mulled wine and cider, you could try something new like <a
+                            href="https://www.mydiageo.com/s/cp-content/a4P4G000000KFn3/cocktail-of-the-week">Captain
+                            Morgan’s Apple & Ginger Smash</a> with applejuice and
+                        ginger beer, served hot or cold.A firm winnerat Christmas markets is Pimm’s Winter. Mix 1 part
+                        Pimm’s No. 3 Winter with 3 parts warm apple juice for a warming alternative to this summer
+                        favourite.</p>
+                </div>
+            </div>
+        </div>
+        <div class="tips-list">
+
+            <div class="tip">
+                <img class="tip-img"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2F" alt="">
+                <div class="tip-texts">
+                    <p class="tip-title">Tip</p>
+                    <p class="tip-description">Try a classic snowball, eggnog or cinnamon butter rum (try Captain Morgan
+                        Original spiced Gold Rum).</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="tips-component-container">
+        <div class="description-container">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2F"
+                    alt="">
+            </div>
+            <div class="text-container">
+                <div class="tips-desc-title">
+                    <p>Entertainment</p>
+                </div>
+                <div class="tips-desc-description">
+                    <p>Complete the atmosphere with something to occupy customers and increasedwell time on less busy
+                        times like Sunday mornings with music or making</p>
+                </div>
+            </div>
+        </div>
+        <div class="tips-list">
+
+            <div class="tip">
+                <img class="tip-img"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2F" alt="">
+                <div class="tip-texts">
+                    <p class="tip-title">Tip 1</p>
+                    <p class="tip-description">Christmas carollers can provide that instant hit of atmosphere and cheer.
+                        They don’t need to be professional: a local group collecting for charity will sing for free.</p>
+                </div>
+            </div>
+            <div class="tip">
+                <img class="tip-img"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2F" alt="">
+                <div class="tip-texts">
+                    <p class="tip-title">Tip 2</p>
+                    <p class="tip-description">Encourage families to stay by providing craft making stations for
+                        children. Hire in a provider or just supply baubles and felt tips and let the kids get creative.
+                    </p>
+                </div>
+            </div>
+            <div class="tip">
+                <img class="tip-img"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2F" alt="">
+                <div class="tip-texts">
+                    <p class="tip-title">Tip 3</p>
+                    <p class="tip-description">Find a local florist to lead a session and host a wreath-making class.
+                        This is an ideal way to boost footfall at less busy times.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="image-outside-horizontal-card-container">
+        <div class="image-outside-horizontal-card">
+            <div class="content-container">
+                <div class="title-container">
+                    <span class="title">christmas cocktail menu</span>
+                </div>
+                <div class="description-container">
+                    <span class="description"> Help customers break into the category and tempt them away from their
+                        usual drink with beautiful imagery and seductive descriptions. Our FREE Christmas cocktail menu
+                        makes it easy to get started</span>
+                </div>
+                <div class="btn-container">
+                    <a href="https://www.mydiageo.com/s/cp-content/a4P4G000000KFpbUAG" target="_blank" class="content-button">get the menu</a>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+            </div>
+        </div>
+    </div>
+
+
+    <div class="titles-and-descriptions">
+        <p class="related-title">RELATED articles</p>
+    </div>
+
+    <div class="vertical-card-container">
+
+        <div class="card-related-content ">
+            <div class="image-container">
+                <img src="./" />
+            </div>
+            <div class="copy-container">
+                <p class="copy-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <a href="#" class="copy-link">Find out more<i
+                        class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+
+        <div class="card-related-content">
+            <div class="image-container">
+                <img src="./" />
+            </div>
+            <div class="copy-container">
+                <p class="copy-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <a href="#"
+                    class="copy-link">Find out more<i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+
+        <div class="card-related-content">
+            <div class="image-container">
+                <img src="./" />
+            </div>
+            <div class="copy-container">
+                <p class="copy-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <a href="#" class="copy-link">Find out
+                    more<i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>

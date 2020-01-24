@@ -1,0 +1,249 @@
+<style>
+body {
+  max-width: 1280px;
+  background-color: lightblue;
+  margin: 0 auto;
+}
+* {
+  box-sizing: border-box;
+}
+p {
+  margin: unset;
+  font-family: Roboto, sans-serif;
+}
+
+</style>
+<style>
+.banner-container {
+  font-family: Roboto, sans-serif;
+}
+.banner-container .banner-card-container {
+  text-align: left;
+  background-color: #ffffff;
+  display: flex;
+}
+.banner-container .banner-card-container .content-container {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.banner-container .banner-card-container .content-container .label {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: auto;
+  height: 40px;
+  margin-left: 83px;
+  margin-top: 25px;
+  width: 125px;
+  background-color: #51ae00;
+}
+.banner-container .banner-card-container .content-container .label span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.banner-container .banner-card-container .content-container .title-container {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.banner-container .banner-card-container .content-container .title-container.with-label {
+  margin-top: 20px;
+}
+.banner-container .banner-card-container .content-container .title-container .title {
+  font-size: 38px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  color: black;
+  text-transform: uppercase;
+}
+.banner-container .banner-card-container .content-container .text-container .text {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #3e3e3e;
+}
+.banner-container .banner-card-container .content-container .btn-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.banner-container .banner-card-container .content-container .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.banner-container .banner-card-container .concont {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.banner-container .banner-card-container .concont .image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.banner-container .banner-card-container .concont .image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .banner-container .banner-card-container {
+    height: 420px;
+  }
+  .banner-container .banner-card-container .text-container,
+  .banner-container .banner-card-container .title-container {
+    padding-left: 83px;
+  }
+  .banner-container .banner-card-container .text-container {
+    padding-bottom: 20px;
+  }
+  .banner-container .banner-card-container .btn-container {
+    height: 45px;
+    width: 160px;
+    margin-left: 83px;
+    margin-bottom: 30px;
+  }
+  .banner-container .banner-card-container .concont .image-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 425px solid #ffffff;
+    border-right: 80px solid transparent;
+    width: 0;
+  }
+  .banner-container .banner-card-container .concont .image-container .desktop-img {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner-container .banner-card-container {
+    flex-flow: column;
+    margin-top: 0;
+  }
+  .banner-container .banner-card-container .content-container {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .banner-container .banner-card-container .content-container .label {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  .banner-container .banner-card-container .content-container .text-container,
+  .banner-container .banner-card-container .content-container .title-container {
+    padding: 20px;
+    margin: 0;
+  }
+  .banner-container .banner-card-container .content-container .text-container .text,
+  .banner-container .banner-card-container .content-container .title-container .text {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.63;
+    color: #3e3e3e;
+    margin: 0;
+  }
+  .banner-container .banner-card-container .content-container .text-container .title,
+  .banner-container .banner-card-container .content-container .title-container .title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .banner-container .banner-card-container .content-container .title-container {
+    margin-top: 75px;
+  }
+  .banner-container .banner-card-container .content-container .title-container.with-label {
+    margin-top: 20px;
+  }
+  .banner-container .banner-card-container .content-container .btn-container {
+    width: 88%;
+    height: 45px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .banner-container .banner-card-container .concont {
+    width: 100%;
+    height: 280px;
+  }
+  .banner-container .banner-card-container .concont .image-container .phone-img {
+    display: block;
+    position: absolute;
+    height: 280px;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+</style>
+
+<div class="banner-container">
+    <div class="banner-card-container">
+        <div class="content-container">
+            <div class="title-container">
+                <h2 class="title">CAN WE TEMPT YOU TO SOME EXTRA PROFIT?</h2>
+            </div>
+            <div class="text-container">
+                <p class="text">There are three ways you can make Baileys part of the occasion and generate some
+                    tasty extra revenue. It’s all about timing and your team having the confidence to ask the
+                    question…</p>
+            </div>
+        </div>
+        <div class="concont">
+            <div class="image-container">
+                <img class="desktop-img"
+                    src="../../assets/banner-desktop.jpg"
+                    alt="" />
+                <img class="phone-img"
+                    src="../../assets/banner-mobile.jpg"
+                    alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="banner-container">
+    <div class="banner-card-container">
+        <div class="content-container">
+            <div class="label">
+                        <span>TREND ALERT</span>
+                </div>
+            <div class="title-container with-label">
+                <h2 class="title">CAN WE TEMPT YOU TO SOME EXTRA PROFIT?</h2>
+            </div>
+            <div class="text-container">
+                <p class="text">There are three ways you can make Baileys part of the occasion and generate some
+                    tasty extra revenue. It’s all about timing and your team having the confidence to ask the
+                    question…</p>
+            </div>
+            <div class="btn-container">
+                    <a href="#" target="_blank" class="content-button">download it now</a>
+                </div>
+        </div>
+        <div class="concont">
+            <div class="image-container">
+                <img class="desktop-img"
+                    src="../../assets/banner-desktop.jpg"
+                    alt="" />
+                <img class="phone-img"
+                    src="../../assets/banner-mobile.jpg"
+                    alt="" />
+            </div>
+        </div>
+    </div>
+</div>

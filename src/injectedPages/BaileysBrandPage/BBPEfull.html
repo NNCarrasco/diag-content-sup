@@ -1,0 +1,2326 @@
+<style>
+.BaileysBrandPage {
+  text-align: left;
+  background-color: #f2f2f2;
+}
+.BaileysBrandPage .banner-container {
+  font-family: Roboto, sans-serif;
+}
+.BaileysBrandPage .banner-container .banner-card-container {
+  text-align: left;
+  background-color: #ffffff;
+  display: flex;
+}
+.BaileysBrandPage .banner-container .banner-card-container .content-container {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.BaileysBrandPage .banner-container .banner-card-container .content-container .label {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: auto;
+  height: 40px;
+  margin-left: 83px;
+  margin-top: 25px;
+  width: 125px;
+  background-color: #51ae00;
+}
+.BaileysBrandPage .banner-container .banner-card-container .content-container .label span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.BaileysBrandPage .banner-container .banner-card-container .content-container .title-container {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.BaileysBrandPage .banner-container .banner-card-container .content-container .title-container.with-label {
+  margin-top: 20px;
+}
+.BaileysBrandPage .banner-container .banner-card-container .content-container .title-container .title {
+  font-size: 38px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  color: black;
+  text-transform: uppercase;
+}
+.BaileysBrandPage .banner-container .banner-card-container .content-container .text-container .text {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #3e3e3e;
+}
+.BaileysBrandPage .banner-container .banner-card-container .content-container .btn-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.BaileysBrandPage .banner-container .banner-card-container .content-container .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.BaileysBrandPage .banner-container .banner-card-container .concont {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.BaileysBrandPage .banner-container .banner-card-container .concont .image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.BaileysBrandPage .banner-container .banner-card-container .concont .image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .BaileysBrandPage .banner-container .banner-card-container {
+    height: 420px;
+  }
+  .BaileysBrandPage .banner-container .banner-card-container .text-container,
+  .BaileysBrandPage .banner-container .banner-card-container .title-container {
+    padding-left: 83px;
+  }
+  .BaileysBrandPage .banner-container .banner-card-container .text-container {
+    padding-bottom: 20px;
+  }
+  .BaileysBrandPage .banner-container .banner-card-container .btn-container {
+    height: 45px;
+    width: 160px;
+    margin-left: 83px;
+    margin-bottom: 30px;
+  }
+  .BaileysBrandPage .banner-container .banner-card-container .concont .image-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 425px solid #ffffff;
+    border-right: 80px solid transparent;
+    width: 0;
+  }
+  .BaileysBrandPage .banner-container .banner-card-container .concont .image-container .desktop-img {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .BaileysBrandPage .banner-container .banner-card-container {
+    flex-flow: column;
+    margin-top: 0;
+  }
+  .BaileysBrandPage .banner-container .banner-card-container .content-container {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .BaileysBrandPage .banner-container .banner-card-container .content-container .label {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  .BaileysBrandPage .banner-container .banner-card-container .content-container .text-container,
+  .BaileysBrandPage .banner-container .banner-card-container .content-container .title-container {
+    padding: 20px;
+    margin: 0;
+  }
+  .BaileysBrandPage .banner-container .banner-card-container .content-container .text-container .text,
+  .BaileysBrandPage .banner-container .banner-card-container .content-container .title-container .text {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.63;
+    color: #3e3e3e;
+    margin: 0;
+  }
+  .BaileysBrandPage .banner-container .banner-card-container .content-container .text-container .title,
+  .BaileysBrandPage .banner-container .banner-card-container .content-container .title-container .title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .BaileysBrandPage .banner-container .banner-card-container .content-container .title-container {
+    margin-top: 75px;
+  }
+  .BaileysBrandPage .banner-container .banner-card-container .content-container .title-container.with-label {
+    margin-top: 20px;
+  }
+  .BaileysBrandPage .banner-container .banner-card-container .content-container .btn-container {
+    width: 88%;
+    height: 45px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .BaileysBrandPage .banner-container .banner-card-container .concont {
+    width: 100%;
+    height: 280px;
+  }
+  .BaileysBrandPage .banner-container .banner-card-container .concont .image-container .phone-img {
+    display: block;
+    position: absolute;
+    height: 280px;
+    left: 0;
+    bottom: 0;
+  }
+}
+.BaileysBrandPage .vertical-card-container {
+  padding-bottom: 80px;
+}
+@media (min-width: 768px) {
+  .BaileysBrandPage .vertical-card-container {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+  .BaileysBrandPage .vertical-card-container.border-bottom {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.BaileysBrandPage .vertical-card-container .card-related-content {
+  font-family: 'Roboto', sans-serif;
+  height: 430px;
+  display: block;
+}
+@media (min-width: 768px) {
+  .BaileysBrandPage .vertical-card-container .card-related-content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 33.3333%;
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .vertical-card-container .card-related-content {
+    margin-bottom: 4%;
+  }
+}
+.BaileysBrandPage .vertical-card-container.border-bottom .card-related-content .image-container {
+  border-bottom: 4px solid blue;
+}
+.BaileysBrandPage .vertical-card-container .card-related-content .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+  height: 250px;
+}
+.BaileysBrandPage .vertical-card-container .card-related-content .image-container img {
+  width: 100%;
+  height: 100%;
+}
+.BaileysBrandPage .vertical-card-container .card-related-content .copy-container {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+}
+.BaileysBrandPage .vertical-card-container .card-related-content .copy-container .copy-text {
+  padding: 20px 30px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.75;
+  color: #000000;
+}
+.BaileysBrandPage .vertical-card-container .card-related-content .copy-container .description {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.63;
+  color: #3e3e3e;
+  padding-left: 30px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+.BaileysBrandPage .vertical-card-container .card-related-content .copy-container .copy-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #4092df;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  text-decoration: none;
+}
+.BaileysBrandPage .vertical-card-container .card-related-content .copy-container .copy-link:hover {
+  border-bottom: 2px solid;
+  margin-bottom: -2px;
+}
+.BaileysBrandPage .vertical-card-container .card-related-content .copy-container .copy-link i.fas.fa-angle-right {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #4092df;
+  position: absolute;
+  bottom: 4px;
+}
+.BaileysBrandPage .image-text-block {
+  display: flex;
+  padding-left: 18%;
+  padding-bottom: 90px;
+}
+.BaileysBrandPage .image-text-block .itb-image-container {
+  width: 80px;
+  height: 80px;
+  margin-right: 25px;
+}
+.BaileysBrandPage .image-text-block .itb-image-container img {
+  height: 100%;
+  width: 100%;
+}
+.BaileysBrandPage .image-text-block .itb-text-container {
+  width: 735px;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #3e3e3e;
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .image-text-block {
+    flex-flow: column;
+    padding-left: 6%;
+    padding-right: 6%;
+    text-align: center;
+  }
+  .BaileysBrandPage .image-text-block .itb-image-container {
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .BaileysBrandPage .image-text-block .itb-text-container {
+    width: unset;
+  }
+}
+.BaileysBrandPage .image-outside-horizontal-card-container {
+  padding-top: 40px;
+}
+.BaileysBrandPage .image-outside-horizontal-card-container .image-outside-horizontal-card {
+  display: flex;
+  width: 845px;
+  height: 334px;
+  position: relative;
+}
+.BaileysBrandPage .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container {
+  width: 100%;
+  border: 5px solid #0041a5;
+  z-index: 1;
+}
+.BaileysBrandPage .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
+  width: 380px;
+  padding-left: 80px;
+  padding-top: 35px;
+  padding-right: 85px;
+}
+.BaileysBrandPage .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
+  padding: 0;
+  width: 380px;
+  padding-left: 80px;
+  padding-top: 20px;
+  padding-right: 85px;
+}
+.BaileysBrandPage .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.BaileysBrandPage .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.BaileysBrandPage .image-outside-horizontal-card-container .image-outside-horizontal-card .image-container {
+  position: absolute;
+  right: -100px;
+  top: -40px;
+  z-index: 0;
+  height: 415px;
+  width: 410px;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.BaileysBrandPage .image-outside-horizontal-card-container .image-outside-horizontal-card .image-container img {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .BaileysBrandPage .image-outside-horizontal-card-container {
+    padding-bottom: 40px;
+    padding-left: 14%;
+  }
+  .BaileysBrandPage .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
+    width: 530px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 25px;
+  }
+  .BaileysBrandPage .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
+    width: 530px;
+    text-align: center;
+    font-size: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .BaileysBrandPage .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container {
+    width: unset;
+    margin-left: 165px;
+    height: 44px;
+    margin-top: 26px;
+    margin-left: 180px;
+  }
+  .BaileysBrandPage .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container .content-button {
+    width: max-content;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .image-outside-horizontal-card-container {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .BaileysBrandPage .image-outside-horizontal-card-container .image-outside-horizontal-card {
+    width: 100%;
+    height: unset;
+    flex-wrap: wrap;
+  }
+  .BaileysBrandPage .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container {
+    order: 1;
+  }
+  .BaileysBrandPage .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
+    padding-left: 30px;
+    padding-top: 410px;
+    padding-right: 30px;
+    width: unset;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .BaileysBrandPage .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
+    font-size: 20px;
+    text-align: center;
+    color: #3e3e3e;
+    width: unset;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 30px;
+  }
+  .BaileysBrandPage .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container {
+    height: 45px;
+    width: 160px;
+    margin-top: 40px;
+    margin-left: 25%;
+    margin-bottom: 20px;
+  }
+  .BaileysBrandPage .image-outside-horizontal-card-container .image-outside-horizontal-card .image-container {
+    order: 0;
+    position: absolute;
+    top: -30px;
+    z-index: 0;
+    width: 102vw;
+    right: -6.7%;
+  }
+}
+.BaileysBrandPage .tabs-table-container {
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .BaileysBrandPage .tabs-table-container {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .BaileysBrandPage .tabs-table-container {
+    margin-bottom: 80px;
+  }
+}
+.BaileysBrandPage .tabs-table-container .porcentual-block {
+  z-index: 3;
+  bottom: -65px;
+  position: absolute;
+  width: 100%;
+}
+.BaileysBrandPage .tabs-table-container .porcentual-block .porcentual-description {
+  font-size: 16px;
+  line-height: 1.63;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  border: 4px solid #00b39f;
+  padding-right: 75px;
+  background-color: white;
+}
+.BaileysBrandPage .tabs-table-container .porcentual-block .porcentual-description .porcentual-number-container {
+  position: absolute;
+  bottom: -20px;
+  right: -35px;
+  color: white;
+  border-radius: 50%;
+  background-color: #00b39f;
+  width: 100px;
+  height: 100px;
+}
+.BaileysBrandPage .tabs-table-container .porcentual-block .porcentual-description .porcentual-number-container .porcentual-number {
+  padding-top: 29px;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.6;
+  text-align: center;
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .tabs-table-container .porcentual-block {
+    bottom: -100px;
+    left: -14px;
+  }
+  .BaileysBrandPage .tabs-table-container .porcentual-block .porcentual-description {
+    padding-right: 80px;
+  }
+  .BaileysBrandPage .tabs-table-container .porcentual-block .porcentual-description .porcentual-number-container {
+    width: 110px;
+    height: 110px;
+  }
+  .BaileysBrandPage .tabs-table-container .porcentual-block .porcentual-description .porcentual-number-container .porcentual-number {
+    padding-top: 35px;
+  }
+}
+.BaileysBrandPage .tabs-table-container .tab [type="radio"] {
+  display: none;
+}
+.BaileysBrandPage .tabs-table-container .tab [type="radio"]:checked ~ .label {
+  background: rgba(242, 175, 12, 0.12);
+  padding-bottom: 17px;
+  padding-top: 17px;
+  border-bottom: 2px solid #f2af0c;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .BaileysBrandPage .tabs-table-container {
+    width: 100%;
+    height: 780px;
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .tabs-table-container {
+    height: 320px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 321px) {
+  .BaileysBrandPage .tabs-table-container {
+    height: 320px;
+    margin-bottom: 40px;
+  }
+}
+.BaileysBrandPage .tabs-table-container .tab [type="radio"]:checked ~ .label ~ .content {
+  z-index: 1;
+  display: flex;
+}
+.BaileysBrandPage .tabs-table-container .tabs {
+  position: relative;
+  clear: both;
+  margin: 0;
+  padding-top: 25px;
+  white-space: nowrap;
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid #979797;
+}
+.BaileysBrandPage .tabs-table-container .tabs .download-tab-btn {
+  display: none;
+}
+@media (min-width: 768px) {
+  .BaileysBrandPage .tabs-table-container .tabs .download-tab-btn {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    font-size: 14px;
+    display: block;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs .download-tab-btn a {
+    color: #4092df;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs .download-tab-btn a i {
+    margin-right: 10px;
+  }
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab {
+  vertical-align: top;
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .text-container .the-colection {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  text-transform: uppercase;
+  border-bottom: 1px solid #b9b9b9;
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .text-container .title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .text-container .text {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.63;
+  color: #3e3e3e;
+}
+@media (min-width: 768px) {
+  .BaileysBrandPage .tabs-table-container .tabs .tab {
+    display: block;
+    height: 650px;
+    padding-top: 0;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs .tab .text-container {
+    width: 300px;
+    padding-top: 170px;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs .tab .image-container {
+    height: 525px;
+    width: 435px;
+    margin-left: 70px;
+    margin-top: 70px;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs .tab .image-container img {
+    width: 100%;
+    height: 100%;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs .tab.show-desktop {
+    display: block;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs .tab.show-phone {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .tabs-table-container .tabs .tab .the-colection {
+    padding-top: 20px;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs .tab .image-container {
+    width: 252px;
+    height: 302px;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs .tab.show-desktop {
+    display: none;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs .tab.show-phone {
+    display: block;
+  }
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .label {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  min-height: 50px;
+  line-height: 50px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  padding-top: 17px;
+  border-bottom: 2px solid #979797;
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .label:hover {
+  cursor: pointer;
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .content {
+  white-space: normal;
+  top: 77px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 50px;
+  position: absolute;
+  background-color: white;
+  height: 650px;
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .content .text {
+  font-size: 16px;
+  line-height: 1.63;
+  color: #3e3e3e;
+  padding-bottom: 45px;
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .content .youtube-video {
+  width: 100%;
+  height: 516px;
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .content ol,
+.BaileysBrandPage .tabs-table-container .tabs .tab .content ul {
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 45px;
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .content ol li,
+.BaileysBrandPage .tabs-table-container .tabs .tab .content ul li {
+  margin-bottom: 10px;
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .content ol li:last-child,
+.BaileysBrandPage .tabs-table-container .tabs .tab .content ul li:last-child {
+  margin-bottom: 0;
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .content ol li p,
+.BaileysBrandPage .tabs-table-container .tabs .tab .content ul li p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #000000;
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .content ol li:before,
+.BaileysBrandPage .tabs-table-container .tabs .tab .content ul li:before {
+  content: counter(my-awesome-counter);
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  position: absolute;
+  --size: 25px;
+  left: calc(-1 * var(--size) - 20px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  background: #3e3e3e;
+  border-radius: 50%;
+  text-align: center;
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .content ul {
+  padding-left: 25px;
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .content ul li:before {
+  content: "";
+  color: #fff;
+  /* font-size : 10px; */
+  font-weight: bold;
+  position: absolute;
+  --size: 8px;
+  left: calc(-1 * var(--size) - 15px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 9px;
+  background: #7d7773;
+  border-radius: 50%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .tabs-table-container {
+    flex-wrap: wrap;
+    height: 720px;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs .tab {
+    margin-top: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: none;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs .tab .content {
+    top: 128px;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: unset;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs .tab .content .youtube-video {
+    height: 228px;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs .tab [type="radio"]:checked ~ .label ~ .content {
+    z-index: 1;
+    display: table;
+    top: 130px;
+  }
+}
+@media (min-width: 768px) {
+  .BaileysBrandPage .small-banner-card-container {
+    padding-left: 11%;
+    padding-right: 11%;
+  }
+}
+.BaileysBrandPage .small-banner-card-container .mixed-content-block {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  height: 540px;
+  width: 335px;
+}
+.BaileysBrandPage .small-banner-card-container .mixed-content-block .copy-container {
+  height: 288px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.BaileysBrandPage .small-banner-card-container .mixed-content-block .copy-container .content-title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.63;
+  color: #000000;
+  margin: 0;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+.BaileysBrandPage .small-banner-card-container .mixed-content-block .copy-container .content-text {
+  font-size: 16px;
+  padding-top: 10px;
+  line-height: 1.63;
+  color: #3e3e3e;
+  margin: 0;
+}
+.BaileysBrandPage .small-banner-card-container .mixed-content-block .copy-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 2px;
+  font-weight: 500;
+}
+.BaileysBrandPage .small-banner-card-container .mixed-content-block .copy-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.BaileysBrandPage .small-banner-card-container .mixed-content-block .image-container {
+  width: 335px;
+  height: 250px;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.BaileysBrandPage .small-banner-card-container .mixed-content-block .image-container img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .BaileysBrandPage .small-banner-card-container {
+    padding-left: 18%;
+    padding-right: 18%;
+    padding-top: 0;
+  }
+  .BaileysBrandPage .small-banner-card-container .mixed-content-block {
+    height: 190px;
+    width: 100%;
+  }
+  .BaileysBrandPage .small-banner-card-container .mixed-content-block .copy-container {
+    float: left;
+    height: 100%;
+    width: 63%;
+    padding-left: 35px;
+    padding-right: 80px;
+  }
+  .BaileysBrandPage .small-banner-card-container .mixed-content-block .copy-container .content-text {
+    padding-bottom: 5px;
+    font-size: 18px;
+  }
+  .BaileysBrandPage .small-banner-card-container .mixed-content-block .copy-container .content-button {
+    position: relative;
+    width: 185px;
+  }
+  .BaileysBrandPage .small-banner-card-container .mixed-content-block .image-container {
+    height: 100%;
+    width: 37%;
+    float: left;
+  }
+  .BaileysBrandPage .small-banner-card-container .mixed-content-block .image-container img {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .small-banner-card-container {
+    padding-top: 60px;
+  }
+  .BaileysBrandPage .small-banner-card-container .mixed-content-block {
+    position: relative;
+    width: 100%;
+    height: unset;
+  }
+  .BaileysBrandPage .small-banner-card-container .mixed-content-block .image-container {
+    width: 100%;
+    height: 220px;
+  }
+  .BaileysBrandPage .small-banner-card-container .mixed-content-block .image-container img {
+    height: 100%;
+  }
+  .BaileysBrandPage .small-banner-card-container .mixed-content-block .copy-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    height: unset;
+  }
+  .BaileysBrandPage .small-banner-card-container .mixed-content-block .copy-container .content-text {
+    padding-top: 30px;
+    font-size: 18px;
+  }
+  .BaileysBrandPage .small-banner-card-container .mixed-content-block .copy-container .content-button {
+    position: relative;
+    margin-top: 30px;
+  }
+}
+.BaileysBrandPage .icon-and-description-container {
+  display: flex;
+}
+.BaileysBrandPage .icon-and-description-container .item-container {
+  display: flex;
+}
+.BaileysBrandPage .icon-and-description-container .item-container .image-container {
+  height: 96px;
+  width: 96px;
+}
+.BaileysBrandPage .icon-and-description-container .item-container .image-container img {
+  width: 100%;
+  height: 100%;
+}
+.BaileysBrandPage .icon-and-description-container .item-container .descrition-container {
+  width: 240px;
+  margin-left: 40px;
+  padding-right: 30px;
+}
+.BaileysBrandPage .icon-and-description-container .item-container .descrition-container .title {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.BaileysBrandPage .icon-and-description-container .item-container .descrition-container .description {
+  font-size: 18px;
+  line-height: 1.56;
+}
+@media screen and (min-width: 768px) {
+  .BaileysBrandPage .icon-and-description-container {
+    margin-bottom: 80px;
+  }
+  .BaileysBrandPage .icon-and-description-container .item-container {
+    border-right: 1px solid black;
+    margin-left: 70px;
+  }
+  .BaileysBrandPage .icon-and-description-container .item-container:last-child {
+    border-right: unset;
+  }
+  .BaileysBrandPage .icon-and-description-container .item-container:first-child {
+    margin-left: unset;
+  }
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .icon-and-description-container {
+    flex-flow: column;
+  }
+  .BaileysBrandPage .icon-and-description-container .item-container {
+    flex-flow: column;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .BaileysBrandPage .icon-and-description-container .item-container .image-container {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .BaileysBrandPage .icon-and-description-container .item-container .descrition-container {
+    width: 88%;
+    margin-right: 6%;
+    margin-left: 6%;
+    padding: unset;
+  }
+}
+@media (min-width: 768px) {
+  .BaileysBrandPage .halloween-class {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .halloween-class {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+.BaileysBrandPage .halloween-class .tab-table-container .tab [type="radio"] {
+  display: none;
+}
+.BaileysBrandPage .halloween-class .tab-table-container .tab [type="radio"]:checked ~ .label {
+  background: rgba(242, 175, 12, 0.12);
+  padding-bottom: 17px;
+  padding-top: 17px;
+  border-bottom: 2px solid #f2af0c;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .BaileysBrandPage .halloween-class .tab-table-container {
+    height: 330px;
+  }
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .halloween-class .tab-table-container {
+    height: 320px;
+  }
+}
+@media (max-width: 321px) {
+  .BaileysBrandPage .halloween-class .tab-table-container {
+    height: 320px;
+  }
+}
+.BaileysBrandPage .halloween-class .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content {
+  z-index: 1;
+  display: table;
+  min-height: 205px;
+}
+.BaileysBrandPage .halloween-class .tab-table-container .tabs {
+  position: relative;
+  clear: both;
+  margin: 0;
+  padding-top: 25px;
+  white-space: nowrap;
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid #979797;
+}
+.BaileysBrandPage .halloween-class .tab-table-container .tabs .tab {
+  vertical-align: top;
+}
+.BaileysBrandPage .halloween-class .tab-table-container .tabs .tab .label {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  min-height: 50px;
+  line-height: 50px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  padding-top: 17px;
+  border-bottom: 2px solid #979797;
+}
+.BaileysBrandPage .halloween-class .tab-table-container .tabs .tab .label:hover {
+  cursor: pointer;
+}
+.BaileysBrandPage .halloween-class .tab-table-container .tabs .tab .content {
+  white-space: normal;
+  top: 77px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  background-color: white;
+}
+.BaileysBrandPage .halloween-class .tab-table-container .tabs .tab .content ol,
+.BaileysBrandPage .halloween-class .tab-table-container .tabs .tab .content ul {
+  max-width: 350px;
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 45px;
+}
+.BaileysBrandPage .halloween-class .tab-table-container .tabs .tab .content ol li,
+.BaileysBrandPage .halloween-class .tab-table-container .tabs .tab .content ul li {
+  margin-bottom: 16px;
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+.BaileysBrandPage .halloween-class .tab-table-container .tabs .tab .content ol li p,
+.BaileysBrandPage .halloween-class .tab-table-container .tabs .tab .content ul li p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #000000;
+}
+.BaileysBrandPage .halloween-class .tab-table-container .tabs .tab .content ol li:before,
+.BaileysBrandPage .halloween-class .tab-table-container .tabs .tab .content ul li:before {
+  content: counter(my-awesome-counter);
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  position: absolute;
+  --size: 25px;
+  left: calc(-1 * var(--size) - 20px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  background: #3e3e3e;
+  border-radius: 50%;
+  text-align: center;
+}
+.BaileysBrandPage .halloween-class .tab-table-container .tabs .tab .content ul {
+  padding-left: 25px;
+}
+.BaileysBrandPage .halloween-class .tab-table-container .tabs .tab .content ul li:before {
+  content: "";
+  color: #fff;
+  /* font-size : 10px; */
+  font-weight: bold;
+  position: absolute;
+  --size: 8px;
+  left: calc(-1 * var(--size) - 15px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 9px;
+  background: #7d7773;
+  border-radius: 50%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .halloween-class .tab-table-container {
+    flex-wrap: wrap;
+  }
+  .BaileysBrandPage .halloween-class .tab-table-container .tab {
+    margin-top: -6px;
+  }
+  .BaileysBrandPage .halloween-class .tab-table-container .tab .content {
+    top: 71px;
+  }
+  .BaileysBrandPage .halloween-class .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content {
+    z-index: 1;
+    display: table;
+    top: 71px;
+  }
+}
+.BaileysBrandPage .title-card {
+  width: 520px;
+  height: 40px;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.BaileysBrandPage .subtitle-card {
+  width: 520px;
+  height: 52px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #3e3e3e;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.BaileysBrandPage .FULL-SIZE {
+  width: 520px;
+  height: 317px;
+  object-fit: cover;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.BaileysBrandPage .container-recipes {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .title-card {
+    width: unset;
+    height: unset;
+  }
+  .BaileysBrandPage .subtitle-card {
+    width: unset;
+    height: unset;
+    text-align: left;
+  }
+  .BaileysBrandPage .FULL-SIZE {
+    width: 334.7px;
+    height: 203.5px;
+    object-fit: cover;
+  }
+  .BaileysBrandPage .container-recipes {
+    display: block;
+    height: 1775px;
+  }
+  .BaileysBrandPage .recipe-card {
+    padding: 40px 0 20px 0;
+  }
+  .BaileysBrandPage .recipe-card.not-first {
+    border-top: 1px solid #b9b9b9;
+  }
+}
+.BaileysBrandPage .download-block {
+  background-color: #ffffff;
+}
+.BaileysBrandPage .download-block .download-header {
+  position: relative;
+  border-bottom: 1px solid #e3e3e3;
+  border-top: 1px solid #e3e3e3;
+  height: 95px;
+}
+.BaileysBrandPage .download-block .download-header .title {
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
+  height: inherit;
+  padding-top: 35px;
+  padding-left: 60px;
+}
+.BaileysBrandPage .download-block .download-header .download-btn {
+  position: absolute;
+  top: 38px;
+  right: 40px;
+  font-size: 14px;
+}
+.BaileysBrandPage .download-block .download-header .download-btn a {
+  color: #4092df;
+}
+.BaileysBrandPage .download-block .download-header .download-btn a i {
+  margin-right: 10px;
+}
+.BaileysBrandPage .download-block .download-body {
+  padding: 40px;
+  padding-bottom: 0;
+}
+.BaileysBrandPage .download-block .download-body .download-card-container {
+  display: flex;
+  padding-bottom: 20px;
+}
+.BaileysBrandPage .download-block .download-body .download-card-container .download-card {
+  width: 220px;
+  height: 355px;
+  margin-left: 20px;
+}
+.BaileysBrandPage .download-block .download-body .download-card-container .download-card:first-child {
+  margin-left: 0;
+}
+.BaileysBrandPage .download-block .download-body .download-card-container .download-card .image-container {
+  height: 170px;
+}
+.BaileysBrandPage .download-block .download-body .download-card-container .download-card .image-container img {
+  height: 100%;
+  width: 100%;
+}
+.BaileysBrandPage .download-block .download-body .download-card-container .download-card .body-container {
+  background-color: #f2f2f2;
+  height: 185px;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+.BaileysBrandPage .download-block .download-body .download-card-container .download-card .body-container .title-text {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 22px;
+  color: #0041a5;
+  text-transform: uppercase;
+}
+.BaileysBrandPage .download-block .download-body .download-card-container .download-card .body-container .description-text {
+  padding-top: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  word-break: break-word;
+}
+.BaileysBrandPage .download-block .download-body .download-card-container .download-card .body-container .download-card-btn {
+  margin-top: 20px;
+  border: 1px solid;
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+}
+.BaileysBrandPage .download-block .download-body .download-card-container .download-card .body-container .download-card-btn .download-link-box {
+  color: #3e3e3e;
+}
+.BaileysBrandPage .download-block .download-body .download-card-container .download-card .body-container .download-card-btn .download-link-box i {
+  margin-right: 10px;
+}
+.BaileysBrandPage .download-block .download-footer {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+  color: #3e3e3e;
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .download-block .download-header .title {
+    padding-top: 21px;
+    padding-left: 21px;
+    height: unset;
+  }
+  .BaileysBrandPage .download-block .download-header .download-btn {
+    position: unset;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .BaileysBrandPage .download-block .download-body {
+    padding: 20px;
+  }
+  .BaileysBrandPage .download-block .download-body .download-card-container {
+    flex-direction: column;
+  }
+  .BaileysBrandPage .download-block .download-body .download-card-container .download-card {
+    width: 100%;
+    height: unset;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .BaileysBrandPage .download-block .download-body .download-card-container .download-card .image-container {
+    height: 225px;
+  }
+  .BaileysBrandPage .download-block .download-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+  }
+}
+.BaileysBrandPage .titles-and-descriptions .general-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  padding-left: 18%;
+  padding-right: 18%;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .BaileysBrandPage .titles-and-descriptions .general-title {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .BaileysBrandPage .titles-and-descriptions .general-title {
+    padding-bottom: 40px;
+  }
+}
+.BaileysBrandPage .titles-and-descriptions .general-description {
+  font-size: 20px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  color: #3e3e3e;
+  padding-right: 18%;
+  padding-left: 18%;
+}
+@media screen and (min-width: 768px) {
+  .BaileysBrandPage .titles-and-descriptions .general-description {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .BaileysBrandPage .titles-and-descriptions .general-description {
+    padding-bottom: 80px;
+  }
+}
+.BaileysBrandPage .titles-and-descriptions .related-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  text-transform: uppercase;
+  border-bottom: 1px solid #7d7773;
+}
+@media screen and (min-width: 768px) {
+  .BaileysBrandPage .titles-and-descriptions .related-title {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .BaileysBrandPage .titles-and-descriptions .related-title {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .BaileysBrandPage .titles-and-descriptions .general-title {
+    font-size: 24px;
+    padding-left: 6%;
+    padding-right: 5%;
+  }
+  .BaileysBrandPage .titles-and-descriptions .general-description {
+    padding-left: 6%;
+    padding-right: 5%;
+  }
+  .BaileysBrandPage .titles-and-descriptions .related-title {
+    font-size: 24px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+}
+@media (min-width: 768px) {
+  .BaileysBrandPage .vertical-card-container-related-article {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+}
+.BaileysBrandPage .vertical-card-container-related-article .card-related-content {
+  font-family: 'Roboto', sans-serif;
+  height: 430px;
+  display: block;
+}
+@media (min-width: 768px) {
+  .BaileysBrandPage .vertical-card-container-related-article .card-related-content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 33.3333%;
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .vertical-card-container-related-article .card-related-content {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 4%;
+  }
+}
+.BaileysBrandPage .vertical-card-container-related-article .card-related-content .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+  height: 250px;
+}
+.BaileysBrandPage .vertical-card-container-related-article .card-related-content .image-container img {
+  width: 100%;
+  height: 100%;
+}
+.BaileysBrandPage .vertical-card-container-related-article .card-related-content .copy-container {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 180px;
+}
+.BaileysBrandPage .vertical-card-container-related-article .card-related-content .copy-container .copy-text {
+  padding: 20px 30px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.75;
+  color: #000000;
+}
+.BaileysBrandPage .vertical-card-container-related-article .card-related-content .copy-container .copy-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #4092df;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  text-decoration: none;
+}
+.BaileysBrandPage .vertical-card-container-related-article .card-related-content .copy-container .copy-link:hover {
+  border-bottom: 2px solid;
+  margin-bottom: -2px;
+}
+.BaileysBrandPage .vertical-card-container-related-article .card-related-content .copy-container .copy-link i.fas.fa-angle-right {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #4092df;
+  position: absolute;
+  bottom: 4px;
+}
+.BaileysBrandPage .spacer {
+  padding-bottom: 50px;
+}
+.slds-col--padded.contentRegion.comm-layout-column {
+  padding: 0;
+}
+.cCP_NewsDetail .detail-date.p-16-white-bold,
+.cCP_NewsDetail .btn-div.content-button-container {
+  display: none;
+}
+.cCP_NewsDetail {
+  margin: unset;
+  padding: unset;
+  background-color: unset;
+}
+
+</style>
+
+<div class="BaileysBrandPage">
+    <div class="banner-container">
+        <div class="banner-card-container">
+            <div class="content-container">
+                <div class="title-container">
+                    <h2 class="title">¿PODEMOS TENTARTE CON UN EXTRA DE BENEFICIO?</h2>
+                </div>
+                <div class="text-container">
+                    <p class="text">Estos son las 3 formas de incluir Baileys en cada ocasión y generar un beneficio
+                        extra.</p>
+                </div>
+            </div>
+            <div class="concont">
+                <div class="image-container">
+                    <img class="desktop-img"
+                        src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaP1"
+                        alt="" />
+                    <img class="phone-img"
+                        src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaP6 "
+                        alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="vertical-card-container border-bottom">
+        <div class="card-related-content">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaPB" />
+            </div>
+            <div class="copy-container">
+                <p class="copy-text">SOBRE EL POSTRE</p>
+                <p class="description">Ofrecer Baileys sobre el postre aumentaría 1€ la cuenta.
+                    <br>
+                    <b>Pregunta:</b> “Tarta de chocolate – ¡Buena elección! ¿Sabes que va muy bien con esto? Un chorrito
+                    de Baileys. ¿Te gustaría probarlo?
+                </p>
+            </div>
+        </div>
+        <div class="card-related-content">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaPG" />
+            </div>
+            <div class="copy-container">
+                <p class="copy-text">EN UN CAFÉ O CHOCOLATE</p>
+                <p class="description">Un chorrito de Baileys en café o chocolate aumentaría en 0’50€ la consumición.
+                    <br>
+                    <b>Pregunta:</b> “¿Quieres darte un capricho ya que estas aquí y añadir un chorrito de Baileys en tu
+                    café? Por solo 0,5€ adicionales.
+                </p>
+            </div>
+        </div>
+        <div class="card-related-content">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaPL" />
+            </div>
+            <div class="copy-container">
+                <p class="copy-text">EN LA SOBREMESA</p>
+                <p class="description">Un Baileys con hielo después de la comida puede cobrarse a 2,50€ por lo menos.
+                    <br>
+                    <b>Pregunta:</b> “¿Puedo ofreceros café o infusión? ¿o qué tal vez un Baileys? Es la mejor forma de
+                    terminar la comida…”
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-text-block">
+        <div class="itb-image-container">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaPQ" alt="" />
+        </div>
+        <div class="itb-text-container">
+            <p>El 88% de los consumidores piden postre, el 90% café o infusión. Baileys puede ayudar a los consumidores
+                a animarse y a incrementar tu beneficio</p>
+        </div>
+    </div>
+
+    <div class="image-outside-horizontal-card-container">
+        <div class="image-outside-horizontal-card">
+            <div class="content-container">
+                <div class="title-container">
+                    <span class="title">CÓMO INCLUIR LA PROPUESTA DEL CHORRITO DE BAILEYS EN LA CONVERSACIÓN</span>
+                </div>
+                <div class="description-container">
+                    <span class="description"> 2 de cada 3 clientes se animarían a un Baileys de sobremesa si se lo
+                        ofrecieran. Tú puedes hacerlo parte de cada ocasión con una pregunta simple</span>
+                </div>
+                <div class="btn-container">
+                    <a href="#" target="_blank" class="content-button">¿Le apetece un Baileys?</a>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaRC" />
+            </div>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="titles-and-descriptions">
+        <div class="general-title">PUEDE QUE HAYA MÁS VARIEDADES DE BAILEYS DEL QUE CONOCES….</div>
+    </div>
+
+    <div class="tabs-table-container">
+        <div class="tabs">
+            <div class="tab">
+                <input type="radio" id="tab-12" name="tab-group-12" checked>
+                <label class="label" for="tab-12">ALMANDE</label>
+                <div class="ingredients spacer"></div>
+                <div class="content">
+                    <div class="text-container">
+                        <p class="the-colection">LA COLECCIÓN</p>
+                        <p class="title">Baileys Almande</p>
+                        <p class="text">Indulgencia también para la creciente comunidad de consumidores “sin”. Baileys
+                            Almande es un producto SIN lactosa y vegano, pero para nada SIN esa traviesa y deliciosa
+                            indulgencia que todo el mundo quiere</p>
+                    </div>
+                    <div class="image-container">
+                        <img
+                            src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaRM" />
+                    </div>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" id="tab-13" name="tab-group-12">
+                <label class="label" for="tab-13">FRESAS Y NATA</label>
+                <div class="method spacer"></div>
+                <div class="content">
+                    <div class="text-container">
+                        <p class="the-colection">the colection</p>
+                        <p class="title">Baileys Fresas y Nata</p>
+                        <p class="text">Esta variante de sabor del clásico Baileys es como un batido de fresa, pero para
+                            adultos. Suave y cremoso, con un delicioso sabor a fresa, está delicioso sobre un helado de
+                            chocolate o solo con hielo.</p>
+                    </div>
+                    <div class="image-container">
+                        <img
+                            src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaRW" />
+                    </div>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" id="tab-14" name="tab-group-12">
+                <label class="label" for="tab-14">CHOCO LUXE</label>
+                <div class="method spacer"></div>
+                <div class="content">
+                    <div class="text-container">
+                        <p class="the-colection">the colection</p>
+                        <p class="title">Baileys Choco Luxe</p>
+
+                        <p class="text">Una decadente mezcla de chocolate belga con Baileys original. La variante
+                            Chocolate Luxe es el colmo de la indulgencia y completamente inolvidable</p>
+                    </div>
+                    <div class="image-container">
+                        <img
+                            src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaRb" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="small-banner-card-container">
+        <div class="mixed-content-block">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaRl" />
+            </div>
+            <div class="copy-container">
+                <p class="content-text">Hay un incremental del 43% de consumidores que está experimentando con Baileys
+                    en postres y bebidas calientes. No te pierdas algunas de las más alucinantes creaciones que hemos
+                    visto…
+                </p>
+                <a href="" target="_blank" class="content-button">instagram DE BAILEYS</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="titles-and-descriptions">
+        <div class="general-title">¿SABIAS QUE…? <br>
+            ¡BAILEYS ES LA BEBIDA MÁS QUERIDA DEL MUNDO!
+        </div>
+    </div>
+
+    <div class="titles-and-descriptions">
+        <div class="general-description ">Nacida en Irlanda en 1974, la crema irlandesa original se vende actualmente en más de
+            150 paises. Cada gota de leche Baileys proviene de los deliciosos campos verdes de las granjas familiares
+            irlandesas, lo que mantiene felices a nuestras vacas y nuestra crema impecable.</div>
+    </div>
+
+    <div class="icon-and-description-container">
+        <div class="item-container">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaRv" />
+            </div>
+            <div class="descrition-container">
+                <p class="title">MÁS DE 2 AÑOS</p>
+                <p class="description">Fue el tiempo que se tardó en crear la receta perfecta de Baileys, con su rica
+                    leche y los mejores whiskies irlandeses</p>
+            </div>
+        </div>
+        <div class="item-container">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaS0" />
+            </div>
+            <div class="descrition-container">
+                <p class="title">AMPLIO RECONOCIMIENTO</p>
+                <p class="description">Con un origen humilde, Baileys es actualmente el líquido más querido del mundo
+                </p>
+            </div>
+        </div>
+        <div class="item-container">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaS5" />
+            </div>
+            <div class="descrition-container">
+                <p class="title">CONSUMIDORES LEALES</p>
+                <p class="description">156 millones de personas dicen que AMAN Baileys</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="titles-and-descriptions">
+        <div class="general-title">RECETAS</div>
+    </div>
+
+    <div class="halloween-class">
+        <div class="container-recipes">
+            <div class="recipe-card">
+                <div class="title-card">
+                    <p>LATTE FRÍO DE BAILEYS</p>
+                </div>
+                <div>
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaSF"
+                        class="FULL-SIZE">
+                </div>
+                <div class="tab-table-container">
+                    <div class="tabs">
+                        <div class="tab">
+                            <input type="radio" id="tab-1" name="tab-group-1" checked>
+                            <label class="label" for="tab-1">INGREDIENTES</label>
+                            <div class="ingredients spacer"></div>
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <p>50ml de Baileys Original</p>
+                                    </li>
+                                    <li>
+                                        <p>250ml de leche</p>
+                                    </li>
+                                    <li>
+                                        <p>1 chupito de café Espresso</p>
+                                    </li>
+                                    <li>
+                                        <p>Nata montada</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="radio" id="tab-2" name="tab-group-1">
+                            <label class="label" for="tab-2">PREPARACIÓN</label>
+                            <div class="method spacer"></div>
+                            <div class="content">
+                                <ol>
+                                    <li>
+                                        <p>Vierte 250ml de leche fría en un vaso con hielo</p>
+                                    </li>
+                                    <li>
+                                        <p>Añáde el chupito de espresso</p>
+                                    </li>
+                                    <li>
+                                        <p>Vierte 50ml de Baileys</p>
+                                    </li>
+                                    <li>
+                                        <p>Decora con nata montada y una galleta</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-card not-first">
+                <div class="title-card">
+                    <p>CHOCOLATE CALIENTE DE BAILEYS</p>
+                </div>
+                <div>
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaSK"
+                        class="FULL-SIZE">
+                </div>
+                <div class="tab-table-container">
+                    <div class="tabs">
+                        <div class="tab">
+                            <input type="radio" id="tab-3" name="tab-group-2" checked>
+                            <label class="label" for="tab-3">INGREDIENTES</label>
+                            <div class="ingredients spacer"></div>
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <p>50ml de Baileys Original</p>
+                                    </li>
+                                    <li>
+                                        <p>250ml de chocolate caliente</p>
+                                    </li>
+                                    <li>
+                                        <p>Nata montada</p>
+                                    </li>
+                                    <li>
+                                        <p>Mini nubes</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="radio" id="tab-4" name="tab-group-2">
+                            <label class="label" for="tab-4">PREPARACIÓN</label>
+                            <div class="method spacer"></div>
+                            <div class="content">
+                                <ol>
+                                    <li>
+                                        <p>Prepara un chocolate caliente de 250ml</p>
+                                    </li>
+                                    <li>
+                                        <p>Añade 50ml de Baileys</p>
+                                    </li>
+                                    <li>
+                                        <p>Decora con nata montada y mini nubes, virutas de chocolate o chocolate
+                                            rallado y sírvelo</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="halloween-class">
+        <div class="container-recipes">
+            <div class="recipe-card">
+                <div class="title-card">
+                    <p>CAFÉ CON BAILEYS</p>
+                </div>
+                <div class="subtitle-card">
+                    <p>Algunas recetas nunca se pasan de moda. Un sorbito basta para saber por qué…</p>
+                </div>
+                <div>
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaSU"
+                        class="FULL-SIZE">
+                </div>
+                <div class="tab-table-container">
+                    <div class="tabs">
+                        <div class="tab">
+                            <input type="radio" id="tab-5" name="tab-group-3" checked>
+                            <label class="label" for="tab-5">INGREDIENTES</label>
+                            <div class="ingredients spacer"></div>
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <p>50ml de Baileys Original</p>
+                                    </li>
+                                    <li>
+                                        <p>150ml de café negro</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="radio" id="tab-6" name="tab-group-3">
+                            <label class="label" for="tab-6">PREPARACIÓN</label>
+                            <div class="method spacer"></div>
+                            <div class="content">
+                                <ol>
+                                    <li>
+                                        <p>Prepara un vaso o taza con 150ml de café negro</p>
+                                    </li>
+                                    <li>
+                                        <p>Añade 50ml de Baileys Original*</p>
+                                    </li>
+                                    <li>
+                                        <p>Revuelve para mezclarlo bien y sírvelo</p>
+                                    </li>
+                                    <p>*Sustituye el Baileys Original por Baileys Almendra para ofrecer una alternativa
+                                        sin lactosa</p>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-card not-first">
+                <div class="title-card">
+                    <p>MARTINI BLANCO DE BAILEYS</p>
+                </div>
+                <div class="subtitle-card">
+                    <p>Un cocktail con clase, de sabor rico, suave, espumoso y con el final potente del café</p>
+                </div>
+                <div>
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaSj"
+                        class="FULL-SIZE">
+                </div>
+                <div class="tab-table-container">
+                    <div class="tabs">
+                        <div class="tab">
+                            <input type="radio" id="tab-7" name="tab-group-4" checked>
+                            <label class="label" for="tab-7">INGREDIENTES</label>
+                            <div class="ingredients spacer"></div>
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <p>50ml de Baileys Original</p>
+                                    </li>
+                                    <li>
+                                        <p>25ml de Smirnoff Vodka</p>
+                                    </li>
+                                    <li>
+                                        <p>25ml de Espresso</p>
+                                    </li>
+                                    <li>
+                                        <p>Semillas de café</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="radio" id="tab-8" name="tab-group-4">
+                            <label class="label" for="tab-8">PREPARACIÓN</label>
+                            <div class="method spacer"></div>
+                            <div class="content">
+                                <ol>
+                                    <li>
+                                        <p>Llena una coctelera de hielo</p>
+                                    </li>
+                                    <li>
+                                        <p>Vierte 50ml de Baileys Original*, 25ml de Smirnoff y 25ml de Espresso en la
+                                            coctelera y agita para mezclar</p>
+                                    </li>
+                                    <li>
+                                        <p>Cuela la mezcla en una copa martini</p>
+                                    </li>
+                                    <li>
+                                        <p>Decora con 3 granos de café flotando en el centro y servir</p>
+                                    </li>
+                                    <p>*Sustituye el Baileys Original por Baileys Almande para ofrecer una alternativa
+                                        sin lactosa</p>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="download-block">
+        <div class="download-header">
+            <div class="title">
+                <p>SOCIAL MEDIA DOWNLOADS</p>
+            </div>
+            <div class="download-btn">
+                <a href="/"><i class="fas fa-download"></i>Descargar todo</a>
+            </div>
+        </div>
+        <div class="download-body">
+            <div class="download-card-container">
+                <div class="download-card">
+                    <div class="image-container">
+                        <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHx"
+                            alt="" />
+                    </div>
+                    <div class="body-container">
+                        <p class="title-text">Social media image</p>
+                        <p class="description-text">001_A_HOT_CHOC.jpg</p>
+                        <div class="download-card-btn">
+                            <a href="#" target="_blank" class="download-link-box"><i
+                                    class="fas fa-download"></i>Descargar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-card">
+                    <div class="image-container">
+                        <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHx"
+                            alt="" />
+                    </div>
+                    <div class="body-container">
+                        <p class="title-text">Social media image</p>
+                        <p class="description-text">1_LATTE_SET_V03.jpg</p>
+                        <div class="download-card-btn">
+                            <a href="#" target="_blank" class="download-link-box"><i
+                                    class="fas fa-download"></i>Descargar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-card">
+                    <div class="image-container">
+                        <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHx"
+                            alt="" />
+                    </div>
+                    <div class="body-container">
+                        <p class="title-text">Social media image</p>
+                        <p class="description-text">002_A_OVER_ICE_CREAM.jpg</p>
+                        <div class="download-card-btn">
+                            <a href="#" target="_blank" class="download-link-box"><i
+                                    class="fas fa-download"></i>Descargar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-card">
+                    <div class="image-container">
+                        <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHx"
+                            alt="" />
+                    </div>
+                    <div class="body-container">
+                        <p class="title-text">Social media image</p>
+                        <p class="description-text">8_ESPRESSO MARTINI_SET_V02.jpg</p>
+                        <div class="download-card-btn">
+                            <a href="#" target="_blank" class="download-link-box"><i
+                                    class="fas fa-download"></i>Descargar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-card">
+                    <div class="image-container">
+                        <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXI2"
+                            alt="" />
+                    </div>
+                    <div class="body-container">
+                        <p class="title-text">pos image</p>
+                        <p class="description-text">3_OVER ICE_V02.jpg</p>
+                        <div class="download-card-btn">
+                            <a href="#" target="_blank" class="download-link-box"><i
+                                    class="fas fa-download"></i>Descargar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="download-card-container">
+                <div class="download-card">
+                    <div class="image-container">
+                        <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHx"
+                            alt="" />
+                    </div>
+                    <div class="body-container">
+                        <p class="title-text">Social media image</p>
+                        <p class="description-text">4_AMERICANO_SET_V03.jpg</p>
+                        <div class="download-card-btn">
+                            <a href="#" target="_blank" class="download-link-box"><i
+                                    class="fas fa-download"></i>Descargar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-card">
+                    <div class="image-container">
+                        <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHx"
+                            alt="" />
+                    </div>
+                    <div class="body-container">
+                        <p class="title-text">Social media image</p>
+                        <p class="description-text">7_AFFOGATO_SET_V03.jpg</p>
+                        <div class="download-card-btn">
+                            <a href="#" target="_blank" class="download-link-box"><i
+                                    class="fas fa-download"></i>Descargar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-card">
+                    <div class="image-container">
+                        <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHx"
+                            alt="" />
+                    </div>
+                    <div class="body-container">
+                        <p class="title-text">Social media image</p>
+                        <p class="description-text">Baileys Brownie Tower.jpg</p>
+                        <div class="download-card-btn">
+                            <a href="#" target="_blank" class="download-link-box"><i
+                                    class="fas fa-download"></i>Descargar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-card">
+                    <div class="image-container">
+                        <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHx"
+                            alt="" />
+                    </div>
+                    <div class="body-container">
+                        <p class="title-text">Social media image</p>
+                        <p class="description-text">006_A_CAKE_MPU.jpg</p>
+                        <div class="download-card-btn">
+                            <a href="#" target="_blank" class="download-link-box"><i
+                                    class="fas fa-download"></i>Descargar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-card">
+                    <div class="image-container">
+                        <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXI2"
+                            alt="" />
+                    </div>
+                    <div class="body-container">
+                        <p class="title-text">Social media image</p>
+                        <p class="description-text">6_ICE CREAM_SET_V03.jpg</p>
+                        <div class="download-card-btn">
+                            <a href="#" target="_blank" class="download-link-box"><i
+                                    class="fas fa-download"></i>Descargar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="download-footer">
+                <p>Al utilizar estos activos, usted acepta asegurarse de que su comercialización de productos Diageo
+                    mediante el uso de activos digitales proporcionados por nosotros se adhiera en todo momento al
+                    Diageo
+                    Marketing Code ("DMC"), cuya copia está disponible en www.diageo.com. Si no cumple con él en su uso
+                    de
+                    los activos digitales, nos reservamos el derecho de exigirle que retire los activos de sus canales
+                    de
+                    redes sociales y no le proporcionaremos ningún activo adicional. Si se le solicita, acepta eliminar
+                    los
+                    activos de sus canales de redes sociales de inmediato.</p>
+            </div>
+        </div>
+    </div>
+    <div class="download-block">
+        <div class="download-header">
+            <div class="title">
+                <p>Social Media Videos</p>
+            </div>
+        </div>
+        <div class="download-body">
+            <div class="download-card-container">
+                <div class="download-card">
+                    <div class="image-container">
+                        <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHx"
+                            alt="" />
+                    </div>
+                    <div class="body-container">
+                        <p class="title-text">SOCIAL MEDIA VIDEO</p>
+                        <p class="description-text">104_BA2022_FWM_020_GB_001.mov</p>
+                        <div class="download-card-btn">
+                            <a href="#" target="_blank" class="download-link-box"><i
+                                    class="fas fa-download"></i>Descargar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-card">
+                    <div class="image-container">
+                        <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHx"
+                            alt="" />
+                    </div>
+                    <div class="body-container">
+                        <p class="title-text">SOCIAL MEDIA VIDEO</p>
+                        <p class="description-text">150_BA2202_OIC_005_GB_005.mov</p>
+                        <div class="download-card-btn">
+                            <a href="#" target="_blank" class="download-link-box"><i
+                                    class="fas fa-download"></i>Descargar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-card">
+                    <div class="image-container">
+                        <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHx"
+                            alt="" />
+                    </div>
+                    <div class="body-container">
+                        <p class="title-text">SOCIAL MEDIA VIDEO</p>
+                        <p class="description-text">152_BA2202_BCL_005_GB_006.mov</p>
+                        <div class="download-card-btn">
+                            <a href="#" target="_blank" class="download-link-box"><i
+                                    class="fas fa-download"></i>Descargar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-card">
+                    <div class="image-container">
+                        <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHx"
+                            alt="" />
+                    </div>
+                    <div class="body-container">
+                        <p class="title-text">SOCIAL MEDIA VIDEO</p>
+                        <p class="description-text">178_BA1786_ANTLR_010_GB_001.mp4</p>
+                        <div class="download-card-btn">
+                            <a href="#" target="_blank" class="download-link-box"><i
+                                    class="fas fa-download"></i>Descargar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-card">
+                    <div class="image-container">
+                        <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXI2"
+                            alt="" />
+                    </div>
+                    <div class="body-container">
+                        <p class="title-text">SOCIAL MEDIA VIDEO</p>
+                        <p class="description-text">178_BA2202_REIN_020_GB_001.mp4</p>
+                        <div class="download-card-btn">
+                            <a href="#" target="_blank" class="download-link-box"><i
+                                    class="fas fa-download"></i>Descargar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="download-card-container">
+                <div class="download-card">
+                    <div class="image-container">
+                        <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHx"
+                            alt="" />
+                    </div>
+                    <div class="body-container">
+                        <p class="title-text">SOCIAL MEDIA VIDEO</p>
+                        <p class="description-text">187_BA2202_HOT_020_GB_001.mp4</p>
+                        <div class="download-card-btn">
+                            <a href="#" target="_blank" class="download-link-box"><i
+                                    class="fas fa-download"></i>Descargar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-card">
+                    <div class="image-container">
+                        <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHx"
+                            alt="" />
+                    </div>
+                    <div class="body-container">
+                        <p class="title-text">SOCIAL MEDIA VIDEO</p>
+                        <p class="description-text">187_BA2202_HOT_020_GB_001.mp4</p>
+                        <div class="download-card-btn">
+                            <a href="#" target="_blank" class="download-link-box"><i
+                                    class="fas fa-download"></i>Descargar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="download-footer">
+                <p>Al utilizar estos activos, usted acepta asegurarse de que su comercialización de productos Diageo
+                    mediante el uso de activos digitales proporcionados por nosotros se adhiera en todo momento al
+                    Diageo
+                    Marketing Code ("DMC"), cuya copia está disponible en www.diageo.com. Si no cumple con él en su uso
+                    de
+                    los activos digitales, nos reservamos el derecho de exigirle que retire los activos de sus canales
+                    de
+                    redes sociales y no le proporcionaremos ningún activo adicional. Si se le solicita, acepta eliminar
+                    los
+                    activos de sus canales de redes sociales de inmediato.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="download-block">
+        <div class="download-header">
+            <div class="title">
+                <p>POINT OF SALE</p>
+            </div>
+        </div>
+        <div class="download-body">
+            <div class="download-card-container">
+                <div class="download-card">
+                    <div class="image-container">
+                        <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHx"
+                            alt="" />
+                    </div>
+                    <div class="body-container">
+                        <p class="title-text">POINT OF SALE</p>
+                        <p class="description-text">Baileys_UK_Menu_Cards_No_Prices.pdf</p>
+                        <div class="download-card-btn">
+                            <a href="#" target="_blank" class="download-link-box"><i
+                                    class="fas fa-download"></i>Descargar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-card">
+                    <div class="image-container">
+                        <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHx"
+                            alt="" />
+                    </div>
+                    <div class="body-container">
+                        <p class="title-text">POINT OF SALE</p>
+                        <p class="description-text">Baileys_GB_Menu_Cards_With_Prices.pdf</p>
+                        <div class="download-card-btn">
+                            <a href="#" target="_blank" class="download-link-box"><i
+                                    class="fas fa-download"></i>Descargar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="download-footer">
+                <p>Al utilizar estos activos, usted acepta asegurarse de que su comercialización de productos Diageo
+                    mediante el uso de activos digitales proporcionados por nosotros se adhiera en todo momento al
+                    Diageo
+                    Marketing Code ("DMC"), cuya copia está disponible en www.diageo.com. Si no cumple con él en su uso
+                    de
+                    los activos digitales, nos reservamos el derecho de exigirle que retire los activos de sus canales
+                    de
+                    redes sociales y no le proporcionaremos ningún activo adicional. Si se le solicita, acepta eliminar
+                    los
+                    activos de sus canales de redes sociales de inmediato.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="titles-and-descriptions">
+        <p class="related-title">RELATED articles</p>
+    </div>
+
+    <div class="vertical-card-container-related-article">
+
+        <div class="card-related-content">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOqe" />
+            </div>
+            <div class="copy-container">
+                <p class="copy-text">Aliquam ac ligula ac odio molestie consequat varius est urna ipsum dolor sit </p>
+                <a href="https://www.mydiageo.com/s/cp-content/a4P4G000000KEN9" class="copy-link">Find out more<i
+                        class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+
+        <div class="card-related-content">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOkv" />
+            </div>
+            <div class="copy-container">
+                <p class="copy-text">Aliquam ac ligula ac odio molestie consequat varius est urna ipsum dolor sit </p>
+                <a href="https://www.mydiageo.com/s/cp-content/a4PD00000001VDUMA2/trendsbeerinsightjune18?retUrl=https%3A%2F%2Fwww.mydiageo.com%2Fs%2Fdiscover"
+                    class="copy-link">Find out more<i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+
+        <div class="card-related-content">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOl0" />
+            </div>
+            <div class="copy-container">
+                <p class="copy-text">Aliquam ac ligula ac odio molestie consequat varius est urna ipsum dolor sit </p>
+                <a href="https://www.mydiageo.com/s/landing?menu=IRL-get-the-basics-right" class="copy-link">Find out
+                    more<i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>

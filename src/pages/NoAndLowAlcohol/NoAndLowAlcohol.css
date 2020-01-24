@@ -1,0 +1,919 @@
+.NoAndLowAlcoholGB {
+  text-align: left;
+  background-color: #f2f2f2;
+}
+.NoAndLowAlcoholGB .titles-and-descriptions .general-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  padding-left: 18%;
+  padding-right: 18%;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .NoAndLowAlcoholGB .titles-and-descriptions .general-title {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .NoAndLowAlcoholGB .titles-and-descriptions .general-title {
+    padding-bottom: 40px;
+  }
+}
+.NoAndLowAlcoholGB .titles-and-descriptions .general-description {
+  font-size: 20px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  color: #3e3e3e;
+  padding-right: 18%;
+  padding-left: 18%;
+}
+@media screen and (min-width: 768px) {
+  .NoAndLowAlcoholGB .titles-and-descriptions .general-description {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .NoAndLowAlcoholGB .titles-and-descriptions .general-description {
+    padding-bottom: 80px;
+  }
+}
+.NoAndLowAlcoholGB .titles-and-descriptions .related-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  text-transform: uppercase;
+  border-bottom: 1px solid #7d7773;
+}
+@media screen and (min-width: 768px) {
+  .NoAndLowAlcoholGB .titles-and-descriptions .related-title {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .NoAndLowAlcoholGB .titles-and-descriptions .related-title {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .NoAndLowAlcoholGB .titles-and-descriptions .general-title {
+    font-size: 24px;
+    padding-left: 6%;
+    padding-right: 5%;
+  }
+  .NoAndLowAlcoholGB .titles-and-descriptions .general-description {
+    padding-left: 6%;
+    padding-right: 5%;
+  }
+  .NoAndLowAlcoholGB .titles-and-descriptions .related-title {
+    font-size: 24px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .NoAndLowAlcoholGB .banner-container {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .NoAndLowAlcoholGB .banner-container {
+    padding-bottom: 80px;
+  }
+}
+.NoAndLowAlcoholGB .banner-container .banner-card-container {
+  text-align: left;
+  background-color: #ffffff;
+}
+.NoAndLowAlcoholGB .banner-container .banner-card-container .label {
+  height: 40px;
+  margin-left: 83px;
+  margin-top: 25px;
+  width: 125px;
+  background-color: #51ae00;
+}
+.NoAndLowAlcoholGB .banner-container .banner-card-container .label div {
+  height: 100%;
+}
+.NoAndLowAlcoholGB .banner-container .banner-card-container .label div span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.NoAndLowAlcoholGB .banner-container .banner-card-container .title-container {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.NoAndLowAlcoholGB .banner-container .banner-card-container .title-container.with-label {
+  margin-top: 20px;
+}
+.NoAndLowAlcoholGB .banner-container .banner-card-container .title-container .title {
+  font-size: 38px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  color: black;
+  text-transform: uppercase;
+}
+.NoAndLowAlcoholGB .banner-container .banner-card-container .text-container .text {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #3e3e3e;
+}
+.NoAndLowAlcoholGB .banner-container .banner-card-container .btn-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.NoAndLowAlcoholGB .banner-container .banner-card-container .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.NoAndLowAlcoholGB .banner-container .banner-card-container .image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.NoAndLowAlcoholGB .banner-container .banner-card-container .image-container img {
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .NoAndLowAlcoholGB .banner-container .banner-card-container {
+    height: 420px;
+  }
+  .NoAndLowAlcoholGB .banner-container .banner-card-container .content-container {
+    padding-right: 110px;
+  }
+  .NoAndLowAlcoholGB .banner-container .banner-card-container .text-container,
+  .NoAndLowAlcoholGB .banner-container .banner-card-container .title-container {
+    padding-left: 83px;
+  }
+  .NoAndLowAlcoholGB .banner-container .banner-card-container .text-container {
+    padding-bottom: 20px;
+  }
+  .NoAndLowAlcoholGB .banner-container .banner-card-container .btn-container {
+    height: 45px;
+    width: 160px;
+    margin-left: 83px;
+  }
+  .NoAndLowAlcoholGB .banner-container .banner-card-container .image-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 425px solid #ffffff;
+    border-right: 80px solid transparent;
+    width: 0;
+  }
+  .NoAndLowAlcoholGB .banner-container .banner-card-container .image-container .desktop-img {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .NoAndLowAlcoholGB .banner-container .banner-card-container {
+    flex-wrap: wrap;
+    margin-top: 0;
+    height: 630px;
+  }
+  .NoAndLowAlcoholGB .banner-container .banner-card-container .label {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  .NoAndLowAlcoholGB .banner-container .banner-card-container .text-container,
+  .NoAndLowAlcoholGB .banner-container .banner-card-container .title-container {
+    padding: 20px;
+    padding-top: 0;
+    margin: 0;
+  }
+  .NoAndLowAlcoholGB .banner-container .banner-card-container .text-container .text,
+  .NoAndLowAlcoholGB .banner-container .banner-card-container .title-container .text {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.63;
+    color: #3e3e3e;
+  }
+  .NoAndLowAlcoholGB .banner-container .banner-card-container .text-container .title,
+  .NoAndLowAlcoholGB .banner-container .banner-card-container .title-container .title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .NoAndLowAlcoholGB .banner-container .banner-card-container .title-container {
+    margin-top: 75px;
+  }
+  .NoAndLowAlcoholGB .banner-container .banner-card-container .title-container.with-label {
+    margin-top: 20px;
+  }
+  .NoAndLowAlcoholGB .banner-container .banner-card-container .btn-container {
+    width: 88%;
+    height: 45px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .NoAndLowAlcoholGB .banner-container .banner-card-container .image-container .phone-img {
+    display: block;
+    position: absolute;
+    height: 280px;
+    left: 0;
+    bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .NoAndLowAlcoholGB .mixed-content-card-container {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .NoAndLowAlcoholGB .mixed-content-card-container {
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 768px) {
+  .NoAndLowAlcoholGB .mixed-content-card-container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media (max-width: 768px) {
+  .NoAndLowAlcoholGB .mixed-content-card-container {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+.NoAndLowAlcoholGB .mixed-content-card-container .mixed-content-block {
+  font-family: 'Roboto', sans-serif;
+  background-color: transparent;
+}
+.NoAndLowAlcoholGB .mixed-content-card-container .mixed-content-block .copy-container .content-title {
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+.NoAndLowAlcoholGB .mixed-content-card-container .mixed-content-block .copy-container .content-text {
+  color: #3e3e3e;
+}
+.NoAndLowAlcoholGB .mixed-content-card-container .mixed-content-block .copy-container .content-button {
+  font-size: 14px;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.NoAndLowAlcoholGB .mixed-content-card-container .mixed-content-block .copy-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.NoAndLowAlcoholGB .mixed-content-card-container .mixed-content-block .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+  overflow: hidden;
+}
+.NoAndLowAlcoholGB .mixed-content-card-container .mixed-content-block .image-container img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .NoAndLowAlcoholGB .mixed-content-card-container .mixed-content-block {
+    width: 100%;
+    display: flex;
+    height: 340px;
+    margin-bottom: 80px;
+  }
+  .NoAndLowAlcoholGB .mixed-content-card-container .mixed-content-block.image-left .copy-container {
+    order: 0;
+    padding-right: 115px;
+  }
+  .NoAndLowAlcoholGB .mixed-content-card-container .mixed-content-block.image-left .image-container {
+    order: 1;
+  }
+  .NoAndLowAlcoholGB .mixed-content-card-container .mixed-content-block.image-right .copy-container {
+    order: 1;
+    padding-left: 115px;
+  }
+  .NoAndLowAlcoholGB .mixed-content-card-container .mixed-content-block.image-right .image-container {
+    order: 0;
+  }
+  .NoAndLowAlcoholGB .mixed-content-card-container .mixed-content-block .copy-container {
+    height: 100%;
+    width: 100%;
+  }
+  .NoAndLowAlcoholGB .mixed-content-card-container .mixed-content-block .copy-container .content-title {
+    font-size: 18px;
+    padding-top: 60px;
+    line-height: 40px;
+  }
+  .NoAndLowAlcoholGB .mixed-content-card-container .mixed-content-block .copy-container .content-button {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+  .NoAndLowAlcoholGB .mixed-content-card-container .mixed-content-block .copy-container .content-text {
+    padding: 20px 0;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .NoAndLowAlcoholGB .mixed-content-card-container .mixed-content-block .image-container {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .NoAndLowAlcoholGB .mixed-content-card-container .mixed-content-block {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: unset;
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
+  .NoAndLowAlcoholGB .mixed-content-card-container .mixed-content-block .copy-container {
+    width: 100%;
+  }
+  .NoAndLowAlcoholGB .mixed-content-card-container .mixed-content-block .copy-container .content-title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 32px;
+    color: #000000;
+    text-transform: uppercase;
+    padding-top: 20px;
+  }
+  .NoAndLowAlcoholGB .mixed-content-card-container .mixed-content-block .copy-container .content-text {
+    font-size: 16px;
+    padding-top: 10px;
+    line-height: 26px;
+    color: #3e3e3e;
+  }
+  .NoAndLowAlcoholGB .mixed-content-card-container .mixed-content-block .copy-container .content-button {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 13px 0;
+    background-color: #f2af0c;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    bottom: 2px;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+  .NoAndLowAlcoholGB .mixed-content-card-container .mixed-content-block .image-container {
+    height: 250px;
+    margin-left: -7%;
+    margin-right: -7%;
+    width: 114%;
+    background-color: rgba(64, 146, 223, 0.5);
+  }
+  .NoAndLowAlcoholGB .mixed-content-card-container .mixed-content-block .image-container img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .NoAndLowAlcoholGB .vertical-card-container {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+}
+.NoAndLowAlcoholGB .vertical-card-container .card-related-content {
+  font-family: 'Roboto', sans-serif;
+  height: 430px;
+  display: block;
+}
+@media (min-width: 768px) {
+  .NoAndLowAlcoholGB .vertical-card-container .card-related-content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 33.3333%;
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 768px) {
+  .NoAndLowAlcoholGB .vertical-card-container .card-related-content {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 4%;
+  }
+}
+.NoAndLowAlcoholGB .vertical-card-container .card-related-content .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+  height: 250px;
+  overflow: hidden;
+}
+.NoAndLowAlcoholGB .vertical-card-container .card-related-content .image-container img {
+  width: 100%;
+  height: auto;
+}
+.NoAndLowAlcoholGB .vertical-card-container .card-related-content .copy-container {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 180px;
+}
+.NoAndLowAlcoholGB .vertical-card-container .card-related-content .copy-container .copy-text {
+  padding: 20px 30px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.75;
+  color: #000000;
+}
+.NoAndLowAlcoholGB .vertical-card-container .card-related-content .copy-container .copy-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #4092df;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  text-decoration: none;
+}
+.NoAndLowAlcoholGB .vertical-card-container .card-related-content .copy-container .copy-link:hover {
+  border-bottom: 2px solid;
+  margin-bottom: -2px;
+}
+.NoAndLowAlcoholGB .vertical-card-container .card-related-content .copy-container .copy-link i.fas.fa-angle-right {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #4092df;
+  position: absolute;
+  bottom: 4px;
+}
+.NoAndLowAlcoholGB .numeric-list-block {
+  background-color: #ffffff;
+  padding-right: 110px;
+  padding-left: 110px;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .NoAndLowAlcoholGB .numeric-list-block {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .NoAndLowAlcoholGB .numeric-list-block {
+    margin-bottom: 60px;
+  }
+}
+.NoAndLowAlcoholGB .numeric-list-block .numeric-list-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+.NoAndLowAlcoholGB .numeric-list-block .numeric-list-text {
+  font-size: 16px;
+  padding-bottom: 25px;
+}
+.NoAndLowAlcoholGB .numeric-list-block .numeric-list-text.padding-top-25 {
+  padding-top: 25px;
+}
+.NoAndLowAlcoholGB .numeric-list-block ol,
+.NoAndLowAlcoholGB .numeric-list-block ul {
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 45px;
+}
+.NoAndLowAlcoholGB .numeric-list-block ol li,
+.NoAndLowAlcoholGB .numeric-list-block ul li {
+  margin-bottom: 30px;
+  counter-increment: my-awesome-counter;
+  position: relative;
+  font-size: 16px;
+  line-height: 1.63;
+  color: #3e3e3e;
+}
+.NoAndLowAlcoholGB .numeric-list-block ol li:last-child,
+.NoAndLowAlcoholGB .numeric-list-block ul li:last-child {
+  margin-bottom: 0;
+}
+.NoAndLowAlcoholGB .numeric-list-block ol li:before,
+.NoAndLowAlcoholGB .numeric-list-block ul li:before {
+  content: counter(my-awesome-counter);
+  color: #f2af0c;
+  font-size: 16px;
+  position: absolute;
+  --size: 35px;
+  left: calc(-1 * var(--size) - 20px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  background: #3e3e3e;
+  border-radius: 50%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .NoAndLowAlcoholGB .numeric-list-block {
+    padding-right: 6%;
+    padding-left: 6%;
+  }
+}
+.NoAndLowAlcoholGB .icon-and-description-container {
+  display: flex;
+}
+.NoAndLowAlcoholGB .icon-and-description-container .item-container {
+  display: flex;
+}
+.NoAndLowAlcoholGB .icon-and-description-container .item-container .image-container {
+  height: 96px;
+  width: 96px;
+}
+.NoAndLowAlcoholGB .icon-and-description-container .item-container .image-container img {
+  width: 100%;
+  height: 100%;
+}
+.NoAndLowAlcoholGB .icon-and-description-container .item-container .descrition-container {
+  width: 240px;
+  margin-left: 40px;
+  padding-right: 30px;
+}
+.NoAndLowAlcoholGB .icon-and-description-container .item-container .descrition-container .title {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.NoAndLowAlcoholGB .icon-and-description-container .item-container .descrition-container .description {
+  font-size: 18px;
+  line-height: 1.56;
+}
+@media screen and (min-width: 768px) {
+  .NoAndLowAlcoholGB .icon-and-description-container {
+    margin-bottom: 80px;
+  }
+  .NoAndLowAlcoholGB .icon-and-description-container .item-container {
+    border-right: 1px solid black;
+    margin-left: 70px;
+  }
+  .NoAndLowAlcoholGB .icon-and-description-container .item-container:last-child {
+    border-right: unset;
+  }
+  .NoAndLowAlcoholGB .icon-and-description-container .item-container:first-child {
+    margin-left: unset;
+  }
+}
+@media (max-width: 768px) {
+  .NoAndLowAlcoholGB .icon-and-description-container {
+    flex-flow: column;
+  }
+  .NoAndLowAlcoholGB .icon-and-description-container .item-container {
+    flex-flow: column;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .NoAndLowAlcoholGB .icon-and-description-container .item-container .image-container {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .NoAndLowAlcoholGB .icon-and-description-container .item-container .descrition-container {
+    width: 88%;
+    margin-right: 6%;
+    margin-left: 6%;
+    padding: unset;
+  }
+}
+.NoAndLowAlcoholGB .halloween-class {
+  padding-bottom: 60px;
+}
+@media (min-width: 768px) {
+  .NoAndLowAlcoholGB .halloween-class {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+@media (max-width: 768px) {
+  .NoAndLowAlcoholGB .halloween-class {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+.NoAndLowAlcoholGB .halloween-class .tab-table-container .tab [type="radio"] {
+  display: none;
+}
+.NoAndLowAlcoholGB .halloween-class .tab-table-container .tab [type="radio"]:checked ~ .label {
+  background: rgba(242, 175, 12, 0.12);
+  padding-bottom: 17px;
+  padding-top: 17px;
+  border-bottom: 2px solid #f2af0c;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .NoAndLowAlcoholGB .halloween-class .tab-table-container {
+    height: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .NoAndLowAlcoholGB .halloween-class .tab-table-container {
+    height: 320px;
+  }
+}
+@media (max-width: 321px) {
+  .NoAndLowAlcoholGB .halloween-class .tab-table-container {
+    height: 320px;
+  }
+}
+.NoAndLowAlcoholGB .halloween-class .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content {
+  z-index: 1;
+  display: table;
+}
+.NoAndLowAlcoholGB .halloween-class .tab-table-container .tabs {
+  position: relative;
+  clear: both;
+  margin: 0;
+  padding-top: 25px;
+  white-space: nowrap;
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid #979797;
+}
+.NoAndLowAlcoholGB .halloween-class .tab-table-container .tabs .tab {
+  vertical-align: top;
+}
+.NoAndLowAlcoholGB .halloween-class .tab-table-container .tabs .tab .label {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  min-height: 50px;
+  line-height: 50px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  padding-top: 17px;
+  border-bottom: 2px solid #979797;
+}
+.NoAndLowAlcoholGB .halloween-class .tab-table-container .tabs .tab .label:hover {
+  cursor: pointer;
+}
+.NoAndLowAlcoholGB .halloween-class .tab-table-container .tabs .tab .content {
+  white-space: normal;
+  top: 77px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  background-color: white;
+  min-height: 210px;
+}
+.NoAndLowAlcoholGB .halloween-class .tab-table-container .tabs .tab .content ol,
+.NoAndLowAlcoholGB .halloween-class .tab-table-container .tabs .tab .content ul {
+  max-width: 350px;
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 45px;
+}
+.NoAndLowAlcoholGB .halloween-class .tab-table-container .tabs .tab .content ol li,
+.NoAndLowAlcoholGB .halloween-class .tab-table-container .tabs .tab .content ul li {
+  margin-bottom: 16px;
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+.NoAndLowAlcoholGB .halloween-class .tab-table-container .tabs .tab .content ol li p,
+.NoAndLowAlcoholGB .halloween-class .tab-table-container .tabs .tab .content ul li p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #000000;
+}
+.NoAndLowAlcoholGB .halloween-class .tab-table-container .tabs .tab .content ol li:before,
+.NoAndLowAlcoholGB .halloween-class .tab-table-container .tabs .tab .content ul li:before {
+  content: counter(my-awesome-counter);
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  position: absolute;
+  --size: 25px;
+  left: calc(-1 * var(--size) - 20px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  background: #3e3e3e;
+  border-radius: 50%;
+  text-align: center;
+}
+.NoAndLowAlcoholGB .halloween-class .tab-table-container .tabs .tab .content ul {
+  padding-left: 25px;
+}
+.NoAndLowAlcoholGB .halloween-class .tab-table-container .tabs .tab .content ul li:before {
+  content: "";
+  color: #fff;
+  /* font-size : 10px; */
+  font-weight: bold;
+  position: absolute;
+  --size: 8px;
+  left: calc(-1 * var(--size) - 15px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 9px;
+  background: #7d7773;
+  border-radius: 50%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .NoAndLowAlcoholGB .halloween-class .tab-table-container {
+    flex-wrap: wrap;
+  }
+  .NoAndLowAlcoholGB .halloween-class .tab-table-container .tab {
+    margin-top: -6px;
+  }
+  .NoAndLowAlcoholGB .halloween-class .tab-table-container .tab .content {
+    top: 71px;
+  }
+  .NoAndLowAlcoholGB .halloween-class .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content {
+    z-index: 1;
+    display: table;
+    top: 71px;
+  }
+}
+.NoAndLowAlcoholGB .title-card {
+  width: 520px;
+  height: 40px;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.NoAndLowAlcoholGB .recipe-tag {
+  background-color: #51ae00;
+  color: #ffffff;
+  padding: 8px 10px;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+.NoAndLowAlcoholGB .subtitle-card {
+  width: 520px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #3e3e3e;
+  text-align: left;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .NoAndLowAlcoholGB .subtitle-card {
+    min-height: 80px;
+  }
+}
+.NoAndLowAlcoholGB .FULL-SIZE {
+  width: 520px;
+  height: 317px;
+  object-fit: cover;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.NoAndLowAlcoholGB .container-recipes {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .NoAndLowAlcoholGB .title-card {
+    width: unset;
+    height: unset;
+  }
+  .NoAndLowAlcoholGB .subtitle-card {
+    width: unset;
+    height: unset;
+    text-align: left;
+  }
+  .NoAndLowAlcoholGB .FULL-SIZE {
+    width: 334.7px;
+    height: 203.5px;
+    object-fit: cover;
+  }
+  .NoAndLowAlcoholGB .container-recipes {
+    display: block;
+  }
+  .NoAndLowAlcoholGB .recipe-card {
+    padding: 40px 0 20px 0;
+  }
+  .NoAndLowAlcoholGB .recipe-card.not-first {
+    border-top: 1px solid #b9b9b9;
+  }
+}
+.NoAndLowAlcoholGB .border-text-component {
+  margin-bottom: 60px;
+  border: 4px solid #51ae00;
+  margin-right: 18%;
+  margin-left: 18%;
+  position: relative;
+}
+.NoAndLowAlcoholGB .border-text-component .images-container .image-1 {
+  height: 72px;
+  width: 100px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.NoAndLowAlcoholGB .border-text-component .images-container .image-2 {
+  height: 72px;
+  width: 100px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.NoAndLowAlcoholGB .border-text-component .border-texts {
+  padding: 64px 0;
+  text-align: center;
+}
+.NoAndLowAlcoholGB .border-text-component .border-texts .border-text {
+  padding-bottom: 45px;
+  font-size: 20px;
+  color: #3e3e3e;
+  padding-left: 110px;
+  padding-right: 110px;
+}
+.NoAndLowAlcoholGB .border-text-component .border-texts .border-bottom-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+@media (max-width: 768px) {
+  .NoAndLowAlcoholGB .border-text-component {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .NoAndLowAlcoholGB .border-text-component .border-texts {
+    position: relative;
+    z-index: 2;
+    padding: 70px 0;
+    text-align: left;
+  }
+  .NoAndLowAlcoholGB .border-text-component .border-texts .border-text {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+  .NoAndLowAlcoholGB .border-text-component .border-texts .border-bottom-text {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: black;
+  }
+}
+.NoAndLowAlcoholGB .notes {
+  font-size: 14px;
+  padding-bottom: 60px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+@media (max-width: 768px) {
+  .NoAndLowAlcoholGB .notes {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+.slds-col--padded.contentRegion.comm-layout-column {
+  padding: 0;
+}
+.cCP_NewsDetail .detail-date.p-16-white-bold,
+.cCP_NewsDetail .btn-div.content-button-container {
+  display: none;
+}
+.cCP_NewsDetail {
+  margin: unset;
+  padding: unset;
+}

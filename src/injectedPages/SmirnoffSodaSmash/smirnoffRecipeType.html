@@ -1,0 +1,552 @@
+<style>
+.smirnoffRecipeType-page {
+  text-align: left;
+  background-color: #f2f2f2;
+}
+.smirnoffRecipeType-page .content-card-recipes {
+  padding-left: 108px;
+  background: rgba(255, 255, 255, 0.5);
+  padding-top: 40px;
+  margin-bottom: 80px;
+  padding-bottom: 110px;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-header {
+  display: flex;
+  flex-direction: column;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-header .recipes-top {
+  position: relative;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty {
+  position: absolute;
+  top: 0;
+  right: 109px;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block {
+  display: flex;
+  margin: 2px;
+  width: fit-content;
+  border: 1px solid #0041a5;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block .p-title {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.38;
+  background-color: #0041a5;
+  color: #ffffff;
+  padding: 4px 8px;
+  text-transform: uppercase;
+  min-width: 100px;
+  text-align: center;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block .puntuation-container {
+  padding-left: 10px;
+  min-width: 95px;
+  padding-right: 5px;
+  color: #bebebe;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block .puntuation-container .far.fa-grin {
+  font-size: 20px;
+  padding-right: 5px;
+  padding-top: 3px;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block .puntuation-container .fas.fa-cocktail {
+  font-size: 17px;
+  padding-right: 5px;
+  padding-top: 3px;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block .puntuation-container .selected {
+  color: #0041a5;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .difficulty {
+  margin-top: 15px;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-header .recipes-top .recipes-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-header .recipes-top .recipes-tag-container {
+  display: flex;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-header .recipes-top .recipes-tag-container .recipes-tag {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #ffffff;
+  background-color: #0041a5;
+  padding: 8px 10px;
+  margin-bottom: 30px;
+  margin-left: 5px;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-header .recipes-top .recipes-tag-container .recipes-tag:first-child {
+  margin-left: 0;
+}
+@media (max-width: 768px) {
+  .smirnoffRecipeType-page .content-card-recipes .recipe-header .recipes-top .recipes-tag-container {
+    flex-flow: wrap;
+  }
+  .smirnoffRecipeType-page .content-card-recipes .recipe-header .recipes-top .recipes-tag-container .recipes-tag {
+    margin-bottom: 10px;
+  }
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-header .recipes-description {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: left;
+  padding-bottom: 60px;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-header .recipe-information .recipes-medium {
+  float: left;
+  display: inline-flex;
+  border-right: 2px solid #b9b9b9;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 50px;
+  width: 21.5%;
+  position: relative;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-header .recipe-information .recipes-medium .recipes-medium-title {
+  display: flex;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-header .recipe-information .recipes-medium .description {
+  position: absolute;
+  bottom: 0;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty {
+  display: none;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method {
+  display: flex;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content {
+  background-color: rgba(64, 146, 223, 0.5);
+}
+@media (min-width: 768px) {
+  .smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content {
+    width: 44%;
+    height: 316px;
+    margin-top: 25px;
+    margin-right: 25px;
+  }
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content img {
+  height: 100%;
+  width: 100%;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
+  position: relative;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block {
+  z-index: 3;
+  bottom: -65px;
+  position: absolute;
+  width: 100%;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-description .porcentual-number-container {
+  position: absolute;
+  bottom: 30px;
+  right: -35px;
+  color: white;
+  border-radius: 50%;
+  background-color: #0041a5;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-description .porcentual-number-container .porcentual-number {
+  padding-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block {
+    bottom: -100px;
+    left: -14px;
+  }
+  .smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-description {
+    padding-right: 80px;
+  }
+  .smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-description .porcentual-number-container {
+    width: 110px;
+    height: 110px;
+  }
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"] {
+  display: none;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label {
+  background: rgba(242, 175, 12, 0.12);
+  padding-bottom: 17px;
+  padding-top: 17px;
+  border-bottom: 2px solid #f2af0c;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
+    width: 44%;
+  }
+}
+@media (max-width: 768px) {
+  .smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
+    height: 320px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 321px) {
+  .smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
+    height: 320px;
+    margin-bottom: 40px;
+  }
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content {
+  z-index: 1;
+  display: table;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs {
+  position: relative;
+  clear: both;
+  margin: 0;
+  padding-top: 25px;
+  white-space: nowrap;
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid #979797;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .download-tab-btn {
+  display: none;
+}
+@media (min-width: 768px) {
+  .smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .download-tab-btn {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    font-size: 14px;
+    display: block;
+  }
+  .smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .download-tab-btn a {
+    color: #4092df;
+  }
+  .smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .download-tab-btn a i {
+    margin-right: 10px;
+  }
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab {
+  vertical-align: top;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .label {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  min-height: 50px;
+  line-height: 50px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  padding-top: 17px;
+  border-bottom: 2px solid #979797;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .label:hover {
+  cursor: pointer;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content {
+  white-space: normal;
+  top: 77px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  background-color: white;
+  height: 265px;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol,
+.smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul {
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 45px;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li,
+.smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li {
+  margin-bottom: 10px;
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li:last-child,
+.smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li:last-child {
+  margin-bottom: 0;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li p,
+.smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #000000;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li:before,
+.smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li:before {
+  content: counter(my-awesome-counter);
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  position: absolute;
+  --size: 25px;
+  left: calc(-1 * var(--size) - 20px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  background: #3e3e3e;
+  border-radius: 50%;
+  text-align: center;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul {
+  padding-left: 25px;
+}
+.smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li:before {
+  content: "";
+  color: #fff;
+  /* font-size : 10px; */
+  font-weight: bold;
+  position: absolute;
+  --size: 8px;
+  left: calc(-1 * var(--size) - 15px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 9px;
+  background: #7d7773;
+  border-radius: 50%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
+    flex-wrap: wrap;
+  }
+  .smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab {
+    margin-top: -6px;
+  }
+  .smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab .content {
+    top: 71px;
+  }
+  .smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content {
+    z-index: 1;
+    display: table;
+    top: 71px;
+  }
+}
+@media (max-width: 768px) {
+  .smirnoffRecipeType-page .content-card-recipes {
+    padding-left: unset;
+    padding-right: unset;
+    padding-bottom: 40px;
+    margin-bottom: 81px;
+  }
+  .smirnoffRecipeType-page .content-card-recipes .recipe-header {
+    padding-right: 6%;
+    padding-left: 6%;
+  }
+  .smirnoffRecipeType-page .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty {
+    display: none;
+  }
+  .smirnoffRecipeType-page .content-card-recipes .recipe-header .recipes-top .recipes-title {
+    margin-bottom: 20px;
+  }
+  .smirnoffRecipeType-page .content-card-recipes .recipe-header .recipes-description {
+    padding-bottom: 20px;
+  }
+  .smirnoffRecipeType-page .content-card-recipes .recipe-header .recipe-information .recipes-medium {
+    float: unset;
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .smirnoffRecipeType-page .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty {
+    display: block;
+  }
+  .smirnoffRecipeType-page .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .wow-factor img {
+    height: 40px;
+  }
+  .smirnoffRecipeType-page .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .difficulty {
+    margin-top: 20px;
+  }
+  .smirnoffRecipeType-page .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .difficulty img {
+    height: 40px;
+  }
+  .smirnoffRecipeType-page .content-card-recipes .recipe-body {
+    padding-right: 6%;
+    padding-left: 6%;
+  }
+  .smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method {
+    flex-direction: column;
+  }
+  .smirnoffRecipeType-page .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content {
+    margin-top: 25px;
+    margin-right: 25px;
+    width: 100%;
+  }
+}
+.smirnoffRecipeType-page .content-card-recipes .only-mobile-download-tab-btn {
+  text-align: left;
+  display: none;
+}
+@media (max-width: 768px) {
+  .smirnoffRecipeType-page .content-card-recipes .only-mobile-download-tab-btn {
+    margin-top: 87px;
+    padding-right: 6%;
+    padding-left: 6%;
+    display: block;
+  }
+  .smirnoffRecipeType-page .content-card-recipes .only-mobile-download-tab-btn a {
+    color: #4092df;
+  }
+  .smirnoffRecipeType-page .content-card-recipes .only-mobile-download-tab-btn a i {
+    margin-right: 10px;
+  }
+}
+
+</style>
+
+<div class="smirnoffRecipeType-page">
+    <div class="content-card-recipes">
+        <div class="recipe-header">
+            <div class="recipes-top">
+                <div class="recipes-factor-and-difficulty">
+                    <div class="puntuation-block wow-factor">
+                        <div class="p-title">Super easy</div>
+                        <div class="puntuation-container">
+                            <i class="fas fa-cocktail selected"></i>
+                            <i class="fas fa-cocktail"></i>
+                            <i class="fas fa-cocktail"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="recipes-title">
+                    <p>Smirnoff Soda Smash Recipe</p>
+                </div>
+                <div class="recipes-tag-container">
+                    <p class="recipes-tag">Early evening</p>
+                    <p class="recipes-tag">Lazy afternoons</p>
+                    <p class="recipes-tag">Relaxing in the beer garden</p>
+                </div>
+            </div>
+            <div class="recipes-description">
+                <p>A margin-enhancing serve which will appeal to customers motivated by a balanced lifestyle.</p>
+            </div>
+            <div class="recipe-information">
+                <div class="recipes-medium">
+                    <div class="recipes-medium-title">
+                        <p>Drink Style</p>
+                    </div>
+                    <div class="description">
+                        <p>Zesty &amp; refreshing</p>
+                    </div>
+                </div>
+                <div class="recipes-medium">
+                    <div class="recipes-medium-title">
+                        <p>Season/Occasion</p>
+                    </div>
+                    <div class="description">
+                        <p>Relaxed social gatherings</p>
+                    </div>
+                </div>
+                <div class="recipes-medium">
+                    <div class="recipes-medium-title">
+                        <p>Alcohol content</p>
+                    </div>
+                    <div class="description">
+                        <p>1.3 units</p>
+                    </div>
+                </div>
+            </div>
+            <div class="only-mobile-recipes-factor-and-difficulty">
+                <div class="recipes-factor-and-difficulty">
+                    <div class="puntuation-block wow-factor">
+                        <div class="p-title">Super easy</div>
+                        <div class="puntuation-container">
+                            <i class="fas fa-cocktail selected"></i>
+                            <i class="fas fa-cocktail"></i>
+                            <i class="fas fa-cocktail"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="recipe-body">
+            <div class="recipes-ingredients-method">
+                <div class="recipes-image-content">
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+                </div>
+                <div class="tab-table-container">
+                    <div class="porcentual-block">
+                        <div class="porcentual-description">
+                            <div class="porcentual-number-container">
+                                <p class="porcentual-number">81</p>
+                                <span style="font-size: 12px;">CALORIES<br>PER SERVE</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs">
+                        <div class="download-tab-btn">
+                            <a href="https://ent.box.com/s/8qri8bu0lzcrm9vhzbjagu4bsvfvsf18"><i class="fas fa-download"></i>Download recipe card</a>
+                        </div>
+                        <div class="tab">
+                            <input type="radio" id="tab-3" name="tab-group-2" checked>
+                            <label class="label" for="tab-3">Ingredients</label>
+                            <div class="ingredients spacer"></div>
+                            <div class="content">
+                                <ul>
+                                    <li>    
+                                        <p>35.5 ml Smirnoff</p>
+                                    </li>
+                                    <li>
+                                        <p>150 ml soda</p>
+                                    </li>
+                                    <li>
+                                        <p>Half a citrus fruit</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="radio" id="tab-4" name="tab-group-2">
+                            <label class="label" for="tab-4">Method</label>
+                            <div class="method spacer"></div>
+                            <div class="content">
+                                <ol>
+                                    <li>
+                                        <p>Fill a highball glass with ice and add 35.5ml of Smirnoff</p>
+                                    </li>
+                                    <li>
+                                        <p>Firmly squeeze the juice of half a citrus fruit into the glass</p>
+                                    </li>
+                                    <li>
+                                        <p>Top up with soda water and garnish with wedges or wheels of the same fruit</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="only-mobile-download-tab-btn">
+            <a href="https://ent.box.com/s/8qri8bu0lzcrm9vhzbjagu4bsvfvsf18"><i class="fas fa-download"></i>Download recipe card</a>
+        </div>
+    </div>
+</div>

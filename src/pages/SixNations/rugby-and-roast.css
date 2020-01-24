@@ -1,0 +1,587 @@
+.rugby-and-roast {
+  text-align: left;
+}
+.rugby-and-roast .banner-container {
+  font-family: Roboto, sans-serif;
+}
+.rugby-and-roast .banner-container .banner-card-container {
+  text-align: left;
+  background-color: #ffffff;
+  display: flex;
+}
+.rugby-and-roast .banner-container .banner-card-container .content-container {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.rugby-and-roast .banner-container .banner-card-container .content-container .label {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: auto;
+  height: 40px;
+  margin-left: 83px;
+  margin-top: 25px;
+  width: 125px;
+  background-color: #51ae00;
+}
+.rugby-and-roast .banner-container .banner-card-container .content-container .label span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.rugby-and-roast .banner-container .banner-card-container .content-container .title-container {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.rugby-and-roast .banner-container .banner-card-container .content-container .title-container.with-label {
+  margin-top: 20px;
+}
+.rugby-and-roast .banner-container .banner-card-container .content-container .title-container .title {
+  font-size: 38px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  color: black;
+  text-transform: uppercase;
+}
+.rugby-and-roast .banner-container .banner-card-container .content-container .text-container .text {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #3e3e3e;
+}
+.rugby-and-roast .banner-container .banner-card-container .content-container .btn-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.rugby-and-roast .banner-container .banner-card-container .content-container .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.rugby-and-roast .banner-container .banner-card-container .concont {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.rugby-and-roast .banner-container .banner-card-container .concont .image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.rugby-and-roast .banner-container .banner-card-container .concont .image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .rugby-and-roast .banner-container .banner-card-container {
+    height: 420px;
+  }
+  .rugby-and-roast .banner-container .banner-card-container .text-container,
+  .rugby-and-roast .banner-container .banner-card-container .title-container {
+    padding-left: 83px;
+  }
+  .rugby-and-roast .banner-container .banner-card-container .text-container {
+    padding-bottom: 20px;
+  }
+  .rugby-and-roast .banner-container .banner-card-container .btn-container {
+    height: 45px;
+    width: 160px;
+    margin-left: 83px;
+    margin-bottom: 30px;
+  }
+  .rugby-and-roast .banner-container .banner-card-container .concont .image-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 425px solid #ffffff;
+    border-right: 80px solid transparent;
+    width: 0;
+  }
+  .rugby-and-roast .banner-container .banner-card-container .concont .image-container .desktop-img {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .rugby-and-roast .banner-container .banner-card-container {
+    flex-flow: column;
+    margin-top: 0;
+  }
+  .rugby-and-roast .banner-container .banner-card-container .content-container {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .rugby-and-roast .banner-container .banner-card-container .content-container .label {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  .rugby-and-roast .banner-container .banner-card-container .content-container .text-container,
+  .rugby-and-roast .banner-container .banner-card-container .content-container .title-container {
+    padding: 20px;
+    margin: 0;
+  }
+  .rugby-and-roast .banner-container .banner-card-container .content-container .text-container .text,
+  .rugby-and-roast .banner-container .banner-card-container .content-container .title-container .text {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.63;
+    color: #3e3e3e;
+    margin: 0;
+  }
+  .rugby-and-roast .banner-container .banner-card-container .content-container .text-container .title,
+  .rugby-and-roast .banner-container .banner-card-container .content-container .title-container .title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .rugby-and-roast .banner-container .banner-card-container .content-container .title-container.with-label {
+    margin-top: 20px;
+  }
+  .rugby-and-roast .banner-container .banner-card-container .content-container .btn-container {
+    width: 88%;
+    height: 45px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .rugby-and-roast .banner-container .banner-card-container .concont {
+    width: 100%;
+    height: 280px;
+  }
+  .rugby-and-roast .banner-container .banner-card-container .concont .image-container .phone-img {
+    display: block;
+    position: absolute;
+    height: 280px;
+    left: 0;
+    bottom: 0;
+  }
+}
+.rugby-and-roast .icon-and-description-container {
+  display: flex;
+  text-align: left;
+}
+.rugby-and-roast .icon-and-description-container .item-container {
+  display: flex;
+}
+.rugby-and-roast .icon-and-description-container .item-container .image-container {
+  height: 96px;
+  width: 96px;
+}
+.rugby-and-roast .icon-and-description-container .item-container .image-container img {
+  width: 100%;
+  height: 100%;
+}
+.rugby-and-roast .icon-and-description-container .item-container .descrition-container {
+  text-align: left;
+  width: 240px;
+  margin-left: 40px;
+  padding-right: 30px;
+}
+.rugby-and-roast .icon-and-description-container .item-container .descrition-container .title {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.rugby-and-roast .icon-and-description-container .item-container .descrition-container .description {
+  font-size: 18px;
+  line-height: 1.56;
+}
+@media screen and (min-width: 768px) {
+  .rugby-and-roast .icon-and-description-container {
+    margin-bottom: 80px;
+  }
+  .rugby-and-roast .icon-and-description-container .item-container {
+    border-right: 1px solid black;
+    margin-left: 70px;
+  }
+  .rugby-and-roast .icon-and-description-container .item-container:last-child {
+    border-right: unset;
+  }
+  .rugby-and-roast .icon-and-description-container .item-container:first-child {
+    margin-left: unset;
+  }
+}
+@media (max-width: 768px) {
+  .rugby-and-roast .icon-and-description-container {
+    flex-flow: column;
+  }
+  .rugby-and-roast .icon-and-description-container .item-container {
+    flex-flow: column;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .rugby-and-roast .icon-and-description-container .item-container .image-container {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .rugby-and-roast .icon-and-description-container .item-container .descrition-container {
+    width: 88%;
+    margin-right: 6%;
+    margin-left: 6%;
+    padding: unset;
+  }
+}
+.rugby-and-roast .image-text-list-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 9%;
+  margin-right: 9%;
+  padding-left: 9%;
+  padding-right: 9%;
+  padding-top: 40px;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .rugby-and-roast .image-text-list-block {
+    margin-bottom: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .rugby-and-roast .image-text-list-block {
+    margin-bottom: 80px;
+  }
+}
+.rugby-and-roast .image-text-list-block a {
+  color: #2959a2;
+}
+.rugby-and-roast .image-text-list-block a:hover {
+  color: #214781;
+  text-decoration: underline;
+}
+.rugby-and-roast .image-text-list-block .list-column {
+  display: flex;
+  min-height: 150px;
+  margin-bottom: 30px;
+}
+.rugby-and-roast .image-text-list-block .list-column .list-column-image {
+  height: 375px;
+  width: 50%;
+  overflow: hidden;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.rugby-and-roast .image-text-list-block .list-column .list-column-image img {
+  width: auto;
+  max-width: unset;
+  height: 100%;
+}
+.rugby-and-roast .image-text-list-block .list-column .list-column-text {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+.rugby-and-roast .image-text-list-block .list-column .list-column-text .list-column-text-title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.56;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.rugby-and-roast .image-text-list-block .list-column .list-column-text .list-column-text-description {
+  font-size: 16px;
+  line-height: 1.63;
+  color: #3e3e3e;
+}
+.rugby-and-roast .image-text-list-block .list-column.image-left .list-column-image {
+  order: 1;
+  margin-right: 1%;
+}
+.rugby-and-roast .image-text-list-block .list-column.image-left .list-column-text {
+  order: 2;
+  padding-left: 25px;
+}
+.rugby-and-roast .image-text-list-block .list-column.image-right .list-column-image {
+  order: 2;
+  margin-left: 1%;
+}
+.rugby-and-roast .image-text-list-block .list-column.image-right .list-column-text {
+  order: 1;
+  padding-right: 25px;
+}
+@media screen and (max-width: 768px) {
+  .rugby-and-roast .image-text-list-block {
+    margin-left: 6%;
+    margin-right: 6%;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .rugby-and-roast .image-text-list-block .list-column {
+    height: unset;
+    flex-flow: column;
+  }
+  .rugby-and-roast .image-text-list-block .list-column .list-column-image {
+    width: 100%;
+    height: 220px;
+  }
+  .rugby-and-roast .image-text-list-block .list-column .list-column-text {
+    margin-top: 10px;
+    padding: unset;
+    width: 100%;
+  }
+  .rugby-and-roast .image-text-list-block .list-column.image-left .list-column-image {
+    order: 1;
+    padding: unset;
+  }
+  .rugby-and-roast .image-text-list-block .list-column.image-left .list-column-text {
+    order: 2;
+    padding: unset;
+  }
+  .rugby-and-roast .image-text-list-block .list-column.image-right .list-column-image {
+    order: 1;
+    padding: unset;
+  }
+  .rugby-and-roast .image-text-list-block .list-column.image-right .list-column-text {
+    order: 2;
+    padding: unset;
+  }
+}
+.rugby-and-roast .box-container {
+  display: flex;
+  margin-right: 18%;
+  margin-left: 18%;
+  position: relative;
+  color: white;
+  background-color: #3e3e3e;
+  height: unset;
+  align-items: center;
+}
+.rugby-and-roast .box-container .image-container {
+  height: 110px;
+  width: 110px;
+  min-width: 110px;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.rugby-and-roast .box-container .image-container img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.rugby-and-roast .box-container .body-container {
+  width: 100%;
+  text-align: left;
+}
+.rugby-and-roast .box-container .body-container .box-text {
+  margin: 0;
+  margin-left: 20px;
+  font-size: 18px;
+  line-height: 1.56;
+  font-weight: 300;
+  width: 65%;
+}
+.rugby-and-roast .box-container .body-container .box-button {
+  height: 44px;
+  width: 130px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 40px;
+  margin: auto 0;
+}
+.rugby-and-roast .box-container .body-container .box-button.display-block {
+  position: unset;
+}
+.rugby-and-roast .box-container .body-container .box-button .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.rugby-and-roast .box-container .body-container .box-button .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.rugby-and-roast .box-container.round-image {
+  border-radius: 56px 0px 0px 56px;
+}
+.rugby-and-roast .box-container.round-image .image-container {
+  border-radius: 56px;
+  margin-left: -2px;
+}
+@media screen and (max-width: 768px) {
+  .rugby-and-roast .box-container,
+  .rugby-and-roast .box-container.round-image {
+    flex-flow: column;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: unset;
+  }
+  .rugby-and-roast .box-container .image-container,
+  .rugby-and-roast .box-container.round-image .image-container {
+    height: 110px;
+    width: 110px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: -1px;
+  }
+  .rugby-and-roast .box-container .body-container .box-text,
+  .rugby-and-roast .box-container.round-image .body-container .box-text {
+    width: unset;
+    margin: unset;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+  .rugby-and-roast .box-container .body-container .box-button,
+  .rugby-and-roast .box-container.round-image .body-container .box-button {
+    position: unset;
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 40px;
+  }
+}
+.rugby-and-roast .titles-and-descriptions .related-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  text-transform: uppercase;
+  border-bottom: 1px solid #7d7773;
+}
+@media screen and (min-width: 768px) {
+  .rugby-and-roast .titles-and-descriptions .related-title {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .rugby-and-roast .titles-and-descriptions .related-title {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .rugby-and-roast .titles-and-descriptions .related-title {
+    font-size: 24px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+}
+@media (min-width: 768px) {
+  .rugby-and-roast .vertical-card-container-related-article {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+}
+.rugby-and-roast .vertical-card-container-related-article .card-related-content {
+  font-family: 'Roboto', sans-serif;
+  height: 430px;
+  display: block;
+}
+@media (min-width: 768px) {
+  .rugby-and-roast .vertical-card-container-related-article .card-related-content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 33.3333%;
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 768px) {
+  .rugby-and-roast .vertical-card-container-related-article .card-related-content {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 4%;
+  }
+}
+.rugby-and-roast .vertical-card-container-related-article .card-related-content .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+  height: 250px;
+}
+.rugby-and-roast .vertical-card-container-related-article .card-related-content .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.rugby-and-roast .vertical-card-container-related-article .card-related-content .copy-container {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+.rugby-and-roast .vertical-card-container-related-article .card-related-content .copy-container .copy-text {
+  padding: 20px 30px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.75;
+  color: #000000;
+}
+.rugby-and-roast .vertical-card-container-related-article .card-related-content .copy-container .copy-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #4092df;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  text-decoration: none;
+}
+.rugby-and-roast .vertical-card-container-related-article .card-related-content .copy-container .copy-link:hover {
+  border-bottom: 2px solid;
+  margin-bottom: -2px;
+}
+.rugby-and-roast .vertical-card-container-related-article .card-related-content .copy-container .copy-link i.fas.fa-angle-right {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #4092df;
+  position: absolute;
+  bottom: 4px;
+}
+.rugby-and-roast .notes {
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  .rugby-and-roast .notes {
+    padding-right: 18%;
+    padding-left: 18%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .rugby-and-roast .notes {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+.rugby-and-roast .spacer {
+  padding-bottom: 60px;
+}
+.slds-col--padded.contentRegion.comm-layout-column {
+  padding: 0;
+}
+.cCP_NewsDetail .detail-date.p-16-white-bold,
+.cCP_NewsDetail .btn-div.content-button-container {
+  display: none;
+}
+.cCP_NewsDetail {
+  margin: unset;
+  padding: unset;
+  background-color: unset;
+}

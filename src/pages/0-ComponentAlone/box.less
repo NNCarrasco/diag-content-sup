@@ -1,0 +1,112 @@
+.box-container {
+	@component-background-color: #3e3e3e;
+	@component-height: unset;
+	display: flex;
+	margin-right: 18%;
+	margin-left: 18%;
+	position: relative;
+	color: white;
+	background-color: @component-background-color;
+	height: @component-height;
+	align-items: center;
+	.image-container {
+		height: 208px;
+		width: 300px;
+		min-width: 110px;
+		background-color: rgba(64, 146, 223, 0.5);
+		img {
+			height: 100%;
+			object-fit: cover;
+			width: 100%;
+		}
+	}
+	.body-container {
+		width: 100%;
+		text-align: left;
+		.box-text {
+			margin: 0;
+			margin-left: 20px;
+			font-size: 18px;
+			line-height: 1.56;
+			font-weight: 300;
+			width: 65%;
+		}
+		.box-button {
+			&.display-block {
+				position: unset;
+				.content-button {
+					margin-left: 20px;
+					margin-top: 20px;
+				}
+			}
+			height: 44px;
+			width: 130px;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 40px;
+			margin: auto 0;
+			.content-button {
+				width: 100%;
+				font-size: 14px;
+				text-align: center;
+				display: block;
+				padding: 13px 0;
+				background-color: #f2af0c;
+				color: #000;
+				text-decoration: none;
+				text-transform: uppercase;
+				bottom: 2px;
+				font-weight: 500;
+				&:hover {
+					background-color: #ffc800;
+					color: #000;
+				}
+			}
+		}
+	}
+	//ROUND IMAGE VERSION
+	&.round-image {
+		border-radius: 56px 0px 0px 56px;
+		.image-container {
+			border-radius: 56px;
+			margin-left: -2px;
+		}
+	}
+	//MOBILE
+	@media screen and (max-width: 768px) {
+		&,
+		&.round-image {
+			flex-flow: column;
+			margin-left: 0;
+			margin-right: 0;
+			border-radius: unset;
+
+			.image-container {
+				height: 110px;
+				width: 110px;
+				margin: auto;
+				margin-top: 20px;
+				margin-bottom: -1px;
+			}
+			.body-container {
+				.box-text {
+					text-align: center;
+					width: unset;
+					margin: unset;
+					padding-top: 20px;
+					padding-bottom: 20px;
+					padding-right: 35px;
+					padding-left: 35px;
+				}
+				.box-button {
+					position: unset;
+					width: 88%;
+					margin-left: 6%;
+					margin-right: 6%;
+					margin-bottom: 40px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,984 @@
+<style>
+.MediaCopa {
+  text-align: left;
+  background-color: #f2f2f2;
+}
+.MediaCopa .titles-and-descriptions .general-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  padding-left: 14%;
+  padding-right: 18%;
+  padding-bottom: 60px;
+  text-transform: uppercase;
+}
+.MediaCopa .titles-and-descriptions .general-description {
+  font-size: 19px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  color: #3e3e3e;
+  padding-right: 9%;
+  padding-left: 9%;
+  padding-bottom: 80px;
+}
+.MediaCopa .titles-and-descriptions .related-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  text-transform: uppercase;
+  border-bottom: 1px solid #7d7773;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .MediaCopa .titles-and-descriptions .general-title {
+    padding-left: 6%;
+    padding-right: 6%;
+    font-size: 20px;
+  }
+  .MediaCopa .titles-and-descriptions .general-description {
+    padding-left: 6%;
+    padding-right: 5%;
+  }
+  .MediaCopa .titles-and-descriptions .related-title {
+    font-size: 24px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+}
+.MediaCopa .banner-container .banner-card-container {
+  text-align: left;
+  background-color: #ffffff;
+}
+.MediaCopa .banner-container .banner-card-container .label {
+  width: 60px;
+  height: 40px;
+  margin-left: 83px;
+  margin-top: 25px;
+}
+.MediaCopa .banner-container .banner-card-container .label div {
+  height: 100%;
+}
+.MediaCopa .banner-container .banner-card-container .label div span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.MediaCopa .banner-container .banner-card-container .title-container {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.MediaCopa .banner-container .banner-card-container .title-container.with-label {
+  margin-top: 20px;
+}
+.MediaCopa .banner-container .banner-card-container .title-container .title {
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  color: black;
+  text-transform: uppercase;
+}
+.MediaCopa .banner-container .banner-card-container .text-container .text {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #3e3e3e;
+}
+.MediaCopa .banner-container .banner-card-container .btn-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.MediaCopa .banner-container .banner-card-container .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.MediaCopa .banner-container .banner-card-container .image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.MediaCopa .banner-container .banner-card-container .image-container img {
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .MediaCopa .banner-container .banner-card-container {
+    height: 420px;
+    margin-bottom: 40px;
+  }
+  .MediaCopa .banner-container .banner-card-container .content-container {
+    padding-right: 110px;
+  }
+  .MediaCopa .banner-container .banner-card-container .text-container,
+  .MediaCopa .banner-container .banner-card-container .title-container {
+    padding-left: 83px;
+  }
+  .MediaCopa .banner-container .banner-card-container .text-container {
+    padding-bottom: 20px;
+  }
+  .MediaCopa .banner-container .banner-card-container .btn-container {
+    height: 45px;
+    width: 160px;
+    margin-left: 83px;
+  }
+  .MediaCopa .banner-container .banner-card-container .image-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 425px solid #ffffff;
+    border-right: 80px solid transparent;
+    width: 0;
+  }
+  .MediaCopa .banner-container .banner-card-container .image-container .desktop-img {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .MediaCopa .banner-container .banner-card-container {
+    flex-wrap: wrap;
+    margin-top: 0;
+    height: 660px;
+    margin-bottom: 45px;
+  }
+  .MediaCopa .banner-container .banner-card-container .label {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  .MediaCopa .banner-container .banner-card-container .text-container,
+  .MediaCopa .banner-container .banner-card-container .title-container {
+    padding: 20px;
+    padding-top: 0;
+    margin: 0;
+  }
+  .MediaCopa .banner-container .banner-card-container .text-container .text,
+  .MediaCopa .banner-container .banner-card-container .title-container .text {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.63;
+    color: #3e3e3e;
+  }
+  .MediaCopa .banner-container .banner-card-container .text-container .title,
+  .MediaCopa .banner-container .banner-card-container .title-container .title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .MediaCopa .banner-container .banner-card-container .title-container {
+    margin-top: 75px;
+  }
+  .MediaCopa .banner-container .banner-card-container .title-container.with-label {
+    margin-top: 20px;
+  }
+  .MediaCopa .banner-container .banner-card-container .btn-container {
+    width: 88%;
+    height: 45px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .MediaCopa .banner-container .banner-card-container .image-container .phone-img {
+    display: block;
+    position: absolute;
+    height: 280px;
+    left: 0;
+    bottom: 0;
+  }
+}
+.MediaCopa .vertical-card-container {
+  padding-bottom: 80px;
+}
+@media (min-width: 768px) {
+  .MediaCopa .vertical-card-container {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+}
+.MediaCopa .vertical-card-container .card-related-content {
+  font-family: 'Roboto', sans-serif;
+  height: 430px;
+  display: block;
+}
+@media (min-width: 768px) {
+  .MediaCopa .vertical-card-container .card-related-content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 33.3333%;
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 768px) {
+  .MediaCopa .vertical-card-container .card-related-content {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 4%;
+  }
+}
+.MediaCopa .vertical-card-container .card-related-content .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+  height: 250px;
+  overflow: hidden;
+}
+.MediaCopa .vertical-card-container .card-related-content .image-container img {
+  width: 100%;
+  height: auto;
+}
+.MediaCopa .vertical-card-container .card-related-content .copy-container {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 180px;
+}
+.MediaCopa .vertical-card-container .card-related-content .copy-container .copy-text {
+  padding: 20px 30px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.75;
+  color: #000000;
+}
+.MediaCopa .vertical-card-container .card-related-content .copy-container .copy-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #4092df;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  text-decoration: none;
+}
+.MediaCopa .vertical-card-container .card-related-content .copy-container .copy-link:hover {
+  border-bottom: 2px solid;
+  margin-bottom: -2px;
+}
+.MediaCopa .vertical-card-container .card-related-content .copy-container .copy-link i.fas.fa-angle-right {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #4092df;
+  position: absolute;
+  bottom: 4px;
+}
+.MediaCopa .image-outside-horizontal-card-container .image-outside-horizontal-card {
+  display: flex;
+  width: 845px;
+  height: 334px;
+  position: relative;
+}
+.MediaCopa .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container {
+  width: 100%;
+  border: 5px solid #50af01;
+  z-index: 1;
+}
+.MediaCopa .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
+  width: 380px;
+  padding-left: 80px;
+  padding-top: 35px;
+  padding-right: 85px;
+}
+.MediaCopa .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
+  padding: 0;
+  width: 380px;
+  padding-left: 80px;
+  padding-top: 20px;
+  padding-right: 85px;
+}
+.MediaCopa .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.MediaCopa .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.MediaCopa .image-outside-horizontal-card-container .image-outside-horizontal-card .image-container {
+  position: absolute;
+  right: -100px;
+  top: -40px;
+  z-index: 0;
+  height: 415px;
+  width: 410px;
+  background-color: rgba(64, 146, 223, 0.5);
+  overflow: hidden;
+}
+.MediaCopa .image-outside-horizontal-card-container .image-outside-horizontal-card .image-container img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .MediaCopa .image-outside-horizontal-card-container {
+    padding-bottom: 120px;
+    padding-top: 40px;
+    padding-left: 14%;
+  }
+  .MediaCopa .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
+    width: 530px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .MediaCopa .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
+    width: 550px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .MediaCopa .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container {
+    width: 162px;
+    height: 44px;
+    margin-top: 30px;
+    margin-left: 180px;
+    margin-bottom: 20px;
+  }
+  .MediaCopa .image-outside-horizontal-card-container .image-outside-horizontal-card.image-left .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .MediaCopa .image-outside-horizontal-card-container .image-outside-horizontal-card.image-left .content-container .title-container {
+    padding-top: 0;
+  }
+  .MediaCopa .image-outside-horizontal-card-container .image-outside-horizontal-card.image-left .image-container {
+    right: unset;
+    left: -100px;
+  }
+  .MediaCopa .image-outside-horizontal-card-container .image-outside-horizontal-card.only-text {
+    height: unset;
+  }
+  .MediaCopa .image-outside-horizontal-card-container .image-outside-horizontal-card.only-text .content-container {
+    border: 5px solid #f2af0c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .MediaCopa .image-outside-horizontal-card-container {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 80px;
+  }
+  .MediaCopa .image-outside-horizontal-card-container .image-outside-horizontal-card {
+    width: 100%;
+    height: unset;
+    flex-wrap: wrap;
+  }
+  .MediaCopa .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container {
+    padding-bottom: 20px;
+    order: 1;
+  }
+  .MediaCopa .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
+    padding-left: 30px;
+    padding-top: 410px;
+    padding-right: 30px;
+    width: unset;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .MediaCopa .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
+    font-size: 20px;
+    text-align: center;
+    color: #3e3e3e;
+    width: unset;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 30px;
+  }
+  .MediaCopa .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container {
+    height: 45px;
+    width: 160px;
+    margin-top: 40px;
+    margin-left: 25%;
+  }
+  .MediaCopa .image-outside-horizontal-card-container .image-outside-horizontal-card .image-container {
+    order: 0;
+    position: absolute;
+    top: -30px;
+    z-index: 0;
+    width: 102vw;
+    right: -6.7%;
+  }
+  .MediaCopa .image-outside-horizontal-card-container .image-outside-horizontal-card.only-text .content-container {
+    border: 5px solid #f2af0c;
+    padding-top: 20px;
+  }
+  .MediaCopa .image-outside-horizontal-card-container .image-outside-horizontal-card.only-text .content-container .title-container {
+    padding-top: 0;
+  }
+}
+.MediaCopa .icon-and-description-container {
+  display: flex;
+  text-align: left;
+}
+.MediaCopa .icon-and-description-container .item-container {
+  display: flex;
+}
+.MediaCopa .icon-and-description-container .item-container .image-container {
+  height: 96px;
+  width: 96px;
+}
+.MediaCopa .icon-and-description-container .item-container .image-container img {
+  width: 100%;
+  height: 100%;
+}
+.MediaCopa .icon-and-description-container .item-container .descrition-container {
+  text-align: left;
+  width: 240px;
+  margin-left: 40px;
+  padding-right: 30px;
+}
+.MediaCopa .icon-and-description-container .item-container .descrition-container .title {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.MediaCopa .icon-and-description-container .item-container .descrition-container .description {
+  font-size: 16px;
+  line-height: 1.56;
+}
+@media screen and (min-width: 768px) {
+  .MediaCopa .icon-and-description-container {
+    margin-bottom: 80px;
+  }
+  .MediaCopa .icon-and-description-container .item-container {
+    border-right: 1px solid black;
+    margin-left: 70px;
+  }
+  .MediaCopa .icon-and-description-container .item-container:last-child {
+    border-right: unset;
+  }
+  .MediaCopa .icon-and-description-container .item-container:first-child {
+    margin-left: unset;
+  }
+}
+@media (max-width: 768px) {
+  .MediaCopa .icon-and-description-container {
+    flex-flow: column;
+  }
+  .MediaCopa .icon-and-description-container .item-container {
+    flex-flow: column;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .MediaCopa .icon-and-description-container .item-container .image-container {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .MediaCopa .icon-and-description-container .item-container .descrition-container {
+    margin-right: 6%;
+    margin-left: 6%;
+    padding: unset;
+    text-align: center;
+    align-self: center;
+    width: 56%;
+  }
+  .MediaCopa .icon-and-description-container .item-container .descrition-container .description {
+    font-size: 18px;
+  }
+}
+.MediaCopa .horizontal-cards-container {
+  padding-bottom: 35px;
+}
+@media (min-width: 768px) {
+  .MediaCopa .horizontal-cards-container {
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-bottom: 40px;
+  }
+}
+.MediaCopa .horizontal-cards-container .card-container {
+  text-align: left;
+  margin-bottom: 25px;
+}
+.MediaCopa .horizontal-cards-container .card-container .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+  overflow: hidden;
+}
+.MediaCopa .horizontal-cards-container .card-container .image-container img {
+  height: auto;
+  width: 100%;
+}
+.MediaCopa .horizontal-cards-container .card-container .content-container {
+  background-color: #ffffff;
+}
+.MediaCopa .horizontal-cards-container .card-container .content-container .icon {
+  height: 35px;
+}
+.MediaCopa .horizontal-cards-container .card-container .content-container .content-title {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  margin: unset;
+}
+.MediaCopa .horizontal-cards-container .card-container .content-container .content-text {
+  font-size: 16px;
+  line-height: 26px;
+  margin: unset;
+}
+@media (min-width: 768px) {
+  .MediaCopa .horizontal-cards-container .card-container {
+    height: 250px;
+    display: flex;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 50%;
+    flex: 1 1 auto;
+    margin-bottom: 35px;
+  }
+  .MediaCopa .horizontal-cards-container .card-container .image-container {
+    width: 45%;
+  }
+  .MediaCopa .horizontal-cards-container .card-container .content-container {
+    width: 54%;
+    padding-top: 44px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+  }
+  .MediaCopa .horizontal-cards-container .card-container.image-left .image-container {
+    order: 0;
+    border-right: 5px solid #50af01;
+  }
+  .MediaCopa .horizontal-cards-container .card-container.image-left .content-container {
+    order: 1;
+  }
+  .MediaCopa .horizontal-cards-container .card-container.image-right .image-container {
+    order: 1;
+    border-left: 5px solid #50af01;
+  }
+  .MediaCopa .horizontal-cards-container .card-container.image-right .content-container {
+    order: 0;
+  }
+}
+@media (max-width: 768px) {
+  .MediaCopa .horizontal-cards-container .card-container {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 4%;
+  }
+  .MediaCopa .horizontal-cards-container .card-container .image-container {
+    height: 260px;
+    width: 100%;
+    border-bottom: 5px solid #50af01;
+  }
+  .MediaCopa .horizontal-cards-container .card-container .content-container {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .MediaCopa .horizontal-cards-container .card-container .content-container .icon {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .MediaCopa .horizontal-cards-container .card-container .content-container .content-title {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .MediaCopa .horizontal-cards-container .card-container .content-container .content-text {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+.MediaCopa .item-list {
+  padding-left: 14%;
+  padding-right: 14%;
+  padding-bottom: 40px;
+}
+.MediaCopa .item-list .item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.MediaCopa .item-list .item img {
+  height: 40px;
+  width: 40px;
+}
+.MediaCopa .item-list .item .text {
+  margin-left: 20px;
+  font-size: 18px;
+  color: #3e3e3e;
+}
+@media screen and (max-width: 768px) {
+  .MediaCopa .item-list {
+    padding-left: 6%;
+    padding-bottom: 20px;
+  }
+  .MediaCopa .item-list .item .text {
+    margin-left: 40px;
+  }
+}
+.slds-col--padded.contentRegion.comm-layout-column {
+  padding: 0;
+}
+.cCP_NewsDetail .detail-date.p-16-white-bold,
+.cCP_NewsDetail .btn-div.content-button-container {
+  display: none;
+}
+.cCP_NewsDetail {
+  margin: unset;
+  padding: unset;
+}
+
+</style>
+
+<div class="MediaCopa">
+    <!-- BANNER -->
+    <div class="banner-container">
+        <div class="banner-card-container slds-grid">
+            <div class="content-container slds-col slds-size_2-of-2 slds-large-size_1-of-2">
+                <div class="label">
+                    <div class="slds-align_absolute-center">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="title-container with-label">
+                    <h2 class="title">OBTÉN RENTABILIDAD OFRECIENDO MEDIA COPA</h2>
+                </div>
+                <div class="text-container">
+                    <p class="text">Con el apoyo de la FEBE Diageo ofrece una opción reducida de la Copa habitual para
+                        aumentar el consumo de espirituosos en el APERITIVO y el TARDEO.</p>
+                </div>
+                <!-- <div class="btn-container">
+                    <a href="#" target="_blank" class="content-button">download it now</a>
+                </div> -->
+            </div>
+            <div class="slds-col slds-size_2-of-2 slds-large-size_1-of-2">
+                <div class="image-container">
+                    <img class="desktop-img"
+                        src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1"
+                        alt="" />
+                    <img class="phone-img"
+                        src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1"
+                        alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="titles-and-descriptions">
+        <p class="general-title">¿SABIAS QUE LOS HABITOS DE CONSUMO ESTÁN CAMBIANDO?</p>
+    </div>
+
+    <div class="icon-and-description-container">
+        <div class="item-container">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+            </div>
+            <div class="descrition-container">
+                <!-- <p class="title">SIMPLE TO SERVE</p> -->
+                <p class="description"><b>3 de cada 10</b> consumidores intentan evitar o reducir el consumo de azúcar
+                </p>
+            </div>
+        </div>
+        <div class="item-container">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+            </div>
+            <div class="descrition-container">
+                <!-- <p class="title">every occasion</p> -->
+                <p class="description"><b>6 de cada 10</b> consumidores están haciendo algo para mejorar su salud</p>
+            </div>
+        </div>
+        <div class="item-container">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+            </div>
+            <div class="descrition-container">
+                <!-- <p class="title">Consumer appeal</p> -->
+                <p class="description"><b>1/2</b> se popularizan las medias raciones</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-outside-horizontal-card-container">
+        <div class="image-outside-horizontal-card image-left">
+            <div class="content-container">
+                <div class="title-container">
+                    <span class="title">Aumenta el consumo de bebidas 0% Sin Alcohol</span>
+                </div>
+                <div class="description-container">
+                    <span class="description"> Las personas son más conscientes de lo que consumen y buscan opciones que
+                        les permitan mantener el control en momentos de ocio.</span>
+                </div>
+                <!-- <div class="btn-container">
+                    <a href="https://www.mydiageo.com/s/cp-content/a4P4G000000KFpbUAG" target="_blank"
+                        class="content-button">get the menu</a>
+                </div> -->
+            </div>
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+            </div>
+        </div>
+    </div>
+
+    <div class="horizontal-cards-container">
+        <div class="card-container image-left">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+            </div>
+            <div class="content-container">
+                <img class="icon"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+                <p class="content-title">Solo 5,5% ABV</p>
+                <p class="content-text">Media Copa (3cl de alcohol + 20cl de refresco) tiene una graduación alcohólica
+                    <b>equiparable a la de una caña de 20cl</b></p>
+            </div>
+        </div>
+        <div class="card-container image-left">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+            </div>
+            <div class="content-container">
+                <img class="icon"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+                <p class="content-title">1.800€ de beneficio anual adicional</p>
+                <p class="content-text">Si cada fin de semana, tan solo <b>1 de cada 10</b> consumiciones de cerveza o
+                    vino pasara a ser de Media Copa</p>
+            </div>
+        </div>
+        <div class="card-container image-right">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+            </div>
+            <div class="content-container">
+                <img class="icon"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+                <p class="content-title">90% de los consumidores</p>
+                <p class="content-text">la considera la <b>Opción Ideal</b> para ampliar los momentos de consumo</p>
+            </div>
+        </div>
+        <div class="card-container image-right">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+            </div>
+            <div class="content-container">
+                <img class="icon"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+                <p class="content-title">60% de los consumidores</p>
+                <p class="content-text"><b>prefiere una Media Copa</b> en lugar de una Cerveza</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="titles-and-descriptions">
+        <p class="general-title">¿Cómo preparla?</p>
+    </div>
+
+    <div class="icon-and-description-container">
+        <div class="item-container">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+            </div>
+            <div class="descrition-container">
+                <!-- <p class="title">SIMPLE TO SERVE</p> -->
+                <p class="description">Coge una copa de vino y llénala de hielo</p>
+            </div>
+        </div>
+        <div class="item-container">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+            </div>
+            <div class="descrition-container">
+                <!-- <p class="title">every occasion</p> -->
+                <p class="description">Sirve la mitad de espirituoso que en una copa normal (unos 3cl), más el refresco
+                </p>
+            </div>
+        </div>
+        <div class="item-container">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+            </div>
+            <div class="descrition-container">
+                <!-- <p class="title">Consumer appeal</p> -->
+                <p class="description">Añade una sutil decoración con una rodaja de lima, limón o naranja</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-outside-horizontal-card-container">
+        <div class="image-outside-horizontal-card only-text">
+            <div class="content-container">
+                <div class="title-container">
+                    <span class="title">¿CÓMO CALCULAR EL PRECIO DE VENTA?</span>
+                </div>
+                <div class="description-container">
+                    <span class="description"> Se recomienda la mitad del precio de una copa y añadir: <br>
+                        +0,50€ para copas normales <br>
+                        +1,00€ para copas premium</span>
+                </div>
+                <!-- <div class="btn-container">
+                        <a href="https://www.mydiageo.com/s/cp-content/a4P4G000000KFpbUAG" target="_blank"
+                            class="content-button">Pídelo ahora</a>
+                    </div> -->
+            </div>
+            <!-- <div class="image-container">
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+                </div> -->
+        </div>
+    </div>
+
+    <div class="titles-and-descriptions">
+        <p class="general-title">Lo más importante es la prescripción del camarero</p>
+    </div>
+
+    <div class="horizontal-cards-container">
+        <div class="card-container image-left">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+            </div>
+            <div class="content-container">
+                <img class="icon"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+                <p class="content-title">9 de cada 10</p>
+                <p class="content-text">consumidores aceptará su recomendación</p>
+            </div>
+        </div>
+        <div class="card-container image-left">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+            </div>
+            <div class="content-container">
+                <img class="icon"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+                <p class="content-title">8 de cada 10</p>
+                <p class="content-text">continuará con la misma bebida a la hora de pedir por segunda vez</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-outside-horizontal-card-container">
+        <div class="image-outside-horizontal-card">
+            <div class="content-container">
+                <div class="title-container">
+                    <span class="title">Para hacerlo visible cuenta con un Kit de Visibilidad. Incluye:</span>
+                </div>
+                <div class="description-container">
+                    <span class="description"> Vinilos para dentro y fuera del bar <br>
+                        Displays para las mesas <br>
+                        Inserciones y pegatinas para dentro de la carta</span>
+                </div>
+                <div class="btn-container">
+                    <a href="#" target="_blank"
+                        class="content-button">Pídelo ahora</a>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+            </div>
+        </div>
+    </div>
+
+    <div class="titles-and-descriptions">
+        <p class="general-title">No esperes a servir ¡Media Copa!</p>
+    </div>
+
+
+    <div class="item-list">
+
+        <div class="item">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" alt="">
+            <p class="text">Novedoso y versátil</p>
+        </div>
+        <div class="item">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" alt="">
+            <p class="text">Encaja con el consumo diurno</p>
+        </div>
+        <div class="item">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" alt="">
+            <p class="text">Fácil de preparar</p>
+        </div>
+        <div class="item">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" alt="">
+            <p class="text">No requiere inversión, ni una nueva vajilla</p>
+        </div>
+        <div class="item">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" alt="">
+            <p class="text">El consumidor ya lo pide</p>
+        </div>
+
+    </div>
+
+
+    <div class="titles-and-descriptions">
+        <p class="general-title">…¡Aumentando tu beneficio!</p>
+    </div>
+
+    <div class="titles-and-descriptions">
+        <p class="related-title">RELATED articles</p>
+    </div>
+
+    <div class="vertical-card-container">
+
+        <div class="card-related-content ">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+            </div>
+            <div class="copy-container">
+                <p class="copy-text">EL PORTFOLIO PERFECTO ¿Por qué es importante tu portfolio de productos?</p>
+                <a href="#" class="copy-link">Find out more<i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+
+        <div class="card-related-content">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+            </div>
+            <div class="copy-container">
+                <p class="copy-text">Descubre el sabor agridulce único de las naranjas de Sevilla, afrutado y cítrico
+                </p>
+                <a href="#" class="copy-link">Find out more<i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+
+        <div class="card-related-content">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+            </div>
+            <div class="copy-container">
+                <p class="copy-text">BEBIDAS SERVIDAS DE FORMA PERFECTA
+                    La importancia de la calidad del servicio</p>
+                <a href="#" class="copy-link">Find out
+                    more<i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>

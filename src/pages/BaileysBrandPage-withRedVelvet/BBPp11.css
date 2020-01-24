@@ -1,0 +1,131 @@
+.download-block .download-header {
+  position: relative;
+  border-bottom: 1px solid #e3e3e3;
+  border-top: 1px solid #e3e3e3;
+  height: 95px;
+}
+.download-block .download-header .title {
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
+  height: inherit;
+  padding-top: 35px;
+  padding-left: 60px;
+}
+.download-block .download-header .download-btn {
+  position: absolute;
+  top: 38px;
+  right: 40px;
+  font-size: 14px;
+}
+.download-block .download-header .download-btn a {
+  color: #4092df;
+}
+.download-block .download-header .download-btn a i {
+  margin-right: 10px;
+}
+.download-block .download-body {
+  padding: 40px;
+  padding-bottom: 0;
+}
+.download-block .download-body .download-card-container {
+  display: flex;
+  padding-bottom: 20px;
+}
+.download-block .download-body .download-card-container .download-card {
+  width: 220px;
+  height: 355px;
+  margin-left: 20px;
+}
+.download-block .download-body .download-card-container .download-card:first-child {
+  margin-left: 0;
+}
+.download-block .download-body .download-card-container .download-card .image-container {
+  height: 170px;
+}
+.download-block .download-body .download-card-container .download-card .image-container img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.download-block .download-body .download-card-container .download-card .body-container {
+  background-color: #f2f2f2;
+  height: 185px;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+.download-block .download-body .download-card-container .download-card .body-container .title-text {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 22px;
+  color: #0041a5;
+  text-transform: uppercase;
+}
+.download-block .download-body .download-card-container .download-card .body-container .description-text {
+  padding-top: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  word-break: break-word;
+}
+.download-block .download-body .download-card-container .download-card .body-container .download-card-btn {
+  margin-top: 20px;
+  border: 1px solid;
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+}
+.download-block .download-body .download-card-container .download-card .body-container .download-card-btn .download-link-box {
+  color: #3e3e3e;
+}
+.download-block .download-body .download-card-container .download-card .body-container .download-card-btn .download-link-box i {
+  margin-right: 10px;
+}
+.download-block .download-footer {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+  color: #3e3e3e;
+}
+@media (max-width: 768px) {
+  .download-block .download-header .title {
+    padding-top: 21px;
+    padding-left: 21px;
+    height: unset;
+  }
+  .download-block .download-header .download-btn {
+    position: unset;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .download-block .download-body {
+    padding: 20px;
+  }
+  .download-block .download-body .download-card-container {
+    flex-direction: column;
+  }
+  .download-block .download-body .download-card-container .download-card {
+    width: 100%;
+    height: unset;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .download-block .download-body .download-card-container .download-card .image-container {
+    height: 225px;
+  }
+  .download-block .download-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+  }
+}

@@ -1,0 +1,105 @@
+.ChristmasAtmosphere {
+  text-align: left;
+}
+.ChristmasAtmosphere .tips-component-container {
+  background-color: #fff;
+  margin-left: 9%;
+  margin-right: 9%;
+  padding-left: 9%;
+  padding-right: 9%;
+  padding-top: 60px;
+  text-align: left;
+}
+.ChristmasAtmosphere .tips-component-container .description-container {
+  position: relative;
+  height: 415px;
+}
+.ChristmasAtmosphere .tips-component-container .description-container .image-container {
+  height: 415px;
+  width: 410px;
+  background-color: rgba(64, 146, 223, 0.5);
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+}
+.ChristmasAtmosphere .tips-component-container .description-container .image-container img {
+  width: auto;
+  height: 100%;
+  max-width: unset;
+}
+.ChristmasAtmosphere .tips-component-container .description-container .text-container {
+  width: 45%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.ChristmasAtmosphere .tips-component-container .description-container .text-container .tips-desc-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.ChristmasAtmosphere .tips-component-container .description-container .text-container .tips-desc-description {
+  font-size: 13px;
+  font-weight: 500;
+}
+.ChristmasAtmosphere .tips-component-container .description-container.image-left .image-container {
+  right: unset;
+  left: 0;
+}
+.ChristmasAtmosphere .tips-component-container .description-container.image-left .text-container {
+  margin-left: 55%;
+}
+.ChristmasAtmosphere .tips-component-container .tips-list {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.ChristmasAtmosphere .tips-component-container .tips-list .tip {
+  display: flex;
+  padding-bottom: 40px;
+}
+.ChristmasAtmosphere .tips-component-container .tips-list .tip .tip-img {
+  width: 80px;
+  height: 80px;
+}
+.ChristmasAtmosphere .tips-component-container .tips-list .tip .tip-texts {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  justify-content: center;
+}
+.ChristmasAtmosphere .tips-component-container .tips-list .tip .tip-texts .tip-title {
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .ChristmasAtmosphere .tips-component-container {
+    margin: 0;
+    padding-top: 30px;
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 40px;
+  }
+  .ChristmasAtmosphere .tips-component-container .description-container {
+    height: unset;
+  }
+  .ChristmasAtmosphere .tips-component-container .description-container .image-container {
+    position: relative;
+    height: 250px;
+    width: 100%;
+  }
+  .ChristmasAtmosphere .tips-component-container .description-container .text-container {
+    top: unset;
+    transform: unset;
+    width: 100%;
+    padding-top: 20px;
+  }
+  .ChristmasAtmosphere .tips-component-container .description-container .text-container .tips-desc-title {
+    font-size: 20px;
+  }
+  .ChristmasAtmosphere .tips-component-container .description-container .text-container .tips-desc-description {
+    font-size: 16px;
+  }
+  .ChristmasAtmosphere .tips-component-container .description-container.image-left .text-container {
+    margin: unset;
+  }
+}

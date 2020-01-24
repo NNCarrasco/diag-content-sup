@@ -1,0 +1,150 @@
+<style>
+body {
+  max-width: 1280px;
+  background-color: lightblue;
+  margin: 0 auto;
+}
+* {
+  box-sizing: border-box;
+}
+p {
+  margin: unset;
+  font-family: Roboto, sans-serif;
+}
+
+</style>
+<style>
+.vertical-card-container {
+  padding-bottom: 80px;
+}
+@media (min-width: 768px) {
+  .vertical-card-container {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+  .vertical-card-container.border-bottom {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.vertical-card-container .card-related-content {
+  font-family: 'Roboto', sans-serif;
+  height: 430px;
+  display: block;
+}
+@media (min-width: 768px) {
+  .vertical-card-container .card-related-content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 33.3333%;
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 768px) {
+  .vertical-card-container .card-related-content {
+    margin-bottom: 4%;
+  }
+}
+.vertical-card-container.border-bottom .card-related-content .image-container {
+  border-bottom: 4px solid blue;
+}
+.vertical-card-container .card-related-content .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+  height: 250px;
+}
+.vertical-card-container .card-related-content .image-container img {
+  width: 100%;
+  height: 100%;
+}
+.vertical-card-container .card-related-content .copy-container {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+}
+.vertical-card-container .card-related-content .copy-container .copy-text {
+  padding: 20px 30px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.75;
+  color: #000000;
+}
+.vertical-card-container .card-related-content .copy-container .description {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.63;
+  color: #3e3e3e;
+  padding-left: 30px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+.vertical-card-container .card-related-content .copy-container .copy-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #4092df;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  text-decoration: none;
+}
+.vertical-card-container .card-related-content .copy-container .copy-link:hover {
+  border-bottom: 2px solid;
+  margin-bottom: -2px;
+}
+.vertical-card-container .card-related-content .copy-container .copy-link i.fas.fa-angle-right {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #4092df;
+  position: absolute;
+  bottom: 4px;
+}
+
+</style>
+
+<div class="vertical-card-container border-bottom">
+    <div class="card-related-content">
+        <div class="image-container">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaPB" />
+        </div>
+        <div class="copy-container">
+            <p class="copy-text">SOBRE EL POSTRE</p>
+            <p class="description">Ofrecer Baileys sobre el postre aumentaría 1€ la cuenta.
+                <br>
+                <b>Pregunta:</b> “Tarta de chocolate – ¡Buena elección! ¿Sabes que va muy bien con esto? Un chorrito
+                de Baileys. ¿Te gustaría probarlo?
+            </p>
+        </div>
+    </div>
+    <div class="card-related-content">
+        <div class="image-container">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaPG" />
+        </div>
+        <div class="copy-container">
+            <p class="copy-text">EN UN CAFÉ O CHOCOLATE</p>
+            <p class="description">Un chorrito de Baileys en café o chocolate aumentaría en 0’50€ la consumición.
+                <br>
+                <b>Pregunta:</b> “¿Quieres darte un capricho ya que estas aquí y añadir un chorrito de Baileys en tu
+                café? Por solo 0,5€ adicionales.
+            </p>
+        </div>
+    </div>
+    <div class="card-related-content">
+        <div class="image-container">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaPL" />
+        </div>
+        <div class="copy-container">
+            <p class="copy-text">EN LA SOBREMESA</p>
+            <p class="description">Un Baileys con hielo después de la comida puede cobrarse a 2,50€ por lo menos.
+                <br>
+                <b>Pregunta:</b> “¿Puedo ofreceros café o infusión? ¿o qué tal vez un Baileys? Es la mejor forma de
+                terminar la comida…”
+            </p>
+        </div>
+    </div>
+</div>

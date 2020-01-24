@@ -1,0 +1,566 @@
+.smirnoff-soda-smash-page {
+  text-align: left;
+  background-color: #f2f2f2;
+}
+.smirnoff-soda-smash-page .titles-and-descriptions .general-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  padding-left: 18%;
+  padding-right: 18%;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.smirnoff-soda-smash-page .titles-and-descriptions .general-description {
+  font-size: 20px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  color: #3e3e3e;
+  padding-right: 18%;
+  padding-left: 18%;
+  margin-bottom: 80px;
+}
+.smirnoff-soda-smash-page .titles-and-descriptions .related-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  text-transform: uppercase;
+  border-bottom: 1px solid #7d7773;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .smirnoff-soda-smash-page .titles-and-descriptions .general-title {
+    padding-left: 6%;
+    padding-right: 6%;
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  .smirnoff-soda-smash-page .titles-and-descriptions .general-description {
+    padding-left: 6%;
+    padding-right: 5%;
+    margin-bottom: 60px;
+  }
+  .smirnoff-soda-smash-page .titles-and-descriptions .related-title {
+    font-size: 24px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+}
+@media (min-width: 768px) {
+  .smirnoff-soda-smash-page .banner-container {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .smirnoff-soda-smash-page .banner-container {
+    margin-bottom: 80px;
+  }
+}
+.smirnoff-soda-smash-page .banner-container .banner-card-container {
+  text-align: left;
+  background-color: #ffffff;
+}
+.smirnoff-soda-smash-page .banner-container .banner-card-container .label {
+  width: 150px;
+  height: 40px;
+  margin-left: 83px;
+  margin-top: 25px;
+  background-color: #0041a5;
+}
+.smirnoff-soda-smash-page .banner-container .banner-card-container .label div {
+  height: 100%;
+}
+.smirnoff-soda-smash-page .banner-container .banner-card-container .label div span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.smirnoff-soda-smash-page .banner-container .banner-card-container .title-container {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.smirnoff-soda-smash-page .banner-container .banner-card-container .title-container.with-label {
+  margin-top: 20px;
+}
+.smirnoff-soda-smash-page .banner-container .banner-card-container .title-container .title {
+  font-size: 38px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  color: black;
+  text-transform: uppercase;
+}
+.smirnoff-soda-smash-page .banner-container .banner-card-container .text-container .text {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #3e3e3e;
+}
+.smirnoff-soda-smash-page .banner-container .banner-card-container .btn-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.smirnoff-soda-smash-page .banner-container .banner-card-container .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.smirnoff-soda-smash-page .banner-container .banner-card-container .image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.smirnoff-soda-smash-page .banner-container .banner-card-container .image-container img {
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .smirnoff-soda-smash-page .banner-container .banner-card-container {
+    height: 420px;
+    margin-bottom: 40px;
+  }
+  .smirnoff-soda-smash-page .banner-container .banner-card-container .content-container {
+    padding-right: 110px;
+  }
+  .smirnoff-soda-smash-page .banner-container .banner-card-container .text-container,
+  .smirnoff-soda-smash-page .banner-container .banner-card-container .title-container {
+    padding-left: 83px;
+  }
+  .smirnoff-soda-smash-page .banner-container .banner-card-container .text-container {
+    padding-bottom: 20px;
+  }
+  .smirnoff-soda-smash-page .banner-container .banner-card-container .btn-container {
+    height: 45px;
+    width: 160px;
+    margin-left: 83px;
+  }
+  .smirnoff-soda-smash-page .banner-container .banner-card-container .image-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 425px solid #ffffff;
+    border-right: 80px solid transparent;
+    width: 0;
+  }
+  .smirnoff-soda-smash-page .banner-container .banner-card-container .image-container .desktop-img {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .smirnoff-soda-smash-page .banner-container .banner-card-container {
+    flex-wrap: wrap;
+    margin-top: 0;
+    height: 660px;
+    margin-bottom: 45px;
+  }
+  .smirnoff-soda-smash-page .banner-container .banner-card-container .label {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  .smirnoff-soda-smash-page .banner-container .banner-card-container .text-container,
+  .smirnoff-soda-smash-page .banner-container .banner-card-container .title-container {
+    padding: 20px;
+    padding-top: 0;
+    margin: 0;
+  }
+  .smirnoff-soda-smash-page .banner-container .banner-card-container .text-container .text,
+  .smirnoff-soda-smash-page .banner-container .banner-card-container .title-container .text {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.63;
+    color: #3e3e3e;
+  }
+  .smirnoff-soda-smash-page .banner-container .banner-card-container .text-container .title,
+  .smirnoff-soda-smash-page .banner-container .banner-card-container .title-container .title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .smirnoff-soda-smash-page .banner-container .banner-card-container .title-container {
+    margin-top: 75px;
+  }
+  .smirnoff-soda-smash-page .banner-container .banner-card-container .title-container.with-label {
+    margin-top: 20px;
+  }
+  .smirnoff-soda-smash-page .banner-container .banner-card-container .btn-container {
+    width: 88%;
+    height: 45px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .smirnoff-soda-smash-page .banner-container .banner-card-container .image-container .phone-img {
+    display: block;
+    position: absolute;
+    height: 280px;
+    left: 0;
+    bottom: 0;
+  }
+}
+.smirnoff-soda-smash-page .image-text-block {
+  display: flex;
+  padding-left: 18%;
+  padding-bottom: 90px;
+}
+.smirnoff-soda-smash-page .image-text-block .itb-image-container {
+  width: 80px;
+  height: 80px;
+  margin-right: 25px;
+}
+.smirnoff-soda-smash-page .image-text-block .itb-image-container img {
+  height: 100%;
+  width: 100%;
+}
+.smirnoff-soda-smash-page .image-text-block .itb-text-container {
+  width: 735px;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #3e3e3e;
+}
+@media (max-width: 768px) {
+  .smirnoff-soda-smash-page .image-text-block {
+    flex-flow: column;
+    padding-left: 6%;
+    padding-right: 6%;
+    text-align: center;
+  }
+  .smirnoff-soda-smash-page .image-text-block .itb-image-container {
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .smirnoff-soda-smash-page .image-text-block .itb-text-container {
+    width: unset;
+  }
+}
+@media (min-width: 768px) {
+  .smirnoff-soda-smash-page .horizontal-cards-container {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .smirnoff-soda-smash-page .horizontal-cards-container {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .smirnoff-soda-smash-page .horizontal-cards-container {
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-bottom: 0;
+  }
+}
+.smirnoff-soda-smash-page .horizontal-cards-container .card-container {
+  margin-bottom: 25px;
+}
+.smirnoff-soda-smash-page .horizontal-cards-container .card-container .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.smirnoff-soda-smash-page .horizontal-cards-container .card-container .image-container img {
+  height: 100%;
+  width: 100%;
+}
+.smirnoff-soda-smash-page .horizontal-cards-container .card-container .content-container {
+  background-color: #ffffff;
+}
+.smirnoff-soda-smash-page .horizontal-cards-container .card-container .content-container .icon {
+  height: 35px;
+}
+.smirnoff-soda-smash-page .horizontal-cards-container .card-container .content-container .content-title {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  margin: unset;
+}
+.smirnoff-soda-smash-page .horizontal-cards-container .card-container .content-container .content-text {
+  font-size: 16px;
+  line-height: 26px;
+  margin: unset;
+}
+@media (min-width: 768px) {
+  .smirnoff-soda-smash-page .horizontal-cards-container .card-container {
+    height: 250px;
+    display: flex;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 50%;
+    flex: 1 1 auto;
+    margin-bottom: 35px;
+  }
+  .smirnoff-soda-smash-page .horizontal-cards-container .card-container .image-container {
+    width: 45%;
+  }
+  .smirnoff-soda-smash-page .horizontal-cards-container .card-container .content-container {
+    width: 54%;
+    padding-top: 44px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+  }
+  .smirnoff-soda-smash-page .horizontal-cards-container .card-container.image-left .image-container {
+    order: 0;
+    border-right: 5px solid #0041a5;
+  }
+  .smirnoff-soda-smash-page .horizontal-cards-container .card-container.image-left .content-container {
+    order: 1;
+  }
+  .smirnoff-soda-smash-page .horizontal-cards-container .card-container.image-right .image-container {
+    order: 1;
+    border-left: 5px solid #0041a5;
+  }
+  .smirnoff-soda-smash-page .horizontal-cards-container .card-container.image-right .content-container {
+    order: 0;
+  }
+}
+@media (max-width: 768px) {
+  .smirnoff-soda-smash-page .horizontal-cards-container .card-container {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 4%;
+  }
+  .smirnoff-soda-smash-page .horizontal-cards-container .card-container .image-container {
+    height: 260px;
+    width: 100%;
+    border-bottom: 5px solid #0041a5;
+  }
+  .smirnoff-soda-smash-page .horizontal-cards-container .card-container .content-container {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .smirnoff-soda-smash-page .horizontal-cards-container .card-container .content-container .icon {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .smirnoff-soda-smash-page .horizontal-cards-container .card-container .content-container .content-title {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .smirnoff-soda-smash-page .horizontal-cards-container .card-container .content-container .content-text {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .smirnoff-soda-smash-page .list-container {
+    padding-right: 18%;
+    padding-left: 18%;
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .smirnoff-soda-smash-page .list-container {
+    padding-right: 5%;
+    padding-left: 6%;
+    margin-bottom: 60px;
+  }
+}
+.smirnoff-soda-smash-page .list-container ol,
+.smirnoff-soda-smash-page .list-container ul {
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 45px;
+}
+.smirnoff-soda-smash-page .list-container ol li,
+.smirnoff-soda-smash-page .list-container ul li {
+  padding-bottom: 30px;
+  padding-top: 10px;
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+.smirnoff-soda-smash-page .list-container ol li:last-child,
+.smirnoff-soda-smash-page .list-container ul li:last-child {
+  margin-bottom: 0;
+}
+.smirnoff-soda-smash-page .list-container ol li p,
+.smirnoff-soda-smash-page .list-container ul li p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #000000;
+}
+.smirnoff-soda-smash-page .list-container ol li:before,
+.smirnoff-soda-smash-page .list-container ul li:before {
+  content: counter(my-awesome-counter);
+  color: #f2af0c;
+  font-size: 18px;
+  position: absolute;
+  --size: 41px;
+  left: calc(-1 * var(--size) - 20px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  background: #3e3e3e;
+  border-radius: 50%;
+  text-align: center;
+}
+.smirnoff-soda-smash-page .list-container ul {
+  padding-left: 25px;
+}
+.smirnoff-soda-smash-page .list-container ul li:before {
+  content: "";
+  color: #fff;
+  /* font-size : 10px; */
+  font-weight: bold;
+  position: absolute;
+  --size: 8px;
+  left: calc(-1 * var(--size) - 15px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 9px;
+  background: #7d7773;
+  border-radius: 50%;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .smirnoff-soda-smash-page .vertical-card-container-related-article {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .smirnoff-soda-smash-page .vertical-card-container-related-article {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .smirnoff-soda-smash-page .vertical-card-container-related-article {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+}
+.smirnoff-soda-smash-page .vertical-card-container-related-article .card-related-content {
+  font-family: 'Roboto', sans-serif;
+  height: 430px;
+  display: block;
+}
+@media (min-width: 768px) {
+  .smirnoff-soda-smash-page .vertical-card-container-related-article .card-related-content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 33.3333%;
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 768px) {
+  .smirnoff-soda-smash-page .vertical-card-container-related-article .card-related-content {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 4%;
+  }
+}
+.smirnoff-soda-smash-page .vertical-card-container-related-article .card-related-content .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+  height: 250px;
+}
+.smirnoff-soda-smash-page .vertical-card-container-related-article .card-related-content .image-container img {
+  width: 100%;
+  height: 100%;
+}
+.smirnoff-soda-smash-page .vertical-card-container-related-article .card-related-content .copy-container {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 180px;
+}
+.smirnoff-soda-smash-page .vertical-card-container-related-article .card-related-content .copy-container .copy-text {
+  padding: 20px 30px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.75;
+  color: #000000;
+}
+.smirnoff-soda-smash-page .vertical-card-container-related-article .card-related-content .copy-container .copy-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #4092df;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  text-decoration: none;
+}
+.smirnoff-soda-smash-page .vertical-card-container-related-article .card-related-content .copy-container .copy-link:hover {
+  border-bottom: 2px solid;
+  margin-bottom: -2px;
+}
+.smirnoff-soda-smash-page .vertical-card-container-related-article .card-related-content .copy-container .copy-link i.fas.fa-angle-right {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #4092df;
+  position: absolute;
+  bottom: 4px;
+}
+@media (min-width: 768px) {
+  .smirnoff-soda-smash-page .img-contianer {
+    margin-bottom: 40px;
+  }
+  .smirnoff-soda-smash-page .img-contianer .only-desktop {
+    display: block;
+  }
+  .smirnoff-soda-smash-page .img-contianer .only-mobile {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .smirnoff-soda-smash-page .img-contianer {
+    margin-bottom: 60px;
+  }
+  .smirnoff-soda-smash-page .img-contianer .only-desktop {
+    display: none;
+  }
+  .smirnoff-soda-smash-page .img-contianer .only-mobile {
+    display: block;
+  }
+}
+.smirnoff-soda-smash-page .img-contianer .only-desktop {
+  width: 64%;
+  height: 225px;
+  margin: 0 18%;
+}
+.smirnoff-soda-smash-page .img-contianer .only-mobile {
+  width: 100%;
+  height: 340px;
+}
+.slds-col--padded.contentRegion.comm-layout-column {
+  padding: 0;
+}
+.cCP_NewsDetail .detail-date.p-16-white-bold,
+.cCP_NewsDetail .btn-div.content-button-container {
+  display: none;
+}
+.cCP_NewsDetail {
+  margin: unset;
+  padding: unset;
+}

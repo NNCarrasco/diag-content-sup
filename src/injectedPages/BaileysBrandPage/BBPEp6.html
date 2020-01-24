@@ -1,0 +1,103 @@
+<style>
+.BaileysBrandPage {
+  text-align: left;
+  background-color: #f2f2f2;
+}
+.BaileysBrandPage .icon-and-description-container {
+  display: flex;
+}
+.BaileysBrandPage .icon-and-description-container .item-container {
+  display: flex;
+}
+.BaileysBrandPage .icon-and-description-container .item-container .image-container {
+  height: 96px;
+  width: 96px;
+}
+.BaileysBrandPage .icon-and-description-container .item-container .image-container img {
+  width: 100%;
+  height: 100%;
+}
+.BaileysBrandPage .icon-and-description-container .item-container .descrition-container {
+  width: 240px;
+  margin-left: 40px;
+  padding-right: 30px;
+}
+.BaileysBrandPage .icon-and-description-container .item-container .descrition-container .title {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.BaileysBrandPage .icon-and-description-container .item-container .descrition-container .description {
+  font-size: 18px;
+  line-height: 1.56;
+}
+@media screen and (min-width: 768px) {
+  .BaileysBrandPage .icon-and-description-container {
+    margin-bottom: 80px;
+  }
+  .BaileysBrandPage .icon-and-description-container .item-container {
+    border-right: 1px solid black;
+    margin-left: 70px;
+  }
+  .BaileysBrandPage .icon-and-description-container .item-container:last-child {
+    border-right: unset;
+  }
+  .BaileysBrandPage .icon-and-description-container .item-container:first-child {
+    margin-left: unset;
+  }
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .icon-and-description-container {
+    flex-flow: column;
+  }
+  .BaileysBrandPage .icon-and-description-container .item-container {
+    flex-flow: column;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .BaileysBrandPage .icon-and-description-container .item-container .image-container {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .BaileysBrandPage .icon-and-description-container .item-container .descrition-container {
+    width: 88%;
+    margin-right: 6%;
+    margin-left: 6%;
+    padding: unset;
+  }
+}
+
+</style>
+
+<div class="BaileysBrandPage">
+    <div class="icon-and-description-container">
+        <div class="item-container">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaRv" />
+            </div>
+            <div class="descrition-container">
+                <p class="title">MÁS DE 2 AÑOS</p>
+                <p class="description">Fue el tiempo que se tardó en crear la receta perfecta de Baileys, con su rica
+                    leche y los mejores whiskies irlandeses</p>
+            </div>
+        </div>
+        <div class="item-container">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaS0" />
+            </div>
+            <div class="descrition-container">
+                <p class="title">AMPLIO RECONOCIMIENTO</p>
+                <p class="description">Con un origen humilde, Baileys es actualmente el líquido más querido del mundo</p>
+            </div>
+        </div>
+        <div class="item-container">
+            <div class="image-container">
+                <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaS5" />
+            </div>
+            <div class="descrition-container">
+                <p class="title">CONSUMIDORES LEALES</p>
+                <p class="description">156 millones de personas dicen que AMAN Baileys</p>
+            </div>
+        </div>
+    </div>
+</div>

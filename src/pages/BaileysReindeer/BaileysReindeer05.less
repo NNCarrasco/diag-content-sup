@@ -1,0 +1,137 @@
+.download-block {
+	background-color: #ffffff;
+	.download-header {
+		position: relative;
+		border-bottom: 1px solid #e3e3e3;
+		border-top: 1px solid #e3e3e3;
+		height: 95px;
+		.title {
+			font-size: 18px;
+			line-height: 28px;
+			text-transform: uppercase;
+			font-weight: bold;
+			text-align: left;
+			height: inherit;
+			padding-top: 35px;
+			padding-left: 60px;
+		}
+		.download-btn {
+			position: absolute;
+			top: 38px;
+			right: 40px;
+			font-size: 14px;
+			a {
+				color: #4092df;
+				i {
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+	.download-body {
+		padding: 40px;
+		padding-bottom: 0;
+		.download-card-container {
+			display: flex;
+			padding-bottom: 20px;
+			.download-card {
+				width: 220px;
+				height: 355px;
+				margin-left: 20px;
+				&:first-child {
+					margin-left: 0;
+				}
+
+				.image-container {
+					height: 170px;
+					img {
+						height: 100%;
+						width: 100%;
+					}
+				}
+				.body-container {
+					background-color: #f2f2f2;
+					height: 185px;
+					text-align: left;
+					padding-top: 10px;
+					padding-left: 20px;
+					padding-right: 20px;
+					padding-bottom: 20px;
+					.title-text {
+						font-size: 12px;
+						font-weight: bold;
+						line-height: 22px;
+						color: #0041a5;
+						text-transform: uppercase;
+					}
+					.description-text {
+						padding-top: 10px;
+						font-size: 16px;
+						line-height: 20px;
+						word-break: break-word;
+					}
+					.download-card-btn {
+						margin-top: 20px;
+						border: 1px solid;
+						padding-top: 10px;
+						padding-left: 40px;
+						padding-bottom: 10px;
+						text-transform: uppercase;
+						font-size: 14px;
+						line-height: 24px;
+						.download-link-box {
+							color: #3e3e3e;
+							i {
+								margin-right: 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.download-footer {
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-bottom: 40px;
+		font-size: 12px;
+		line-height: 18px;
+		text-align: left;
+		color: #3e3e3e;
+	}
+	//MOBILE
+	@media (max-width: 768px) {
+		.download-header {
+			.title {
+				padding-top: 21px;
+				padding-left: 21px;
+				height: unset;
+			}
+			.download-btn {
+				position: unset;
+				text-align: left;
+				padding-left: 20px;
+			}
+		}
+		.download-body {
+			padding: 20px;
+			.download-card-container {
+				flex-direction: column;
+				.download-card {
+					width: 100%;
+					height: unset;
+					margin-left: 0;
+					margin-bottom: 20px;
+					.image-container {
+						height: 225px;
+					}
+				}
+			}
+		}
+		.download-footer {
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-bottom: 25px;
+		}
+	}
+}

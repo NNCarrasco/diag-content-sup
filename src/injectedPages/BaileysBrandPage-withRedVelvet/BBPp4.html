@@ -1,0 +1,403 @@
+<style>
+.BaileysBrandPage {
+  text-align: left;
+  background-color: #f2f2f2;
+}
+.BaileysBrandPage .tabs-table-container {
+  position: relative;
+}
+.BaileysBrandPage .tabs-table-container .porcentual-block {
+  z-index: 3;
+  bottom: -65px;
+  position: absolute;
+  width: 100%;
+}
+.BaileysBrandPage .tabs-table-container .porcentual-block .porcentual-description {
+  font-size: 16px;
+  line-height: 1.63;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  border: 4px solid #00b39f;
+  padding-right: 75px;
+  background-color: white;
+}
+.BaileysBrandPage .tabs-table-container .porcentual-block .porcentual-description .porcentual-number-container {
+  position: absolute;
+  bottom: -20px;
+  right: -35px;
+  color: white;
+  border-radius: 50%;
+  background-color: #00b39f;
+  width: 100px;
+  height: 100px;
+}
+.BaileysBrandPage .tabs-table-container .porcentual-block .porcentual-description .porcentual-number-container .porcentual-number {
+  padding-top: 29px;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.6;
+  text-align: center;
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .tabs-table-container .porcentual-block {
+    bottom: -100px;
+    left: -14px;
+  }
+  .BaileysBrandPage .tabs-table-container .porcentual-block .porcentual-description {
+    padding-right: 80px;
+  }
+  .BaileysBrandPage .tabs-table-container .porcentual-block .porcentual-description .porcentual-number-container {
+    width: 110px;
+    height: 110px;
+  }
+  .BaileysBrandPage .tabs-table-container .porcentual-block .porcentual-description .porcentual-number-container .porcentual-number {
+    padding-top: 35px;
+  }
+}
+.BaileysBrandPage .tabs-table-container .tab [type="radio"] {
+  display: none;
+}
+.BaileysBrandPage .tabs-table-container .tab [type="radio"]:checked ~ .label {
+  background: rgba(242, 175, 12, 0.12);
+  padding-bottom: 17px;
+  padding-top: 17px;
+  border-bottom: 2px solid #f2af0c;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .BaileysBrandPage .tabs-table-container {
+    width: 100%;
+    height: 705px;
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .tabs-table-container {
+    height: 320px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 321px) {
+  .BaileysBrandPage .tabs-table-container {
+    height: 320px;
+    margin-bottom: 40px;
+  }
+}
+.BaileysBrandPage .tabs-table-container .tab [type="radio"]:checked ~ .label ~ .content {
+  z-index: 1;
+  display: flex;
+}
+.BaileysBrandPage .tabs-table-container .tabs {
+  position: relative;
+  clear: both;
+  margin: 0;
+  white-space: nowrap;
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid #979797;
+}
+.BaileysBrandPage .tabs-table-container .tabs .download-tab-btn {
+  display: none;
+}
+@media (min-width: 768px) {
+  .BaileysBrandPage .tabs-table-container .tabs .download-tab-btn {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    font-size: 14px;
+    display: block;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs .download-tab-btn a {
+    color: #4092df;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs .download-tab-btn a i {
+    margin-right: 10px;
+  }
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab {
+  vertical-align: top;
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .text-container .the-colection {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  text-transform: uppercase;
+  border-bottom: 1px solid #b9b9b9;
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .text-container .title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .text-container .text {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.63;
+  color: #3e3e3e;
+}
+@media (min-width: 768px) {
+  .BaileysBrandPage .tabs-table-container .tabs .tab {
+    display: block;
+    height: 650px;
+    padding-top: 0;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs .tab .text-container {
+    width: 300px;
+    padding-top: 170px;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs .tab .image-container {
+    height: 525px;
+    width: 435px;
+    margin-left: 70px;
+    margin-top: 70px;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs .tab .image-container img {
+    width: 100%;
+    height: 100%;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs .tab.show-desktop {
+    display: block;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs .tab.show-phone {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .tabs-table-container .tabs .tab .the-colection {
+    padding-top: 20px;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs .tab .image-container {
+    width: 252px;
+    height: 302px;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs .tab.show-desktop {
+    display: none;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs .tab.show-phone {
+    display: block;
+  }
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .label {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  min-height: 50px;
+  line-height: 50px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  padding-top: 17px;
+  border-bottom: 2px solid #979797;
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .label:hover {
+  cursor: pointer;
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .content {
+  white-space: normal;
+  top: 53px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 50px;
+  position: absolute;
+  background-color: white;
+  height: 650px;
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .content .text {
+  font-size: 16px;
+  line-height: 1.63;
+  color: #3e3e3e;
+  padding-bottom: 45px;
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .content .youtube-video {
+  width: 100%;
+  height: 516px;
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .content ol,
+.BaileysBrandPage .tabs-table-container .tabs .tab .content ul {
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 45px;
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .content ol li,
+.BaileysBrandPage .tabs-table-container .tabs .tab .content ul li {
+  margin-bottom: 10px;
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .content ol li:last-child,
+.BaileysBrandPage .tabs-table-container .tabs .tab .content ul li:last-child {
+  margin-bottom: 0;
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .content ol li p,
+.BaileysBrandPage .tabs-table-container .tabs .tab .content ul li p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #000000;
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .content ol li:before,
+.BaileysBrandPage .tabs-table-container .tabs .tab .content ul li:before {
+  content: counter(my-awesome-counter);
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  position: absolute;
+  --size: 25px;
+  left: calc(-1 * var(--size) - 20px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  background: #3e3e3e;
+  border-radius: 50%;
+  text-align: center;
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .content ul {
+  padding-left: 25px;
+}
+.BaileysBrandPage .tabs-table-container .tabs .tab .content ul li:before {
+  content: "";
+  color: #fff;
+  /* font-size : 10px; */
+  font-weight: bold;
+  position: absolute;
+  --size: 8px;
+  left: calc(-1 * var(--size) - 15px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 9px;
+  background: #7d7773;
+  border-radius: 50%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .tabs-table-container {
+    flex-wrap: wrap;
+    height: 720px;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs {
+    flex-wrap: wrap;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs .tab {
+    margin-top: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: none;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs .tab .content {
+    top: 128px;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: unset;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs .tab .content .youtube-video {
+    height: 228px;
+  }
+  .BaileysBrandPage .tabs-table-container .tabs .tab [type="radio"]:checked ~ .label ~ .content {
+    z-index: 1;
+    display: table;
+    top: 106px;
+  }
+}
+
+</style>
+
+<div class="BaileysBrandPage">
+    <div class="tabs-table-container">
+        <div class="tabs">
+            <div class="tab">
+                <input type="radio" id="tab-15" name="tab-group-12" checked>
+                <label class="label" for="tab-15">RED VELVET CUPCAKE</label>
+                <div class="ingredients spacer"></div>
+                <div class="content">
+                    <div class="text-container">
+                        <p class="the-colection">the colection</p>
+                        <P class="limited-edition-label">LIMITED EDITION</P>
+                        <p class="title">Baileys Red Velvet Cupcake</p>
+                        <p class="text">Introducing Baileys Red Velvet Cupcake, our most indulgent and arguably most
+                            delicious flavour yet. The perfect blend of light, fluffy cupcakes folded into our
+                            mouth-watering Baileys Original Irish Cream. Best enjoyed straight from the fridge, poured
+                            over ice-cream. Now you really can have you cake and eat it.</p>
+                    </div>
+                    <div class="image-container">
+                        <img
+                            src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaRM" />
+                    </div>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" id="tab-12" name="tab-group-12">
+                <label class="label" for="tab-12">ALMANDE</label>
+                <div class="ingredients spacer"></div>
+                <div class="content">
+                    <div class="text-container">
+                        <p class="the-colection">the colection</p>
+                        <p class="title">Baileys Almande</p>
+                        <p class="text">Indulgence for the free-from community. Baileys Almande is dairy-free and
+                            vegan-friendly, but very much not free from naughty, delicious indulgence.</p>
+                    </div>
+                    <div class="image-container">
+                        <img
+                            src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaRM" />
+                    </div>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" id="tab-13" name="tab-group-12">
+                <label class="label" for="tab-13">STRAWBERRIES & CREAM</label>
+                <div class="method spacer"></div>
+                <div class="content">
+                    <div class="text-container">
+                        <p class="the-colection">the colection</p>
+                        <p class="title">Baileys Strawberries & cream</p>
+                        <p class="text">This flavourful addition to the classic Bailey's lineup is like a strawberry
+                            milkshake for adults. Smooth and creamy with appealing strawberry flavour, this would be
+                            delicious poured over chocolate ice cream or served neat.</p>
+                    </div>
+                    <div class="image-container">
+                        <img
+                            src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaRW" />
+                    </div>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" id="tab-14" name="tab-group-12">
+                <label class="label" for="tab-14">CHOCOLAT LUXE</label>
+                <div class="method spacer"></div>
+                <div class="content">
+                    <div class="text-container">
+                        <p class="the-colection">the colection</p>
+                        <p class="title">Baileys Chocolat Luxe</p>
+
+                        <p class="text">A blend of decadent Belgian chocolate and Baileys Original Irish Cream,
+                            Chocolate
+                            Luxe is utterly indulgent - and completely unforgettable.</p>
+                    </div>
+                    <div class="image-container">
+                        <img
+                            src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaRb" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

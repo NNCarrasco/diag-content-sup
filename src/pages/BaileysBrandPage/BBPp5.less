@@ -1,0 +1,132 @@
+.BaileysBrandPage {
+	text-align: left;
+	background-color: #f2f2f2;
+	
+	.small-banner-card-container {
+		@media (min-width: 768px) {
+			padding-left: 11%;
+			padding-right: 11%;
+		}
+		// MIXED CONTENT BLOCK
+		.mixed-content-block {
+			//GENERAL AND PHONE
+			box-sizing: border-box; //FIXME: ??
+			font-family: 'Roboto', sans-serif;
+			background-color: #ffffff;
+			height: 540px;
+			width: 335px;
+			.copy-container {
+				height: 288px;
+				box-sizing: border-box;
+				width: 100%;
+				.content-title {
+					font-size: 20px;
+					font-weight: bold;
+					line-height: 1.63;
+					color: #000000;
+					margin: 0;
+					text-transform: uppercase;
+					padding-top: 20px;
+				}
+				.content-text {
+					font-size: 16px;
+					padding-top: 10px;
+					line-height: 1.63;
+					color: #3e3e3e;
+					margin: 0;
+				}
+				.content-button {
+					width: 100%;
+					font-size: 14px;
+					text-align: center;
+					display: block;
+					padding: 13px 0;
+					background-color: #f2af0c;
+					color: #000;
+					text-decoration: none;
+					text-transform: uppercase;
+					position: absolute;
+					bottom: 2px;
+					font-weight: 500;
+					&:hover {
+						background-color: #ffc800;
+						color: #000;
+					}
+				}
+			}
+			.image-container {
+				width: 335px;
+				height: 250px;
+				background-color: rgba(64, 146, 223, 0.5);
+				img {
+					width: 100%;
+				}
+			}
+		}
+		//DESKTOP
+		@media (min-width: 768px) {
+			padding-left: 18%;
+			padding-right: 18%;
+			padding-top: 0;
+			.mixed-content-block {
+				height: 190px;
+				width: 100%;
+				.copy-container {
+					float: left;
+					height: 100%;
+					width: 63%;
+					padding-left: 35px;
+					padding-right: 80px;
+					padding-top: 30px;
+					.content-text {
+						padding-bottom: 20px;
+						font-size: 18px;
+					}
+					.content-button {
+						position: relative;
+						width: 185px;
+					}
+				}
+				.image-container {
+					height: 100%;
+					width: 37%;
+					float: left;
+					img {
+						height: 100%;
+						width: 100%;
+					}
+				}
+			}
+		}
+		//MOBILE
+		@media (max-width: 768px) {
+			padding-top: 60px;
+			.mixed-content-block {
+				position: relative;
+				width: 100%;
+				height: unset; //FIXME:
+				.image-container {
+					width: 100%;
+					height: 220px;
+					img {
+						height: 100%;
+					}
+				}
+				.copy-container {
+					padding-left: 20px;
+					padding-right: 20px;
+					padding-bottom: 30px;
+					height: unset; //FIXME:
+					.content-text {
+						padding-top: 30px;
+						font-size: 18px;
+					}
+					.content-button {
+						position: relative;
+						margin-top: 30px;
+					}
+				}
+			}
+		}
+	}
+}

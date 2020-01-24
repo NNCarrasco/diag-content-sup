@@ -1,0 +1,175 @@
+<style>
+body {
+  max-width: 1280px;
+  background-color: lightblue;
+  margin: 0 auto;
+}
+* {
+  box-sizing: border-box;
+}
+p {
+  margin: unset;
+  font-family: Roboto, sans-serif;
+}
+
+</style>
+<style>
+.horizontal-cards-container {
+  padding-bottom: 35px;
+}
+@media (min-width: 768px) {
+  .horizontal-cards-container {
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-bottom: 40px;
+  }
+}
+.horizontal-cards-container .card-container {
+  text-align: left;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+}
+.horizontal-cards-container .card-container .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+  overflow: hidden;
+}
+.horizontal-cards-container .card-container .image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.horizontal-cards-container .card-container .content-container {
+  background-color: #ffffff;
+}
+.horizontal-cards-container .card-container .content-container .icon {
+  height: 35px;
+}
+.horizontal-cards-container .card-container .content-container .content-title {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  margin: unset;
+}
+.horizontal-cards-container .card-container .content-container .content-text {
+  font-size: 16px;
+  line-height: 26px;
+  margin: unset;
+}
+@media (min-width: 768px) {
+  .horizontal-cards-container .card-container {
+    height: 250px;
+    display: flex;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 50%;
+    flex: 1 1 auto;
+    margin-bottom: 35px;
+  }
+  .horizontal-cards-container .card-container .image-container {
+    width: 45%;
+  }
+  .horizontal-cards-container .card-container .content-container {
+    width: 54%;
+    padding-top: 44px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+  }
+  .horizontal-cards-container .card-container.image-left .image-container {
+    order: 0;
+    border-right: 5px solid #50af01;
+  }
+  .horizontal-cards-container .card-container.image-left .content-container {
+    order: 1;
+  }
+  .horizontal-cards-container .card-container.image-right .image-container {
+    order: 1;
+    border-left: 5px solid #50af01;
+  }
+  .horizontal-cards-container .card-container.image-right .content-container {
+    order: 0;
+  }
+}
+@media (max-width: 768px) {
+  .horizontal-cards-container .card-container {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 4%;
+  }
+  .horizontal-cards-container .card-container .image-container {
+    height: 260px;
+    width: 100%;
+    border-bottom: 5px solid #50af01;
+  }
+  .horizontal-cards-container .card-container .content-container {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .horizontal-cards-container .card-container .content-container .icon {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .horizontal-cards-container .card-container .content-container .content-title {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .horizontal-cards-container .card-container .content-container .content-text {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+</style>
+
+<div class="horizontal-cards-container">
+    <div class="card-container image-left">
+        <div class="image-container">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+        </div>
+        <div class="content-container">
+            <img class="icon"
+                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+            <p class="content-title">Solo 5,5% ABV</p>
+            <p class="content-text">Media Copa (3cl de alcohol + 20cl de refresco) tiene una graduación alcohólica
+                <b>equiparable a la de una caña de 20cl</b></p>
+        </div>
+    </div>
+    <div class="card-container image-left">
+        <div class="image-container">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+        </div>
+        <div class="content-container">
+            <img class="icon"
+                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+            <p class="content-title">1.800€ de beneficio anual adicional</p>
+            <p class="content-text">Si cada fin de semana, tan solo <b>1 de cada 10</b> consumiciones de cerveza o
+                vino pasara a ser de Media Copa</p>
+        </div>
+    </div>
+    <div class="card-container image-right">
+        <div class="image-container">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+        </div>
+        <div class="content-container">
+            <img class="icon"
+                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+            <p class="content-title">90% de los consumidores</p>
+            <p class="content-text">la considera la <b>Opción Ideal</b> para ampliar los momentos de consumo</p>
+        </div>
+    </div>
+    <div class="card-container image-right">
+        <div class="image-container">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+        </div>
+        <div class="content-container">
+            <img class="icon"
+                src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+            <p class="content-title">60% de los consumidores</p>
+            <p class="content-text"><b>prefiere una Media Copa</b> en lugar de una Cerveza</p>
+        </div>
+    </div>
+</div>
