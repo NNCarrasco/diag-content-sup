@@ -149,9 +149,6 @@
     font-weight: bold;
     margin: 0;
   }
-  .banner-container .banner-card-container .content-container .title-container {
-    margin-top: 75px;
-  }
   .banner-container .banner-card-container .content-container .title-container.with-label {
     margin-top: 20px;
   }
@@ -226,7 +223,7 @@
 }
 .image-outside-horizontal-card-container .image-outside-horizontal-card .image-container img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 @media (min-width: 768px) {
@@ -244,7 +241,7 @@
   }
   .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
     width: 550px;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
   }
   .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container {
@@ -291,8 +288,12 @@
     flex-wrap: wrap;
   }
   .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container {
+    padding-top: 390px;
     padding-bottom: 20px;
     order: 1;
+  }
+  .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container img {
+    margin-left: unset !important;
   }
   .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
     padding-left: 30px;
@@ -342,18 +343,10 @@
   margin-right: 9%;
   padding-left: 9%;
   padding-right: 9%;
-  padding-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 40px;
   background-color: #ffffff;
-}
-@media screen and (min-width: 768px) {
-  .image-text-list-block {
-    margin-bottom: 70px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .image-text-list-block {
-    margin-bottom: 80px;
-  }
+  text-align: left;
 }
 .image-text-list-block a {
   color: #2959a2;
@@ -373,8 +366,11 @@
   overflow: hidden;
   background-color: rgba(64, 146, 223, 0.5);
 }
+.image-text-list-block .list-column .list-column-image.special-height {
+  height: 250px;
+}
 .image-text-list-block .list-column .list-column-image img {
-  width: auto;
+  width: 100%;
   max-width: unset;
   height: 100%;
 }
@@ -395,6 +391,24 @@
   font-size: 16px;
   line-height: 1.63;
   color: #3e3e3e;
+}
+.image-text-list-block .list-column .list-column-text .btn-container .content-button {
+  width: 33%;
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.image-text-list-block .list-column .list-column-text .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
 }
 .image-text-list-block .list-column.image-left .list-column-image {
   order: 1;
@@ -418,6 +432,8 @@
     margin-right: 6%;
     padding-left: 6%;
     padding-right: 6%;
+    padding-top: 40px;
+    padding-bottom: unset;
   }
   .image-text-list-block .list-column {
     height: unset;
@@ -430,6 +446,9 @@
   .image-text-list-block .list-column .list-column-text {
     margin-top: 10px;
     padding: unset;
+    width: 100%;
+  }
+  .image-text-list-block .list-column .list-column-text .btn-container .content-button {
     width: 100%;
   }
   .image-text-list-block .list-column.image-left .list-column-image {
@@ -449,15 +468,149 @@
     padding: unset;
   }
 }
-.slds-col--padded.contentRegion.comm-layout-column {
-  padding: 0;
+.image-text-block {
+  display: flex;
+  padding-left: 18%;
+  text-align: left;
 }
-.cCP_NewsDetail .detail-date.p-16-white-bold,
-.cCP_NewsDetail .btn-div.content-button-container {
-  display: none;
+.image-text-block .itb-image-container {
+  width: 80px;
+  height: 80px;
+  margin-right: 25px;
 }
-.cCP_NewsDetail {
-  margin: unset;
-  padding: unset;
-  background-color: unset;
+.image-text-block .itb-image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.image-text-block .itb-text-container {
+  width: 735px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #3e3e3e;
+  align-self: center;
+}
+@media (max-width: 768px) {
+  .image-text-block {
+    flex-flow: column;
+    padding-left: 6%;
+    padding-right: 6%;
+    text-align: center;
+  }
+  .image-text-block .itb-image-container {
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .image-text-block .itb-text-container {
+    width: unset;
+  }
+}
+.titles-and-descriptions .related-title {
+  text-align: left;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  text-transform: uppercase;
+  border-bottom: 1px solid #7d7773;
+}
+@media screen and (min-width: 768px) {
+  .titles-and-descriptions .related-title {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .titles-and-descriptions .related-title {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .titles-and-descriptions .related-title {
+    font-size: 24px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+}
+.vertical-card-container-related-article {
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .vertical-card-container-related-article {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+}
+.vertical-card-container-related-article .card-related-content {
+  font-family: 'Roboto', sans-serif;
+  height: 430px;
+  display: block;
+}
+@media (min-width: 768px) {
+  .vertical-card-container-related-article .card-related-content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 33.3333%;
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 768px) {
+  .vertical-card-container-related-article .card-related-content {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 4%;
+  }
+}
+.vertical-card-container-related-article .card-related-content .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+  height: 250px;
+}
+.vertical-card-container-related-article .card-related-content .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.vertical-card-container-related-article .card-related-content .copy-container {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+.vertical-card-container-related-article .card-related-content .copy-container .copy-text {
+  padding: 20px 30px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.75;
+  color: #000000;
+}
+.vertical-card-container-related-article .card-related-content .copy-container .copy-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #4092df;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  text-decoration: none;
+}
+.vertical-card-container-related-article .card-related-content .copy-container .copy-link:hover {
+  border-bottom: 2px solid;
+  margin-bottom: -2px;
+}
+.vertical-card-container-related-article .card-related-content .copy-container .copy-link i.fas.fa-angle-right {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #4092df;
+  position: absolute;
+  bottom: 4px;
+}
+.href-style {
+  color: #3e3e3e;
+  text-decoration: underline;
+  font-weight: 500;
 }

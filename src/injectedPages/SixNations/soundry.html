@@ -150,9 +150,6 @@
     font-weight: bold;
     margin: 0;
   }
-  .banner-container .banner-card-container .content-container .title-container {
-    margin-top: 75px;
-  }
   .banner-container .banner-card-container .content-container .title-container.with-label {
     margin-top: 20px;
   }
@@ -227,7 +224,7 @@
 }
 .image-outside-horizontal-card-container .image-outside-horizontal-card .image-container img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 @media (min-width: 768px) {
@@ -245,7 +242,7 @@
   }
   .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
     width: 550px;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
   }
   .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container {
@@ -292,8 +289,12 @@
     flex-wrap: wrap;
   }
   .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container {
+    padding-top: 390px;
     padding-bottom: 20px;
     order: 1;
+  }
+  .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container img {
+    margin-left: unset !important;
   }
   .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
     padding-left: 30px;
@@ -343,18 +344,10 @@
   margin-right: 9%;
   padding-left: 9%;
   padding-right: 9%;
-  padding-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 40px;
   background-color: #ffffff;
-}
-@media screen and (min-width: 768px) {
-  .image-text-list-block {
-    margin-bottom: 70px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .image-text-list-block {
-    margin-bottom: 80px;
-  }
+  text-align: left;
 }
 .image-text-list-block a {
   color: #2959a2;
@@ -374,8 +367,11 @@
   overflow: hidden;
   background-color: rgba(64, 146, 223, 0.5);
 }
+.image-text-list-block .list-column .list-column-image.special-height {
+  height: 250px;
+}
 .image-text-list-block .list-column .list-column-image img {
-  width: auto;
+  width: 100%;
   max-width: unset;
   height: 100%;
 }
@@ -396,6 +392,24 @@
   font-size: 16px;
   line-height: 1.63;
   color: #3e3e3e;
+}
+.image-text-list-block .list-column .list-column-text .btn-container .content-button {
+  width: 33%;
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.image-text-list-block .list-column .list-column-text .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
 }
 .image-text-list-block .list-column.image-left .list-column-image {
   order: 1;
@@ -419,6 +433,8 @@
     margin-right: 6%;
     padding-left: 6%;
     padding-right: 6%;
+    padding-top: 40px;
+    padding-bottom: unset;
   }
   .image-text-list-block .list-column {
     height: unset;
@@ -431,6 +447,9 @@
   .image-text-list-block .list-column .list-column-text {
     margin-top: 10px;
     padding: unset;
+    width: 100%;
+  }
+  .image-text-list-block .list-column .list-column-text .btn-container .content-button {
     width: 100%;
   }
   .image-text-list-block .list-column.image-left .list-column-image {
@@ -450,6 +469,167 @@
     padding: unset;
   }
 }
+.image-text-block {
+  display: flex;
+  padding-left: 18%;
+  text-align: left;
+}
+.image-text-block .itb-image-container {
+  width: 80px;
+  height: 80px;
+  margin-right: 25px;
+}
+.image-text-block .itb-image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.image-text-block .itb-text-container {
+  width: 735px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #3e3e3e;
+  align-self: center;
+}
+@media (max-width: 768px) {
+  .image-text-block {
+    flex-flow: column;
+    padding-left: 6%;
+    padding-right: 6%;
+    text-align: center;
+  }
+  .image-text-block .itb-image-container {
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .image-text-block .itb-text-container {
+    width: unset;
+  }
+}
+.titles-and-descriptions .related-title {
+  text-align: left;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  text-transform: uppercase;
+  border-bottom: 1px solid #7d7773;
+}
+@media screen and (min-width: 768px) {
+  .titles-and-descriptions .related-title {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .titles-and-descriptions .related-title {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .titles-and-descriptions .related-title {
+    font-size: 24px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+}
+.vertical-card-container-related-article {
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .vertical-card-container-related-article {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+}
+.vertical-card-container-related-article .card-related-content {
+  font-family: 'Roboto', sans-serif;
+  height: 430px;
+  display: block;
+}
+@media (min-width: 768px) {
+  .vertical-card-container-related-article .card-related-content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 33.3333%;
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 768px) {
+  .vertical-card-container-related-article .card-related-content {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 4%;
+  }
+}
+.vertical-card-container-related-article .card-related-content .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+  height: 250px;
+}
+.vertical-card-container-related-article .card-related-content .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.vertical-card-container-related-article .card-related-content .copy-container {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+.vertical-card-container-related-article .card-related-content .copy-container .copy-text {
+  padding: 20px 30px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.75;
+  color: #000000;
+}
+.vertical-card-container-related-article .card-related-content .copy-container .copy-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #4092df;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  text-decoration: none;
+}
+.vertical-card-container-related-article .card-related-content .copy-container .copy-link:hover {
+  border-bottom: 2px solid;
+  margin-bottom: -2px;
+}
+.vertical-card-container-related-article .card-related-content .copy-container .copy-link i.fas.fa-angle-right {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #4092df;
+  position: absolute;
+  bottom: 4px;
+}
+.href-style {
+  color: #3e3e3e;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+</style>
+<style>
+#spacer10 {
+  padding-bottom: 10px;
+}
+#spacer20 {
+  padding-bottom: 20px;
+}
+#spacer40 {
+  padding-bottom: 40px;
+}
+#spacer80 {
+  padding-bottom: 80px;
+}
 .slds-col--padded.contentRegion.comm-layout-column {
   padding: 0;
 }
@@ -462,74 +642,121 @@
   padding: unset;
   background-color: unset;
 }
+.general-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  padding-left: 18%;
+  padding-right: 18%;
+  text-transform: uppercase;
+  text-align: left;
+}
+.general-description {
+  font-size: 20px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  color: #3e3e3e;
+  padding-right: 18%;
+  padding-left: 18%;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .general-title {
+    font-size: 24px;
+    padding-left: 6%;
+    padding-right: 5%;
+  }
+  .general-description {
+    padding-left: 6%;
+    padding-right: 5%;
+  }
+}
 
 </style>
 <div class="banner-container">
     <div class="banner-card-container">
         <div class="content-container">
             <div class="title-container">
-                <h2 class="title">CAN WE TEMPT YOU TO SOME EXTRA PROFIT?</h2>
+                <h2 class="title">MUSIC TO YOUR EARS: ONE FREE MONTH OF SOUNDRY</h2>
             </div>
             <div class="text-container">
-                <p class="text">There are three ways you can make Baileys part of the occasion and generate some
-                    tasty extra revenue. It’s all about timing and your team having the confidence to ask the
-                    question…</p>
+                <p class="text">Soundry is a music app for businesses, offering ready-made playlists specifically
+                    tailored to your venue. </p>
             </div>
         </div>
         <div class="concont">
             <div class="image-container">
                 <img class="desktop-img"
-                    src="../../assets/banner-desktop.jpg"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1R"
                     alt="" />
                 <img class="phone-img"
-                    src="../../assets/banner-mobile.jpg"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1R"
                     alt="" />
             </div>
         </div>
     </div>
 </div>
 
-<div class="image-text-list-block">
+<div id="spacer40"></div>
 
+<p class="general-description">Running an outlet is non-stop – publicans have to offer event nights, brunch and beyond.
+    All of those occasions are made even more special with the right music but organising a public performance license
+    and all the paperwork can be both costly and a lot of hassle. MyDiageo has teamed up with Soundry to offer our
+    on-trade customers a discount on an easy way to offer music: easy, legal, and royalty free.</p>
+
+<div id="spacer20"></div>
+
+<p class="general-description">We’re offering MyDiageo customers a full month of Soundry FREE after the 14-day free
+    trial. Just sign up <a href="" class="href-style">here</a></p>
+
+<div id="spacer10"></div>
+
+<div class="image-text-block">
+    <div class="itb-image-container">
+        <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaPQ" alt="" />
+    </div>
+    <div class="itb-text-container">
+        <p>Playing music that suits your venue gives a 31.7% increase in overall sales compared with playing songs
+            randomly*</p>
+        <p>*’What Does Your Brand Sound Like?’ Johansson & Moradi</p>
+    </div>
+</div>
+
+<div id="spacer20"></div>
+
+<div class="image-text-list-block">
     <div class="list-column image-right">
-        <div class="list-column-image">
+        <div class="list-column-image special-height">
             <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1R" />
         </div>
         <div class="list-column-text">
             <div class="list-column-text-title">
-                <p>DECORATIONS FOR THE SIX NATIONS</p>
+                <p> SOUNDRY – WHAT IS IT?</p>
             </div>
             <div class="list-column-text-description">
-                <p>Guinness is offering activation materials including posters with the ‘Match Made And Settled’
-                    campaign. This will be <a href="#">supported</a> so you get everything lookingfullybranded and
-                    official. Pop down to <a
-                        href="https://www.google.com/search?q=rugby+clubs+near+me&oq=rugby+clubs+near+me&aqs=chrome..69i57j0l5.5392j0j7&sourceid=chrome&ie=UTF-8">your
-                        local rugby club</a> o see if they have any balls or other paraphernaliayou could use to
-                    decorate. Advertise the <a
-                        href="https://www.sixnationsrugby.com/six-nations-guide/">fixtures</a> and include the <a
-                        href="#">women’s rugby listings</a>.
-
-                </p>
+                <p>Soundry provides music tailored for businesses. Music enables customers to relax and enjoy themselves
+                    – they can spend longer with you and spend more. Soundry has made the setup simple, so you can get
+                    back to business.</p>
             </div>
         </div>
     </div>
-
 </div>
+
+<div id="spacer80"></div>
 
 <div class="image-outside-horizontal-card-container">
     <div class="image-outside-horizontal-card image-left">
         <div class="content-container">
-            <div class="title-container">
-                <span class="title">Aumenta el consumo de bebidas 0% Sin Alcohol</span>
-            </div>
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" alt=""
+                style="height: 45px;width: 45px;align-self: center;margin-left: 33%;">
             <div class="description-container">
-                <span class="description"> Las personas son más conscientes de lo que consumen y buscan opciones que
-                    les permitan mantener el control en momentos de ocio.</span>
+                <span class="description"> As a business owner, I am always short on time. With Soundry, I don't have to
+                    worry about the music any more!</span>
+                    <div id="spacer20"></div>
+                <span><b>Babak Kharazmi-Owner of Bistro Casper</b></span>
             </div>
-            <!-- <div class="btn-container">
-                <a href="https://www.mydiageo.com/s/cp-content/a4P4G000000KFpbUAG" target="_blank"
-                    class="content-button">get the menu</a>
-            </div> -->
         </div>
         <div class="image-container">
             <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
@@ -537,56 +764,125 @@
     </div>
 </div>
 
-<div class="image-text-list-block">
-
-    <div class="list-column image-right">
-        <div class="list-column-image">
-            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1R" />
-        </div>
-        <div class="list-column-text">
-            <div class="list-column-text-title">
-                <p>DECORATIONS FOR THE SIX NATIONS</p>
-            </div>
-            <div class="list-column-text-description">
-                <p>Guinness is offering activation materials including posters with the ‘Match Made And Settled’
-                    campaign. This will be <a href="#">supported</a> so you get everything lookingfullybranded and
-                    official. Pop down to <a
-                        href="https://www.google.com/search?q=rugby+clubs+near+me&oq=rugby+clubs+near+me&aqs=chrome..69i57j0l5.5392j0j7&sourceid=chrome&ie=UTF-8">your
-                        local rugby club</a> o see if they have any balls or other paraphernaliayou could use to
-                    decorate. Advertise the <a
-                        href="https://www.sixnationsrugby.com/six-nations-guide/">fixtures</a> and include the <a
-                        href="#">women’s rugby listings</a>.
-
-                </p>
-            </div>
-        </div>
-    </div>
-
-</div>
+<div id="spacer80"></div>
 
 <div class="image-text-list-block">
-
     <div class="list-column image-left">
         <div class="list-column-image">
             <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1R" />
         </div>
         <div class="list-column-text">
             <div class="list-column-text-title">
-                <p>DECORATIONS FOR THE SIX NATIONS</p>
+                <p>HOW DOES IT WORK?</p>
             </div>
             <div class="list-column-text-description">
-                <p>Guinness is offering activation materials including posters with the ‘Match Made And Settled’
-                    campaign. This will be <a href="#">supported</a> so you get everything lookingfullybranded and
-                    official. Pop down to <a
-                        href="https://www.google.com/search?q=rugby+clubs+near+me&oq=rugby+clubs+near+me&aqs=chrome..69i57j0l5.5392j0j7&sourceid=chrome&ie=UTF-8">your
-                        local rugby club</a> o see if they have any balls or other paraphernaliayou could use to
-                    decorate. Advertise the <a
-                        href="https://www.sixnationsrugby.com/six-nations-guide/">fixtures</a> and include the <a
-                        href="#">women’s rugby listings</a>.
-
-                </p>
+                <p>Soundry curates tracks into playlists for your business ready to be played directly from your
+                    computer, iPad, iPhone or Sonos speakers.</p>
             </div>
         </div>
     </div>
+</div>
 
+<div id="spacer40"></div>
+
+<div class="image-text-list-block">
+    <div class="list-column image-right">
+        <div class="list-column-image">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1R" />
+        </div>
+        <div class="list-column-text">
+            <div class="list-column-text-title">
+                <p>WHY DO I NEED SOUNDRY?</p>
+            </div>
+            <div class="list-column-text-description">
+                <p>When you play music in your venue, you have to pay for the music streaming service (if you use one)
+                    as well as to collecting societies. With Soundry you only have to pay €16.99 a month and avoid
+                    paying fees to collecting societies for playing the music.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="spacer40"></div>
+
+<div class="image-text-list-block">
+    <div class="list-column image-left">
+        <div class="list-column-image">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1R" />
+        </div>
+        <div class="list-column-text">
+            <div class="list-column-text-title">
+                <p>HOW DOES SOUNDRY KNOW HOW TO PERSONALISE THE PLAYLIST? </p>
+            </div>
+            <div class="list-column-text-description">
+                <p>From your signup Soundry knows which country you have signed up from. For the playlist selection, you
+                    simply select from your desired category like ‘type of business’ or ‘energy level’.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="spacer40"></div>
+
+<div class="image-text-list-block">
+    <div class="list-column image-right">
+        <div class="list-column-image">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1R" />
+        </div>
+        <div class="list-column-text">
+            <div class="list-column-text-title">
+                <p> HOW DO YOU OPT OUT AFTER THE ONE MONTH ENDS?</p>
+            </div>
+            <div class="list-column-text-description">
+                <p>You need to sign up with a credit card. After the extended free period, payment will start
+                    automatically. If you want to cancel, which you can do at any time even after payment has started,
+                    simply login on the web and cancel the subscription under ‘settings.</p>
+            </div>
+            <div class="btn-container">
+                <a href="#" target="_blank" class="content-button">SING UO NOW</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="spacer40"></div>
+
+<div class="titles-and-descriptions">
+    <p class="related-title">RELATED articles</p>
+</div>
+
+<div class="vertical-card-container-related-article">
+
+    <div class="card-related-content">
+        <div class="image-container">
+            <!-- <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOqe" /> -->
+        </div>
+        <div class="copy-container">
+            <p class="copy-text">Aliquam ac ligula ac odio molestie consequat varius est urna ipsum dolor sit </p>
+            <a href="https://www.mydiageo.com/s/cp-content/a4P4G000000KEN9" class="copy-link">Find out more<i
+                    class="fas fa-angle-right"></i></a>
+        </div>
+    </div>
+
+    <div class="card-related-content">
+        <div class="image-container">
+            <!-- <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOkv" /> -->
+        </div>
+        <div class="copy-container">
+            <p class="copy-text">Aliquam ac ligula ac odio molestie consequat varius est urna ipsum dolor sit </p>
+            <a href="https://www.mydiageo.com/s/cp-content/a4PD00000001VDUMA2/trendsbeerinsightjune18?retUrl=https%3A%2F%2Fwww.mydiageo.com%2Fs%2Fdiscover"
+                class="copy-link">Find out more<i class="fas fa-angle-right"></i></a>
+        </div>
+    </div>
+
+    <div class="card-related-content">
+        <div class="image-container">
+            <!-- <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOl0" /> -->
+        </div>
+        <div class="copy-container">
+            <p class="copy-text">Aliquam ac ligula ac odio molestie consequat varius est urna ipsum dolor sit </p>
+            <a href="https://www.mydiageo.com/s/landing?menu=IRL-get-the-basics-right" class="copy-link">Find out
+                more<i class="fas fa-angle-right"></i></a>
+        </div>
+    </div>
 </div>

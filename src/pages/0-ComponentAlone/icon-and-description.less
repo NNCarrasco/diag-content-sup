@@ -1,5 +1,6 @@
 .icon-and-description-container {
     display: flex;
+    justify-content: center;
     text-align: left;
     .item-container {
         display: flex;
@@ -33,11 +34,22 @@
         .item-container {
             border-right: 1px solid black;
             margin-left: 70px;
+            .descrition-container {
+                align-self: center;
+            }
             &:last-child {
                 border-right: unset;
             }
             &:first-child {
                 margin-left: unset;
+            }
+            &:only-child {
+                .descrition-container {
+                    max-width: 684px;
+                    width: unset;
+                    padding-right: unset;
+                }
+                
             }
         }
     }

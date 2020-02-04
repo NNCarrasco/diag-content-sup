@@ -1,3 +1,6 @@
+.titles-and-descriptions {
+  text-align: left;
+}
 .titles-and-descriptions .related-title {
   font-size: 28px;
   font-weight: bold;
@@ -22,6 +25,9 @@
     margin-left: 6%;
     margin-right: 6%;
   }
+}
+.vertical-card-container-related-article {
+  text-align: left;
 }
 @media (min-width: 768px) {
   .vertical-card-container-related-article {

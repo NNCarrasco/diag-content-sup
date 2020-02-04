@@ -16,6 +16,7 @@ p {
 <style>
 .icon-and-description-container {
   display: flex;
+  justify-content: center;
   text-align: left;
 }
 .icon-and-description-container .item-container {
@@ -49,11 +50,19 @@ p {
     border-right: 1px solid black;
     margin-left: 70px;
   }
+  .icon-and-description-container .item-container .descrition-container {
+    align-self: center;
+  }
   .icon-and-description-container .item-container:last-child {
     border-right: unset;
   }
   .icon-and-description-container .item-container:first-child {
     margin-left: unset;
+  }
+  .icon-and-description-container .item-container:only-child .descrition-container {
+    max-width: 684px;
+    width: unset;
+    padding-right: unset;
   }
 }
 @media (max-width: 768px) {
@@ -82,7 +91,7 @@ p {
 <div class="icon-and-description-container">
     <div class="item-container">
         <div class="image-container">
-            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=REPLACE" />
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
         </div>
         <div class="descrition-container">
             <!-- <p class="title">SIMPLE TO SERVE</p> -->
@@ -91,7 +100,7 @@ p {
     </div>
     <div class="item-container">
         <div class="image-container">
-            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=REPLACE" />
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
         </div>
         <div class="descrition-container">
             <!-- <p class="title">every occasion</p> -->
@@ -100,11 +109,25 @@ p {
     </div>
     <div class="item-container">
         <div class="image-container">
-            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=REPLACE" />
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
         </div>
         <div class="descrition-container">
             <!-- <p class="title">Consumer appeal</p> -->
             <p class="description"><b>41%</b> most likely to pay a premium price for alcohol</p>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="icon-and-description-container">
+    <div class="item-container">
+        <div class="image-container">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+        </div>
+        <div class="descrition-container">
+            <!-- <p class="title">SIMPLE TO SERVE</p> -->
+            <p class="description"><b>89%</b> of consumers would treat themselves</p>
         </div>
     </div>
 </div>

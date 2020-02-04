@@ -1,0 +1,1081 @@
+<style>
+#spacer10 {
+  padding-bottom: 10px;
+}
+#spacer20 {
+  padding-bottom: 20px;
+}
+#spacer40 {
+  padding-bottom: 40px;
+}
+#spacer80 {
+  padding-bottom: 80px;
+}
+.slds-col--padded.contentRegion.comm-layout-column {
+  padding: 0;
+}
+.cCP_NewsDetail .detail-date.p-16-white-bold,
+.cCP_NewsDetail .btn-div.content-button-container {
+  display: none;
+}
+.cCP_NewsDetail {
+  margin: unset;
+  padding: unset;
+  background-color: unset;
+}
+.general-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  padding-left: 18%;
+  padding-right: 18%;
+  text-transform: uppercase;
+  text-align: left;
+}
+.general-description {
+  font-size: 20px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  color: #3e3e3e;
+  padding-right: 18%;
+  padding-left: 18%;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .general-title {
+    font-size: 24px;
+    padding-left: 6%;
+    padding-right: 5%;
+  }
+  .general-description {
+    padding-left: 6%;
+    padding-right: 5%;
+  }
+}
+
+</style>
+<style>
+.BaileysBrandPage {
+  text-align: left;
+}
+.BaileysBrandPage .recipe .content-card-recipes {
+  padding-left: 108px;
+  background: rgba(255, 255, 255, 0.5);
+  padding-top: 40px;
+  padding-bottom: 110px;
+  text-align: left;
+}
+.BaileysBrandPage .recipe .content-card-recipes.transparent-background {
+  background-color: transparent;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-header {
+  display: flex;
+  flex-direction: column;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-header .recipes-top {
+  position: relative;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty {
+  position: absolute;
+  top: 0;
+  right: 109px;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-header .recipes-top .recipes-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-header .recipes-top .recipes-tag-container {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-header .recipes-top .recipes-tag-container .recipes-tag {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #ffffff;
+  background-color: #00b39f;
+  padding: 8px 10px;
+  margin-left: 5px;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-header .recipes-top .recipes-tag-container .recipes-tag:first-child {
+  margin-left: 0;
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .recipe .content-card-recipes .recipe-header .recipes-top .recipes-tag-container {
+    flex-flow: wrap;
+    padding-bottom: 10px;
+  }
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-header .recipes-description {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: left;
+  padding-bottom: 40px;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-header .recipe-information .recipes-medium {
+  float: left;
+  display: inline-flex;
+  border-right: 2px solid #b9b9b9;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 50px;
+  width: 21.5%;
+  position: relative;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-header .recipe-information .recipes-medium .recipes-medium-title {
+  display: flex;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-header .recipe-information .recipes-medium .description {
+  position: absolute;
+  bottom: 0;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty {
+  display: none;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block,
+.BaileysBrandPage .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .puntuation-block {
+  display: flex;
+  margin: 2px;
+  width: fit-content;
+  border: 1px solid #00b39f;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block .p-title,
+.BaileysBrandPage .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .puntuation-block .p-title {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.38;
+  background-color: #00b39f;
+  color: #ffffff;
+  padding: 4px 8px;
+  text-transform: uppercase;
+  min-width: 100px;
+  width: 100px;
+  white-space: nowrap;
+  text-align: center;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block .puntuation-container,
+.BaileysBrandPage .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .puntuation-block .puntuation-container {
+  padding-left: 10px;
+  min-width: 95px;
+  padding-right: 5px;
+  color: #bebebe;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block .puntuation-container .far.fa-grin,
+.BaileysBrandPage .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .puntuation-block .puntuation-container .far.fa-grin {
+  font-size: 20px;
+  padding-right: 5px;
+  padding-top: 3px;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block .puntuation-container .fas.fa-cocktail,
+.BaileysBrandPage .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .puntuation-block .puntuation-container .fas.fa-cocktail {
+  font-size: 17px;
+  padding-right: 5px;
+  padding-top: 3px;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block .puntuation-container .selected,
+.BaileysBrandPage .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .puntuation-block .puntuation-container .selected {
+  color: #00b39f;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .difficulty,
+.BaileysBrandPage .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .difficulty {
+  margin-top: 15px;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method {
+  display: flex;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content {
+  background-color: rgba(64, 146, 223, 0.5);
+}
+@media (min-width: 768px) {
+  .BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content {
+    width: 44%;
+    height: 316px;
+    margin-top: 25px;
+    margin-right: 25px;
+  }
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
+  height: 350px;
+  position: relative;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block {
+  z-index: 3;
+  bottom: -65px;
+  position: absolute;
+  width: 100%;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-content .porcentual-number-container {
+  position: absolute;
+  bottom: -15px;
+  right: -35px;
+  color: white;
+  border-radius: 50%;
+  background-color: #00b39f;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-content .porcentual-number-container .porcentual-number {
+  padding-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: #ffffff;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-content.with-description {
+  font-size: 16px;
+  line-height: 1.63;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  border: 4px solid #00b39f;
+  padding-right: 75px;
+  background-color: white;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-content.with-description .porcentual-number-container {
+  bottom: -15px;
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block {
+    bottom: -100px;
+    left: -14px;
+  }
+  .BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-description {
+    padding-right: 80px;
+  }
+  .BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-description .porcentual-number-container {
+    width: 110px;
+    height: 110px;
+  }
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"] {
+  display: none;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label {
+  background: rgba(242, 175, 12, 0.12);
+  padding-bottom: 17px;
+  padding-top: 17px;
+  border-bottom: 2px solid #f2af0c;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
+    width: 44%;
+  }
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content {
+  z-index: 1;
+  display: table;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs {
+  position: relative;
+  clear: both;
+  margin: 0;
+  padding-top: 25px;
+  white-space: nowrap;
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid #979797;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .download-tab-btn {
+  display: none;
+}
+@media (min-width: 768px) {
+  .BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .download-tab-btn {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    font-size: 14px;
+    display: block;
+  }
+  .BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .download-tab-btn a {
+    color: #4092df;
+  }
+  .BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .download-tab-btn a i {
+    margin-right: 10px;
+  }
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab {
+  vertical-align: top;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .label {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  min-height: 50px;
+  line-height: 50px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  padding-top: 17px;
+  border-bottom: 2px solid #979797;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .label:hover {
+  cursor: pointer;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content {
+  white-space: normal;
+  top: 77px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  background-color: white;
+  height: 275px;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol,
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul {
+  height: inherit;
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 45px;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li,
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li {
+  margin-bottom: 10px;
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li:last-child,
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li:last-child {
+  margin-bottom: 0;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li p,
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #000000;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li:before,
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li:before {
+  content: counter(my-awesome-counter);
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  position: absolute;
+  --size: 25px;
+  left: calc(-1 * var(--size) - 20px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  background: #3e3e3e;
+  border-radius: 50%;
+  text-align: center;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul {
+  padding-left: 25px;
+}
+.BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li:before {
+  content: "";
+  color: #fff;
+  /* font-size : 10px; */
+  font-weight: bold;
+  position: absolute;
+  --size: 8px;
+  left: calc(-1 * var(--size) - 15px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 9px;
+  background: #7d7773;
+  border-radius: 50%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
+    flex-wrap: wrap;
+  }
+  .BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab {
+    margin-top: -6px;
+  }
+  .BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab .content {
+    top: 71px;
+  }
+  .BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content {
+    z-index: 1;
+    display: table;
+    top: 71px;
+  }
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .recipe .content-card-recipes {
+    padding-left: unset;
+    padding-right: unset;
+    padding-bottom: 40px;
+  }
+  .BaileysBrandPage .recipe .content-card-recipes .recipe-header {
+    padding-right: 6%;
+    padding-left: 6%;
+  }
+  .BaileysBrandPage .recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty {
+    display: none;
+  }
+  .BaileysBrandPage .recipe .content-card-recipes .recipe-header .recipes-top .recipes-title {
+    margin-bottom: 20px;
+  }
+  .BaileysBrandPage .recipe .content-card-recipes .recipe-header .recipes-description {
+    padding-bottom: 20px;
+  }
+  .BaileysBrandPage .recipe .content-card-recipes .recipe-header .recipe-information .recipes-medium {
+    float: unset;
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .BaileysBrandPage .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty {
+    display: block;
+  }
+  .BaileysBrandPage .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .wow-factor img {
+    height: 40px;
+  }
+  .BaileysBrandPage .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .difficulty {
+    margin-top: 20px;
+  }
+  .BaileysBrandPage .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .difficulty img {
+    height: 40px;
+  }
+  .BaileysBrandPage .recipe .content-card-recipes .recipe-body {
+    padding-right: 6%;
+    padding-left: 6%;
+  }
+  .BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method {
+    flex-direction: column;
+  }
+  .BaileysBrandPage .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content {
+    margin-top: 25px;
+    margin-right: 25px;
+    width: 100%;
+  }
+}
+.BaileysBrandPage .recipe .content-card-recipes .only-mobile-download-tab-btn {
+  text-align: left;
+  display: none;
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .recipe .content-card-recipes .only-mobile-download-tab-btn {
+    margin-top: 87px;
+    padding-right: 6%;
+    padding-left: 6%;
+    display: block;
+  }
+  .BaileysBrandPage .recipe .content-card-recipes .only-mobile-download-tab-btn a {
+    color: #4092df;
+  }
+  .BaileysBrandPage .recipe .content-card-recipes .only-mobile-download-tab-btn a i {
+    margin-right: 10px;
+  }
+}
+.BaileysBrandPage .recipe.doble-recipe {
+  display: flex;
+}
+.BaileysBrandPage .recipe.doble-recipe .content-card-recipes.one-of-two {
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  width: 50%;
+  padding-left: unset;
+  padding-right: unset;
+  padding-bottom: 40px;
+}
+.BaileysBrandPage .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header .recipes-top .recipes-tag-container {
+  flex-flow: wrap;
+  padding-bottom: 10px;
+}
+.BaileysBrandPage .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body .recipes-ingredients-method .tab-table-container {
+  width: 100%;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+.BaileysBrandPage .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-description {
+  padding-right: 80px;
+}
+.BaileysBrandPage .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-description .porcentual-number-container {
+  width: 110px;
+  height: 110px;
+}
+.BaileysBrandPage .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body .recipes-ingredients-method .tab-table-container .tab {
+  margin-top: -6px;
+}
+.BaileysBrandPage .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body .recipes-ingredients-method .tab-table-container .tab .content {
+  top: 71px;
+}
+.BaileysBrandPage .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content {
+  z-index: 1;
+  display: table;
+  top: 71px;
+}
+.BaileysBrandPage .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header {
+  padding-right: 6%;
+  padding-left: 6%;
+}
+.BaileysBrandPage .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header .recipes-top .recipes-factor-and-difficulty {
+  display: none;
+}
+.BaileysBrandPage .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header .recipes-top .recipes-title {
+  margin-bottom: 20px;
+}
+.BaileysBrandPage .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header .recipes-description {
+  padding-bottom: 20px;
+  min-height: 75px;
+}
+.BaileysBrandPage .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header .recipe-information .recipes-medium {
+  float: unset;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.BaileysBrandPage .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header .only-mobile-recipes-factor-and-difficulty {
+  display: block;
+}
+.BaileysBrandPage .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header .only-mobile-recipes-factor-and-difficulty .wow-factor img {
+  height: 40px;
+}
+.BaileysBrandPage .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header .only-mobile-recipes-factor-and-difficulty .difficulty {
+  margin-top: 20px;
+}
+.BaileysBrandPage .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header .only-mobile-recipes-factor-and-difficulty .difficulty img {
+  height: 40px;
+}
+.BaileysBrandPage .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body {
+  padding-right: 6%;
+  padding-left: 6%;
+}
+.BaileysBrandPage .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body .recipes-ingredients-method {
+  flex-direction: column;
+}
+.BaileysBrandPage .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body .recipes-ingredients-method .recipes-image-content {
+  margin-top: 25px;
+  margin-right: 25px;
+  width: 100%;
+}
+.BaileysBrandPage .recipe.doble-recipe .content-card-recipes .only-mobile-download-tab-btn {
+  margin-top: 87px;
+  padding-right: 6%;
+  padding-left: 6%;
+  display: block;
+}
+.BaileysBrandPage .recipe.doble-recipe .content-card-recipes .only-mobile-download-tab-btn a {
+  color: #4092df;
+}
+.BaileysBrandPage .recipe.doble-recipe .content-card-recipes .only-mobile-download-tab-btn a i {
+  margin-right: 10px;
+}
+@media (max-width: 768px) {
+  .BaileysBrandPage .recipe.doble-recipe {
+    flex-direction: column;
+  }
+  .BaileysBrandPage .recipe.doble-recipe .content-card-recipes.one-of-two {
+    width: 100%;
+  }
+}
+.BaileysBrandPage .recipe-banner {
+  background-color: #ffffff;
+  padding-top: 20px;
+  padding-left: 85px;
+  padding-bottom: 45px;
+  padding-right: 80px;
+  position: relative;
+}
+.BaileysBrandPage .recipe-banner .recipe-banner-type {
+  width: fit-content;
+  background-color: #00b39f;
+  color: #ffffff;
+  padding: 12px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.BaileysBrandPage .recipe-banner .recipe-banner-title-container {
+  font-size: 38px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.32;
+}
+.BaileysBrandPage .recipe-banner .recipe-banner-bottom-bar {
+  height: 30px;
+  width: 50%;
+  background-color: #00b39f;
+  position: absolute;
+  right: 0;
+  bottom: -16px;
+}
+.BaileysBrandPage .recipe-banner .recipe-banner-bottom-bar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 0;
+  border-bottom: 30px solid #00b39f;
+  border-left: 10px solid transparent;
+}
+@media screen and (max-width: 768px) {
+  .BaileysBrandPage .recipe-banner {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .BaileysBrandPage .recipe-banner .recipe-banner-type {
+    margin-bottom: 20px;
+  }
+  .BaileysBrandPage .recipe-banner .recipe-banner-bottom-bar {
+    width: 90%;
+  }
+}
+
+</style>
+
+<div class="BaileysBrandPage">
+    <div class="recipe-banner">
+        <div class="recipe-banner-type">
+            <p>Recipes</p>
+        </div>
+        <div class="recipe-banner-title-container">
+            <p class="recipe-banner-title">Baileys red velvet</p>
+        </div>
+        <div class="recipe-banner-bottom-bar"></div>
+    </div>
+
+    <div class="recipe">
+        <div class="content-card-recipes">
+            <div class="recipe-header">
+                <div class="recipes-top">
+                    <div class="recipes-factor-and-difficulty">
+                        <div class="puntuation-block wow-factor">
+                            <div class="p-title">Wow factor</div>
+                            <div class="puntuation-container">
+                                <i class="far fa-grin selected"></i>
+                                <i class="far fa-grin selected"></i>
+                                <i class="far fa-grin"></i>
+                            </div>
+                        </div>
+                        <div class="puntuation-block difficulty">
+                            <div class="p-title">Wow factor</div>
+                            <div class="puntuation-container">
+                                <i class="fas fa-cocktail selected"></i>
+                                <i class="fas fa-cocktail selected"></i>
+                                <i class="fas fa-cocktail"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recipes-title">
+                        <p>
+                            Red Velvet Hot chocolate
+                        </p>
+                    </div>
+                </div>
+                <div class="recipes-description">
+                    <p>
+                        The ultimate indulgent treat for chocolate lovers and cake lovers
+                    </p>
+                </div>
+                <div class="recipe-information">
+                    <div class="recipes-medium">
+                        <div class="recipes-medium-title">
+                            <p>
+                                Drink Style
+                            </p>
+                        </div>
+                        <div class="description">
+                            <p>Sweet &amp; Tasty</p>
+                        </div>
+                    </div>
+                    <div class="recipes-medium">
+                        <div class="recipes-medium-title">
+                            <p>
+                                Season/Occasion
+                            </p>
+                        </div>
+                        <div class="description">
+                            <p>Valentine's Day | Mothers Day</p>
+                        </div>
+                    </div>
+                    <div class="recipes-medium">
+                        <div class="recipes-medium-title">
+                            <p>
+                                Alcohol content
+                            </p>
+                        </div>
+                        <div class="description">
+                            <p>0.8 units</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="only-mobile-recipes-factor-and-difficulty">
+                    <div class="puntuation-block wow-factor">
+                        <div class="p-title">Wow factor</div>
+                        <div class="puntuation-container">
+                            <i class="far fa-grin selected"></i>
+                            <i class="far fa-grin selected"></i>
+                            <i class="far fa-grin"></i>
+                        </div>
+                    </div>
+                    <div class="puntuation-block difficulty">
+                        <div class="p-title">Wow factor</div>
+                        <div class="puntuation-container">
+                            <i class="fas fa-cocktail selected"></i>
+                            <i class="fas fa-cocktail selected"></i>
+                            <i class="fas fa-cocktail"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-body">
+                <div class="recipes-ingredients-method">
+                    <div class="recipes-image-content">
+                        <img
+                            src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaSA" />
+                    </div>
+                    <div class="tab-table-container">
+                        <div class="tabs">
+                            <div class="download-tab-btn">
+                                <a href="/"><i class="fas fa-download"></i>Download recipe card</a>
+                            </div>
+                            <div class="tab">
+                                <input type="radio" id="tab-9" name="tab-group-5" checked>
+                                <label class="label" for="tab-9">Ingredients</label>
+                                <div class="ingredients spacer"></div>
+                                <div class="content">
+                                    <ul>
+                                        <li>
+                                            <p>2 cups milk</p>
+                                        </li>
+                                        <li>
+                                            <p>3 tablespoons unsweetened cocoa powder</p>
+                                        </li>
+                                        <li>
+                                            <p>50 ml Red Velvet cupcake</p>
+                                        </li>
+                                        <li>
+                                            <p>1/2 cup Vanilla Whipped Cream</p>
+                                        </li>
+                                        <li>
+                                            <p>1/3 cup Red velvet cake crumbs</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab">
+                                <input type="radio" id="tab-10" name="tab-group-5">
+                                <label class="label" for="tab-10">Method</label>
+                                <div class="method spacer"></div>
+                                <div class="content">
+                                    <ol>
+                                        <li>
+                                            <p>Mix up a 250ml hot chocolate drink</p>
+                                        </li>
+                                        <li>
+                                            <p>Add 50ml of Baileys Red Velvet Cupcake</p>
+                                        </li>
+                                        <li>
+                                            <p>Top with whipped cream and red velvet cake crumbs</p>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="only-mobile-download-tab-btn">
+                <a href="/"><i class="fas fa-download"></i>Download recipe card</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe doble-recipe">
+
+        <div class="content-card-recipes one-of-two transparent-background">
+            <div class="recipe-header">
+                <div class="recipes-top">
+                    <div class="recipes-title">
+                        <p>Baileys iced latte</p>
+                    </div>
+                </div>
+                <div class="recipes-description">
+                    <p>For large events, use Baileys pre-mixed cans to create serves and use branded disposable cups</p>
+                </div>
+            </div>
+            <div class="recipe-body">
+                <div class="recipes-ingredients-method">
+                    <div class="recipes-image-content">
+                        <img
+                            src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaSF" />
+                    </div>
+                    <div class="tab-table-container">
+                        <div class="tabs">
+                            <div class="tab">
+                                <input type="radio" id="tab-1" name="tab-group-1" checked>
+                                <label class="label" for="tab-1">Ingredients</label>
+                                <div class="ingredients spacer"></div>
+                                <div class="content">
+                                    <ul>
+                                        <li>
+                                            <p>Pour 250ml of cold milk into a glass of ice</p>
+                                        </li>
+                                        <li>
+                                            <p>Add a shot of espresso</p>
+                                        </li>
+                                        <li>
+                                            <p>Pour in 50ml of Baileys Original Irish Cream</p>
+                                        </li>
+                                        <li>
+                                            <p>Top with whipped cream and a sweet treat</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab">
+                                <input type="radio" id="tab-2" name="tab-group-1">
+                                <label class="label" for="tab-2">Method</label>
+                                <div class="method spacer"></div>
+                                <div class="content">
+                                    <ol>
+                                        <li>
+                                            <p>Pour 250ml of cold milk into a glass of ice</p>
+                                        </li>
+                                        <li>
+                                            <p>Add a shot of espresso</p>
+                                        </li>
+                                        <li>
+                                            <p>Pour in 50ml of Baileys Original Irish Cream</p>
+                                        </li>
+                                        <li>
+                                            <p>Top with whipped cream and a sweet treat</p>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card-recipes one-of-two transparent-background">
+            <div class="recipe-header">
+                <div class="recipes-top">
+                    <div class="recipes-title">
+                        <p>RED VELVET CUPCAKE MARTINI</p> 
+                    </div>
+                </div>
+                <div class="recipes-description">
+                    <p>A perfect sweet treat</p>
+                </div>
+            </div>
+            <div class="recipe-body">
+                <div class="recipes-ingredients-method">
+                    <div class="recipes-image-content">
+                        <img
+                            src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaSK" />
+                    </div>
+                    <div class="tab-table-container">
+                        <div class="tabs">
+                            <div class="tab">
+                                <input type="radio" id="tab-3" name="tab-group-2" checked>
+                                <label class="label" for="tab-3">Ingredients</label>
+                                <div class="ingredients spacer"></div>
+                                <div class="content">
+                                    <ul>
+                                        <li>
+                                            <p>4 oz Chocolate liqueur</p>
+                                        </li>
+                                        <li>
+                                            <p>4 oz Vanilla vodka</p>
+                                        </li>
+                                        <li>
+                                            <p>4 oz Baileys Red Velvet Cupcake</p>
+                                        </li>
+                                        <li>
+                                            <p>1 Chocolate</p>
+                                        </li>
+                                        <li>
+                                            <p>Ice</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab">
+                                <input type="radio" id="tab-4" name="tab-group-2">
+                                <label class="label" for="tab-4">Method</label>
+                                <div class="method spacer"></div>
+                                <div class="content">
+                                    <ol>
+                                        <li>
+                                            <p>Pour the vodka, chocolate liqueur and Baileys into a shaker</p>
+                                        </li>
+                                        <li>
+                                            <p>Add ice and shake</p>
+                                        </li>
+                                        <li>
+                                            <p>Pour into two chocolate rimmed martini glasses</p>
+                                        </li>
+                                        <li>
+                                            <p>Shave chocolate or red velvet crumbs into the top</p>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="recipe doble-recipe">
+
+        <div class="content-card-recipes one-of-two transparent-background">
+            <div class="recipe-header">
+                <div class="recipes-top">
+                    <div class="recipes-title">
+                        <p>BAILEYS COFFEE</p>
+                    </div>
+                </div>
+                <div class="recipes-description">
+                    <p>Some combinations just never go out of style. One sip, and it’s easy to see why.</p>
+                </div>
+            </div>
+            <div class="recipe-body">
+                <div class="recipes-ingredients-method">
+                    <div class="recipes-image-content">
+                        <img
+                            src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaSU" />
+                    </div>
+                    <div class="tab-table-container">
+                        <div class="tabs">
+                            <div class="tab">
+                                <input type="radio" id="tab-5" name="tab-group-3" checked>
+                                <label class="label" for="tab-5">Ingredients</label>
+                                <div class="ingredients spacer"></div>
+                                <div class="content">
+                                    <ul>
+                                        <li>
+                                            <p>50ml Baileys Original irish Cream</p>
+                                        </li>
+                                        <li>
+                                            <p>150ml black coffee</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab">
+                                <input type="radio" id="tab-6" name="tab-group-3">
+                                <label class="label" for="tab-6">Method</label>
+                                <div class="method spacer"></div>
+                                <div class="content">
+                                    <ol>
+                                        <li>
+                                            <p>Prepare a glass or mug of 150ml black coffee</p>
+                                        </li>
+                                        <li>
+                                            <p>Add 50ml Baileys Original Irish Cream*</p>
+                                        </li>
+                                        <li>
+                                            <p>Stir to mix and serve</p>
+                                        </li>
+                                        <p>*Replace with Baileys Almande for a dairy-free alternative</p>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card-recipes one-of-two transparent-background">
+            <div class="recipe-header">
+                <div class="recipes-top">
+                    <div class="recipes-title">
+                        <p>BAILEYS FLAT WHITE MARTINI</p>
+                    </div>
+                </div>
+                <div class="recipes-description">
+                    <p>A classy cocktail with a rich, smooth flavour, frothy finish and coffee kick.</p>
+                </div>
+            </div>
+            <div class="recipe-body">
+                <div class="recipes-ingredients-method">
+                    <div class="recipes-image-content">
+                        <img
+                            src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MaSj" />
+                    </div>
+                    <div class="tab-table-container">
+                        <div class="tabs">
+                            <div class="tab">
+                                <input type="radio" id="tab-7" name="tab-group-4" checked>
+                                <label class="label" for="tab-7">Ingredients</label>
+                                <div class="ingredients spacer"></div>
+                                <div class="content">
+                                    <ul>
+                                        <li>
+                                            <p>50ml Baileys Original irish Cream</p>
+                                        </li>
+                                        <li>
+                                            <p>25ml Smirnoff No.21 Vodka</p>
+                                        </li>
+                                        <li>
+                                            <p>25ml Espresso</p>
+                                        </li>
+                                        <li>
+                                            <p>Coffee beans</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab">
+                                <input type="radio" id="tab-8" name="tab-group-4">
+                                <label class="label" for="tab-8">Method</label>
+                                <div class="method spacer"></div>
+                                <div class="content">
+                                    <ol>
+                                        <li>
+                                            <p>Fill a cocktail shaker with ice</p>
+                                        </li>
+                                        <li>
+                                            <p>Pour 50ml Baileys Original Irish Cream*, 25ml Smirnoff No. 21 Vodka and 25ml espresso into the cocktail shaker and shake to mix</p>
+                                        </li>
+                                        <li>
+                                            <p>Strain into a martini glass</p>
+                                        </li>
+                                        <li>
+                                            <p>Garnish with three coffee beans floating in the centre of the drink and serve</p>
+                                        </li>
+                                        <p>*Replace with Baileys Almande for a dairy-free alternative</p>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

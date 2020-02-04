@@ -1,5 +1,6 @@
 .icon-and-description-container {
   display: flex;
+  justify-content: center;
   text-align: left;
 }
 .icon-and-description-container .item-container {
@@ -33,11 +34,19 @@
     border-right: 1px solid black;
     margin-left: 70px;
   }
+  .icon-and-description-container .item-container .descrition-container {
+    align-self: center;
+  }
   .icon-and-description-container .item-container:last-child {
     border-right: unset;
   }
   .icon-and-description-container .item-container:first-child {
     margin-left: unset;
+  }
+  .icon-and-description-container .item-container:only-child .descrition-container {
+    max-width: 684px;
+    width: unset;
+    padding-right: unset;
   }
 }
 @media (max-width: 768px) {

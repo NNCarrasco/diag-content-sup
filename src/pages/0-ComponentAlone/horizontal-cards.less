@@ -1,4 +1,6 @@
 .horizontal-cards-container {
+	@general-color: #553222;
+
 	padding-bottom: 35px;
 	//Desktop
 	@media (min-width: 768px) {
@@ -62,7 +64,7 @@
 			&.image-left {
 				.image-container {
 					order: 0;
-					border-right: 5px solid #50af01;
+					border-right: 5px solid @general-color;
 				}
 				.content-container {
 					order: 1;
@@ -71,7 +73,7 @@
 			&.image-right {
 				.image-container {
 					order: 1;
-					border-left: 5px solid #50af01;
+					border-left: 5px solid @general-color;
 				}
 				.content-container {
 					order: 0;
@@ -86,7 +88,7 @@
 			.image-container {
 				height: 260px;
 				width: 100%;
-				border-bottom: 5px solid #50af01;
+				border-bottom: 5px solid @general-color;
 			}
 			.content-container {
 				width: 100%;

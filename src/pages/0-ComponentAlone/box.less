@@ -1,17 +1,20 @@
 .box-container {
 	@component-background-color: #3e3e3e;
-	@component-height: unset;
+	@image-height-desktop: 110px;
+	@image-width-desktop: 110px;
+	@image-height-mobile: 110px;
+	@image-width-mobile: 110px;
+
 	display: flex;
 	margin-right: 18%;
 	margin-left: 18%;
 	position: relative;
 	color: white;
 	background-color: @component-background-color;
-	height: @component-height;
 	align-items: center;
 	.image-container {
-		height: 208px;
-		width: 300px;
+		height: @image-height-desktop;
+		width: @image-width-desktop;
 		min-width: 110px;
 		background-color: rgba(64, 146, 223, 0.5);
 		img {
@@ -83,8 +86,8 @@
 			border-radius: unset;
 
 			.image-container {
-				height: 110px;
-				width: 110px;
+				height: @image-height-mobile;
+				width: @image-width-mobile;
 				margin: auto;
 				margin-top: 20px;
 				margin-bottom: -1px;

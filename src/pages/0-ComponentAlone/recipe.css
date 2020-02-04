@@ -143,6 +143,7 @@
 .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
   height: 350px;

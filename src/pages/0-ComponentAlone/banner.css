@@ -149,9 +149,6 @@
     font-weight: bold;
     margin: 0;
   }
-  .banner-container .banner-card-container .content-container .title-container {
-    margin-top: 75px;
-  }
   .banner-container .banner-card-container .content-container .title-container.with-label {
     margin-top: 20px;
   }
