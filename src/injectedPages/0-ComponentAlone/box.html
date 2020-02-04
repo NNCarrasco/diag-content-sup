@@ -22,6 +22,18 @@ p {
   color: white;
   background-color: #3e3e3e;
   align-items: center;
+  min-height: 110px;
+}
+.box-container.full-image .image-container {
+  min-width: 100%;
+}
+.box-container.button-position-unset .body-container .box-text {
+  width: unset;
+}
+.box-container.button-position-unset .body-container .box-button {
+  position: unset;
+  padding-left: 20px;
+  padding-top: 10px;
 }
 .box-container .image-container {
   height: 110px;
@@ -54,13 +66,6 @@ p {
   bottom: 0;
   right: 40px;
   margin: auto 0;
-}
-.box-container .body-container .box-button.display-block {
-  position: unset;
-}
-.box-container .body-container .box-button.display-block .content-button {
-  margin-left: 20px;
-  margin-top: 20px;
 }
 .box-container .body-container .box-button .content-button {
   width: 100%;
@@ -160,14 +165,25 @@ p {
     </div>
 </div>
 <br>
-<div class="box-container">
+<div class="box-container button-position-unset">
     <div class="image-container">
         <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
     </div>
     <div class="body-container">
-        <p class="box-text"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam molestiae voluptatum
+        <p class="box-text"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
          </p>
-        <div class="box-button display-block">
+        <div class="box-button">
+            <a href="#" target="_blank" class="content-button">GET RECIPES</a>
+        </div>
+    </div>
+</div>
+<br>
+<div class="box-container full-image">
+    <div class="image-container">
+        <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+    </div>
+    <div class="body-container">
+        <div class="box-button">
             <a href="#" target="_blank" class="content-button">GET RECIPES</a>
         </div>
     </div>

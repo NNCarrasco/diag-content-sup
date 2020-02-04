@@ -6,6 +6,7 @@
 	padding-left: 9%;
 	padding-right: 9%;
 	padding-top: 40px;
+	padding-bottom: 40px;
 	text-align: left;
 	&.with-background {
 		background-color: #ffffff;
@@ -19,9 +20,12 @@
 	}
 	.list-column {
 		display: flex;
-		min-height: 150px;
+		// min-height: 150px;
 		margin-bottom: 30px;
 		align-self: center;
+		&:last-child {
+			margin-bottom: unset;
+		}
 		.list-column-image {
 			height: 375px;
 			width: 50%;

@@ -22,6 +22,7 @@ p {
   padding-left: 9%;
   padding-right: 9%;
   padding-top: 40px;
+  padding-bottom: 40px;
   text-align: left;
 }
 .image-text-list-block.with-background {
@@ -36,9 +37,11 @@ p {
 }
 .image-text-list-block .list-column {
   display: flex;
-  min-height: 150px;
   margin-bottom: 30px;
   align-self: center;
+}
+.image-text-list-block .list-column:last-child {
+  margin-bottom: unset;
 }
 .image-text-list-block .list-column .list-column-image {
   height: 375px;

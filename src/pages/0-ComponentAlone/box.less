@@ -12,6 +12,24 @@
 	color: white;
 	background-color: @component-background-color;
 	align-items: center;
+	min-height: 110px;
+	&.full-image {
+		.image-container {
+			min-width: 100%;
+		}
+	}
+	&.button-position-unset {
+		.body-container {
+			.box-text {
+				width: unset;
+			}
+			.box-button {
+				position: unset;
+				padding-left: 20px;
+				padding-top: 10px;
+			}
+		}
+	}
 	.image-container {
 		height: @image-height-desktop;
 		width: @image-width-desktop;
@@ -35,13 +53,6 @@
 			width: 65%;
 		}
 		.box-button {
-			&.display-block {
-				position: unset;
-				.content-button {
-					margin-left: 20px;
-					margin-top: 20px;
-				}
-			}
 			height: 44px;
 			width: 130px;
 			position: absolute;
