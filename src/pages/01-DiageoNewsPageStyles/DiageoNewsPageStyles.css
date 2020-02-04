@@ -32,6 +32,13 @@
   text-transform: uppercase;
   text-align: left;
 }
+@media screen and (max-width: 768px) {
+  .general-title {
+    font-size: 24px;
+    padding-left: 6%;
+    padding-right: 5%;
+  }
+}
 .general-description {
   font-size: 20px;
   font-stretch: normal;
@@ -43,13 +50,17 @@
   text-align: left;
 }
 @media screen and (max-width: 768px) {
-  .general-title {
-    font-size: 24px;
-    padding-left: 6%;
-    padding-right: 5%;
-  }
   .general-description {
     padding-left: 6%;
     padding-right: 5%;
+  }
+}
+.note {
+  text-align: left;
+  padding-left: 9%;
+}
+@media screen and (max-width: 768px) {
+  .note {
+    padding-left: 6%;
   }
 }
