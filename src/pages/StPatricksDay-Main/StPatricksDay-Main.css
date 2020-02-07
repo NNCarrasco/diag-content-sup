@@ -1481,3 +1481,23 @@
   position: absolute;
   bottom: 4px;
 }
+.image {
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.image.small {
+  margin-left: 18%;
+  margin-right: 18%;
+  height: 515px;
+}
+.image.small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .image.small {
+    margin-left: 0;
+    margin-right: 0;
+    height: 230px;
+  }
+}

@@ -1551,6 +1551,26 @@
   position: absolute;
   bottom: 4px;
 }
+.image {
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.image.small {
+  margin-left: 18%;
+  margin-right: 18%;
+  height: 515px;
+}
+.image.small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .image.small {
+    margin-left: 0;
+    margin-right: 0;
+    height: 230px;
+  }
+}
 
 </style>
 <style>
@@ -1628,7 +1648,9 @@ p {
     time of year. You can play your part in making this year’s festivities their best yet, 
     with a brilliant Guinness experience. </p>
 <div id="spacer40"></div>
-<!-- TODO: imagen -->
+<div class="image small">
+    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" alt=""></img>
+</div>
 
 <div id="spacer80"></div>
 <p class="general-title">YOUR KEYS TO ST PATRICK’S SUCCESS</p>
