@@ -1,0 +1,30 @@
+.youtube-video {
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.youtube-video.small {
+  margin-left: 18%;
+  margin-right: 18%;
+}
+.youtube-video.small iframe {
+  width: 100%;
+  height: 515px;
+}
+.youtube-video.full-width {
+  margin-left: 9%;
+  margin-right: 9%;
+}
+.youtube-video.full-width iframe {
+  width: 100%;
+  height: 600px;
+}
+@media screen and (max-width: 768px) {
+  .youtube-video.small,
+  .youtube-video.full-width {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .youtube-video.small iframe,
+  .youtube-video.full-width iframe {
+    height: 230px;
+  }
+}
