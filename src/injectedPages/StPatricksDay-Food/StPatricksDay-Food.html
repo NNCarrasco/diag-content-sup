@@ -78,7 +78,7 @@
 }
 .banner-container .banner-card-container .content-container {
   flex: 0 0 auto;
-  width: 50%;
+  width: 100%;
 }
 .banner-container .banner-card-container .content-container .label {
   display: flex;
@@ -89,18 +89,19 @@
   height: 40px;
   margin-left: 83px;
   margin-top: 25px;
-  width: 125px;
-  background-color: #51ae00;
+  width: 150px;
+  background-color: #00b39f;
+  text-transform: uppercase;
 }
 .banner-container .banner-card-container .content-container .label span {
   font-size: 14px;
   font-weight: bold;
   color: #ffffff;
-  text-transform: uppercase;
 }
 .banner-container .banner-card-container .content-container .title-container {
   margin-top: 60px;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 .banner-container .banner-card-container .content-container .title-container.with-label {
   margin-top: 20px;
@@ -124,42 +125,23 @@
   letter-spacing: normal;
   color: #3e3e3e;
 }
-.banner-container .banner-card-container .content-container .btn-container .content-button {
-  width: 100%;
-  font-size: 14px;
-  text-align: center;
-  display: block;
-  padding: 13px 0;
-  background-color: #f2af0c;
-  color: #000;
-  text-decoration: none;
-  text-transform: uppercase;
-  bottom: 2px;
-  font-weight: 500;
-}
-.banner-container .banner-card-container .content-container .btn-container .content-button:hover {
-  background-color: #ffc800;
-  color: #000;
-}
 .banner-container .banner-card-container .concont {
   flex: 0 0 auto;
+  float: right;
   width: 50%;
+  height: 30px;
+  background-color: #00b39f;
 }
-.banner-container .banner-card-container .concont .image-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(64, 146, 223, 0.5);
-}
-.banner-container .banner-card-container .concont .image-container img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  display: none;
+.banner-container .banner-card-container .concont:before {
+  content: '';
+  position: absolute;
+  border-top: 30px solid white;
+  border-right: 10px solid #00b39f;
+  width: 0;
 }
 @media screen and (min-width: 768px) {
   .banner-container .banner-card-container {
-    height: 420px;
+    height: 200px;
   }
   .banner-container .banner-card-container .text-container,
   .banner-container .banner-card-container .title-container {
@@ -167,24 +149,6 @@
   }
   .banner-container .banner-card-container .text-container {
     padding-bottom: 20px;
-  }
-  .banner-container .banner-card-container .btn-container {
-    height: 45px;
-    width: 160px;
-    margin-left: 83px;
-    margin-bottom: 30px;
-  }
-  .banner-container .banner-card-container .concont .image-container:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-top: 425px solid #ffffff;
-    border-right: 80px solid transparent;
-    width: 0;
-  }
-  .banner-container .banner-card-container .concont .image-container .desktop-img {
-    display: block;
   }
 }
 @media screen and (max-width: 768px) {
@@ -194,7 +158,6 @@
   }
   .banner-container .banner-card-container .content-container {
     width: 100%;
-    padding: 10px 0;
   }
   .banner-container .banner-card-container .content-container .label {
     margin-left: 20px;
@@ -222,395 +185,26 @@
   .banner-container .banner-card-container .content-container .title-container.with-label {
     margin-top: 20px;
   }
-  .banner-container .banner-card-container .content-container .btn-container {
-    width: 88%;
-    height: 45px;
-    margin-left: 6%;
-    margin-right: 6%;
-  }
-  .banner-container .banner-card-container .concont {
-    width: 100%;
-    height: 280px;
-  }
-  .banner-container .banner-card-container .concont .image-container .phone-img {
-    display: block;
-    position: absolute;
-    height: 280px;
-    left: 0;
-    bottom: 0;
-  }
 }
-.icon-and-description-container {
-  display: flex;
-  justify-content: center;
-  text-align: left;
+.recipe.recipe-large {
+  margin-bottom: 90px;
 }
-.icon-and-description-container .item-container {
-  display: flex;
+.recipe.recipe-large .content-card-recipes {
+  height: 75%;
 }
-.icon-and-description-container .item-container .image-container {
-  height: 96px;
-  width: 96px;
-}
-.icon-and-description-container .item-container .image-container img {
-  width: 100%;
-  height: 100%;
-}
-.icon-and-description-container .item-container .descrition-container {
-  text-align: left;
-  width: 240px;
-  margin-left: 40px;
-  padding-right: 30px;
-}
-.icon-and-description-container .item-container .descrition-container .title {
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.icon-and-description-container .item-container .descrition-container .description {
-  font-size: 18px;
-  line-height: 1.56;
-}
-@media screen and (min-width: 768px) {
-  .icon-and-description-container .item-container {
-    border-right: 1px solid black;
-    margin-left: 70px;
-  }
-  .icon-and-description-container .item-container:last-child {
-    border-right: unset;
-  }
-  .icon-and-description-container .item-container:first-child {
-    margin-left: unset;
-  }
-  .icon-and-description-container .item-container:only-child .descrition-container {
-    max-width: 684px;
-    width: unset;
-    padding-right: unset;
+@media (max-width: 768px) {
+  .recipe.recipe-large .content-card-recipes {
+    height: 80%;
   }
 }
 @media (max-width: 768px) {
-  .icon-and-description-container {
-    flex-flow: column;
-  }
-  .icon-and-description-container .item-container {
-    flex-flow: column;
-    padding-bottom: 40px;
-    text-align: center;
-  }
-  .icon-and-description-container .item-container .image-container {
-    margin: auto;
-    margin-bottom: 20px;
-  }
-  .icon-and-description-container .item-container .descrition-container {
-    width: 88%;
-    margin-right: 6%;
-    margin-left: 6%;
-    padding: unset;
-  }
-}
-@media (min-width: 768px) {
-  .mixed-content-card-container {
-    padding-left: 9%;
-    padding-right: 9%;
-  }
-}
-@media (max-width: 768px) {
-  .mixed-content-card-container {
-    padding-left: 6%;
-    padding-right: 6%;
-  }
-}
-.mixed-content-card-container .mixed-content-block {
-  font-family: 'Roboto', sans-serif;
-  background-color: transparent;
-}
-.mixed-content-card-container .mixed-content-block .copy-container .content-title {
-  font-weight: bold;
-  color: #000000;
-  text-transform: uppercase;
-}
-.mixed-content-card-container .mixed-content-block .copy-container .content-text {
-  color: #3e3e3e;
-}
-.mixed-content-card-container .mixed-content-block .copy-container .content-button {
-  font-size: 14px;
-  background-color: #f2af0c;
-  color: #000;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-.mixed-content-card-container .mixed-content-block .copy-container .content-button:hover {
-  background-color: #ffc800;
-  color: #000;
-}
-.mixed-content-card-container .mixed-content-block .image-container {
-  background-color: rgba(64, 146, 223, 0.5);
-}
-.mixed-content-card-container .mixed-content-block .image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-@media (min-width: 768px) {
-  .mixed-content-card-container .mixed-content-block {
-    width: 100%;
-    display: flex;
-    padding-bottom: 80px;
-  }
-  .mixed-content-card-container .mixed-content-block:last-child {
-    padding-bottom: 0;
-  }
-  .mixed-content-card-container .mixed-content-block.text-left .copy-container {
-    order: 0;
-    margin-right: 6%;
-  }
-  .mixed-content-card-container .mixed-content-block.text-left .image-container {
-    order: 1;
-  }
-  .mixed-content-card-container .mixed-content-block.text-right .copy-container {
-    order: 1;
-    margin-left: 6%;
-  }
-  .mixed-content-card-container .mixed-content-block.text-right .image-container {
-    order: 0;
-  }
-  .mixed-content-card-container .mixed-content-block .copy-container {
-    height: 100%;
-    width: 44%;
-    text-align: left;
-    align-self: center;
-  }
-  .mixed-content-card-container .mixed-content-block .copy-container .content-title {
-    font-size: 18px;
-  }
-  .mixed-content-card-container .mixed-content-block .copy-container .content-button {
-    padding: 10px 25px;
-    font-size: 14px;
-  }
-  .mixed-content-card-container .mixed-content-block .copy-container .content-text {
-    padding: 20px 0;
-    font-size: 16px;
-    line-height: 26px;
-  }
-  .mixed-content-card-container .mixed-content-block .image-container {
-    height: 390px;
-    width: 50%;
-  }
-}
-@media (max-width: 768px) {
-  .mixed-content-card-container .mixed-content-block {
-    font-family: 'Roboto', sans-serif;
-    width: 100%;
-    padding-bottom: 40px;
-    margin: 0;
-  }
-  .mixed-content-card-container .mixed-content-block .copy-container {
-    width: 100%;
-  }
-  .mixed-content-card-container .mixed-content-block .copy-container .content-title {
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 32px;
-    color: #000000;
-    text-transform: uppercase;
-    padding-top: 20px;
-  }
-  .mixed-content-card-container .mixed-content-block .copy-container .content-text {
-    font-size: 16px;
-    padding-top: 10px;
-    color: #3e3e3e;
-  }
-  .mixed-content-card-container .mixed-content-block .copy-container .content-button {
-    width: 100%;
-    font-size: 14px;
-    text-align: center;
-    display: block;
-    padding: 13px 0;
-    background-color: #f2af0c;
-    color: #000;
-    text-decoration: none;
-    text-transform: uppercase;
-    bottom: 2px;
-    font-weight: 500;
-    margin-top: 20px;
-  }
-  .mixed-content-card-container .mixed-content-block .image-container {
-    height: 250px;
-    margin-left: -7%;
-    margin-right: -7%;
-    width: 114%;
-    background-color: rgba(64, 146, 223, 0.5);
-  }
-  .mixed-content-card-container .mixed-content-block .image-container img {
-    width: 100%;
-    height: 100%;
-  }
-}
-.image-outside-horizontal-card-container .image-outside-horizontal-card {
-  display: flex;
-  width: 845px;
-  height: 334px;
-  position: relative;
-}
-.image-outside-horizontal-card-container .image-outside-horizontal-card .content-container {
-  width: 100%;
-  border: 5px solid #00b39f;
-  z-index: 1;
-}
-.image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
-  width: 380px;
-  padding-left: 80px;
-  padding-top: 35px;
-  padding-right: 85px;
-}
-.image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
-  padding: 0;
-  width: 380px;
-  padding-left: 80px;
-  padding-top: 20px;
-  padding-right: 85px;
-}
-.image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container .content-button {
-  width: 100%;
-  font-size: 14px;
-  text-align: center;
-  display: block;
-  padding: 13px 0;
-  background-color: #f2af0c;
-  color: #000;
-  text-decoration: none;
-  text-transform: uppercase;
-  bottom: 2px;
-  font-weight: 500;
-}
-.image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container .content-button:hover {
-  background-color: #ffc800;
-  color: #000;
-}
-.image-outside-horizontal-card-container .image-outside-horizontal-card .image-container {
-  position: absolute;
-  right: -100px;
-  top: -40px;
-  z-index: 0;
-  height: 415px;
-  width: 410px;
-  background-color: rgba(64, 146, 223, 0.5);
-  overflow: hidden;
-}
-.image-outside-horizontal-card-container .image-outside-horizontal-card .image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-@media (min-width: 768px) {
-  .image-outside-horizontal-card-container {
-    padding-bottom: 40px;
-    padding-top: 40px;
-    padding-left: 14%;
-  }
-  .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
-    width: 530px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
-    width: 550px;
-    font-size: 20px;
-    text-align: center;
-  }
-  .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container {
-    width: 162px;
-    height: 44px;
-    margin: 20px auto;
-    margin-right: 180px;
-  }
-  .image-outside-horizontal-card-container .image-outside-horizontal-card.image-left .content-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-  }
-  .image-outside-horizontal-card-container .image-outside-horizontal-card.image-left .content-container .title-container {
-    padding-top: 0;
-  }
-  .image-outside-horizontal-card-container .image-outside-horizontal-card.image-left .image-container {
-    right: unset;
-    left: -100px;
-  }
-  .image-outside-horizontal-card-container .image-outside-horizontal-card.only-text {
-    height: unset;
-  }
-  .image-outside-horizontal-card-container .image-outside-horizontal-card.only-text .content-container {
-    border: 5px solid #00b39f;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self: center;
-    padding-bottom: 30px;
-  }
-}
-@media (max-width: 768px) {
-  .image-outside-horizontal-card-container {
-    padding-left: 6%;
-    padding-right: 6%;
-    padding-top: 30px;
-  }
-  .image-outside-horizontal-card-container .image-outside-horizontal-card {
-    width: 100%;
-    height: unset;
-    flex-wrap: wrap;
-  }
-  .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container {
-    padding-bottom: 20px;
-    order: 1;
-  }
-  .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
-    padding-left: 30px;
-    padding-top: 410px;
-    padding-right: 30px;
-    width: unset;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
-    font-size: 20px;
-    text-align: center;
-    color: #3e3e3e;
-    width: unset;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 30px;
-  }
-  .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container {
-    height: 45px;
-    width: 160px;
-    margin-top: 40px;
-    margin-left: 30%;
-  }
-  .image-outside-horizontal-card-container .image-outside-horizontal-card .image-container {
-    order: 0;
-    position: absolute;
-    top: -30px;
-    z-index: 0;
-    width: 102vw;
-    right: -6.7%;
-  }
-  .image-outside-horizontal-card-container .image-outside-horizontal-card.only-text .content-container {
-    border: 5px solid #00b39f;
-    padding-top: 20px;
-  }
-  .image-outside-horizontal-card-container .image-outside-horizontal-card.only-text .content-container .title-container {
-    padding-top: 0;
+  .recipe.recipe-large-mobile {
+    height: 70%;
   }
 }
 .recipe .content-card-recipes {
   padding-left: 108px;
-  background: rgba(255, 255, 255, 0.5);
+  background: #ffffff;
   padding-top: 40px;
   padding-bottom: 110px;
   text-align: left;
@@ -885,12 +479,16 @@
   width: 100%;
   padding: 20px;
   position: absolute;
-  background-color: white;
+  background-color: #f8f8f8;
   height: 275px;
+}
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content .middle-title {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol,
 .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul {
-  height: inherit;
   counter-reset: my-awesome-counter;
   list-style: none;
   padding-left: 45px;
@@ -954,7 +552,7 @@
 }
 @media (max-width: 768px) {
   .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
-    flex-wrap: wrap;
+    height: 440px;
   }
   .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab {
     margin-top: -6px;
@@ -1070,6 +668,7 @@
 }
 .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body .recipes-ingredients-method .tab-table-container .tab .content {
   top: 71px;
+  height: 370px;
 }
 .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content {
   z-index: 1;
@@ -1079,6 +678,7 @@
 .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header {
   padding-right: 6%;
   padding-left: 6%;
+  height: 180px;
 }
 .recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header .recipes-top .recipes-factor-and-difficulty {
   display: none;
@@ -1149,7 +749,11 @@
   color: white;
   background-color: #3e3e3e;
   align-items: center;
-  min-height: 154px;
+  min-height: 110px;
+}
+.box-container.background-white {
+  background-color: white;
+  color: #3e3e3e;
 }
 .box-container.full-image .image-container {
   min-width: 100%;
@@ -1253,198 +857,6 @@
     margin-bottom: 40px;
   }
 }
-.download-block {
-  overflow: hidden;
-  position: relative;
-}
-.download-block .tab-label {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  border-bottom: 1px solid #b9b9b9;
-  border-top: 1px solid #b9b9b9;
-  height: 95px;
-  font-size: 18px;
-  line-height: 28px;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: left;
-  height: inherit;
-  padding-top: 35px;
-  padding-bottom: 35px;
-  padding-left: 60px;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-  /* Icon */
-}
-.download-block .tab-label::after {
-  content: "\276F";
-  width: 1em;
-  height: 1em;
-  text-align: center;
-  color: #f2af0c;
-  left: 1.5%;
-  font-size: 25px;
-  transition: all 0.35s;
-  position: absolute;
-}
-.download-block .tab-content {
-  max-height: 0;
-  padding: 0 40px;
-  background: white;
-  transition: all 0.55s;
-}
-.download-block .tab-button {
-  position: absolute;
-  top: 40px;
-  right: 40px;
-  color: #4092df;
-  font-size: 14px;
-  font-weight: 500;
-}
-.download-block .tab-button i {
-  padding-right: 10px;
-}
-.download-block input {
-  display: none;
-}
-.download-block input:checked + .tab-label {
-  background-color: #ffffff;
-  border-bottom: unset;
-}
-.download-block input:checked + .tab-label::after {
-  transform: rotate(90deg);
-}
-.download-block input:checked ~ .tab-content {
-  max-height: unset;
-}
-.download-block .download-body {
-  position: relative;
-  padding-bottom: 0;
-}
-.download-block .download-body .download-card-container {
-  display: flex;
-  padding-bottom: 20px;
-  flex-wrap: wrap;
-}
-.download-block .download-body .download-card-container .download-card {
-  width: 18.6%;
-  margin-left: 20px;
-  padding-top: 20px;
-}
-.download-block .download-body .download-card-container .download-card:nth-child(5n-4) {
-  margin-left: 0;
-}
-.download-block .download-body .download-card-container .download-card .image-container {
-  height: 170px;
-}
-.download-block .download-body .download-card-container .download-card .image-container img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.download-block .download-body .download-card-container .download-card .body-container {
-  background-color: #f2f2f2;
-  height: 185px;
-  text-align: left;
-  padding-top: 10px;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 20px;
-  position: relative;
-}
-.download-block .download-body .download-card-container .download-card .body-container .title-text {
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 22px;
-  color: #ff21b8;
-  text-transform: uppercase;
-}
-.download-block .download-body .download-card-container .download-card .body-container .description-text {
-  padding-top: 10px;
-  font-size: 16px;
-  line-height: 20px;
-  word-break: break-word;
-}
-.download-block .download-body .download-card-container .download-card .body-container .download-card-btn {
-  margin-top: 20px;
-  border: 1px solid;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 24px;
-  position: absolute;
-  width: 80%;
-  bottom: 15px;
-}
-.download-block .download-body .download-card-container .download-card .body-container .download-card-btn .download-link-box {
-  color: #3e3e3e;
-  display: flex;
-  justify-content: center;
-  text-decoration: unset;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.download-block .download-body .download-card-container .download-card .body-container .download-card-btn .download-link-box i {
-  margin-right: 10px;
-}
-.download-block .download-body .download-card-container .download-card .body-container .download-card-btn .download-link-box:hover {
-  background-color: #3e3e3e;
-  color: #ffffff;
-}
-.download-block .download-body .download-card-container .download-card .body-container .download-card-btn .download-link-box:hover i {
-  color: #ffffff;
-}
-.download-block .download-body .btn-see-more {
-  height: 40px;
-  margin-bottom: 20px;
-}
-.download-block .download-body .btn-see-more .see-more-text {
-  position: absolute;
-  right: 60px;
-  background: #3e3e3e;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  text-decoration: unset;
-  color: #f2af0c;
-}
-.download-block .download-body .btn-see-more .see-more-text:hover {
-  color: #3e3e3e;
-  background-color: #f2af0c;
-  border: 1px solid #3e3e3e;
-}
-.download-block .download-body .download-footer {
-  padding-bottom: 40px;
-  font-size: 12px;
-  line-height: 18px;
-  text-align: left;
-  color: #3e3e3e;
-}
-@media (max-width: 768px) {
-  .download-block .tab-button {
-    display: none;
-  }
-  .download-block .download-body {
-    padding: 0 20px 0 20px;
-  }
-  .download-block .download-body .download-card-container {
-    flex-direction: column;
-  }
-  .download-block .download-body .download-card-container .download-card {
-    width: 100%;
-    height: unset;
-    margin-left: 0;
-    margin-bottom: 20px;
-  }
-  .download-block .download-body .download-card-container .download-card .image-container {
-    height: 225px;
-  }
-  .download-block .download-footer {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 25px;
-  }
-}
 .titles-and-descriptions {
   text-align: left;
 }
@@ -1518,7 +930,7 @@
   background-color: #ffffff;
   position: relative;
   width: 100%;
-  height: 255px;
+  height: 220px;
 }
 .vertical-card-container-related-article .card-related-content .copy-container .copy-text {
   padding: 20px 30px;
@@ -1551,187 +963,37 @@
   position: absolute;
   bottom: 4px;
 }
-.image {
-  background-color: rgba(64, 146, 223, 0.5);
-}
-.image.small {
-  margin-left: 18%;
-  margin-right: 18%;
-  height: 515px;
-}
-.image.small img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-@media screen and (max-width: 768px) {
-  .image.small {
-    margin-left: 0;
-    margin-right: 0;
-    height: 230px;
-  }
-}
 
 </style>
 
 <div class="banner-container">
     <div class="banner-card-container">
         <div class="content-container">
-            <div class="title-container">
-                <h2 class="title">MAKE ST PATRICK’S DAY YOUR MOST PROFITABLE WEEKEND</h2>
+            <div class="label">
+                <span>St’ patrick’s day</span>
             </div>
-            <div class="text-container">
-                <p class="text">Throw a celebration to remember with our Guinness-themed guide to success.</p>
+            <div class="title-container with-label">
+                <h2 class="title">St. patrick’s day food recipes</h2>
             </div>
-        </div>
-        <div class="concont">
-            <div class="image-container">
-                <img class="desktop-img" src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1R" alt="" />
-                <img class="phone-img" src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1R" alt="" />
-            </div>
-        </div>
-    </div>
-</div>
-<div id="spacer80"></div>
-<div class="icon-and-description-container">
-    <div class="item-container">
-        <div class="image-container">
-            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
-        </div>
-        <div class="descrition-container">
-            <p class="description">Total Beverage Spend vs. avg day increased by +7% during St Pat's, with 
-                <b>Beer</b> as the biggest winner in volume share at <b>79.1% *</b></p>
-        </div>
-    </div>
-    <div class="item-container">
-        <div class="image-container">
-            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
-        </div>
-        <div class="descrition-container">
-            <p class="description">It's a worldwide celebration with over <b>250 million people </b>
-                celebrating St Patrick's Day <b>*</b></p>
-        </div>
-    </div>
-    <div class="item-container">
-        <div class="image-container">
-            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
-        </div>
-        <div class="descrition-container">
-            <p class="description">Over 13 million glasses.... That’s <b>890% more</b> than an average day <b>*</b>
-                </br>
-                <b>*CGA Data 2018</b></p>
-        </div>
-    </div>
-</div>
-
-<div id="spacer80"></div><div id="spacer10"></div>
-<p class="general-title">GUINNESS and ST PATRICK’S DAY</p>
-<div id="spacer20"></div>
-<p class="general-description">Through its authentic Irish heritage and values of togetherness 
-    and friendship, Guinness is synoynmous with St. Patrick’s Day. For many customers, 
-    it’s the chance to share great times with those closest to them and celebrate like no other 
-    time of year. You can play your part in making this year’s festivities their best yet, 
-    with a brilliant Guinness experience. </p>
-<div id="spacer40"></div>
-<div class="image small">
-    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" alt=""></img>
-</div>
-
-<div id="spacer80"></div>
-<p class="general-title">YOUR KEYS TO ST PATRICK’S SUCCESS</p>
-<div id="spacer80"></div>
-
-<div class="mixed-content-card-container">
-    <div class="mixed-content-block text-right">
-        <div class="image-container">
-            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" alt="" />
-        </div>
-        <div class="copy-container">
-            <p class="content-title">1. Focus on quality</p>
-            <p class="content-text">For some, this will be their first taste of Guinness. 
-                Following the famous 7Cs on every serve will make sure they receive the best quality experience.</p>
-            <div class="btn-container">
-                <a href="" target="_blank" class="content-button">FIND OUT MORE</a>
-            </div>
-        </div>
-    </div>
-    <div class="mixed-content-block text-left">
-        <div class="image-container">
-            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2F" alt="" />
-        </div>
-        <div class="copy-container">
-            <p class="content-title">2. Dress to impress</p>
-            <p class="content-text">Let your customers know well in advance that you’re 
-                gearing up for a St Patrick’s party to remember by dressing your venue with 
-                eye-catching POS. Venues using our St Patrick’s Day kits saw a 20% uplift in sales last year.*</p>
-            <p class="content-text">*CGA data tp w/e 30/03/2019</p>
-        </div>
-    </div>
-    <div class="mixed-content-block text-right">
-        <div class="image-container">
-            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" alt="" />
-        </div>
-        <div class="copy-container">
-            <p class="content-title">3. Remember the food</p>
-            <p class="content-text">A few subtle changes or the addition of a couple of 
-                <a href="#" target="_blank">simple dishes</a> to your menu could greatly enhance the St Patrick’s experience for your customers.</p>
-            <p class="content-text">Think about special offers, such as a lunch menus with a traditional Irish Stew 
-                or Boxty and Coddle. Offer them both with a pint of Guinness or one of our 
-                <a href="#" target="_blank">themed cocktails</a> as a meal deal.</p>
-        </div>
-    </div>
-    <div class="mixed-content-block text-left">
-        <div class="image-container">
-            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2F" alt="" />
-        </div>
-        <div class="copy-container">
-            <p class="content-title">4. Bring the entertainment</p>
-            <p class="content-text">In outlet entertainment and competitions can all help to bring customers 
-                to your door in greater numbers – especially if you promote them well in advance. 
-                With St Patrick’s falling on a Tuesday, the celebrations will start on the Friday before and continue them across the weekend.</p>
-            <p class="content-text">This is also when the Six Nations rugby will be reaching its climax, 
-                with Ireland taking on France in Paris in a potentially title-deciding match.</p>
-        </div>
-    </div>
-</div>
-<div id="spacer80"></div>
-<div class="image-outside-horizontal-card-container">
-    <div class="image-outside-horizontal-card image-left">
-        <div class="content-container">
-            <div class="title-container">
-                <span class="title">AVAILABLE NOW – YOUR FREE ST PATRICK’S DAY QUIZ</span>
-            </div>
-            <div class="description-container">
-                <span class="description">Ideal for the night itself (Tuesday 17th March) 
-                    this specially themed quiz is free to MyDiageo users and ready to download, 
-                    giving you everything you need to run a fun St Patrick’s night quiz in your outlet.</span>
-            </div>
-            <div class="btn-container">
-                <a href="" target="_blank" class="content-button">DOWNLOAD QUIZ</a>
-            </div>
-        </div>
-        <div class="image-container">
-            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+            <div class="concont"></div>
         </div>
     </div>
 </div>
 
 <div id="spacer80"></div>
-<p class="general-title">GUINNESS RECIPES</p>
-<div id="spacer20"></div>
-<p class="general-description">Alternative ways to serve Guinness to appeal to non-Guinness drinkers on St Patrick’s Day.</p>
-<div id="spacer80"></div><div id="spacer20"></div>
-
 <div class="recipe doble-recipe">
     <div class="content-card-recipes one-of-two transparent-background">
         <div class="recipe-header">
             <div class="recipes-top">
                 <div class="recipes-title">
-                    <p>BLACK FOG</p>
+                    <p>traditional irish stew</p>
                 </div>
                 <div class="recipes-tag-container">
-                    <p class="recipes-tag">St Patrick’s Day</p>
+                    <p class="recipes-tag">St. Patrick’s day</p>
                 </div>
+            </div>
+            <div class="recipes-description">
+                <p>A comforting and warming this dish, this is the perfect companion for St. Patrick’s Day.</p>
             </div>
         </div>
         <div class="recipe-body">
@@ -1748,10 +1010,19 @@
                             <div class="content">
                                 <ul>
                                     <li>
-                                        <p>1/2 pint of Guinness</p>
+                                        <p>2 large onions</p>
                                     </li>
                                     <li>
-                                        <p>25ml Chambord</p>
+                                        <p>4 large Carrots</p>
+                                    </li>
+                                    <li>
+                                        <p>½ stewing steak/mince or lamb</p>
+                                    </li>
+                                    <li>
+                                        <p>8 large potatoes</p>
+                                    </li>
+                                    <li>
+                                        <p>Salt & pepper (personal preference)</p>
                                     </li>
                                 </ul>
                             </div>
@@ -1763,10 +1034,25 @@
                             <div class="content">
                                 <ol>
                                     <li>
-                                        <p>Pout a half pint of Guinness</p>
+                                        <p>Wash and cut onions into moderate size chunks and add to the pot.</p>
                                     </li>
                                     <li>
-                                        <p>Add 25ml Chambord</p>
+                                        <p>Wash carrots and cut into chunks.</p>
+                                    </li>
+                                    <li>
+                                        <p>Wash and peel the potatoes then cut each one in half.</p>
+                                    </li>
+                                    <li>
+                                        <p>Slice the meat into smaller pieces. If using stewing mince roll into meatballs.</p>
+                                    </li>
+                                    <li>
+                                        <p>Get a large pot and fill it with water. Add the potatoes and meat.</p>
+                                    </li>
+                                    <li>
+                                        <p>Heat pot until water boils then add carrots and onions.</p>
+                                    </li>
+                                    <li>
+                                        <p>Keep on a low boil and stir every now and then until vegetables are cooked.</p>
                                     </li>
                                 </ol>
                             </div>
@@ -1780,11 +1066,14 @@
         <div class="recipe-header">
             <div class="recipes-top">
                 <div class="recipes-title">
-                    <p>stout fellow</p>
+                    <p>Dublin coddle</p>
                 </div>
                 <div class="recipes-tag-container">
-                    <p class="recipes-tag">St Patrick’s Day</p>
+                    <p class="recipes-tag">St. Patrick’s day</p>
                 </div>
+            </div>
+            <div class="recipes-description">
+                <p>Irish sausage. bacon, onion and potato hotpot</p>
             </div>
         </div>
         <div class="recipe-body">
@@ -1801,16 +1090,31 @@
                             <div class="content">
                                 <ul>
                                     <li>
-                                        <p>60ml Guinness</p>
+                                        <p>1 pound pork sausage links</p>
                                     </li>
                                     <li>
-                                        <p>30ml Pot still Jamaican Rum</p>
+                                        <p>1/2 pound smoked bacon, cubed</p>
                                     </li>
                                     <li>
-                                        <p>30ml Kahlúa coffee liqueur</p>
+                                        <p>3 carrots, chopped</p>
                                     </li>
                                     <li>
-                                        <p>5ml Dark Créme de cacao liqueur</p>
+                                        <p>4 large potatoes, peeled and sliced</p>
+                                    </li>
+                                    <li>
+                                        <p>salt and ground black pepper to taste</p>
+                                    </li>
+                                    <li>
+                                        <p>1 teaspoon dried parsley</p>
+                                    </li>
+                                    <li>
+                                        <p>1 cup beef stock</p>
+                                    </li>
+                                    <li>
+                                        <p>1 1/2 cups Guinness</p>
+                                    </li>
+                                    <li>
+                                        <p>1/2 cup heavy cream</p>
                                     </li>
                                 </ul>
                             </div>
@@ -1822,10 +1126,28 @@
                             <div class="content">
                                 <ol>
                                     <li>
-                                        <p>Shake all ingredients with ice</p>
+                                        <p>Preheat oven to 325 degrees F (165 degrees C).</p>
                                     </li>
                                     <li>
-                                        <p>Strain into a chilled glass</p>
+                                        <p>Place the sausages and bacon into a large skillet over medium heat, 
+                                            and cook until the sausages are browned on both sides, about 10 minutes.</p>
+                                    </li>
+                                    <li>
+                                        <p>Slice the sausages into large chunks, and set the sausage and bacon aside.</p>
+                                    </li>
+                                    <li>
+                                        <p>Place a layer of 1/3 of the onions in a 9x13-inch baking dish, 
+                                            followed by a layer of 1/3 of the carrots and sliced potatoes. 
+                                            Arrange 1/3 of sausage and bacon in a layer over the potatoes; 
+                                            sprinkle with salt, pepper, and parsley. Repeat layers twice more.</p>
+                                    </li>
+                                    <li>
+                                        <p>Warm the beef stock in a saucepan over medium heat, and pour in 
+                                            the stout beer and cream. Pour the sauce over the casserole, 
+                                            and let the sauce fill in the spaces in the layers.</p>
+                                    </li>
+                                    <li>
+                                        <p>Bake in the preheated oven until the potatoes and vegetables are tender, about 1 1/2 hours.</p>
                                     </li>
                                 </ol>
                             </div>
@@ -1836,89 +1158,219 @@
         </div>
     </div>
 </div>
-<div id="spacer80"></div>
+
+<div id="spacer80"></div><div id="spacer40"></div>
 <div class="box-container">
+    <div class="image-container">
+        <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+    </div>
     <div class="body-container">
-        <p class="box-text">Spirits fans shouldn’t miss out on all the fun of St Patrick’s Day. 
-            <br>
-            Find out how quick and easy it is to <b>serve Irish-inspired cocktails</b> and keep everyone happy.</p>
+        <p class="box-text">Bring a little Irish charm to your venue with these <b>Patrick’s day cocktails</b></p>
         <div class="box-button">
-            <a href="#" target="_blank" class="content-button">GET THE RECIPES</a>
+            <a href="#" target="_blank" class="content-button">VISIT PAGE</a>
         </div>
     </div>
 </div>
+
 <div id="spacer80"></div>
-<div class="download-block">
-    <input type="checkbox" id="download-tab-1">
-    <label class="tab-label" for="download-tab-1">Downloads</label>
-    <a class="tab-button" href=""><i class="fas fa-download"></i> Download all</a>
-    <div class="download-body tab-content">
-        <div class="download-card-container">
-            <div class="download-card">
-                <div class="image-container">
-                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHx" alt="" />
+<div class="recipe recipe-large">
+    <div class="content-card-recipes">
+        <div class="recipe-header">
+            <div class="recipes-top">
+                <div class="recipes-description">
+                    <p>Guinness Recipes</p>
                 </div>
-                <div class="body-container">
-                    <p class="title-text">SOCIAL MEDIA VIDEO</p>
-                    <p class="description-text">110285 GUINNESS SPD PORTRAIT A1 KV</p>
-                    <div class="download-card-btn">
-                        <a href="#" target="_blank" class="download-link-box"><i class="fas fa-download"></i> Download</a>
-                    </div>
+                <div class="recipes-title">
+                    <p>Guinness Smoked Baby Back Ribs</p>
                 </div>
             </div>
-            <div class="download-card">
-                <div class="image-container">
-                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHx" alt="" />
+        </div>
+        <div class="recipe-body">
+            <div class="recipes-ingredients-method">
+                <div class="recipes-image-content">
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
                 </div>
-                <div class="body-container">
-                    <p class="title-text">SOCIAL MEDIA VIDEO</p>
-                    <p class="description-text">110285 GUINNESS SPD LANDSCAPE A1 KV ALT2</p>
-                    <div class="download-card-btn">
-                        <a href="#" target="_blank" class="download-link-box"><i class="fas fa-download"></i> Download</a>
-                    </div>
-                </div>
-            </div>
-            <div class="download-card">
-                <div class="image-container">
-                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHx"
-                        alt="" />
-                </div>
-                <div class="body-container">
-                    <p class="title-text">DOWNLOAD</p>
-                    <p class="description-text">110285 GUINNESS SPD PORTRAIT A1 3 PINTS…</p>
-                    <div class="download-card-btn">
-                        <a href="#" target="_blank" class="download-link-box"><i class="fas fa-download"></i> Download</a>
-                    </div>
-                </div>
-            </div>
-            <div class="download-card">
-                <div class="image-container">
-                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHx" alt="" />
-                </div>
-                <div class="body-container">
-                    <p class="title-text">SOCIAL MEDIA VIDEO</p>
-                    <p class="description-text">EnterAssetTheFileNameHere.mp4</p>
-                    <div class="download-card-btn">
-                        <a href="#" target="_blank" class="download-link-box"><i class="fas fa-download"></i> Download</a>
-                    </div>
-                </div>
-            </div>
-            <div class="download-card">
-                <div class="image-container">
-                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHx"
-                        alt="" />
-                </div>
-                <div class="body-container">
-                    <p class="title-text">SOCIAL MEDIA VIDEO</p>
-                    <p class="description-text">EnterAssetTheFileNameHere.mp4</p>
-                    <div class="download-card-btn">
-                        <a href="#" target="_blank" class="download-link-box"><i class="fas fa-download"></i> Download</a>
+                <div class="tab-table-container">
+                    <div class="tabs">
+                        <div class="tab">
+                            <input type="radio" id="tab-5" name="tab-group-3" checked>
+                            <label class="label" for="tab-5">Ingredients</label>
+                            <div class="ingredients spacer"></div>
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <p>2 racks spare ribs (per 4 servings)</p>
+                                    </li>
+                                    <li>
+                                        <p>Quality barbecue sauce + extra for dripping</p>
+                                    </li>
+                                </ul>
+                                <p class="middle-title">For the Marinade (per 4 servings):</p>
+                                <ul>
+                                    <li>
+                                        <p>4 Cans Guinness® Original</p>
+                                    </li>
+                                    <li>
+                                        <p>1 tbsp dried fennel seeds</p>
+                                    </li>
+                                    <li>
+                                        <p>1 tbsp dried garlic granules</p>
+                                    </li>
+                                    <li>
+                                        <p>1 tbsp light muscovado sugar</p>
+                                    </li>
+                                    <li>
+                                        <p>1 tsp fine table salt</p>
+                                    </li>
+                                    <li>
+                                        <p>1 tbsp smoked paprika</p>
+                                    </li>
+                                    <li>
+                                        <p>pinch cayenne pepper</p>
+                                    </li>
+                                    <li>
+                                        <p>pinch white pepper</p>
+                                    </li>
+                                    <li>
+                                        <p>½ tsp ground cinnamon (optional)</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="radio" id="tab-6" name="tab-group-3">
+                            <label class="label" for="tab-6">Method</label>
+                            <div class="method spacer"></div>
+                            <div class="content">
+                                <ol>
+                                    <li>
+                                        <p>Make up the dry rub by whizzing the fennel seeds and garlic granules 
+                                            in a spice grinder or a pestle & mortar until they are powdered.</p>
+                                    </li>
+                                    <li>
+                                        <p>Mix with the rest of the ingredients in a large bowl.</p>
+                                    </li>
+                                    <li>
+                                        <p>Rub all over the rib racks and set in the fridge for 2 hours, overnight is ideal.</p>
+                                    </li>
+                                    <li>
+                                        <p>Place the rubbed racks on the grill and leave to cook on griddle 
+                                            until the meat starts to shred away from the bones when you insert a fork.</p>
+                                    </li>
+                                    <li>
+                                        <p>When they are ready, lightly brush the barbecue sauce over the ribs and place back on the grill for 15 minutes.</p>
+                                    </li>
+                                    <li>
+                                        <p>Remove from the heat and wrap in tin foil to rest another 15 minutes. 
+                                            Serve warm with a little more barbecue sauce, if you want, and a cold Guinness.</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<div class="recipe recipe-large-mobile">
+    <div class="content-card-recipes">
+        <div class="recipe-header">
+            <div class="recipes-top">
+                <div class="recipes-description">
+                    <p>Guinness Recipes</p>
+                </div>
+                <div class="recipes-title">
+                    <p>GUINNESS ICE CREAM</p>
+                </div>
+            </div>
+        </div>
+        <div class="recipe-body">
+            <div class="recipes-ingredients-method">
+                <div class="recipes-image-content">
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+                </div>
+                <div class="tab-table-container">
+                    <div class="tabs">
+                        <div class="tab">
+                            <input type="radio" id="tab-7" name="tab-group-4" checked>
+                            <label class="label" for="tab-7">Ingredients</label>
+                            <div class="ingredients spacer"></div>
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <p>500ml double cream</p>
+                                    </li>
+                                    <li>
+                                        <p>500ml whole milk</p>
+                                    </li>
+                                    <li>
+                                        <p>1 vanilla pod</p>
+                                    </li>
+                                    <li>
+                                        <p>4 whole eggs</p>
+                                    </li>
+                                    <li>
+                                        <p>3 egg yolks</p>
+                                    </li>
+                                    <li>
+                                        <p>500g caster sugar</p>
+                                    </li>
+                                    <li>
+                                        <p>1.2 litres Guinness® West Indies Porter</p>
+                                    </li>
+                                    <li>
+                                        <p>2 tablespoons golden syrup </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="radio" id="tab-8" name="tab-group-4">
+                            <label class="label" for="tab-8">Method</label>
+                            <div class="method spacer"></div>
+                            <div class="content">
+                                <ol>
+                                    <li>
+                                        <p>First make a Guinness West Indies Porter reduction by boiling and then 
+                                            simmering with the golden syrup until the texture thickens.</p>
+                                    </li>
+                                    <li>
+                                        <p>In a separate pan, bring the cream, milk and vanilla to the boil.</p>
+                                    </li>
+                                    <li>
+                                        <p>Next, place the 4 whole eggs, 3 egg yolks and caster sugar in a bowl and whisk.</p>
+                                    </li>
+                                    <li>
+                                        <p>Allow the mixture to cool before adding to the eggs and sugar.</p>
+                                    </li>
+                                    <li>
+                                        <p>Churn the mixture in an ice cream machine, only half filling the barrel as the mixture rises. 
+                                            Scoop out into a metal container and freeze immediately.</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="spacer80"></div>
+<div class="box-container background-white">
+    <div class="image-container">
+        <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+    </div>
+    <div class="body-container">
+        <p class="box-text">Make <b>St Patrick’s Day</b> your most profitable weekend. Throw a celebration to remember with our Guinness guide</p>
+        <div class="box-button">
+            <a href="#" target="_blank" class="content-button">VISIT PAGE</a>
+        </div>
+    </div>
+</div>
+
 <div id="spacer80"></div>
 <div class="titles-and-descriptions">
     <p class="related-title">RELATED articles</p>
@@ -1931,7 +1383,7 @@
         <div class="copy-container">
             <p class="copy-text">Increase sales and boost profitability with our handy guide to beer and food pairings</p>
             <a href="https://www.mydiageo.com/s/cp-content/a4P4G000000KEN9" 
-            class="copy-link">Find out more<i class="fas fa-angle-right"></i></a>
+                class="copy-link">Find out more<i class="fas fa-angle-right"></i></a>
         </div>
     </div>
     <div class="card-related-content">
@@ -1940,10 +1392,12 @@
         </div>
         <div class="copy-container">
             <p class="copy-text">Would you like the Bill or a Baileys?</p>
-            <a href="https://www.mydiageo.com/s/cp-content/a4PD00000001VDUMA2/trendsbeerinsightjune18?retUrl=https%3A%2F%2Fwww.mydiageo.com%2Fs%2Fdiscover" 
-            class="copy-link">Find out more<i class="fas fa-angle-right"></i></a>
+            <a
+                href="https://www.mydiageo.com/s/cp-content/a4PD00000001VDUMA2/trendsbeerinsightjune18?retUrl=https%3A%2F%2Fwww.mydiageo.com%2Fs%2Fdiscover"
+                class="copy-link">Find out more<i class="fas fa-angle-right"></i></a>
         </div>
     </div>
+
     <div class="card-related-content">
         <div class="image-container">
             <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOl0" />
@@ -1951,7 +1405,7 @@
         <div class="copy-container">
             <p class="copy-text">Cocktail of the week: We asked masters of mixology for tantalising tips on this week’s tastiest cocktail</p>
             <a href="https://www.mydiageo.com/s/landing?menu=IRL-get-the-basics-right" 
-            class="copy-link">Find out more<i class="fas fa-angle-right"></i></a>
+                class="copy-link">Find out more<i class="fas fa-angle-right"></i></a>
         </div>
     </div>
 </div>
