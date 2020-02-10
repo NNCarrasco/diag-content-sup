@@ -179,7 +179,7 @@
 	}
 }
 .recipe {
-	@general-color: #222666;
+	@general-color: #00b39f;
 	@desktop-real-tab-content-height: 350px;
 	@desktop-content-height: @desktop-real-tab-content-height - 75px; // 75px = 50px tab height + 25px tabs padding top
 	.content-card-recipes {
@@ -206,13 +206,13 @@
 				.recipes-title {
 					font-size: 28px;
 					font-weight: bold;
+					text-transform: uppercase;
 				}
 				.recipes-tag-container {
 					display: flex;
 					padding-top: 10px;
 					padding-bottom: 40px;
 					.recipes-tag {
-						text-transform: uppercase;
 						font-size: 14px;
 						font-weight: 500;
 						line-height: 1.71;
@@ -385,7 +385,6 @@
 					.tab [type="radio"] {
 						display: none;
 					}
-
 					.tab [type="radio"]:checked ~ .label {
 						background: rgba(242, 175, 12, 0.12);
 						padding-bottom: 17px;
@@ -393,17 +392,14 @@
 						border-bottom: 2px solid #f2af0c;
 						z-index: 2;
 					}
-
 					//DESKTOP
 					@media (min-width: 768px) {
 						width: 44%;
 					}
-
 					.tab [type="radio"]:checked ~ .label ~ .content {
 						z-index: 1;
 						display: table;
 					}
-
 					.tabs {
 						position: relative;
 						clear: both;
@@ -434,7 +430,6 @@
 						}
 						.tab {
 							vertical-align: top;
-
 							.label {
 								font-size: 14px;
 								text-transform: uppercase;
@@ -452,7 +447,6 @@
 									cursor: pointer;
 								}
 							}
-
 							.content {
 								white-space: normal;
 								top: 77px;
@@ -465,7 +459,6 @@
 								position: absolute;
 								background-color: white;
 								height: @desktop-content-height;
-
 								ol,
 								ul {
 									height: inherit;
@@ -509,7 +502,6 @@
 										}
 									}
 								}
-
 								ul {
 									padding-left: 25px;
 
@@ -535,14 +527,11 @@
 							}
 						}
 					}
-
 					//MOBILE
 					@media (max-width: 768px) {
 						flex-wrap: wrap;
-
 						.tab {
 							margin-top: -6px;
-
 							.content {
 								top: 71px;
 							}
@@ -551,6 +540,7 @@
 							z-index: 1;
 							display: table;
 							top: 71px;
+							height: 240px;
 						}
 					}
 				}
@@ -769,6 +759,10 @@
 	background-color: @component-background-color;
 	align-items: center;
 	min-height: 110px;
+	&.background-white{
+        background-color: white;
+        color: #3e3e3e;
+    }
 	&.full-image {
 		.image-container {
 			min-width: 100%;
@@ -881,7 +875,7 @@
 	}
 }
 .image-outside-horizontal-card-container {
-	@border-color: #50af01; 
+	@border-color: #00b39f; 
 	.image-outside-horizontal-card {
 		display: flex;
 		width: 845px;
