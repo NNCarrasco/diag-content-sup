@@ -1,0 +1,2251 @@
+<style>
+#spacer10 {
+  padding-bottom: 10px;
+}
+#spacer20 {
+  padding-bottom: 20px;
+}
+#spacer40 {
+  padding-bottom: 40px;
+}
+#spacer80 {
+  padding-bottom: 80px;
+}
+.slds-col--padded.contentRegion.comm-layout-column {
+  padding: 0;
+}
+.cCP_NewsDetail .detail-date.p-16-white-bold,
+.cCP_NewsDetail .btn-div.content-button-container {
+  display: none;
+}
+.cCP_NewsDetail {
+  margin: unset;
+  padding: unset;
+  background-color: unset;
+}
+.general-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  padding-left: 18%;
+  padding-right: 18%;
+  text-transform: uppercase;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .general-title {
+    font-size: 24px;
+    padding-left: 6%;
+    padding-right: 5%;
+  }
+}
+.general-description {
+  font-size: 20px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  color: #3e3e3e;
+  padding-right: 18%;
+  padding-left: 18%;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .general-description {
+    padding-left: 6%;
+    padding-right: 5%;
+  }
+}
+.note {
+  text-align: left;
+  padding-left: 9%;
+}
+@media screen and (max-width: 768px) {
+  .note {
+    padding-left: 6%;
+  }
+}
+
+</style>
+<style>
+.banner-container {
+  font-family: Roboto, sans-serif;
+}
+.banner-container .banner-card-container {
+  text-align: left;
+  background-color: #ffffff;
+  display: flex;
+}
+.banner-container .banner-card-container .content-container {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.banner-container .banner-card-container .content-container .label {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: auto;
+  height: 40px;
+  margin-left: 83px;
+  margin-top: 25px;
+  width: 125px;
+  background-color: #51ae00;
+}
+.banner-container .banner-card-container .content-container .label span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.banner-container .banner-card-container .content-container .title-container {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.banner-container .banner-card-container .content-container .title-container.with-label {
+  margin-top: 20px;
+}
+.banner-container .banner-card-container .content-container .title-container .title {
+  font-size: 38px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  color: black;
+  text-transform: uppercase;
+}
+.banner-container .banner-card-container .content-container .text-container .text {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #3e3e3e;
+}
+.banner-container .banner-card-container .content-container .btn-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.banner-container .banner-card-container .content-container .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.banner-container .banner-card-container .concont {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.banner-container .banner-card-container .concont .image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.banner-container .banner-card-container .concont .image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .banner-container .banner-card-container {
+    height: 420px;
+  }
+  .banner-container .banner-card-container .text-container,
+  .banner-container .banner-card-container .title-container {
+    padding-left: 83px;
+  }
+  .banner-container .banner-card-container .text-container {
+    padding-bottom: 20px;
+  }
+  .banner-container .banner-card-container .btn-container {
+    height: 45px;
+    width: 160px;
+    margin-left: 83px;
+    margin-bottom: 30px;
+  }
+  .banner-container .banner-card-container .concont .image-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 425px solid #ffffff;
+    border-right: 80px solid transparent;
+    width: 0;
+  }
+  .banner-container .banner-card-container .concont .image-container .desktop-img {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner-container .banner-card-container {
+    flex-flow: column;
+    margin-top: 0;
+  }
+  .banner-container .banner-card-container .content-container {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .banner-container .banner-card-container .content-container .label {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  .banner-container .banner-card-container .content-container .text-container,
+  .banner-container .banner-card-container .content-container .title-container {
+    padding: 20px;
+    margin: 0;
+  }
+  .banner-container .banner-card-container .content-container .text-container .text,
+  .banner-container .banner-card-container .content-container .title-container .text {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.63;
+    color: #3e3e3e;
+    margin: 0;
+  }
+  .banner-container .banner-card-container .content-container .text-container .title,
+  .banner-container .banner-card-container .content-container .title-container .title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .banner-container .banner-card-container .content-container .title-container.with-label {
+    margin-top: 20px;
+  }
+  .banner-container .banner-card-container .content-container .btn-container {
+    width: 88%;
+    height: 45px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .banner-container .banner-card-container .concont {
+    width: 100%;
+    height: 280px;
+  }
+  .banner-container .banner-card-container .concont .image-container .phone-img {
+    display: block;
+    position: absolute;
+    height: 280px;
+    left: 0;
+    bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+  .mixed-content-card-container {
+    padding-left: 9%;
+    padding-right: 9%;
+  }
+}
+@media (max-width: 768px) {
+  .mixed-content-card-container {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+.mixed-content-card-container .mixed-content-block {
+  font-family: 'Roboto', sans-serif;
+  background-color: transparent;
+}
+.mixed-content-card-container .mixed-content-block .copy-container .content-title {
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+.mixed-content-card-container .mixed-content-block .copy-container .content-text {
+  color: #3e3e3e;
+}
+.mixed-content-card-container .mixed-content-block .copy-container .content-button {
+  font-size: 14px;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.mixed-content-card-container .mixed-content-block .copy-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.mixed-content-card-container .mixed-content-block .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.mixed-content-card-container .mixed-content-block .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .mixed-content-card-container .mixed-content-block {
+    width: 100%;
+    display: flex;
+    padding-bottom: 80px;
+  }
+  .mixed-content-card-container .mixed-content-block:last-child {
+    padding-bottom: 0;
+  }
+  .mixed-content-card-container .mixed-content-block.text-left .copy-container {
+    order: 0;
+    margin-right: 6%;
+  }
+  .mixed-content-card-container .mixed-content-block.text-left .image-container {
+    order: 1;
+  }
+  .mixed-content-card-container .mixed-content-block.text-right .copy-container {
+    order: 1;
+    margin-left: 6%;
+  }
+  .mixed-content-card-container .mixed-content-block.text-right .image-container {
+    order: 0;
+  }
+  .mixed-content-card-container .mixed-content-block .copy-container {
+    height: 100%;
+    width: 44%;
+    text-align: left;
+    align-self: center;
+  }
+  .mixed-content-card-container .mixed-content-block .copy-container .content-title {
+    font-size: 18px;
+  }
+  .mixed-content-card-container .mixed-content-block .copy-container .content-button {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+  .mixed-content-card-container .mixed-content-block .copy-container .content-text {
+    padding: 20px 0;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .mixed-content-card-container .mixed-content-block .image-container {
+    height: 390px;
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .mixed-content-card-container .mixed-content-block {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    padding-bottom: 40px;
+    margin: 0;
+  }
+  .mixed-content-card-container .mixed-content-block .copy-container {
+    width: 100%;
+  }
+  .mixed-content-card-container .mixed-content-block .copy-container .content-title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 32px;
+    color: #000000;
+    text-transform: uppercase;
+    padding-top: 20px;
+  }
+  .mixed-content-card-container .mixed-content-block .copy-container .content-text {
+    font-size: 16px;
+    padding-top: 10px;
+    color: #3e3e3e;
+  }
+  .mixed-content-card-container .mixed-content-block .copy-container .content-button {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 13px 0;
+    background-color: #f2af0c;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    bottom: 2px;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+  .mixed-content-card-container .mixed-content-block .image-container {
+    height: 250px;
+    margin-left: -7%;
+    margin-right: -7%;
+    width: 114%;
+    background-color: rgba(64, 146, 223, 0.5);
+  }
+  .mixed-content-card-container .mixed-content-block .image-container img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.recipe .content-card-recipes {
+  padding-left: 108px;
+  background: rgba(255, 255, 255, 0.5);
+  padding-top: 40px;
+  padding-bottom: 110px;
+  text-align: left;
+}
+.recipe .content-card-recipes.transparent-background {
+  background-color: transparent;
+}
+.recipe .content-card-recipes .recipe-header {
+  display: flex;
+  flex-direction: column;
+}
+.recipe .content-card-recipes .recipe-header .recipes-top {
+  position: relative;
+}
+.recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty {
+  position: absolute;
+  top: 0;
+  right: 109px;
+}
+.recipe .content-card-recipes .recipe-header .recipes-top .recipes-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+.recipe .content-card-recipes .recipe-header .recipes-top .recipes-tag-container {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.recipe .content-card-recipes .recipe-header .recipes-top .recipes-tag-container .recipes-tag {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #ffffff;
+  background-color: #222666;
+  padding: 8px 10px;
+  margin-left: 5px;
+}
+.recipe .content-card-recipes .recipe-header .recipes-top .recipes-tag-container .recipes-tag:first-child {
+  margin-left: 0;
+}
+@media (max-width: 768px) {
+  .recipe .content-card-recipes .recipe-header .recipes-top .recipes-tag-container {
+    flex-flow: wrap;
+    padding-bottom: 10px;
+  }
+}
+.recipe .content-card-recipes .recipe-header .recipes-description {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: left;
+  padding-bottom: 40px;
+}
+.recipe .content-card-recipes .recipe-header .recipe-information .recipes-medium {
+  float: left;
+  display: inline-flex;
+  border-right: 2px solid #b9b9b9;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 50px;
+  width: 21.5%;
+  position: relative;
+}
+.recipe .content-card-recipes .recipe-header .recipe-information .recipes-medium .recipes-medium-title {
+  display: flex;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.recipe .content-card-recipes .recipe-header .recipe-information .recipes-medium .description {
+  position: absolute;
+  bottom: 0;
+}
+.recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty {
+  display: none;
+}
+.recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block,
+.recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .puntuation-block {
+  display: flex;
+  margin: 2px;
+  width: fit-content;
+  border: 1px solid #222666;
+}
+.recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block .p-title,
+.recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .puntuation-block .p-title {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.38;
+  background-color: #222666;
+  color: #ffffff;
+  padding: 4px 8px;
+  text-transform: uppercase;
+  min-width: 100px;
+  width: 100px;
+  white-space: nowrap;
+  text-align: center;
+}
+.recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block .puntuation-container,
+.recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .puntuation-block .puntuation-container {
+  padding-left: 10px;
+  min-width: 95px;
+  padding-right: 5px;
+  color: #bebebe;
+}
+.recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block .puntuation-container .far.fa-grin,
+.recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .puntuation-block .puntuation-container .far.fa-grin {
+  font-size: 20px;
+  padding-right: 5px;
+  padding-top: 3px;
+}
+.recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block .puntuation-container .fas.fa-cocktail,
+.recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .puntuation-block .puntuation-container .fas.fa-cocktail {
+  font-size: 17px;
+  padding-right: 5px;
+  padding-top: 3px;
+}
+.recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block .puntuation-container .selected,
+.recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .puntuation-block .puntuation-container .selected {
+  color: #222666;
+}
+.recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .difficulty,
+.recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .difficulty {
+  margin-top: 15px;
+}
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method {
+  display: flex;
+}
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content {
+  background-color: rgba(64, 146, 223, 0.5);
+}
+@media (min-width: 768px) {
+  .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content {
+    width: 44%;
+    height: 316px;
+    margin-top: 25px;
+    margin-right: 25px;
+  }
+}
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
+  height: 350px;
+  position: relative;
+}
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block {
+  z-index: 3;
+  bottom: -65px;
+  position: absolute;
+  width: 100%;
+}
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-content .porcentual-number-container {
+  position: absolute;
+  bottom: -15px;
+  right: -35px;
+  color: white;
+  border-radius: 50%;
+  background-color: #222666;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-content .porcentual-number-container .porcentual-number {
+  padding-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: #ffffff;
+}
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-content.with-description {
+  font-size: 16px;
+  line-height: 1.63;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  border: 4px solid #222666;
+  padding-right: 75px;
+  background-color: white;
+}
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-content.with-description .porcentual-number-container {
+  bottom: -15px;
+}
+@media (max-width: 768px) {
+  .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block {
+    bottom: -100px;
+    left: -14px;
+  }
+  .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-description {
+    padding-right: 80px;
+  }
+  .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-description .porcentual-number-container {
+    width: 110px;
+    height: 110px;
+  }
+}
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"] {
+  display: none;
+}
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label {
+  background: rgba(242, 175, 12, 0.12);
+  padding-bottom: 17px;
+  padding-top: 17px;
+  border-bottom: 2px solid #f2af0c;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
+    width: 44%;
+  }
+}
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content {
+  z-index: 1;
+  display: table;
+}
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs {
+  position: relative;
+  clear: both;
+  margin: 0;
+  padding-top: 25px;
+  white-space: nowrap;
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid #979797;
+}
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .download-tab-btn {
+  display: none;
+}
+@media (min-width: 768px) {
+  .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .download-tab-btn {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    font-size: 14px;
+    display: block;
+  }
+  .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .download-tab-btn a {
+    color: #4092df;
+  }
+  .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .download-tab-btn a i {
+    margin-right: 10px;
+  }
+}
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab {
+  vertical-align: top;
+}
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .label {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  min-height: 50px;
+  line-height: 50px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  padding-top: 17px;
+  border-bottom: 2px solid #979797;
+}
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .label:hover {
+  cursor: pointer;
+}
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content {
+  white-space: normal;
+  top: 77px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  background-color: white;
+  height: 275px;
+}
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol,
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul {
+  height: inherit;
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 45px;
+}
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li,
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li {
+  margin-bottom: 10px;
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li:last-child,
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li:last-child {
+  margin-bottom: 0;
+}
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li p,
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #000000;
+}
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ol li:before,
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li:before {
+  content: counter(my-awesome-counter);
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  position: absolute;
+  --size: 25px;
+  left: calc(-1 * var(--size) - 20px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  background: #3e3e3e;
+  border-radius: 50%;
+  text-align: center;
+}
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul {
+  padding-left: 25px;
+}
+.recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tabs .tab .content ul li:before {
+  content: "";
+  color: #fff;
+  /* font-size : 10px; */
+  font-weight: bold;
+  position: absolute;
+  --size: 8px;
+  left: calc(-1 * var(--size) - 15px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 9px;
+  background: #7d7773;
+  border-radius: 50%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container {
+    flex-wrap: wrap;
+  }
+  .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab {
+    margin-top: -6px;
+  }
+  .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab .content {
+    top: 71px;
+  }
+  .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content {
+    z-index: 1;
+    display: table;
+    top: 71px;
+  }
+}
+@media (max-width: 768px) {
+  .recipe .content-card-recipes {
+    padding-left: unset;
+    padding-right: unset;
+    padding-bottom: 40px;
+  }
+  .recipe .content-card-recipes .recipe-header {
+    padding-right: 6%;
+    padding-left: 6%;
+  }
+  .recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty {
+    display: none;
+  }
+  .recipe .content-card-recipes .recipe-header .recipes-top .recipes-title {
+    margin-bottom: 20px;
+  }
+  .recipe .content-card-recipes .recipe-header .recipes-description {
+    padding-bottom: 20px;
+  }
+  .recipe .content-card-recipes .recipe-header .recipe-information .recipes-medium {
+    float: unset;
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty {
+    display: block;
+  }
+  .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .wow-factor img {
+    height: 40px;
+  }
+  .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .difficulty {
+    margin-top: 20px;
+  }
+  .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .difficulty img {
+    height: 40px;
+  }
+  .recipe .content-card-recipes .recipe-body {
+    padding-right: 6%;
+    padding-left: 6%;
+  }
+  .recipe .content-card-recipes .recipe-body .recipes-ingredients-method {
+    flex-direction: column;
+  }
+  .recipe .content-card-recipes .recipe-body .recipes-ingredients-method .recipes-image-content {
+    margin-top: 25px;
+    margin-right: 25px;
+    width: 100%;
+  }
+}
+.recipe .content-card-recipes .only-mobile-download-tab-btn {
+  text-align: left;
+  display: none;
+}
+@media (max-width: 768px) {
+  .recipe .content-card-recipes .only-mobile-download-tab-btn {
+    margin-top: 87px;
+    padding-right: 6%;
+    padding-left: 6%;
+    display: block;
+  }
+  .recipe .content-card-recipes .only-mobile-download-tab-btn a {
+    color: #4092df;
+  }
+  .recipe .content-card-recipes .only-mobile-download-tab-btn a i {
+    margin-right: 10px;
+  }
+}
+.recipe.doble-recipe {
+  display: flex;
+}
+.recipe.doble-recipe .content-card-recipes.one-of-two {
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  width: 50%;
+  padding-left: unset;
+  padding-right: unset;
+  padding-bottom: 40px;
+}
+.recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header .recipes-top .recipes-tag-container {
+  flex-flow: wrap;
+  padding-bottom: 10px;
+}
+.recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body .recipes-ingredients-method .tab-table-container {
+  width: 100%;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+.recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-description {
+  padding-right: 80px;
+}
+.recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body .recipes-ingredients-method .tab-table-container .porcentual-block .porcentual-description .porcentual-number-container {
+  width: 110px;
+  height: 110px;
+}
+.recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body .recipes-ingredients-method .tab-table-container .tab {
+  margin-top: -6px;
+}
+.recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body .recipes-ingredients-method .tab-table-container .tab .content {
+  top: 71px;
+}
+.recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body .recipes-ingredients-method .tab-table-container .tab [type="radio"]:checked ~ .label ~ .content {
+  z-index: 1;
+  display: table;
+  top: 71px;
+}
+.recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header {
+  padding-right: 6%;
+  padding-left: 6%;
+}
+.recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header .recipes-top .recipes-factor-and-difficulty {
+  display: none;
+}
+.recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header .recipes-top .recipes-title {
+  margin-bottom: 20px;
+}
+.recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header .recipes-description {
+  padding-bottom: 20px;
+}
+.recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header .recipe-information .recipes-medium {
+  float: unset;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header .only-mobile-recipes-factor-and-difficulty {
+  display: block;
+}
+.recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header .only-mobile-recipes-factor-and-difficulty .wow-factor img {
+  height: 40px;
+}
+.recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header .only-mobile-recipes-factor-and-difficulty .difficulty {
+  margin-top: 20px;
+}
+.recipe.doble-recipe .content-card-recipes.one-of-two .recipe-header .only-mobile-recipes-factor-and-difficulty .difficulty img {
+  height: 40px;
+}
+.recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body {
+  padding-right: 6%;
+  padding-left: 6%;
+}
+.recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body .recipes-ingredients-method {
+  flex-direction: column;
+}
+.recipe.doble-recipe .content-card-recipes.one-of-two .recipe-body .recipes-ingredients-method .recipes-image-content {
+  margin-top: 25px;
+  margin-right: 25px;
+  width: 100%;
+}
+.recipe.doble-recipe .content-card-recipes .only-mobile-download-tab-btn {
+  margin-top: 87px;
+  padding-right: 6%;
+  padding-left: 6%;
+  display: block;
+}
+.recipe.doble-recipe .content-card-recipes .only-mobile-download-tab-btn a {
+  color: #4092df;
+}
+.recipe.doble-recipe .content-card-recipes .only-mobile-download-tab-btn a i {
+  margin-right: 10px;
+}
+@media (max-width: 768px) {
+  .recipe.doble-recipe {
+    flex-direction: column;
+  }
+  .recipe.doble-recipe .content-card-recipes.one-of-two {
+    width: 100%;
+  }
+}
+.image-outside-horizontal-card-container .image-outside-horizontal-card {
+  display: flex;
+  width: 845px;
+  height: 334px;
+  position: relative;
+}
+.image-outside-horizontal-card-container .image-outside-horizontal-card .content-container {
+  width: 100%;
+  border: 5px solid #50af01;
+  z-index: 1;
+}
+.image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
+  width: 380px;
+  padding-left: 80px;
+  padding-top: 35px;
+  padding-right: 85px;
+}
+.image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
+  padding: 0;
+  width: 380px;
+  padding-left: 80px;
+  padding-top: 20px;
+  padding-right: 85px;
+}
+.image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container .content-button {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding: 13px 0;
+  background-color: #f2af0c;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 2px;
+  font-weight: 500;
+}
+.image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container .content-button:hover {
+  background-color: #ffc800;
+  color: #000;
+}
+.image-outside-horizontal-card-container .image-outside-horizontal-card .image-container {
+  position: absolute;
+  right: -100px;
+  top: -40px;
+  z-index: 0;
+  height: 415px;
+  width: 410px;
+  background-color: rgba(64, 146, 223, 0.5);
+  overflow: hidden;
+}
+.image-outside-horizontal-card-container .image-outside-horizontal-card .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .image-outside-horizontal-card-container {
+    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-left: 14%;
+  }
+  .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
+    width: 530px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
+    width: 550px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container {
+    width: 162px;
+    height: 44px;
+    margin-top: 30px;
+    margin-left: 180px;
+    margin-bottom: 20px;
+  }
+  .image-outside-horizontal-card-container .image-outside-horizontal-card.image-left .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .image-outside-horizontal-card-container .image-outside-horizontal-card.image-left .content-container .title-container {
+    padding-top: 0;
+  }
+  .image-outside-horizontal-card-container .image-outside-horizontal-card.image-left .image-container {
+    right: unset;
+    left: -100px;
+  }
+  .image-outside-horizontal-card-container .image-outside-horizontal-card.only-text {
+    height: unset;
+  }
+  .image-outside-horizontal-card-container .image-outside-horizontal-card.only-text .content-container {
+    border: 5px solid #50af01;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .image-outside-horizontal-card-container {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 30px;
+  }
+  .image-outside-horizontal-card-container .image-outside-horizontal-card {
+    width: 100%;
+    height: unset;
+    flex-wrap: wrap;
+  }
+  .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container {
+    padding-bottom: 20px;
+    order: 1;
+  }
+  .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
+    padding-left: 30px;
+    padding-top: 410px;
+    padding-right: 30px;
+    width: unset;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .description-container {
+    font-size: 20px;
+    text-align: center;
+    color: #3e3e3e;
+    width: unset;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 30px;
+  }
+  .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .btn-container {
+    height: 45px;
+    width: 160px;
+    margin-top: 40px;
+    margin-left: 30%;
+  }
+  .image-outside-horizontal-card-container .image-outside-horizontal-card .image-container {
+    order: 0;
+    position: absolute;
+    top: -30px;
+    z-index: 0;
+    width: 102vw;
+    right: -6.7%;
+  }
+  .image-outside-horizontal-card-container .image-outside-horizontal-card.only-text .content-container {
+    border: 5px solid #50af01;
+    padding-top: 20px;
+  }
+  .image-outside-horizontal-card-container .image-outside-horizontal-card.only-text .content-container .title-container {
+    padding-top: 0;
+  }
+}
+.download-block {
+  overflow: hidden;
+  position: relative;
+}
+.download-block .tab-label {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border-bottom: 1px solid #b9b9b9;
+  border-top: 1px solid #b9b9b9;
+  height: 95px;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
+  height: inherit;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 60px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  /* Icon */
+}
+.download-block .tab-label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  color: #f2af0c;
+  left: 1.5%;
+  font-size: 25px;
+  transition: all 0.35s;
+  position: absolute;
+}
+.download-block .tab-content {
+  max-height: 0;
+  padding: 0 40px;
+  background: white;
+  transition: all 0.55s;
+}
+.download-block .tab-button {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  color: #4092df;
+  font-size: 14px;
+  font-weight: 500;
+}
+.download-block .tab-button i {
+  padding-right: 10px;
+}
+.download-block input {
+  display: none;
+}
+.download-block input:checked + .tab-label {
+  background-color: #ffffff;
+  border-bottom: unset;
+}
+.download-block input:checked + .tab-label::after {
+  transform: rotate(90deg);
+}
+.download-block input:checked ~ .tab-content {
+  max-height: unset;
+}
+.download-block .download-body {
+  position: relative;
+  padding-bottom: 0;
+}
+.download-block .download-body .download-card-container {
+  display: flex;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+}
+.download-block .download-body .download-card-container .download-card {
+  width: 18.6%;
+  margin-left: 20px;
+  padding-top: 20px;
+}
+.download-block .download-body .download-card-container .download-card:nth-child(5n-4) {
+  margin-left: 0;
+}
+.download-block .download-body .download-card-container .download-card .image-container {
+  height: 170px;
+}
+.download-block .download-body .download-card-container .download-card .image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.download-block .download-body .download-card-container .download-card .body-container {
+  background-color: #f2f2f2;
+  height: 185px;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 20px;
+  position: relative;
+}
+.download-block .download-body .download-card-container .download-card .body-container .title-text {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 22px;
+  color: #0041a5;
+  text-transform: uppercase;
+}
+.download-block .download-body .download-card-container .download-card .body-container .description-text {
+  padding-top: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  word-break: break-word;
+}
+.download-block .download-body .download-card-container .download-card .body-container .download-card-btn {
+  margin-top: 20px;
+  border: 1px solid;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+  position: absolute;
+  width: 80%;
+  bottom: 15px;
+}
+.download-block .download-body .download-card-container .download-card .body-container .download-card-btn .download-link-box {
+  color: #3e3e3e;
+  display: flex;
+  justify-content: center;
+  text-decoration: unset;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.download-block .download-body .download-card-container .download-card .body-container .download-card-btn .download-link-box i {
+  margin-right: 10px;
+}
+.download-block .download-body .download-card-container .download-card .body-container .download-card-btn .download-link-box:hover {
+  background-color: #3e3e3e;
+  color: #ffffff;
+}
+.download-block .download-body .download-card-container .download-card .body-container .download-card-btn .download-link-box:hover i {
+  color: #ffffff;
+}
+.download-block .download-body .btn-see-more {
+  height: 40px;
+  margin-bottom: 20px;
+}
+.download-block .download-body .btn-see-more .see-more-text {
+  position: absolute;
+  right: 60px;
+  background: #3e3e3e;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: unset;
+  color: #f2af0c;
+}
+.download-block .download-body .btn-see-more .see-more-text:hover {
+  color: #3e3e3e;
+  background-color: #f2af0c;
+  border: 1px solid #3e3e3e;
+}
+.download-block .download-body .download-footer {
+  padding-bottom: 40px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+  color: #3e3e3e;
+}
+@media (max-width: 768px) {
+  .download-block .tab-button {
+    display: none;
+  }
+  .download-block .download-body {
+    padding: 0 20px 0 20px;
+  }
+  .download-block .download-body .download-card-container {
+    flex-direction: column;
+  }
+  .download-block .download-body .download-card-container .download-card {
+    width: 100%;
+    height: unset;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .download-block .download-body .download-card-container .download-card .image-container {
+    height: 225px;
+  }
+  .download-block .download-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+  }
+}
+.titles-and-descriptions {
+  text-align: left;
+}
+.titles-and-descriptions .related-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #000000;
+  text-transform: uppercase;
+  border-bottom: 1px solid #7d7773;
+}
+@media screen and (min-width: 768px) {
+  .titles-and-descriptions .related-title {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .titles-and-descriptions .related-title {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .titles-and-descriptions .related-title {
+    font-size: 24px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+}
+.vertical-card-container-related-article {
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .vertical-card-container-related-article {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+}
+.vertical-card-container-related-article .card-related-content {
+  font-family: 'Roboto', sans-serif;
+  height: 430px;
+  display: block;
+}
+@media (min-width: 768px) {
+  .vertical-card-container-related-article .card-related-content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 33.3333%;
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 768px) {
+  .vertical-card-container-related-article .card-related-content {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 4%;
+  }
+}
+.vertical-card-container-related-article .card-related-content .image-container {
+  background-color: rgba(64, 146, 223, 0.5);
+  height: 250px;
+}
+.vertical-card-container-related-article .card-related-content .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.vertical-card-container-related-article .card-related-content .copy-container {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+.vertical-card-container-related-article .card-related-content .copy-container .copy-text {
+  padding: 20px 30px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.75;
+  color: #000000;
+}
+.vertical-card-container-related-article .card-related-content .copy-container .copy-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #4092df;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  text-decoration: none;
+}
+.vertical-card-container-related-article .card-related-content .copy-container .copy-link:hover {
+  border-bottom: 2px solid;
+  margin-bottom: -2px;
+}
+.vertical-card-container-related-article .card-related-content .copy-container .copy-link i.fas.fa-angle-right {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #4092df;
+  position: absolute;
+  bottom: 4px;
+}
+.icon-and-description-container {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+.icon-and-description-container .item-container {
+  display: flex;
+}
+.icon-and-description-container .item-container .image-container {
+  height: 96px;
+  width: 96px;
+}
+.icon-and-description-container .item-container .image-container img {
+  width: 100%;
+  height: 100%;
+}
+.icon-and-description-container .item-container .descrition-container {
+  text-align: left;
+  width: 240px;
+  margin-left: 40px;
+  padding-right: 30px;
+}
+.icon-and-description-container .item-container .descrition-container .title {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.icon-and-description-container .item-container .descrition-container .description {
+  font-size: 18px;
+  line-height: 1.56;
+}
+@media screen and (min-width: 768px) {
+  .icon-and-description-container .item-container {
+    border-right: 1px solid black;
+    margin-left: 70px;
+  }
+  .icon-and-description-container .item-container .descrition-container {
+    align-self: center;
+  }
+  .icon-and-description-container .item-container:last-child {
+    border-right: unset;
+  }
+  .icon-and-description-container .item-container:first-child {
+    margin-left: unset;
+  }
+  .icon-and-description-container .item-container:only-child .descrition-container {
+    max-width: 684px;
+    width: unset;
+    padding-right: unset;
+  }
+}
+@media (max-width: 768px) {
+  .icon-and-description-container {
+    flex-flow: column;
+  }
+  .icon-and-description-container .item-container {
+    flex-flow: column;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .icon-and-description-container .item-container .image-container {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .icon-and-description-container .item-container .descrition-container {
+    width: 88%;
+    margin-right: 6%;
+    margin-left: 6%;
+    padding: unset;
+  }
+}
+.image-text-list-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 9%;
+  margin-right: 9%;
+  padding-left: 9%;
+  padding-right: 9%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: left;
+}
+.image-text-list-block.with-background {
+  background-color: #ffffff;
+}
+.image-text-list-block a {
+  color: #2959a2;
+}
+.image-text-list-block a:hover {
+  color: #214781;
+  text-decoration: underline;
+}
+.image-text-list-block .list-column {
+  display: flex;
+  margin-bottom: 30px;
+  align-self: center;
+}
+.image-text-list-block .list-column:last-child {
+  margin-bottom: unset;
+}
+.image-text-list-block .list-column .list-column-image {
+  height: 375px;
+  width: 50%;
+  overflow: hidden;
+  align-self: center;
+  background-color: rgba(64, 146, 223, 0.5);
+}
+.image-text-list-block .list-column .list-column-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-text-list-block .list-column .list-column-text {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+.image-text-list-block .list-column .list-column-text .list-column-text-title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.56;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.image-text-list-block .list-column .list-column-text .list-column-text-description {
+  font-size: 16px;
+  line-height: 1.63;
+  color: #3e3e3e;
+}
+.image-text-list-block .list-column.image-left .list-column-image {
+  order: 1;
+  margin-right: 1%;
+}
+.image-text-list-block .list-column.image-left .list-column-text {
+  order: 2;
+  padding-left: 25px;
+}
+.image-text-list-block .list-column.image-right .list-column-image {
+  order: 2;
+  margin-left: 1%;
+}
+.image-text-list-block .list-column.image-right .list-column-text {
+  order: 1;
+  padding-right: 25px;
+}
+.image-text-list-block .list-column.image-small .list-column-image {
+  height: 110px;
+  width: 110px;
+  min-width: 110px;
+}
+.image-text-list-block .list-column.image-small .list-column-text {
+  width: unset;
+}
+@media screen and (max-width: 768px) {
+  .image-text-list-block {
+    margin-left: 6%;
+    margin-right: 6%;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .image-text-list-block .list-column {
+    height: unset;
+    flex-flow: column;
+  }
+  .image-text-list-block .list-column .list-column-image {
+    width: 100%;
+    height: 220px;
+  }
+  .image-text-list-block .list-column .list-column-text {
+    margin-top: 10px;
+    padding: unset;
+    width: 100%;
+  }
+  .image-text-list-block .list-column.image-left .list-column-image {
+    order: 1;
+    padding: unset;
+  }
+  .image-text-list-block .list-column.image-left .list-column-text {
+    order: 2;
+    padding: unset;
+  }
+  .image-text-list-block .list-column.image-right .list-column-image {
+    order: 1;
+    padding: unset;
+  }
+  .image-text-list-block .list-column.image-right .list-column-text {
+    order: 2;
+    padding: unset;
+  }
+}
+
+</style>
+<style>
+body {
+  max-width: 1280px;
+  background-color: lightblue;
+  margin: 0 auto;
+}
+* {
+  box-sizing: border-box;
+}
+p {
+  margin: unset;
+  font-family: Roboto, sans-serif;
+}
+
+</style>
+
+<div class="banner-container">
+    <div class="banner-card-container">
+        <div class="content-container">
+            <div class="title-container">
+                <h2 class="title">freshen your menu and clean up this spring</h2>
+            </div>
+            <div class="text-container">
+                <p class="text">The new season brings light, colour, energy and positivity. Capture it in your menus and
+                    see your business go from strength to strength.
+                </p>
+            </div>
+        </div>
+        <div class="concont">
+            <div class="image-container">
+                <img class="desktop-img"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY3m"
+                    alt="" />
+                <img class="phone-img"
+                    src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY3m"
+                    alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="spacer40"></div>
+
+<p class="general-description">Spring gives you the unique opportunity to introduce bright new flavours and
+    ingredients, experiment with new menu designs and create fresh interest and engagement among staff and customers
+    alike.
+</p>
+
+<div id="spacer80"></div>
+
+<div class="icon-and-description-container">
+    <div class="item-container">
+        <div class="image-container">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+        </div>
+        <div class="descrition-container">
+            <p class="description">Seasonal menus see an average of <b>26% uplift</b> in order value*</p>
+        </div>
+    </div>
+    <div class="item-container">
+        <div class="image-container">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+        </div>
+        <div class="descrition-container">
+            <p class="description"><b>60% are more likely to choose a seasonal item</b> from a menu because they look
+                more appetising*</p>
+        </div>
+    </div>
+    <div class="item-container">
+        <div class="image-container">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+        </div>
+        <div class="descrition-container">
+            <p class="description">40% say seasonal menu items <b>look more healthy</b> compared to regular ones**</p>
+        </div>
+    </div>
+</div>
+
+<div id="spacer20"></div>
+
+<p class="note">*Restaurant Hospitality Report, **Upserve Restaurant Insider</p>
+
+<div id="spacer80"></div>
+
+<p class="general-title">SPRING INTO ACTION BEHIND THE SCENES</p>
+
+<div id="spacer40"></div>
+
+<div class="image-text-list-block with-background">
+
+    <div class="list-column image-right image-small">
+        <div class="list-column-image">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1R" />
+        </div>
+        <div class="list-column-text">
+            <div class="list-column-text-title">
+                <p>GO LOCAL</p>
+            </div>
+            <div class="list-column-text-description">
+                <p>Pick up the phone to your local suppliers and talk deals on fruit, veg, bread, meat and fish. You’ll
+                    add variety and flavour to your menu, your dishes will look and taste better and you’ll be bang on
+                    trend with your customers.</p>
+            </div>
+        </div>
+    </div>
+    <div class="list-column image-left image-small">
+        <div class="list-column-image ">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1R" />
+        </div>
+        <div class="list-column-text">
+            <div class="list-column-text-title">
+                <p>CONTROL COSTS</p>
+            </div>
+            <div class="list-column-text-description">
+                <p>With no shipping or expensive preserving, products that are local and seasonal should cost less to
+                    buy in and be more appealing. 60% of consumers say they’re likely to switch to a brand that is more
+                    environmentally friendly than their current one **. Plan with an eye on price, portion size, mix of
+                    expensive and inexpensive options and the capacity of your kitchen and staff. </p>
+            </div>
+        </div>
+    </div>
+    <div class="list-column image-right image-small">
+        <div class="list-column-image">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1R" />
+        </div>
+        <div class="list-column-text">
+            <div class="list-column-text-title">
+                <p>GOOD TO GROW</p>
+            </div>
+            <div class="list-column-text-description">
+                <p>A vibrant seasonal menu is also a ready-made marketing tool. It’s the perfect reason to talk to
+                    customers, invite them in to try new dishes and tempt them with offers – this is what your social
+                    media channels were born for! Don't forget to upload a version online in .pdf form so that customers
+                    can view from their mobiles with ease.</p>
+            </div>
+        </div>
+    </div>
+    <div class="list-column image-left image-small">
+        <div class="list-column-image">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1R" />
+        </div>
+        <div class="list-column-text">
+            <div class="list-column-text-title">
+                <p>REV UP THE TEAM</p>
+            </div>
+            <div class="list-column-text-description">
+                <p>An injection of new dishes and drinks breathes new life into your team, keeping them motivated and
+                    engaged. Their passion will be infectious, so encourage them to share your new options with
+                    customers every day.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="spacer20"></div>
+
+<p class="note">** Global Web Index 2019</p>
+
+<div id="spacer80"></div>
+
+<p class="general-title">SPRING INTO ACTION Front of house</p>
+
+<div id="spacer40"></div>
+
+<div class="image-text-list-block with-background">
+
+    <div class="list-column image-right image-small">
+        <div class="list-column-image">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1R" />
+        </div>
+        <div class="list-column-text">
+            <div class="list-column-text-title">
+                <p>GET THE LOOK</p>
+            </div>
+            <div class="list-column-text-description">
+                <p>Now’s the time to review your menu for spring. Consider size, print stock and overall design. It’s
+                    possible to introduce on-trend elements like fresh, bright colours, florals and illustrations while
+                    remaining true to your brand.</p>
+            </div>
+        </div>
+    </div>
+    <div class="list-column image-left image-small">
+        <div class="list-column-image ">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1R" />
+        </div>
+        <div class="list-column-text">
+            <div class="list-column-text-title">
+                <p>DON’T FORGET YOUR GLASSES</p>
+            </div>
+            <div class="list-column-text-description">
+                <p>A fresh new cocktail line-up should also be in your plans. Think beyond the drink to the glass –
+                    eye-catching glassware is a vital part of the serve, creates a genuine wow moment and gets the drink
+                    noticed at the bar. </p>
+            </div>
+        </div>
+    </div>
+    <div class="list-column image-right image-small">
+        <div class="list-column-image">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1R" />
+        </div>
+        <div class="list-column-text">
+            <div class="list-column-text-title">
+                <p>CHERRY ON TOP</p>
+            </div>
+            <div class="list-column-text-description">
+                <p>Capture the scents and colours of the season in your garnishes. Look past the conventional lime wedge
+                    to seasonal fruits and flowers, like cucumber, rose, elderflower, lilac and borage, to add a real
+                    flourish to your presentation.</p>
+            </div>
+        </div>
+    </div>
+    <div class="list-column image-left image-small">
+        <div class="list-column-image">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY1R" />
+        </div>
+        <div class="list-column-text">
+            <div class="list-column-text-title">
+                <p>SAVE THE PLANET</p>
+            </div>
+            <div class="list-column-text-description">
+                <p>Making even small commitments to sustainability can have a great impact on customer perceptions.
+                    Paper straws, recycled napkins and switching out plastic for glass can make you part of the world’s
+                    biggest conversation</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="spacer80"></div>
+
+<p class="general-title">AN EXTRA SPRING IN YOUR STEP</p>
+
+<div id="spacer20"></div>
+
+<p class="general-description">Heighten the sense of the season even further with a simple activity or added experience
+    to make every customer’s visit more memorable and profitable…</p>
+
+<div id="spacer80"></div>
+
+<div class="mixed-content-card-container">
+    <div class="mixed-content-block text-right">
+        <div class="image-container">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" alt="" />
+        </div>
+        <div class="copy-container">
+            <p class="content-title">CREATIVE KIDS</p>
+            <p class="content-text">Family meals revolve around the kids. Keep them happy and the parents will be
+                comfortable staying and spending - especially during half term. Set up a simple craft station, with the
+                accessories they need to create a colourful cherry blossom collage to celebrate spring.</p>
+        </div>
+    </div>
+    <div class="mixed-content-block text-left">
+        <div class="image-container">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MY2F" alt="" />
+        </div>
+        <div class="copy-container">
+            <p class="content-title">TOP IT OFF</p>
+            <p class="content-text">Create a vibrant buffet board of spring-themed garnishes for guests to customise
+                their cocktails. Display seasonal berries, flowers and herbs, with tongs or cocktail sticks available to
+                keep things hygienic.</p>
+        </div>
+    </div>
+</div>
+
+<div id="spacer80"></div>
+
+<p class="general-title">SPRING COCKTAIL IDEAS</p>
+
+<div id="spacer20"></div>
+
+<p class="general-description">With lots of fresh, seasonal flavours to play with, serve up a new selection of cocktails
+    to liven up your menu.</p>
+
+<div id="spacer40"></div>
+
+<div class="recipe doble-recipe">
+
+    <div class="content-card-recipes one-of-two transparent-background">
+        <div class="recipe-header">
+            <div class="recipes-top">
+                <div class="recipes-title">
+                    <p>Johnnie & elderflower</p>
+                </div>
+                <div class="recipes-tag-container">
+                    <p class="recipes-tag">Spring Menu</p>
+                </div>
+            </div>
+            <div class="recipes-description">
+                <p>A summery mix of Johnnie Walker Black Label served long over ice, with elderflower and soda.</p>
+            </div>
+        </div>
+        <div class="recipe-body">
+            <div class="recipes-ingredients-method">
+                <div class="recipes-image-content">
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+                </div>
+                <div class="tab-table-container">
+                    <div class="tabs">
+                        <div class="tab">
+                            <input type="radio" id="tab-1" name="tab-group-1" checked>
+                            <label class="label" for="tab-1">Ingredients</label>
+                            <div class="ingredients spacer"></div>
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <p>50ml Johnnie Walker Black Label</p>
+                                    </li>
+                                    <li>
+                                        <p>20ml Elderflower cordial</p>
+                                    </li>
+                                    <li>
+                                        <p>Top with soda water</p>
+                                    </li>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="radio" id="tab-2" name="tab-group-1">
+                            <label class="label" for="tab-2">Method</label>
+                            <div class="method spacer"></div>
+                            <div class="content">
+                                <ol>
+                                    <li>
+                                        <p>Add all ingredients to a Highball glass filled with ice</p>
+                                    </li>
+                                    <li>
+                                        <p>Stir to mix</p>
+                                    </li>
+                                    <li>
+                                        <p>Garnish and serve</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-card-recipes one-of-two transparent-background">
+        <div class="recipe-header">
+            <div class="recipes-top">
+                <div class="recipes-title">
+                    <p>Johnnie & ginger fruity</p>
+                </div>
+                <div class="recipes-tag-container">
+                    <p class="recipes-tag">Spring Menu</p>
+                </div>
+            </div>
+            <div class="recipes-description">
+                <p>Enjoy a subtle berry - infusion to enhance Johnnie Walker Black Label’s naturally fruity profile,
+                    mixed with ginger and finished with fresh raspberries.</p>
+            </div>
+        </div>
+        <div class="recipe-body">
+            <div class="recipes-ingredients-method">
+                <div class="recipes-image-content">
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+                </div>
+                <div class="tab-table-container">
+                    <div class="tabs">
+                        <div class="tab">
+                            <input type="radio" id="tab-3" name="tab-group-2" checked>
+                            <label class="label" for="tab-3">Ingredients</label>
+                            <div class="ingredients spacer"></div>
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <p>50ml Johnnie Walker Black Label</p>
+                                    </li>
+                                    <li>
+                                        <p>150ml Ginger ale</p>
+                                    </li>
+                                    <li>
+                                        <p>3 Raspberries</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="radio" id="tab-4" name="tab-group-2">
+                            <label class="label" for="tab-4">Method</label>
+                            <div class="method spacer"></div>
+                            <div class="content">
+                                <ol>
+                                    <li>
+                                        <p>Add raspberries to a Highball glass and muddle</p>
+                                    </li>
+                                    <li>
+                                        <p>Fill the glass with ice</p>
+                                    </li>
+                                    <li>
+                                        <p>Add Johnnie Walker Black Label and ginger ale</p>
+                                    </li>
+                                    <li>
+                                        <p>Stir to mix, garnish and serve</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="recipe doble-recipe">
+
+    <div class="content-card-recipes one-of-two transparent-background">
+        <div class="recipe-header">
+            <div class="recipes-top">
+                <div class="recipes-title">
+                    <p>smirnoff soda orange smash</p>
+                </div>
+                <div class="recipes-tag-container">
+                    <p class="recipes-tag">Spring Menu</p>
+                </div>
+            </div>
+            <div class="recipes-description">
+                <p>Smirnoff No. 21 Vodka, ice cubes, refreshingly crisp soda water, and a big mouth-watering burst of
+                    freshly squeezed orange.</p>
+            </div>
+        </div>
+        <div class="recipe-body">
+            <div class="recipes-ingredients-method">
+                <div class="recipes-image-content">
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+                </div>
+                <div class="tab-table-container">
+                    <div class="tabs">
+                        <div class="tab">
+                            <input type="radio" id="tab-5" name="tab-group-3" checked>
+                            <label class="label" for="tab-5">Ingredients</label>
+                            <div class="ingredients spacer"></div>
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <p>25ml Smirnoff No. 21 Vodka</p>
+                                    </li>
+                                    <li>
+                                        <p>150ml Soda water</p>
+                                    </li>
+                                    <li>
+                                        <p>Freshly squeezed juice of half an orange</p>
+                                    </li>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="radio" id="tab-6" name="tab-group-3">
+                            <label class="label" for="tab-6">Method</label>
+                            <div class="method spacer"></div>
+                            <div class="content">
+                                <ol>
+                                    <li>
+                                        <p>Add Smirnoff No.21 Vodka to a Highball glass filled with ice</p>
+                                    </li>
+                                    <li>
+                                        <p>Top with soda water and squeeze the juice of half an orange into the glass
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Garnish and serve</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-card-recipes one-of-two transparent-background">
+        <div class="recipe-header">
+            <div class="recipes-top">
+                <div class="recipes-title">
+                    <p>gordon’s pink & tonic</p>
+                </div>
+                <div class="recipes-tag-container">
+                    <p class="recipes-tag">Spring Menu</p>
+                </div>
+            </div>
+            <div class="recipes-description">
+                <p>A Pink twist on the classic G&T, crafted to balance the refreshing taste of Gordon’s with the
+                    sweetness of raspberries and strawberries with the tang of redcurrant.</p>
+            </div>
+        </div>
+        <div class="recipe-body">
+            <div class="recipes-ingredients-method">
+                <div class="recipes-image-content">
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+                </div>
+                <div class="tab-table-container">
+                    <div class="tabs">
+                        <div class="tab">
+                            <input type="radio" id="tab-7" name="tab-group-4" checked>
+                            <label class="label" for="tab-7">Ingredients</label>
+                            <div class="ingredients spacer"></div>
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <p>50ml Gordon’s Premium Pink</p>
+                                    </li>
+                                    <li>
+                                        <p>150ml Tonic water</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="radio" id="tab-8" name="tab-group-4">
+                            <label class="label" for="tab-8">Method</label>
+                            <div class="method spacer"></div>
+                            <div class="content">
+                                <ol>
+                                    <li>
+                                        <p>Add all ingredients to a Copa glass filled with ice</p>
+                                    </li>
+                                    <li>
+                                        <p>Stir to mix</p>
+                                    </li>
+                                    <li>
+                                        <p>Garnish and serve</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="spacer80"></div>
+
+<div class="image-outside-horizontal-card-container">
+    <div class="image-outside-horizontal-card">
+        <div class="content-container">
+            <div class="title-container">
+                <span class="title">QUENCH DEMAND FOR NON-ALCOHOLIC DRINKS</span>
+            </div>
+            <div class="description-container">
+                <span class="description">Low in ABV but high in flavour, offer your customers inspiring non-alcoholic
+                    and low-alcohol drinks.</span>
+            </div>
+            <div class="btn-container">
+                <a href="https://mailchi.mp/mydiageo/baileysreindeer" target="_blank" class="content-button">FIND OUT
+                    MORE</a>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
+        </div>
+    </div>
+</div>
+
+<div id="spacer80"></div>
+
+<div class="download-block">
+    <input type="checkbox" id="download-tab-1">
+    <label class="tab-label" for="download-tab-1">downloads</label>
+    <a class="tab-button" href=""><i class="fas fa-download"></i> Download all</a>
+    <div class="download-body tab-content">
+        <div class="download-card-container">
+            <div class="download-card">
+                <div class="image-container">
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHx"
+                        alt="" />
+                </div>
+                <div class="body-container">
+                    <p class="title-text">SOCIAL MEDIA VIDEO</p>
+                    <p class="description-text">EnterAssetTheFileNameHere.mp4</p>
+                    <div class="download-card-btn">
+                        <a href="#" target="_blank" class="download-link-box"><i
+                                class="fas fa-download"></i>Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="download-card">
+                <div class="image-container">
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHx"
+                        alt="" />
+                </div>
+                <div class="body-container">
+                    <p class="title-text">SOCIAL MEDIA VIDEO</p>
+                    <p class="description-text">EnterAssetTheFileNameHere.mp4</p>
+                    <div class="download-card-btn">
+                        <a href="#" target="_blank" class="download-link-box"><i
+                                class="fas fa-download"></i>Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="download-card">
+                <div class="image-container">
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHx"
+                        alt="" />
+                </div>
+                <div class="body-container">
+                    <p class="title-text">Download</p>
+                    <p class="description-text">file_name.jpg</p>
+                    <div class="download-card-btn">
+                        <a href="#" target="_blank" class="download-link-box"><i
+                                class="fas fa-download"></i>Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="download-card">
+                <div class="image-container">
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHx"
+                        alt="" />
+                </div>
+                <div class="body-container">
+                    <p class="title-text">SOCIAL MEDIA VIDEO</p>
+                    <p class="description-text">EnterAssetTheFileNameHere.mp4</p>
+                    <div class="download-card-btn">
+                        <a href="#" target="_blank" class="download-link-box"><i
+                                class="fas fa-download"></i>Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="download-card">
+                <div class="image-container">
+                    <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MXHx"
+                        alt="" />
+                </div>
+                <div class="body-container">
+                    <p class="title-text">SOCIAL MEDIA VIDEO</p>
+                    <p class="description-text">EnterAssetTheFileNameHere.mp4</p>
+                    <div class="download-card-btn">
+                        <a href="#" target="_blank" class="download-link-box"><i
+                                class="fas fa-download"></i>Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="spacer80"></div>
+
+<div class="titles-and-descriptions">
+    <p class="related-title">RELATED articles</p>
+</div>
+
+<div class="vertical-card-container-related-article">
+
+    <div class="card-related-content">
+        <div class="image-container">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOqe" />
+        </div>
+        <div class="copy-container">
+            <p class="copy-text">Johnnie walker black</p>
+            <a href="https://www.mydiageo.com/s/cp-content/a4P4G000000KEN9" class="copy-link">Find out more<i
+                    class="fas fa-angle-right"></i></a>
+        </div>
+    </div>
+
+    <div class="card-related-content">
+        <div class="image-container">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOqe" />
+        </div>
+        <div class="copy-container">
+            <p class="copy-text">GET READY FOR WORLD MARGARITA DAY</p>
+            <a
+                href="https://www.mydiageo.com/s/cp-content/a4PD00000001VDUMA2/trendsbeerinsightjune18?retUrl=https%3A%2F%2Fwww.mydiageo.com%2Fs%2Fdiscover"
+                class="copy-link">Find out more<i class="fas fa-angle-right"></i></a>
+        </div>
+    </div>
+
+    <div class="card-related-content">
+        <div class="image-container">
+            <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006XOqe" />
+        </div>
+        <div class="copy-container">
+            <p class="copy-text">How to arrange your back bar for seamless service</p>
+            <a href="https://www.mydiageo.com/s/landing?menu=IRL-get-the-basics-right" class="copy-link">Find out
+                more<i class="fas fa-angle-right"></i></a>
+        </div>
+    </div>
+</div>
