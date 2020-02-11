@@ -129,6 +129,7 @@
 			.content-container {
 				width: 100%;
 				padding: 10px 0;
+				order: 1;
 				.label {
 					margin-left: 20px;
 					margin-top: 15px;
@@ -165,6 +166,7 @@
 			.concont {
 				width: 100%;
 				height: 280px;
+				order: 0;
 				.image-container {
 					.phone-img {
 						display: block;
@@ -380,6 +382,7 @@
 				line-height: 26px;
 				text-align: left;
 				padding-bottom: 40px;
+				min-height: 100px;
 			}
 			.recipe-information {
 				.recipes-medium {
@@ -719,6 +722,7 @@
 				}
 				.recipes-description {
 					padding-bottom: 20px;
+					min-height: unset;
 				}
 				.recipe-information {
 					.recipes-medium {
@@ -1557,6 +1561,9 @@
 				margin-top: 10px;
 				padding: unset;
 				width: 100%;
+				.list-column-text-title {
+					text-align: center;
+				}
 			}
 			&.image-left {
 				.list-column-image {
