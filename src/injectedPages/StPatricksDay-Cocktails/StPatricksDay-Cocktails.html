@@ -265,6 +265,7 @@
 .recipe .content-card-recipes .recipe-header .recipes-top .recipes-title {
   font-size: 28px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 .recipe .content-card-recipes .recipe-header .recipes-top .recipes-tag-container {
   display: flex;
@@ -272,12 +273,11 @@
   padding-bottom: 40px;
 }
 .recipe .content-card-recipes .recipe-header .recipes-top .recipes-tag-container .recipes-tag {
-  text-transform: uppercase;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.71;
   color: #ffffff;
-  background-color: #222666;
+  background-color: #00b39f;
   padding: 8px 10px;
   margin-left: 5px;
 }
@@ -325,14 +325,14 @@
   display: flex;
   margin: 2px;
   width: fit-content;
-  border: 1px solid #222666;
+  border: 1px solid #00b39f;
 }
 .recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block .p-title,
 .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .puntuation-block .p-title {
   font-size: 13px;
   font-weight: 500;
   line-height: 1.38;
-  background-color: #222666;
+  background-color: #00b39f;
   color: #ffffff;
   padding: 4px 8px;
   text-transform: uppercase;
@@ -362,7 +362,7 @@
 }
 .recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .puntuation-block .puntuation-container .selected,
 .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .puntuation-block .puntuation-container .selected {
-  color: #222666;
+  color: #00b39f;
 }
 .recipe .content-card-recipes .recipe-header .recipes-top .recipes-factor-and-difficulty .difficulty,
 .recipe .content-card-recipes .recipe-header .only-mobile-recipes-factor-and-difficulty .difficulty {
@@ -403,7 +403,7 @@
   right: -35px;
   color: white;
   border-radius: 50%;
-  background-color: #222666;
+  background-color: #00b39f;
   width: 100px;
   height: 100px;
   text-align: center;
@@ -421,7 +421,7 @@
   padding-top: 17px;
   padding-bottom: 17px;
   padding-left: 20px;
-  border: 4px solid #222666;
+  border: 4px solid #00b39f;
   padding-right: 75px;
   background-color: white;
 }
@@ -598,6 +598,7 @@
     z-index: 1;
     display: table;
     top: 71px;
+    height: 240px;
   }
 }
 @media (max-width: 768px) {
@@ -783,6 +784,10 @@
   align-items: center;
   min-height: 110px;
 }
+.box-container.background-white {
+  background-color: white;
+  color: #3e3e3e;
+}
 .box-container.full-image .image-container {
   min-width: 100%;
 }
@@ -893,7 +898,7 @@
 }
 .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container {
   width: 100%;
-  border: 5px solid #50af01;
+  border: 5px solid #00b39f;
   z-index: 1;
 }
 .image-outside-horizontal-card-container .image-outside-horizontal-card .content-container .title-container {
@@ -983,7 +988,7 @@
     height: unset;
   }
   .image-outside-horizontal-card-container .image-outside-horizontal-card.only-text .content-container {
-    border: 5px solid #50af01;
+    border: 5px solid #00b39f;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1040,7 +1045,7 @@
     right: -6.7%;
   }
   .image-outside-horizontal-card-container .image-outside-horizontal-card.only-text .content-container {
-    border: 5px solid #50af01;
+    border: 5px solid #00b39f;
     padding-top: 20px;
   }
   .image-outside-horizontal-card-container .image-outside-horizontal-card.only-text .content-container .title-container {
@@ -1152,21 +1157,6 @@
   color: #4092df;
   position: absolute;
   bottom: 4px;
-}
-
-</style>
-<style>
-body {
-  max-width: 1280px;
-  background-color: lightblue;
-  margin: 0 auto;
-}
-* {
-  box-sizing: border-box;
-}
-p {
-  margin: unset;
-  font-family: Roboto, sans-serif;
 }
 
 </style>
@@ -1481,7 +1471,7 @@ p {
 </div>
 
 <div id="spacer80"></div>
-<div class="box-container">
+<div class="box-container background-white">
     <div class="image-container">
         <img src="https://www.mydiageo.com/s/sfsites/c/servlet/servlet.FileDownload?file=0154G000006MUg1" />
     </div>
